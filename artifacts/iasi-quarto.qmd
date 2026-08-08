@@ -82,3 +82,4 @@ Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño
 El código fuente, las pruebas y la evolución del paquete viven en el repositorio público.
 
 [Ver `iasi_quarto` en GitHub →](https://github.com/iasi-org/iasi_quarto)
+
