@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: outputs
+  output-dir: _outputs/html
 
 profile:
   default: html
