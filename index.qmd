@@ -34,43 +34,27 @@ El objetivo no es añadir IA a procesos existentes, sino repensar los procesos c
 ::: {.iasi-grid}
 
 ::: {.iasi-card}
-### iasi-book
-
-**Pensar.**
+### [iasi-book (Pensar)](https://github.com/iasi/iasi-book)
 
 Principios, arquitectura, método y fundamentos de una ingeniería que integra la IA como parte natural del proceso.
-
-[Entrar en iasi-book →](https://github.com/iasi/iasi-book)
 :::
 
 ::: {.iasi-card}
-### iasi-quarto
-
-**Publicar.**
+### [iasi-quarto (Publicar)](artifacts/iasi-quarto.qmd)
 
 Infraestructura de construcción y publicación reproducible sobre Quarto.
-
-[Entrar en iasi-quarto →](artifacts/iasi-quarto.qmd)
 :::
 
 ::: {.iasi-card}
-### iasi-lua
-
-**Extender.**
+### [iasi-lua (Extender)](https://github.com/iasi/iasi-lua)
 
 Filtros Lua reutilizables para Pandoc y Quarto, construidos como piezas de infraestructura y no como parches aislados.
-
-[Entrar en iasi-lua →](https://github.com/iasi/iasi-lua)
 :::
 
 ::: {.iasi-card}
-### iasi-infra
-
-**Construir el entorno.**
+### [iasi-infra (Construir el entorno)](https://github.com/iasi/iasi-infra)
 
 Entornos de trabajo reproducibles para pasar de una máquina vacía a una plataforma de ingeniería preparada para el proyecto.
-
-[Entrar en iasi-infra →](https://github.com/iasi/iasi-infra)
 :::
 
 :::

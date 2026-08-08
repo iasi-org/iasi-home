@@ -34,43 +34,27 @@ The goal is not to bolt AI onto existing processes, but to rethink those process
 ::: {.iasi-grid}
 
 ::: {.iasi-card}
-### iasi-book
-
-**Think.**
+### [iasi-book (Think)](https://github.com/iasi/iasi-book)
 
 Principles, architecture, methods and foundations for engineering with AI as a native part of the process.
-
-[Open iasi-book →](https://github.com/iasi/iasi-book)
 :::
 
 ::: {.iasi-card}
-### iasi-quarto
-
-**Publish.**
+### [iasi-quarto (Publish)](../artifacts/iasi-quarto.qmd)
 
 Reproducible build and publishing infrastructure built on Quarto.
-
-[Open iasi-quarto →](../artifacts/iasi-quarto.qmd)
 :::
 
 ::: {.iasi-card}
-### iasi-lua
-
-**Extend.**
+### [iasi-lua (Extend)](https://github.com/iasi/iasi-lua)
 
 Reusable Lua filters for Pandoc and Quarto, built as infrastructure rather than isolated patches.
-
-[Open iasi-lua →](https://github.com/iasi/iasi-lua)
 :::
 
 ::: {.iasi-card}
-### iasi-infra
-
-**Build the environment.**
+### [iasi-infra (Build the environment)](https://github.com/iasi/iasi-infra)
 
 Reproducible working environments that take a project from an empty machine to an engineering-ready platform.
-
-[Open iasi-infra →](https://github.com/iasi/iasi-infra)
 :::
 
 :::
