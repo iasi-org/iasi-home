@@ -1,0 +1,88 @@
+---
+title: "IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-hero}
+<div class="iasi-kicker">INGENIERÍA DE SISTEMAS INTELIGENTES</div>
+
+# IASI
+
+## La IA ya forma parte del sistema.
+
+IASI explora cómo cambia la ingeniería cuando la inteligencia artificial deja de ser una herramienta externa y pasa a formar parte del diseño, la construcción y la evolución de los sistemas.
+
+<div class="iasi-actions">
+<a class="btn btn-primary btn-lg" href="#proyectos">Explorar proyectos</a>
+<a class="btn btn-outline-secondary btn-lg" href="en/">English</a>
+</div>
+:::
+
+::: {.iasi-statement}
+> Porque si la implementación cada vez cuesta menos, el pensamiento cada vez vale más.
+:::
+
+## El proyecto {#proyecto}
+
+IASI no es un único producto. Es un ecosistema abierto de ideas, herramientas e infraestructura para trabajar con sistemas inteligentes desde una perspectiva de ingeniería.
+
+El objetivo no es añadir IA a procesos existentes, sino repensar los procesos cuando la IA ya está dentro.
+
+## Proyectos {#proyectos}
+
+::: {.iasi-grid}
+
+::: {.iasi-card}
+### iasi-book
+
+**Pensar.**
+
+Principios, arquitectura, método y fundamentos de una ingeniería que integra la IA como parte natural del proceso.
+
+[Entrar en iasi-book →](https://github.com/iasi/iasi-book)
+:::
+
+::: {.iasi-card}
+### iasi-quarto
+
+**Publicar.**
+
+Infraestructura de construcción y publicación reproducible sobre Quarto.
+
+[Entrar en iasi-quarto →](https://github.com/iasi/iasi-quarto)
+:::
+
+::: {.iasi-card}
+### iasi-lua
+
+**Extender.**
+
+Filtros Lua reutilizables para Pandoc y Quarto, construidos como piezas de infraestructura y no como parches aislados.
+
+[Entrar en iasi-lua →](https://github.com/iasi/iasi-lua)
+:::
+
+::: {.iasi-card}
+### iasi-infra
+
+**Construir el entorno.**
+
+Entornos de trabajo reproducibles para pasar de una máquina vacía a una plataforma de ingeniería preparada para el proyecto.
+
+[Entrar en iasi-infra →](https://github.com/iasi/iasi-infra)
+:::
+
+:::
+
+## Una idea sencilla {#principios}
+
+La implementación se abarata. La capacidad de generar código crece. Por eso el valor se desplaza hacia otra parte: entender el problema, diseñar la solución, especificar con precisión, validar decisiones y construir sistemas que puedan evolucionar.
+
+IASI nace en ese cambio de equilibrio.
+
+## Abierto por diseño {#participar}
+
+IASI comienza como un proyecto personal, pero no está pensado para quedarse ahí. Los repositorios, las ideas y las herramientas están abiertos a profesionales y organizaciones que quieran explorar esta forma de trabajar.
+
+[Ver IASI en GitHub →](https://github.com/iasi)

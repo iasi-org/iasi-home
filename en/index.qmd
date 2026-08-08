@@ -1,0 +1,88 @@
+---
+title: "IASI"
+lang: en
+title-block-style: none
+---
+
+::: {.iasi-hero}
+<div class="iasi-kicker">INTELLIGENT SYSTEMS ENGINEERING</div>
+
+# IASI
+
+## AI is already part of the system.
+
+IASI explores how engineering changes when artificial intelligence stops being an external tool and becomes part of the design, construction and evolution of systems.
+
+<div class="iasi-actions">
+<a class="btn btn-primary btn-lg" href="#projects">Explore projects</a>
+<a class="btn btn-outline-secondary btn-lg" href="../">Español</a>
+</div>
+:::
+
+::: {.iasi-statement}
+> Because as implementation costs less and less, thinking becomes more and more valuable.
+:::
+
+## The project {#project}
+
+IASI is not a single product. It is an open ecosystem of ideas, tools and infrastructure for engineering intelligent systems.
+
+The goal is not to bolt AI onto existing processes, but to rethink those processes once AI is already inside them.
+
+## Projects {#projects}
+
+::: {.iasi-grid}
+
+::: {.iasi-card}
+### iasi-book
+
+**Think.**
+
+Principles, architecture, methods and foundations for engineering with AI as a native part of the process.
+
+[Open iasi-book →](https://github.com/iasi/iasi-book)
+:::
+
+::: {.iasi-card}
+### iasi-quarto
+
+**Publish.**
+
+Reproducible build and publishing infrastructure built on Quarto.
+
+[Open iasi-quarto →](https://github.com/iasi/iasi-quarto)
+:::
+
+::: {.iasi-card}
+### iasi-lua
+
+**Extend.**
+
+Reusable Lua filters for Pandoc and Quarto, built as infrastructure rather than isolated patches.
+
+[Open iasi-lua →](https://github.com/iasi/iasi-lua)
+:::
+
+::: {.iasi-card}
+### iasi-infra
+
+**Build the environment.**
+
+Reproducible working environments that take a project from an empty machine to an engineering-ready platform.
+
+[Open iasi-infra →](https://github.com/iasi/iasi-infra)
+:::
+
+:::
+
+## A simple idea {#principles}
+
+Implementation is becoming cheaper. Code generation keeps getting better. Value therefore moves elsewhere: understanding the problem, designing the solution, specifying precisely, validating decisions and building systems that can evolve.
+
+IASI begins at that shift in balance.
+
+## Open by design {#contribute}
+
+IASI starts as a personal project, but it is not intended to remain one. Its repositories, ideas and tools are open to professionals and organizations interested in exploring this way of working.
+
+[View IASI on GitHub →](https://github.com/iasi)

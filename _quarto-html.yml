@@ -1,0 +1,9 @@
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    include-in-header:
+      - includes/language.html

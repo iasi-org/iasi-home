@@ -1,0 +1,60 @@
+<script>
+(() => {
+  const STORAGE_KEY = "iasi-language";
+
+  const pageLanguage =
+    (document.documentElement.lang || "").toLowerCase().startsWith("es")
+      ? "es"
+      : "en";
+
+  const savedLanguage = localStorage.getItem(STORAGE_KEY);
+
+  const browserLanguage =
+    (navigator.language || "en").toLowerCase().startsWith("es")
+      ? "es"
+      : "en";
+
+  const preferredLanguage = savedLanguage || browserLanguage;
+
+  const targetUrl = (language) => {
+    if (language === pageLanguage) {
+      return null;
+    }
+
+    if (pageLanguage === "es" && language === "en") {
+      return new URL("en/", window.location.href).href;
+    }
+
+    if (pageLanguage === "en" && language === "es") {
+      return new URL("../", window.location.href).href;
+    }
+
+    return null;
+  };
+
+  const redirect = targetUrl(preferredLanguage);
+
+  if (redirect) {
+    window.location.replace(redirect);
+    return;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a").forEach((link) => {
+      const label = link.textContent.trim().toLowerCase();
+
+      if (label === "es" || label === "español") {
+        link.addEventListener("click", () => {
+          localStorage.setItem(STORAGE_KEY, "es");
+        });
+      }
+
+      if (label === "en" || label === "english") {
+        link.addEventListener("click", () => {
+          localStorage.setItem(STORAGE_KEY, "en");
+        });
+      }
+    });
+  });
+})();
+</script>

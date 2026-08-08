@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: outputs
+
+profile:
+  default: html
+
+website:
+  title: "IASI"
+  page-navigation: true
+
+  navbar:
+    title: "IASI"
+    right:
+      - text: "ES"
+        href: index.qmd
+      - text: "EN"
+        href: en/index.qmd
+      - icon: github
+        href: https://github.com/iasi
+        aria-label: GitHub
+
+  page-footer:
+    left: "IASI · Ingeniería de Sistemas Inteligentes"
+    right:
+      - text: GitHub
+        href: https://github.com/iasi
