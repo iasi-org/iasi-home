@@ -9,3 +9,4 @@ format:
     smooth-scroll: true
     include-in-header:
       - includes/language.html
+

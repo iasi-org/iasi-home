@@ -70,3 +70,4 @@ IASI begins at that shift in balance.
 IASI starts as a personal project, but it is not intended to remain one. Its repositories, ideas and tools are open to professionals and organizations interested in exploring this way of working.
 
 [View IASI on GitHub →](https://github.com/iasi)
+
