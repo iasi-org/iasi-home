@@ -50,7 +50,7 @@ Principles, architecture, methods and foundations for engineering with AI as a n
 
 Reproducible build and publishing infrastructure built on Quarto.
 
-[Open iasi-quarto →](https://github.com/iasi/iasi-quarto)
+[Open iasi-quarto →](../artifacts/iasi-quarto.qmd)
 :::
 
 ::: {.iasi-card}

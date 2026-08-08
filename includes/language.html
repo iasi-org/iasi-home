@@ -32,7 +32,8 @@
     return null;
   };
 
-  const redirect = targetUrl(preferredLanguage);
+  const isArtifactPage = window.location.pathname.includes("/artifacts/");
+  const redirect = isArtifactPage ? null : targetUrl(preferredLanguage);
 
   if (redirect) {
     window.location.replace(redirect);

@@ -1,7 +1,9 @@
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css:
+      - styles.css
+      - styles-artifacts.css
     toc: false
     page-layout: full
     smooth-scroll: true

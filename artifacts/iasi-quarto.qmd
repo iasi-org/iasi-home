@@ -1,0 +1,84 @@
+---
+pagetitle: "iasi.quarto · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-subnav}
+[Overview](#overview)
+[User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
+[Technical Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
+[Repository](https://github.com/iasi-org/iasi_quarto)
+:::
+
+::: {.iasi-artifact-hero}
+<div class="iasi-kicker">IASI QUARTO</div>
+
+# iasi.quarto
+
+## Publicación reproducible sobre Quarto.
+
+Una capa de ingeniería para descubrir, validar, preparar y construir publicaciones Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.
+
+<div class="iasi-actions">
+<a class="btn btn-primary btn-lg" href="#documentation">Documentación</a>
+<a class="btn btn-outline-secondary btn-lg" href="https://github.com/iasi-org/iasi_quarto">Código fuente</a>
+</div>
+:::
+
+## Overview {#overview}
+
+`iasi.quarto` organiza el ciclo de construcción alrededor de una idea sencilla: Quarto sigue siendo el motor de publicación; IASI añade reconocimiento, comprobación y preparación antes del renderizado.
+
+::: {.iasi-artifact-flow}
+::: {.iasi-artifact-step}
+### Discover
+
+Reconoce la publicación y su configuración.
+:::
+
+::: {.iasi-artifact-step}
+### Check
+
+Comprueba que estructura y contrato sean coherentes.
+:::
+
+::: {.iasi-artifact-step}
+### Prepare
+
+Genera únicamente los artefactos derivados que Quarto necesita.
+:::
+
+::: {.iasi-artifact-step}
+### Build
+
+Delega el renderizado final en Quarto para los formatos soportados.
+:::
+:::
+
+## Documentation {#documentation}
+
+La documentación se separa según quién necesita leerla.
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### User Guide
+
+Instalación, configuración y uso de `iasi.quarto` para construir publicaciones y multiproyectos.
+
+[Open User Guide →](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
+:::
+
+::: {.iasi-artifact-doc}
+### Technical Guide
+
+Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.
+
+[Open Technical Guide →](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
+:::
+:::
+
+## Repository {#repository}
+
+El código fuente, las pruebas y la evolución del paquete viven en el repositorio público.
+
+[Ver `iasi_quarto` en GitHub →](https://github.com/iasi-org/iasi_quarto)

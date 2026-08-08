@@ -50,7 +50,7 @@ Principios, arquitectura, método y fundamentos de una ingeniería que integra l
 
 Infraestructura de construcción y publicación reproducible sobre Quarto.
 
-[Entrar en iasi-quarto →](https://github.com/iasi/iasi-quarto)
+[Entrar en iasi-quarto →](artifacts/iasi-quarto.qmd)
 :::
 
 ::: {.iasi-card}
