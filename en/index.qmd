@@ -1,73 +1,63 @@
 ---
-title: "IASI"
+title: "Ingeniería Asistida por Sistemas Inteligentes"
 lang: en
 title-block-style: none
 ---
 
-::: {.iasi-hero}
-<div class="iasi-kicker">INTELLIGENT SYSTEMS ENGINEERING</div>
-
-# IASI
-
-## AI is already part of the system.
-
-IASI explores how engineering changes when artificial intelligence stops being an external tool and becomes part of the design, construction and evolution of systems.
-
-<div class="iasi-actions">
-<a class="btn btn-primary btn-lg" href="#projects">Explore projects</a>
-<a class="btn btn-outline-secondary btn-lg" href="../">Español</a>
-</div>
+::: {.iasi-epigraph}
+*If implementation costs less and less, knowledge becomes more and more valuable.*
 :::
 
-::: {.iasi-statement}
-> Because as implementation costs less and less, thinking becomes more and more valuable.
-:::
+IASI is an initiative to explore a new way of understanding and practicing engineering, in which intelligent systems are a natural part of projects and participate in their construction and evolution.
 
-## The project {#project}
+Intelligent systems can already take an effective role in activities that until now depended almost exclusively on human work, from understanding a problem and proposing solutions to building, reviewing, documenting and validating a system.
 
-IASI is not a single product. It is an open ecosystem of ideas, tools and infrastructure for engineering intelligent systems.
+This changes where the value of engineering lies.
 
-The goal is not to bolt AI onto existing processes, but to rethink those processes once AI is already inside them.
+As implementation becomes cheaper, value shifts toward knowledge: **understanding the problem, deciding what to build, specifying it precisely, designing it and validating the result**.
 
-## Projects {#projects}
+IASI aims to develop **a methodology and an engineering framework for projects in which people and intelligent systems work together**, from initial conception to systems capable of evolving themselves over time.
+
+The goal is not simply to do what we already did faster. It is to investigate **how engineering must change when intelligent systems become part of the engineering process itself**.
+
+## Artifacts {#artifacts}
 
 ::: {.iasi-grid}
 
-::: {.iasi-card}
-### [iasi-book (Think)](https://github.com/iasi/iasi-book)
+::: {.iasi-card .iasi-card-think}
+### [Think: iasi-book](../status/under-construction.html)
 
-Principles, architecture, methods and foundations for engineering with AI as a native part of the process.
+Principles, architecture, methods and foundations for engineering in which intelligent systems are a natural part of the process.
 :::
 
-::: {.iasi-card}
-### [iasi-quarto (Publish)](../artifacts/iasi-quarto.qmd)
+::: {.iasi-card .iasi-card-publish}
+### [Publish: iasi-quarto](../artifacts/iasi-quarto.qmd)
 
 Reproducible build and publishing infrastructure built on Quarto.
 :::
 
-::: {.iasi-card}
-### [iasi-lua (Extend)](https://github.com/iasi/iasi-lua)
+::: {.iasi-card .iasi-card-extend}
+### [Extend: iasi-lua](../status/under-construction.html)
 
 Reusable Lua filters for Pandoc and Quarto, built as infrastructure rather than isolated patches.
 :::
 
-::: {.iasi-card}
-### [iasi-infra (Build the environment)](https://github.com/iasi/iasi-infra)
+::: {.iasi-card .iasi-card-environment}
+### [Build the environment: iasi-infra](../status/under-construction.html)
 
 Reproducible working environments that take a project from an empty machine to an engineering-ready platform.
 :::
 
 :::
 
-## A simple idea {#principles}
-
-Implementation is becoming cheaper. Code generation keeps getting better. Value therefore moves elsewhere: understanding the problem, designing the solution, specifying precisely, validating decisions and building systems that can evolve.
-
-IASI begins at that shift in balance.
-
 ## Open by design {#contribute}
 
-IASI starts as a personal project, but it is not intended to remain one. Its repositories, ideas and tools are open to professionals and organizations interested in exploring this way of working.
+IASI begins as a personal initiative, but **it is not intended to be built alone or to belong to a single person, but to the community**.
+
+Its ideas, methods and artifacts are developed openly so that others can use them, discuss them, challenge them and improve them.
+
+**Professionals, teams and organizations are welcome to participate**, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.
+
+IASI starts here. **What it becomes will also depend on those who choose to build it.**
 
 [View IASI on GitHub →](https://github.com/iasi)
-

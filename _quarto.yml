@@ -1,13 +1,22 @@
 project:
   type: website
   output-dir: _outputs/html
+  resources:
+    - resources/**
+    - status/**
 
 profile:
   default: html
 
 website:
-  title: "IASI"
+  title: "Ingeniería Asistida por Sistemas Inteligentes"
   page-navigation: true
+
+  announcement:
+    dismissable: false
+    content: "![](/resources/images/ants.png){.iasi-ants-image}"
+    type: light
+    position: above-navbar
 
   navbar:
     title: "IASI"
@@ -21,8 +30,7 @@ website:
         aria-label: GitHub
 
   page-footer:
-    left: "IASI · Ingeniería de Sistemas Inteligentes"
+    left: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
     right:
       - text: GitHub
         href: https://github.com/iasi
-

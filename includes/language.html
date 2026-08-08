@@ -1,62 +1,10 @@
 <script>
 (() => {
-  const STORAGE_KEY = "iasi-language";
+  const css = document.querySelector('link[rel="stylesheet"][href*="resources/css/styles.css"]');
+  if (!css) return;
 
-  const pageLanguage =
-    (document.documentElement.lang || "").toLowerCase().startsWith("es")
-      ? "es"
-      : "en";
-
-  const savedLanguage = localStorage.getItem(STORAGE_KEY);
-
-  const browserLanguage =
-    (navigator.language || "en").toLowerCase().startsWith("es")
-      ? "es"
-      : "en";
-
-  const preferredLanguage = savedLanguage || browserLanguage;
-
-  const targetUrl = (language) => {
-    if (language === pageLanguage) {
-      return null;
-    }
-
-    if (pageLanguage === "es" && language === "en") {
-      return new URL("en/", window.location.href).href;
-    }
-
-    if (pageLanguage === "en" && language === "es") {
-      return new URL("../", window.location.href).href;
-    }
-
-    return null;
-  };
-
-  const isArtifactPage = window.location.pathname.includes("/artifacts/");
-  const redirect = isArtifactPage ? null : targetUrl(preferredLanguage);
-
-  if (redirect) {
-    window.location.replace(redirect);
-    return;
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("a").forEach((link) => {
-      const label = link.textContent.trim().toLowerCase();
-
-      if (label === "es" || label === "español") {
-        link.addEventListener("click", () => {
-          localStorage.setItem(STORAGE_KEY, "es");
-        });
-      }
-
-      if (label === "en" || label === "english") {
-        link.addEventListener("click", () => {
-          localStorage.setItem(STORAGE_KEY, "en");
-        });
-      }
-    });
-  });
+  const script = document.createElement("script");
+  script.src = new URL("../js/language.js", css.href).href;
+  document.head.appendChild(script);
 })();
 </script>
-

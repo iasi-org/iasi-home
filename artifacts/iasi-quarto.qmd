@@ -3,6 +3,7 @@ pagetitle: "iasi.quarto · IASI"
 lang: es
 ---
 
+::: {.iasi-artifact-page .iasi-artifact-publish}
 ::: {.iasi-artifact-subnav}
 [Overview](#overview)
 [User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
@@ -20,7 +21,7 @@ lang: es
 Una capa de ingeniería para descubrir, validar, preparar y construir publicaciones Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.
 
 <div class="iasi-actions">
-<a class="btn btn-primary btn-lg" href="#documentation">Documentación</a>
+<a class="btn btn-primary btn-lg" href="#resources">Recursos</a>
 <a class="btn btn-outline-secondary btn-lg" href="https://github.com/iasi-org/iasi_quarto">Código fuente</a>
 </div>
 :::
@@ -55,31 +56,25 @@ Delega el renderizado final en Quarto para los formatos soportados.
 :::
 :::
 
-## Documentation {#documentation}
-
-La documentación se separa según quién necesita leerla.
+## Recursos {#resources}
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### User Guide
+### [User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
 
 Instalación, configuración y uso de `iasi.quarto` para construir publicaciones y multiproyectos.
-
-[Open User Guide →](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
 :::
 
 ::: {.iasi-artifact-doc}
-### Technical Guide
+### [Technical Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
 
 Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.
-
-[Open Technical Guide →](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
-:::
 :::
 
-## Repository {#repository}
+::: {.iasi-artifact-doc}
+### [Repository](https://github.com/iasi-org/iasi_quarto)
 
-El código fuente, las pruebas y la evolución del paquete viven en el repositorio público.
-
-[Ver `iasi_quarto` en GitHub →](https://github.com/iasi-org/iasi_quarto)
-
+Código fuente, pruebas y evolución pública del paquete `iasi.quarto`.
+:::
+:::
+:::

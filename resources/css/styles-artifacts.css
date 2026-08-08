@@ -1,18 +1,27 @@
 /* Shared artifact-page template. iasi.quarto is the first implementation. */
 
+.iasi-artifact-page {
+  --iasi-artifact-accent: var(--iasi-quarto-blue);
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.iasi-artifact-publish {
+  --iasi-artifact-accent: var(--iasi-artifact-publish);
+}
+
 .iasi-artifact-subnav {
-  position: sticky;
-  top: 56px;
-  z-index: 1015;
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 1.6rem;
   overflow-x: auto;
-  margin: 0 calc(50% - 50vw);
-  padding: 0.8rem max(1.5rem, calc((100vw - var(--iasi-max)) / 2));
-  border-bottom: 1px solid var(--iasi-border);
-  background: color-mix(in srgb, var(--bs-body-bg) 96%, transparent);
-  backdrop-filter: blur(10px);
+  margin: -1px calc(50% - 50vw) 0;
+  padding: 0.8rem var(--iasi-page-pad);
+  border-bottom: 0;
+  background: var(--iasi-quarto-blue);
+  backdrop-filter: none;
   white-space: nowrap;
 }
 
@@ -22,21 +31,23 @@
 }
 
 .iasi-artifact-subnav a {
-  color: var(--bs-body-color);
+  color: #fff;
   font-size: 0.93rem;
   font-weight: 600;
   text-decoration: none;
-  opacity: 0.72;
+  opacity: 0.82;
 }
 
 .iasi-artifact-subnav a:hover {
+  color: #fff;
   opacity: 1;
 }
 
 .iasi-artifact-hero {
-  max-width: var(--iasi-max);
-  margin: 0 auto;
-  padding: 5.5rem 1.5rem 4.5rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 5.5rem var(--iasi-page-pad) 4.5rem;
   text-align: left;
 }
 
@@ -71,26 +82,25 @@
 
 .iasi-artifact-flow,
 .iasi-artifact-docs {
-  max-width: var(--iasi-max);
-  margin: 1.25rem auto 2rem;
-  padding: 0 1.5rem;
+  width: 100%;
+  max-width: none;
+  margin: 1.25rem 0 2rem;
+  padding: 0 var(--iasi-page-pad);
   display: grid;
   gap: 1rem;
 }
 
-.iasi-artifact-flow {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
+.iasi-artifact-flow,
 .iasi-artifact-docs {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
 
 .iasi-artifact-step,
 .iasi-artifact-doc {
-  padding: 1.6rem;
+  padding: clamp(1.15rem, 1.6vw, 1.5rem);
   border: 1px solid var(--iasi-border);
-  border-radius: 1rem;
+  border-left: 0.28rem solid var(--iasi-artifact-accent);
+  border-radius: 0.8rem;
   background: var(--bs-body-bg);
 }
 
@@ -107,15 +117,8 @@
   line-height: 1.6;
 }
 
-@media (max-width: 900px) {
-  .iasi-artifact-flow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 760px) {
   .iasi-artifact-subnav {
-    top: 54px;
     gap: 1.1rem;
   }
 
@@ -123,9 +126,4 @@
     padding-top: 4rem;
   }
 
-  .iasi-artifact-flow,
-  .iasi-artifact-docs {
-    grid-template-columns: 1fr;
-  }
 }
-
