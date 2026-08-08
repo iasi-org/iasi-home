@@ -103,4 +103,4 @@ Its ideas, methods and artifacts are developed openly so that others can use the
 
 IASI starts here. **What it becomes will also depend on those who choose to build it.**
 
-[View IASI on GitHub →](https://github.com/iasi)
+[View IASI on GitHub →](https://github.com/iasi-org)

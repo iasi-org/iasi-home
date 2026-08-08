@@ -93,10 +93,8 @@ Entornos de trabajo reproducibles para pasar de una máquina vacía a una plataf
 
 IASI nace como una iniciativa personal, pero **no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad**.
 
-Sus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros.
-
-**Profesionales, equipos y organizaciones son bienvenidos a participar**, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.
+Sus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros **Profesionales, equipos y organizaciones son bienvenidos a participar**, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.
 
 IASI empieza aquí. **Lo que llegue a ser dependerá también de quienes quieran construirlo.**
 
-[Ver IASI en GitHub →](https://github.com/iasi)
+[Ver IASI en GitHub →](https://github.com/iasi-org)
