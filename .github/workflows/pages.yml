@@ -36,7 +36,7 @@ jobs:
         shell: Rscript {0}
         run: |
           install.packages("remotes")
-          remotes::install_github("iasi/iasi-quarto")
+          remotes::install_github("iasi/iasi_quarto")
 
       - name: Build website
         shell: Rscript {0}
