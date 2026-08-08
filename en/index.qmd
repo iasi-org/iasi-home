@@ -8,17 +8,60 @@ title-block-style: none
 *If implementation costs less and less, knowledge becomes more and more valuable.*
 :::
 
-IASI is an initiative to explore a new way of understanding and practicing engineering, in which intelligent systems are a natural part of projects and participate in their construction and evolution.
+IASI is an open ecosystem dedicated to exploring a new way of engineering. We believe that the emergence of Intelligent Systems represents a paradigm shift comparable to the arrival of the Internet, object-oriented programming or open source software. This is not simply about adopting new tools, but about rethinking how we conceive, design, build and evolve software systems.
 
-Intelligent systems can already take an effective role in activities that until now depended almost exclusively on human work, from understanding a problem and proposing solutions to building, reviewing, documenting and validating a system.
+IASI exists to explore that journey.
 
-This changes where the value of engineering lies.
+**Approach**
 
-As implementation becomes cheaper, value shifts toward knowledge: **understanding the problem, deciding what to build, specifying it precisely, designing it and validating the result**.
+IASI does not start from a predefined methodology, we start from the problem, **without preconceptions**.
 
-IASI aims to develop **a methodology and an engineering framework for projects in which people and intelligent systems work together**, from initial conception to systems capable of evolving themselves over time.
+We believe that the emergence of Intelligent Systems requires us to rethink the way engineering is practiced. Therefore, we do not assume that existing methodologies, by themselves, provide the right answer.
 
-The goal is not simply to do what we already did faster. It is to investigate **how engineering must change when intelligent systems become part of the engineering process itself**.
+Instead:
+
+> **We do not adopt methodologies to solve problems. We start from problems to discover the methodology.**
+
+Every need is evaluated independently.
+
+- If an existing methodology provides the best answer, we will use it.
+- If it needs to be adapted, we will adapt it.
+- If combining multiple approaches provides a better solution, we will combine them.
+- And if none is sufficient, we will build a new one.
+
+We are not looking for a universal methodology.
+
+We are looking for the best solution to every problem.
+
+**Principles**
+
+- Engineering comes first.
+- Intelligent Systems are engineering assistants.
+- Knowledge should be open.
+- Documentation is an engineering artefact.
+- Automation should be the consequence of good design, not an objective by itself.
+- Components should be reusable.
+- Every decision can be questioned.
+- Methodologies must evolve as well.
+
+**The Journey Is Knowledge**
+
+IASI does not only publish results, it also documents the journey.
+
+- Architectural decisions.
+- Experiments.
+- Questions.
+- Mistakes.
+- Changes of direction.
+- Discarded tools.
+- Ideas that worked... and those that did not.
+
+We believe that understanding **how** a solution is built is as valuable as the solution itself.
+
+That is why, in IASI, the journey is part of the product.
+
+> *"The best methodology is not the one we follow, but the one we discover while solving the right problem."*
+
 
 ## Artifacts {#artifacts}
 

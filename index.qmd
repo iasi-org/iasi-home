@@ -8,17 +8,56 @@ title-block-style: none
 *Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más.*
 :::
 
-IASI es una iniciativa para explorar una nueva forma de entender y practicar la ingeniería, en la que los sistemas inteligentes forman parte natural de los proyectos y participan en su construcción y evolución.
+IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería.
 
-Los sistemas inteligentes ya pueden intervenir de forma efectiva en actividades que hasta ahora dependían casi exclusivamente del trabajo humano, desde comprender un problema y proponer soluciones hasta construir, revisar, documentar y validar un sistema.
+Creemos que la aparición de los Sistemas Inteligentes representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software, IASI nace para recorrer ese camino.
 
-Esto cambia dónde está el valor de la ingeniería.
+**Nuestra aproximación**
 
-Cuando implementar cuesta cada vez menos, el valor se desplaza hacia el conocimiento: **entender el problema, decidir qué construir, especificarlo con precisión, diseñarlo y validar el resultado**.
+IASI no parte de una metodología predefinida, partimos del problema **sin precondiciones**
 
-IASI busca desarrollar **una metodología y un marco de ingeniería para proyectos en los que personas y sistemas inteligentes trabajan conjuntamente**, desde la concepción inicial hasta sistemas capaces de autoevolucionar con el tiempo.
+Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta, por ello:
 
-No se trata simplemente de hacer más rápido lo que ya hacíamos. Se trata de investigar **cómo debe cambiar la ingeniería cuando los sistemas inteligentes pasan a formar parte del propio proceso de ingeniería**.
+> **No adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.**
+
+Cada necesidad será analizada de forma independiente.
+
+- Si una metodología existente ofrece una buena respuesta, la utilizaremos.
+- Si necesita adaptarse, la adaptaremos.
+- Si varias aportan valor, las combinaremos.
+- Y cuando ninguna resulte suficiente, construiremos una nueva.
+
+No buscamos una metodología universal, buscamos la mejor solución para cada problema.
+
+**Principios**
+
+- La ingeniería es el objetivo.
+- Los Sistemas Inteligentes son asistentes de ingeniería.
+- El conocimiento debe ser abierto.
+- La documentación es un artefacto de ingeniería.
+- La automatización debe ser consecuencia del diseño, no un fin en sí misma.
+- Los componentes deben ser reutilizables.
+- Las decisiones deben poder cuestionarse.
+- La metodología también evoluciona.
+
+**El viaje también es conocimiento**
+
+IASI no solo publica resultados.
+
+- También documenta el camino recorrido.
+- Las decisiones de arquitectura.
+- Los experimentos.
+- Las dudas.
+- Los errores.
+- Los cambios de dirección.
+- Las herramientas descartadas.
+- Las ideas que funcionaron... y las que no.
+
+Creemos que comprender **cómo** se construye una solución es tan valioso como la propia solución.
+
+Por eso, en IASI, el viaje también forma parte del producto.
+
+> *"La mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."*
 
 ## Artefactos {#artefactos}
 

@@ -217,6 +217,8 @@ main.content {
 
 #quarto-document-content > h2,
 #quarto-document-content > p,
+#quarto-document-content > blockquote,
+#quarto-document-content > ul,
 #quarto-document-content > .iasi-grid {
   width: 100%;
   max-width: none;
@@ -242,7 +244,19 @@ main.content {
 #quarto-document-content > p {
   padding: 0 var(--iasi-page-pad);
   font-size: 1.1rem;
-  line-height: 1.75;
+  line-height: 1;
+}
+
+/* Keep top-level quotes and lists inside the same page margins as body text. */
+#quarto-document-content > blockquote {
+  width: auto;
+  margin-left: var(--iasi-page-pad);
+  margin-right: var(--iasi-page-pad);
+}
+
+#quarto-document-content > ul {
+  padding-left: calc(var(--iasi-page-pad) + 2rem);
+  padding-right: var(--iasi-page-pad);
 }
 
 .iasi-grid {
