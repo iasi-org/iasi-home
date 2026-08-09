@@ -68,7 +68,7 @@ That is why, in IASI, the journey is part of the product.
 ::: {.iasi-grid}
 
 ::: {.iasi-card .iasi-card-think}
-### [Think: iasi-book](../status/under-construction.html)
+### [Think: iasi-book](https://iasi-org.github.io/iasi-book/)
 
 Principles, architecture, methods and foundations for engineering in which intelligent systems are a natural part of the process.
 :::

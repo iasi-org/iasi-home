@@ -64,7 +64,7 @@ Por eso, en IASI, el viaje también forma parte del producto.
 ::: {.iasi-grid}
 
 ::: {.iasi-card .iasi-card-think}
-### [Pensar: iasi-book](status/under-construction.html)
+### [Pensar: iasi-book](https://iasi-org.github.io/iasi-book/)
 
 Principios, arquitectura, método y fundamentos de una ingeniería en la que los sistemas inteligentes forman parte natural del proceso.
 :::
