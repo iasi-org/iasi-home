@@ -37,6 +37,7 @@ jobs:
         run: |
           install.packages("remotes")
           remotes::install_git("https://github.com/iasi-org/iasi_quarto.git")
+          stopifnot(requireNamespace("iasi.quarto", quietly = TRUE))
           
       - name: Build website
         shell: Rscript {0}
