@@ -76,15 +76,15 @@ Infraestructura de construcción y publicación reproducible sobre Quarto.
 :::
 
 ::: {.iasi-card .iasi-card-extend}
-### [Extender: iasi-lua](status/under-construction.html)
+### [Extender: iasi-lua](artifacts/iasi-lua.qmd)
 
 Filtros Lua reutilizables para Pandoc y Quarto, construidos como piezas de infraestructura y no como parches aislados.
 :::
 
 ::: {.iasi-card .iasi-card-environment}
-### [Construir el entorno: iasi-infra](status/under-construction.html)
+### [Construir el entorno: iasi-infra](https://iasi-org.github.io/iasi-infra/)
 
-Entornos de trabajo reproducibles para pasar de una máquina vacía a una plataforma de ingeniería preparada para el proyecto.
+Entornos de trabajo reproducibles para pasar de una máquina vacía a una plataforma de ingeniería preparada para el proyecto IASI
 :::
 
 :::

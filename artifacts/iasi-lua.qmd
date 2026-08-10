@@ -1,0 +1,275 @@
+---
+pagetitle: "iasi-lua · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+::: {.iasi-artifact-subnav}
+[Overview](#overview)
+[Extensiones](#extensions)
+[Instalación](#installation)
+[Arquitectura](#architecture)
+[Repository](https://github.com/iasi-org/iasi-lua)
+:::
+
+::: {.iasi-artifact-hero}
+<div class="iasi-kicker">IASI LUA</div>
+
+# iasi-lua
+
+## Filtros y extensiones reutilizables para Quarto.
+
+Una plataforma Lua común para desarrollar, construir y distribuir extensiones Quarto del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.
+
+<div class="iasi-actions">
+<a class="btn btn-primary btn-lg" href="#extensions">Extensiones</a>
+<a class="btn btn-outline-secondary btn-lg" href="https://github.com/iasi-org/iasi-lua">Código fuente</a>
+</div>
+:::
+
+## Overview {#overview}
+
+`iasi-lua` separa el desarrollo de los filtros de su distribución como extensiones Quarto.
+
+La fuente permanece legible y editable en el repositorio. A partir de ella se generan distribuciones autónomas que después se instalan únicamente en los proyectos que las necesitan.
+
+```text
+core/                       plataforma Lua común
+plantuml/                   fuente de IASI PlantUML
+        │
+        ▼
+scripts/build-all.sh
+        │
+        ▼
+_extensions/iasi-plantuml/  extensión Quarto generada
+        │
+        ▼
+proyecto/_extensions/       instalación local
+```
+
+`_extensions/` es un artefacto generado. No constituye la fuente de desarrollo y no debe editarse manualmente.
+
+## Extensiones {#extensions}
+
+Actualmente el repositorio distribuye una extensión:
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### IASI PlantUML
+
+**Filtro:** `iasi-plantuml`  
+**Versión:** `0.4.0`
+
+Transforma bloques `.plantuml` en imágenes mediante un servidor PlantUML.
+
+El filtro utiliza `POST`, integra las imágenes generadas en el *mediabag* de Pandoc, conserva los atributos de presentación y puede mantener una caché de resultados válidos.
+:::
+:::
+
+### Configuración
+
+Un proyecto consumidor activa explícitamente el filtro:
+
+```yaml
+filters:
+  - iasi-plantuml
+
+filter-options:
+  plantuml:
+    enabled: true
+    server: http://javier:1025
+    format: png
+    cache: true
+    styles: []
+```
+
+Los valores predeterminados actuales son:
+
+```yaml
+enabled: true
+server: http://javier:1025
+format: png
+cache: true
+styles: []
+```
+
+### Uso
+
+Un diagrama se escribe directamente en el documento Quarto:
+
+````qmd
+```{.plantuml #fig-pipeline width="80%" fig-cap="Pipeline documental"}
+@startuml
+Documento -> Filtro
+Filtro -> PlantUML
+PlantUML -> Imagen
+@enduml
+```
+````
+
+El servidor PlantUML realiza la generación de la imagen. `iasi-plantuml` se ocupa de la integración con Quarto y Pandoc.
+
+## Instalación {#installation}
+
+### Construir las extensiones
+
+Toda la automatización del repositorio está escrita en Bash.
+
+Desde la raíz de `iasi-lua`:
+
+```bash
+./scripts/build-all.sh
+```
+
+Para construir únicamente PlantUML:
+
+```bash
+./scripts/build-extension.sh plantuml
+```
+
+La distribución resultante se genera en:
+
+```text
+_extensions/
+└── iasi-plantuml/
+```
+
+### Instalar en un proyecto
+
+El propio repositorio proporciona un script para construir e instalar las extensiones en un proyecto Quarto:
+
+```bash
+./scripts/install-local.sh /ruta/al/proyecto
+```
+
+Si se ejecuta sin argumento, utiliza el directorio actual como proyecto consumidor:
+
+```bash
+./scripts/install-local.sh
+```
+
+Internamente, la instalación utiliza Quarto:
+
+```bash
+quarto add /ruta/a/iasi-lua --no-prompt
+```
+
+Por tanto, dentro del esquema local recomendado por IASI también puede instalarse desde un proyecto consumidor mediante una ruta relativa, por ejemplo:
+
+```bash
+quarto add ../iasi-lua --no-prompt
+```
+
+El resultado queda materializado dentro del propio proyecto:
+
+```text
+proyecto/
+└── _extensions/
+    └── iasi-plantuml/
+```
+
+Cada proyecto conserva así las extensiones que necesita para poder renderizarse de forma reproducible.
+
+## Arquitectura {#architecture}
+
+`iasi-lua` mantiene separadas la plataforma común, la fuente específica de cada extensión y su distribución.
+
+::: {.iasi-artifact-flow}
+::: {.iasi-artifact-step}
+### Core
+
+`core/` contiene la plataforma compartida: configuración, motor, caché, sistema de archivos, metadatos y gestión del *mediabag*.
+:::
+
+::: {.iasi-artifact-step}
+### Extension
+
+Cada extensión vive en un directorio raíz propio. Actualmente `plantuml/` contiene el filtro, compilador, valores predeterminados, pruebas y manifiesto.
+:::
+
+::: {.iasi-artifact-step}
+### Build
+
+Los scripts Bash descubren las extensiones por la presencia de `_extension.yml` y generan distribuciones autónomas.
+:::
+
+::: {.iasi-artifact-step}
+### Distribution
+
+Cada distribución incorpora el `core/` necesario y se materializa bajo `_extensions/<id>/`, lista para ser instalada por Quarto.
+:::
+:::
+
+La fuente de IASI PlantUML vive en:
+
+```text
+plantuml/
+├── _extension.yml
+├── iasi-plantuml.lua
+├── compiler.lua
+├── defaults.lua
+├── README.md
+├── CHANGELOG.md
+├── example.qmd
+└── tests/
+```
+
+La distribución generada vive en:
+
+```text
+_extensions/
+└── iasi-plantuml/
+    ├── core/
+    ├── _extension.yml
+    ├── iasi-plantuml.lua
+    ├── compiler.lua
+    ├── defaults.lua
+    ├── version.lua
+    └── ...
+```
+
+## Desarrollo de nuevas extensiones
+
+Una nueva extensión se añade como hermana de `plantuml/`:
+
+```text
+iasi-lua/
+├── core/
+├── plantuml/
+├── graphviz/
+└── _extensions/
+```
+
+No existe un registro paralelo de extensiones. Los scripts las descubren automáticamente a partir de su `_extension.yml`.
+
+El ciclo de desarrollo es:
+
+```bash
+./scripts/build-all.sh
+./scripts/check-generated.sh
+./scripts/check-versions.sh
+./scripts/test-all.sh
+```
+
+## Recursos {#resources}
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### [Repository](https://github.com/iasi-org/iasi-lua)
+
+Código fuente, extensiones generadas, pruebas y scripts de construcción.
+:::
+
+::: {.iasi-artifact-doc}
+### [Architecture](https://github.com/iasi-org/iasi-lua/blob/main/docs/architecture.md)
+
+Estructura del repositorio, responsabilidades del `core` y modelo de distribución.
+:::
+
+::: {.iasi-artifact-doc}
+### [Adding an extension](https://github.com/iasi-org/iasi-lua/blob/main/docs/adding-an-extension.md)
+
+Proceso para incorporar nuevos filtros y extensiones a la plataforma.
+:::
+:::
+:::

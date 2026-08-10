@@ -1,14 +1,56 @@
+/*-- scss:defaults --*/
+
+// IASI common layout
+$grid-body-width: 1000px;
+
+// IASI corporate palette
+$iasi-quarto-blue: #39729e;
+$navbar-bg: $iasi-quarto-blue;
+$navbar-fg: #ffffff;
+
+
+/*-- scss:rules --*/
+
 :root {
   --iasi-page-pad: clamp(1.5rem, 4vw, 4rem);
-  --iasi-quarto-blue: #39729e;
+  --iasi-quarto-blue: #{$iasi-quarto-blue};
   --iasi-soft: rgba(127, 127, 127, 0.10);
   --iasi-border: rgba(127, 127, 127, 0.22);
+}
 
-  /* Artifact accents. Deliberately centralized so the palette can evolve. */
-  --iasi-artifact-think: #8a6542;
-  --iasi-artifact-publish: #39729e;
-  --iasi-artifact-extend: #7666a8;
-  --iasi-artifact-environment: #557a63;
+/* Keep Quarto's header flush with the page content below it. */
+#quarto-header {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+}
+
+#quarto-header + #quarto-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Quarto title block shared by IASI publications. */
+#title-block-header {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 var(--iasi-page-pad) !important;
+  /* margin-top: -17px; */
+}
+
+#title-block-header .quarto-title,
+#title-block-header .quarto-title-block,
+.quarto-title-block .quarto-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.quarto-title-block .quarto-title h1.title,
+#title-block-header .title {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+  line-height: 1.05;
 }
 
 /* Corporate banner: Quarto announcement above the navbar. */
@@ -43,17 +85,16 @@
   padding: 0;
 }
 
-/* Corporate IASI navigation, using Quarto blue. */
+/* Corporate IASI navigation. */
 #quarto-header .navbar {
   margin-bottom: 0 !important;
   border-bottom: 0 !important;
-  background-color: var(--iasi-quarto-blue) !important;
 }
 
 #quarto-header .navbar-brand,
 #quarto-header .navbar-nav .nav-link,
 #quarto-header .navbar .quarto-navbar-tools a {
-  color: #fff !important;
+  color: $navbar-fg !important;
 }
 
 #quarto-header .navbar-nav .nav-link:hover,

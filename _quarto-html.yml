@@ -1,10 +1,9 @@
 format:
   html:
-    theme: cosmo
-    css:
-      - resources/css/iasi.css
-      - resources/css/styles.css
-      - resources/css/styles-artifacts.css    
+    theme:
+      - cosmo
+      - resources/css/iasi.scss
+      - resources/css/home.scss
     toc: false
     page-layout: full
     smooth-scroll: true

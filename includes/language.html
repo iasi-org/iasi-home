@@ -1,10 +1,10 @@
 <script>
 (() => {
-  const css = document.querySelector('link[rel="stylesheet"][href*="resources/css/styles.css"]');
+  const css = document.querySelector('link[rel="stylesheet"][href*="site_libs/bootstrap/"]');
   if (!css) return;
 
   const script = document.createElement("script");
-  script.src = new URL("../js/language.js", css.href).href;
+  script.src = css.href.replace(/site_libs\/bootstrap\/[^/]+$/, "resources/js/language.js");
   document.head.appendChild(script);
 })();
 </script>
