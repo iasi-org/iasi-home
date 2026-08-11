@@ -1,0 +1,29 @@
+---
+pagetitle: "Principios · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-document}
+
+# Principios
+
+Los principios de IASI orientan cómo entendemos la ingeniería y cómo incorporamos los Sistemas Inteligentes al proceso.
+
+1. **La ingeniería es el objetivo.**
+
+2. **Los Sistemas Inteligentes son asistentes de ingeniería.**
+
+3. **El conocimiento debe ser abierto.**
+
+4. **La documentación es un artefacto de ingeniería.**
+
+5. **La automatización debe ser consecuencia del diseño, no un fin en sí misma.**
+
+6. **Los componentes deben ser reutilizables.**
+
+7. **Las decisiones deben poder cuestionarse.**
+
+8. **La metodología también evoluciona.**
+
+:::

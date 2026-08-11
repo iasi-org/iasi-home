@@ -63,35 +63,6 @@ That is why, in IASI, the journey is part of the product.
 > *"The best methodology is not the one we follow, but the one we discover while solving the right problem."*
 
 
-## Artifacts {#artifacts}
-
-::: {.iasi-grid}
-
-::: {.iasi-card .iasi-card-think}
-### [Think: iasi-book](https://iasi-org.github.io/iasi-book/)
-
-Principles, architecture, methods and foundations for engineering in which intelligent systems are a natural part of the process.
-:::
-
-::: {.iasi-card .iasi-card-publish}
-### [Publish: iasi-quarto](../artifacts/iasi-quarto.qmd)
-
-Reproducible build and publishing infrastructure built on Quarto.
-:::
-
-::: {.iasi-card .iasi-card-extend}
-### [Extend: iasi-lua](../status/under-construction.html)
-
-Reusable Lua filters for Pandoc and Quarto, built as infrastructure rather than isolated patches.
-:::
-
-::: {.iasi-card .iasi-card-environment}
-### [Build the environment: iasi-infra](../status/under-construction.html)
-
-Reproducible working environments that take a project from an empty machine to an engineering-ready platform.
-:::
-
-:::
 
 ## Open by design {#contribute}
 

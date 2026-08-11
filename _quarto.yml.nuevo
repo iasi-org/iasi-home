@@ -19,8 +19,7 @@ website:
     position: above-navbar
 
   navbar:
-    title: IASI
-
+    title: false 
     left:
       - text: "Manifiesto"
         href: manifesto.qmd
@@ -28,7 +27,6 @@ website:
         href: principles.qmd
       - text: "Artefactos"
         href: artifacts/index.qmd
-
     right:
       - text: "ES"
         href: index.qmd
