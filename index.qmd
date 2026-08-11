@@ -12,12 +12,12 @@ title-block-style: none
 ## Ingeniería Asistida por Sistemas Inteligentes (IASI)
 
 ::: {.iasi-epigraph}
-*Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más. (Grandez)*
+*Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)*
 :::
 
 Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. **Ese supuesto empieza a dejar de ser válido.**
 
-Hoy podemos incorporar **sistemas inteligentes como parte del equipo de ingeniería**, capaces de participar en el análisis, el diseño, la implementación, la validación y la evolución del propio sistema, y es necesario integrarlos de forma **explícita, sistemática y gobernada** dentro de los procesos de ingeniería.
+Hoy podemos, y debemos, incorporar **sistemas inteligentes como parte del equipo de ingeniería**, capaces de participar en el análisis, el diseño, la implementación, la validación y la evolución del propio sistema, pero es necesario integrarlos de forma **explícita, sistemática y gobernada** dentro de los procesos.
 
 **IASI nace para definir cómo debe hacerse ingeniería de software en este nuevo contexto.**
 

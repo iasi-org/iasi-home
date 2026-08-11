@@ -495,3 +495,56 @@ main.content {
   padding: 0.3rem 0 0.3rem 1.4rem;
   border-left: 0.25rem solid var(--iasi-quarto-blue);
 }
+
+.navbar .nav-link i[aria-label] {
+  position: relative;
+}
+
+.navbar .nav-link i[aria-label]::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 0.75rem;
+  font-style: normal;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 2000;
+}
+
+.navbar .nav-link:hover i[aria-label]::after {
+  opacity: 1;
+}
+
+.navbar .nav-link[aria-label] {
+  position: relative;
+}
+
+.navbar .nav-link[aria-label]::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 2000;
+}
+
+.navbar .nav-link[aria-label]:hover::after {
+  opacity: 1;
+}

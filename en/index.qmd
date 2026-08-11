@@ -1,76 +1,51 @@
 ---
-title: "Ingeniería Asistida por Sistemas Inteligentes"
+pagetitle: "IASI · Engineering Assisted by Intelligent Systems"
 lang: en
 title-block-style: none
 ---
 
+::: {.iasi-home-hero}
+
+
+::: {.iasi-home-copy}
+
+## Engineering Assisted by Intelligent Systems (IASI)
+
 ::: {.iasi-epigraph}
-*If implementation costs less and less, knowledge becomes more and more valuable.*
+*As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)*
 :::
 
-IASI is an open ecosystem dedicated to exploring a new way of engineering. We believe that the emergence of Intelligent Systems represents a paradigm shift comparable to the arrival of the Internet, object-oriented programming or open source software. This is not simply about adopting new tools, but about rethinking how we conceive, design, build and evolve software systems.
+Current software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. **That assumption is beginning to no longer hold.**
 
-IASI exists to explore that journey.
+Today we can, and should, incorporate **intelligent systems as part of the engineering team**, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated **explicitly, systematically and under governance** within engineering processes.
 
-**Approach**
+**IASI was created to define how software engineering should be practiced in this new context.**
 
-IASI does not start from a predefined methodology, we start from the problem, **without preconceptions**.
+Its objectives are:
 
-We believe that the emergence of Intelligent Systems requires us to rethink the way engineering is practiced. Therefore, we do not assume that existing methodologies, by themselves, provide the right answer.
+::: {.iasi-objectives}
 
-Instead:
+A) **Teach** how to use intelligent systems coherently, productively and in alignment with engineering processes.
 
-> **We do not adopt methodologies to solve problems. We start from problems to discover the methodology.**
+B) **Define** a methodology that integrates intelligent systems as part of the team and the engineering process.
 
-Every need is evaluated independently.
+C) **Establish** a set of principles, patterns and good practices for their use.
 
-- If an existing methodology provides the best answer, we will use it.
-- If it needs to be adapted, we will adapt it.
-- If combining multiple approaches provides a better solution, we will combine them.
-- And if none is sufficient, we will build a new one.
+D) **Build** a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.
 
-We are not looking for a universal methodology.
+:::
 
-We are looking for the best solution to every problem.
+<div class="iasi-home-evidence">All of this through <strong>foundations, experimentation and real-world cases</strong>.</div>
 
-**Principles**
+:::
 
-- Engineering comes first.
-- Intelligent Systems are engineering assistants.
-- Knowledge should be open.
-- Documentation is an engineering artefact.
-- Automation should be the consequence of good design, not an objective by itself.
-- Components should be reusable.
-- Every decision can be questioned.
-- Methodologies must evolve as well.
-
-**The Journey Is Knowledge**
-
-IASI does not only publish results, it also documents the journey.
-
-- Architectural decisions.
-- Experiments.
-- Questions.
-- Mistakes.
-- Changes of direction.
-- Discarded tools.
-- Ideas that worked... and those that did not.
-
-We believe that understanding **how** a solution is built is as valuable as the solution itself.
-
-That is why, in IASI, the journey is part of the product.
-
-> *"The best methodology is not the one we follow, but the one we discover while solving the right problem."*
-
-
+:::
 
 ## Open by design {#contribute}
 
-IASI begins as a personal initiative, but **it is not intended to be built alone or to belong to a single person, but to the community**.
+Although IASI began as a personal initiative, **it is not intended to be built alone or to belong to a single person, but to the community**.
 
-Its ideas, methods and artifacts are developed openly so that others can use them, discuss them, challenge them and improve them.
-
-**Professionals, teams and organizations are welcome to participate**, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.
+Its ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: **Professionals, Teams and Organizations are welcome to participate**, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.
 
 IASI starts here. **What it becomes will also depend on those who choose to build it.**
 

@@ -11,6 +11,7 @@ profile:
 website:
   title: "Ingeniería Asistida por Sistemas Inteligentes"
   page-navigation: true
+  search: false
 
   announcement:
     dismissable: false
@@ -32,11 +33,17 @@ website:
     right:
       - text: "ES"
         href: index.qmd
+        aria-label: "Español"
       - text: "EN"
         href: en/index.qmd
+        aria-label: "English"
+      - icon: envelope
+        text: ""
+        href: contact.qmd
+        aria-label: "Contact us"
       - icon: github
         href: https://github.com/iasi-org
-        aria-label: GitHub
+        aria-label: "Explore IASI on GitHub"
 
   page-footer:
     left: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
