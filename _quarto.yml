@@ -29,7 +29,6 @@ website:
         href: principles.qmd
       - text: "Artefactos"
         href: artifacts/index.qmd
-
     right:
       - text: "ES"
         href: index.qmd
@@ -37,8 +36,11 @@ website:
       - text: "EN"
         href: en/index.qmd
         aria-label: "English"
+    tools:     
+      - icon: translate
+        href: manifesto-bilingual.qmd
+        aria-label: "Idioma / Language"    
       - icon: envelope
-        text: ""
         href: contact.qmd
         aria-label: "Contact us"
       - icon: github

@@ -464,9 +464,10 @@ main.content {
    -------------------------------------------------------------------------- */
 
 .iasi-document {
-  width: min(920px, calc(100% - (2 * var(--iasi-page-pad))));
-  margin: 0 auto;
-  padding: clamp(3rem, 6vw, 5.5rem) 0 5rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(3rem, 6vw, 5.5rem) var(--iasi-page-pad) 5rem;
 }
 
 .iasi-document h1 {
@@ -496,55 +497,48 @@ main.content {
   border-left: 0.25rem solid var(--iasi-quarto-blue);
 }
 
-.navbar .nav-link i[aria-label] {
+/* --------------------------------------------------------------------------
+   Navbar tooltips
+
+   Quarto renders navbar `tools` in a container separate from normal
+   navigation links. Depending on the Quarto version, the `aria-label` can
+   live on the tool link itself or on the Bootstrap icon inside it.
+
+   These selectors cover both forms and use the `aria-label` as the visible
+   tooltip text. The YAML remains the single source of truth for the label.
+   -------------------------------------------------------------------------- */
+
+.quarto-navbar-tools .quarto-navigation-tool[aria-label],
+.quarto-navbar-tools .quarto-navigation-tool > [aria-label] {
   position: relative;
 }
 
-.navbar .nav-link i[aria-label]::after {
+.quarto-navbar-tools .quarto-navigation-tool[aria-label]::after,
+.quarto-navbar-tools .quarto-navigation-tool > [aria-label]::after {
   content: attr(aria-label);
   position: absolute;
-  top: calc(100% + 0.6rem);
+  top: calc(100% + 0.55rem);
   left: 50%;
   transform: translateX(-50%);
-  padding: 0.25rem 0.5rem;
+  padding: 0.28rem 0.55rem;
   border-radius: 0.25rem;
   background: rgba(0, 0, 0, 0.85);
-  color: white;
+  color: #fff;
   font-size: 0.75rem;
+  font-weight: 400;
   font-style: normal;
+  line-height: 1.2;
   white-space: nowrap;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease;
   z-index: 2000;
 }
 
-.navbar .nav-link:hover i[aria-label]::after {
+.quarto-navbar-tools .quarto-navigation-tool[aria-label]:hover::after,
+.quarto-navbar-tools .quarto-navigation-tool:hover > [aria-label]::after {
+  visibility: visible;
   opacity: 1;
 }
 
-.navbar .nav-link[aria-label] {
-  position: relative;
-}
-
-.navbar .nav-link[aria-label]::after {
-  content: attr(aria-label);
-  position: absolute;
-  top: calc(100% + 0.6rem);
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  font-size: 0.75rem;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
-  z-index: 2000;
-}
-
-.navbar .nav-link[aria-label]:hover::after {
-  opacity: 1;
-}
