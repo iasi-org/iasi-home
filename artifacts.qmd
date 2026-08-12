@@ -8,7 +8,7 @@ title-block-style: none
 
 # Libros y artefactos
 
-## Una idea, varios productos, una misma ingeniería.
+*Una idea, varios productos, una misma ingeniería.*
 
 IASI se construye como un ecosistema de piezas independientes. Los **libros** reúnen y ordenan el conocimiento; los **artefactos** convierten ese conocimiento en herramientas, infraestructura, decisiones, trazabilidad y experiencia de uso.
 
@@ -23,7 +23,7 @@ Tres volúmenes independientes forman la colección IASI. Cada uno vive en su pr
 
 ### [iasi-book-VI](https://github.com/iasi-org/iasi-book-VI)
 
-Sexto volumen de la colección IASI y repositorio independiente de publicación.
+Primer volumen de la colección IASI y repositorio independiente de publicación.
 :::
 
 ::: {.iasi-card .iasi-card-think .iasi-card-book}
@@ -31,7 +31,7 @@ Sexto volumen de la colección IASI y repositorio independiente de publicación.
 
 ### [iasi-book-VII](https://github.com/iasi-org/iasi-book-VII)
 
-Séptimo volumen de la colección IASI y repositorio independiente de publicación.
+Segundo volumen de la colección IASI y repositorio independiente de publicación.
 :::
 
 ::: {.iasi-card .iasi-card-think .iasi-card-book}
@@ -39,7 +39,7 @@ Séptimo volumen de la colección IASI y repositorio independiente de publicaci�
 
 ### [iasi-book-VIII](https://github.com/iasi-org/iasi-book-VIII)
 
-Octavo volumen de la colección IASI y repositorio independiente de publicación.
+Tercer volumen de la colección IASI y repositorio independiente de publicación.
 :::
 
 :::
@@ -77,9 +77,9 @@ Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina 
 ::: {.iasi-card .iasi-card-publish}
 **OPERAR**
 
-### [iasi-tools](https://github.com/iasi-org/iasi-tools)
+### [iasi-tools-dev](https://github.com/iasi-org/iasi-tools-dev)
 
-Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema y unifican su forma de trabajo.
+Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.
 :::
 
 ::: {.iasi-card .iasi-card-think}

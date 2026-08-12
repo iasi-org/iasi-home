@@ -176,3 +176,16 @@ $navbar-fg: #ffffff;
   object-position: center;
   opacity: 0.72;
 }
+
+/******************************************************************************/
+/* Componentes comunes: p, blockquote, etc                                    */
+/******************************************************************************/
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote, ul, ol {
+  margin-bottom: 0.5em;
+}

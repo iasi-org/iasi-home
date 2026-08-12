@@ -178,38 +178,112 @@ main.content {
   padding: 0 var(--iasi-page-pad) 2rem;
 }
 
+/****************************************************************************/
+/* IASI-CARDS                                                               */
+/****************************************************************************/
+
 .iasi-card {
   --iasi-card-accent: var(--iasi-quarto-blue);
+
+  position: relative;
+  overflow: hidden;
+
   min-height: 0;
-  padding: clamp(1.2rem, 1.8vw, 1.6rem);
-  border: 1px solid var(--iasi-border);
-  border-left: 0.28rem solid var(--iasi-card-accent);
-  border-radius: 0.8rem;
-  background: var(--bs-body-bg);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  padding: 1.45rem 1.55rem 1.5rem;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--iasi-card-accent) 22%,
+    var(--iasi-border)
+  );
+  border-radius: 1rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--iasi-card-accent) 8%, transparent),
+      transparent 48%
+    ),
+    var(--bs-body-bg);
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 }
 
-.iasi-card-think { --iasi-card-accent: var(--iasi-artifact-think); }
-.iasi-card-publish { --iasi-card-accent: var(--iasi-artifact-publish); }
-.iasi-card-extend { --iasi-card-accent: var(--iasi-artifact-extend); }
+.iasi-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.3rem;
+  background: var(--iasi-card-accent);
+}
+
+.iasi-card-think       { --iasi-card-accent: var(--iasi-artifact-think); }
+.iasi-card-publish     { --iasi-card-accent: var(--iasi-artifact-publish); }
+.iasi-card-extend      { --iasi-card-accent: var(--iasi-artifact-extend); }
 .iasi-card-environment { --iasi-card-accent: var(--iasi-artifact-environment); }
 
 .iasi-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: color-mix(
+    in srgb,
+    var(--iasi-card-accent) 45%,
+    var(--iasi-border)
+  );
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* PUBLICAR · EXTENDER · OPERAR... */
+.iasi-card > p:first-child {
+  width: fit-content;
+  margin: 0 0 0.85rem;
+  padding: 0.32rem 0.55rem !important;
+
+  border-radius: 999px;
+  background: color-mix(
+    in srgb,
+    var(--iasi-card-accent) 11%,
+    transparent
+  );
+
+  color: var(--iasi-card-accent);
+  font-size: 0.7rem !important;
+  line-height: 1 !important;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .iasi-card h3 {
-  margin-top: 0;
+  margin: 0 0 0.7rem;
   font-size: 1.55rem;
   letter-spacing: -0.03em;
 }
 
-.iasi-card p {
-  line-height: 1.6;
+.iasi-card h3 a {
+  color: var(--iasi-card-accent);
+  text-decoration: none;
 }
 
-/* Artifact landing pages hosted inside iasi-home. */
+.iasi-card h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.iasi-card > p:last-child {
+  margin-bottom: 0;
+  line-height: 1.55;
+  opacity: 0.78;
+}
+
+/******************************************************************************/
+/* IASI ARTIFACTS                                                             */
+/* Artifact landing pages hosted inside iasi-home.                            */
+/******************************************************************************/
+
 .iasi-artifact-page {
   --iasi-artifact-accent: var(--iasi-quarto-blue);
   margin-top: 0 !important;
@@ -500,12 +574,6 @@ main.content {
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -0.015em;
-}
-
-.iasi-document p,
-.iasi-document li {
-  font-size: 1.08rem;
-  line-height: 1.65 !important;
 }
 
 .iasi-document blockquote {
