@@ -9,10 +9,12 @@ title-block-style: none
 
 ::: {.iasi-home-copy}
 
-## Ingeniería Asistida por Sistemas Inteligentes (IASI)
+::: {.iasi-page-heading}
+<h1>Ingeniería Asistida por Sistemas Inteligentes (IASI)</h1>
 
 ::: {.iasi-epigraph}
 *Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)*
+:::
 :::
 
 Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. **Ese supuesto empieza a dejar de ser válido.**
@@ -49,4 +51,7 @@ Sus ideas, métodos y artefactos se desarrollan de forma abierta, con la intenci
 
 IASI empieza aquí. **Lo que llegue a ser dependerá también de quienes quieran construirlo.**
 
-[Ver IASI en GitHub →](https://github.com/iasi-org)
+
+::: {.iasi-ai-banner}
+![](resources/images/ai-banner.png){.iasi-ai-banner-image}
+:::

@@ -1,3 +1,11 @@
+---
+pagetitle: "Principios"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-document}
+
 # Decálogo IASI
 
 Los principios que orientan el diseño, desarrollo y evolución de IASI.
@@ -73,5 +81,7 @@ Un Sistema Inteligente solo puede participar de forma fiable en ingeniería cuan
 Una solución puede ser internamente sofisticada, pero esa complejidad no debe convertirse innecesariamente en complejidad de uso. La buena ingeniería ofrece interfaces simples sobre mecanismos complejos.
 
 </details>
+
+:::
 
 :::

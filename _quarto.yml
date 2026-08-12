@@ -28,7 +28,7 @@ website:
       - text: "Principios"
         href: principles.qmd
       - text: "Artefactos"
-        href: artifacts/index.qmd
+        href: artifacts.qmd
     right:
       - text: "ES"
         href: index.qmd
@@ -46,9 +46,3 @@ website:
       - icon: github
         href: https://github.com/iasi-org
         aria-label: "Explore IASI on GitHub"
-
-  page-footer:
-    left: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
-    right:
-      - text: GitHub
-        href: https://github.com/iasi-org

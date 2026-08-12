@@ -16,6 +16,13 @@ $navbar-fg: #ffffff;
   --iasi-quarto-blue: #{$iasi-quarto-blue};
   --iasi-soft: rgba(127, 127, 127, 0.10);
   --iasi-border: rgba(127, 127, 127, 0.22);
+
+  /* Shared IASI page-title typography. */
+  --iasi-title-font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --iasi-title-font-size: clamp(2.6rem, 5vw, 4.1rem);
+  --iasi-title-font-weight: 600;
+  --iasi-title-line-height: 1.02;
+  --iasi-title-letter-spacing: -0.025em;
 }
 
 /* Keep Quarto's header flush with the page content below it. */
@@ -28,6 +35,21 @@ $navbar-fg: #ffffff;
 #quarto-header + #quarto-content {
   margin-top: 0 !important;
   padding-top: 0 !important;
+}
+
+/* IASI headings use the corporate blue throughout the site. */
+#quarto-document-content h1,
+#quarto-document-content h2,
+#quarto-document-content h3,
+#title-block-header h1 {
+  color: var(--iasi-quarto-blue);
+}
+
+#quarto-document-content h1 a,
+#quarto-document-content h2 a,
+#quarto-document-content h3 a,
+#title-block-header h1 a {
+  color: inherit;
 }
 
 /* Quarto title block shared by IASI publications. */
@@ -49,8 +71,13 @@ $navbar-fg: #ffffff;
 #title-block-header .title {
   margin: 0 !important;
   padding: 0 !important;
+  font-family: var(--iasi-title-font-family) !important;
+  font-size: var(--iasi-title-font-size) !important;
+  font-weight: var(--iasi-title-font-weight) !important;
+  line-height: var(--iasi-title-line-height) !important;
+  letter-spacing: var(--iasi-title-letter-spacing) !important;
+  color: var(--iasi-quarto-blue) !important;
   text-align: center;
-  line-height: 1.05;
 }
 
 /* Corporate banner: Quarto announcement above the navbar. */
@@ -131,4 +158,21 @@ $navbar-fg: #ffffff;
   .navbar-brand::after {
     content: "🚧 WIP";
   }
+}
+
+.iasi-ai-banner {
+  width: 100%;
+  margin: 3rem 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.iasi-ai-banner-image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.72;
 }

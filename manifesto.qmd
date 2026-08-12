@@ -8,17 +8,13 @@ title-block-style: none
 
 # Manifiesto
 
-IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería.
-
-Creemos que la aparición de los **Sistemas Inteligentes** representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.
+IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería. Creemos que la aparición de los **Sistemas Inteligentes** representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.
 
 IASI nace para recorrer ese camino.
 
 ## Nuestra aproximación
 
-IASI no parte de una metodología predefinida. Partimos del problema **sin precondiciones**.
-
-Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.
+IASI no parte de una metodología predefinida. Partimos del problema **sin precondiciones**. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.
 
 > **No adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.**
 
