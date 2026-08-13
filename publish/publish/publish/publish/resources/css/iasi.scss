@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
 // IASI common layout
-$grid-body-width: 1000px;
+$grid-body-width: 1200px;
 
 // IASI corporate palette
 $iasi-quarto-blue: #39729e;
@@ -10,6 +10,17 @@ $navbar-fg: #ffffff;
 
 
 /*-- scss:rules --*/
+
+body {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#quarto-document-content p,
+#quarto-document-content ul,
+#quarto-document-content ol {
+  max-width: 75ch;
+}
 
 :root {
   --iasi-page-pad: clamp(1.5rem, 4vw, 4rem);
