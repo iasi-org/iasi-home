@@ -1,0 +1,49 @@
+---
+pagetitle: "Libros · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-page-heading}
+# Libros
+
+::: {.iasi-epigraph}
+*Una idea, varios productos, una misma ingeniería.*
+:::
+:::
+
+::: {.iasi-document}
+
+::: {.iasi-catalog-intro}
+Los libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.
+:::
+
+::: {.iasi-grid}
+
+::: {#iasi-i .iasi-card .iasi-card-think .iasi-card-book}
+**LIBRO · VOLUMEN I**
+
+### [iasi-book-I](status/to-be-done.html)
+
+Primer volumen de la colección IASI y repositorio independiente de publicación.
+:::
+
+::: {#iasi-ii .iasi-card .iasi-card-think .iasi-card-book}
+**LIBRO · VOLUMEN II**
+
+### [iasi-book-II](status/to-be-done.html)
+
+Segundo volumen de la colección IASI y repositorio independiente de publicación.
+:::
+
+::: {#iasi-iii .iasi-card .iasi-card-think .iasi-card-book}
+**LIBRO · VOLUMEN III**
+
+### [iasi-book-III](status/to-be-done.html)
+
+Tercer volumen de la colección IASI y repositorio independiente de publicación.
+:::
+
+:::
+
+:::

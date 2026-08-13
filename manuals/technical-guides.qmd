@@ -1,0 +1,41 @@
+---
+pagetitle: "Technical Guides · Manuales · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-page-heading}
+# Technical Guides
+
+::: {.iasi-epigraph}
+*Arquitectura, mantenimiento y evolución de los productos IASI.*
+:::
+:::
+
+::: {.iasi-document}
+
+::: {.iasi-catalog-intro}
+Los Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.
+:::
+
+::: {.iasi-grid}
+
+::: {.iasi-card .iasi-card-publish}
+**TECHNICAL GUIDE**
+
+### [iasi.quarto](https://github.com/iasi-org/iasi-quarto-docs/tree/main/02-technical-guide)
+
+Arquitectura y estrategias del motor de publicación.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**TECHNICAL GUIDE**
+
+### [iasi-lua](https://iasi-org.github.io/iasi-lua-docs/technical-guide/)
+
+Arquitectura y desarrollo de extensiones Lua.
+:::
+
+:::
+
+:::

@@ -1,0 +1,65 @@
+---
+pagetitle: "Manuales · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-page-heading}
+# Manuales
+
+::: {.iasi-epigraph}
+*Guías para utilizar, comprender y ampliar los productos IASI.*
+:::
+:::
+
+::: {.iasi-document}
+
+::: {.iasi-catalog-intro}
+Los manuales documentan el uso y la arquitectura de los artefactos IASI. El catálogo se organiza por tipo y queda preparado para incorporar nuevas familias de documentación.
+:::
+
+## User Guides
+
+::: {.iasi-grid}
+
+::: {.iasi-card .iasi-card-publish}
+**USER GUIDE**
+
+### [iasi.quarto](https://github.com/iasi-org/iasi-quarto-docs/tree/main/01-user-guide)
+
+Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**USER GUIDE**
+
+### [iasi-lua](https://iasi-org.github.io/iasi-lua-docs/user-guide/)
+
+Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
+:::
+
+:::
+
+## Technical Guides
+
+::: {.iasi-grid}
+
+::: {.iasi-card .iasi-card-publish}
+**TECHNICAL GUIDE**
+
+### [iasi.quarto](https://github.com/iasi-org/iasi-quarto-docs/tree/main/02-technical-guide)
+
+Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**TECHNICAL GUIDE**
+
+### [iasi-lua](https://iasi-org.github.io/iasi-lua-docs/technical-guide/)
+
+Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.
+:::
+
+:::
+
+:::

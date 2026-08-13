@@ -23,12 +23,38 @@ website:
     title: IASI
 
     left:
-      - text: "Manifiesto"
-        href: manifesto.qmd
+      - text: "Libros"
+        menu:
+          - text: "Todos"
+            href: books.qmd
+          - text: "IASI I"
+            href: books.qmd#iasi-i
+          - text: "IASI II"
+            href: books.qmd#iasi-ii
+          - text: "IASI III"
+            href: books.qmd#iasi-iii
+      - text: "Manuales"
+        menu:
+          - text: "Todos"
+            href: manuals.qmd
+          - text: "User Guides"
+            href: manuals/user-guides.qmd
+          - text: "Technical Guides"
+            href: manuals/technical-guides.qmd
+      - text: "Artefactos"
+        menu:
+          - text: "Todos"
+            href: artifacts.qmd
+          - text: "IASI Quarto"
+            href: artifacts/iasi-quarto.qmd
+          - text: "IASI Lua"
+            href: artifacts/iasi-lua.qmd
+          - text: "IASI Tools Dev"
+            href: artifacts.qmd#iasi-tools-dev
       - text: "Principios"
         href: principles.qmd
-      - text: "Artefactos"
-        href: artifacts.qmd
+      - text: "Manifiesto"
+        href: common/manifesto.qmd
     right:
       - text: "ES"
         href: index.qmd
@@ -38,10 +64,10 @@ website:
         aria-label: "English"
     tools:     
       - icon: translate
-        href: manifesto-bilingual.qmd
+        href: common/manifesto-bilingual.qmd
         aria-label: "Idioma / Language"    
       - icon: envelope
-        href: contact.qmd
+        href: common/contact.qmd
         aria-label: "Contact us"
       - icon: github
         href: https://github.com/iasi-org

@@ -113,22 +113,6 @@ main.content {
   margin-top: 2rem;
 }
 
-.iasi-epigraph {
-  width: 100%;
-  max-width: none;
-  margin: 0.35rem 0 3.5rem;
-  padding: 0 var(--iasi-page-pad);
-  text-align: center;
-  font-size: 1.12rem;
-  line-height: 1.35;
-  letter-spacing: -0.015em;
-  opacity: 0.72;
-}
-
-.iasi-epigraph p {
-  margin: 0;
-}
-
 #quarto-document-content > h2,
 #quarto-document-content > p,
 #quarto-document-content > blockquote,
@@ -150,6 +134,7 @@ main.content {
 #participar,
 #artifacts,
 #contribute {
+  padding-right: var(--iasi-page-pad) !important;
   padding-left: var(--iasi-page-pad) !important;
 }
 
@@ -456,10 +441,30 @@ main.content {
    -------------------------------------------------------------------------- */
 
 .iasi-home-hero {
-  width: 100%;
+  width: min(1200px, 100%);
+  margin-right: auto;
+  margin-left: auto;
   padding: 1.25rem var(--iasi-page-pad) 2rem;
 }
 
+.iasi-home-copy {
+  width: 100%;
+}
+
+#quarto-document-content .iasi-home-copy > p,
+#quarto-document-content #participar > p {
+  max-width: 133ch;
+}
+
+#quarto-document-content .iasi-home-copy > .iasi-objectives > ol {
+  width: 100%;
+  max-width: none;
+}
+
+#quarto-document-content .iasi-objectives li > p {
+  width: 100%;
+  max-width: none;
+}
 
 .iasi-home-copy h2 {
   margin: 0.65rem 0 0.2rem;
@@ -473,46 +478,12 @@ main.content {
   padding-bottom: 0;
 }
 
-.iasi-page-heading {
-  width: 100%;
-  margin: 0 0 2.5rem !important;
-  padding: 0 !important;
-}
-
-.iasi-page-heading > h1 {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-family: var(--iasi-title-font-family);
-  font-size: var(--iasi-title-font-size);
-  font-weight: var(--iasi-title-font-weight);
-  line-height: var(--iasi-title-line-height);
-  letter-spacing: var(--iasi-title-letter-spacing);
-  color: var(--iasi-quarto-blue);
-  text-align: center;
-}
-
 .iasi-home-copy h2 {
   margin: 0.65rem 0 0;
   font-size: clamp(1.55rem, 2.25vw, 2.3rem);
   line-height: 1.08;
   font-weight: 500;
   letter-spacing: -0.035em;
-}
-
-.iasi-page-heading > .iasi-epigraph {
-  width: 100%;
-  margin: 0.1rem 0 0 !important;
-  padding: 0 !important;
-  text-align: center;
-  border: 0;
-  font-size: clamp(1rem, 1.2vw, 1.15rem);
-  line-height: 1.3;
-  opacity: 0.62;
-}
-
-.iasi-page-heading > .iasi-epigraph > p {
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .iasi-home-copy > p {
@@ -548,6 +519,12 @@ main.content {
   opacity: 0.72;
 }
 
+#participar {
+  width: min(1200px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 980px) {
    .iasi-home-hero {
       width: 100%;
@@ -556,7 +533,6 @@ main.content {
    
   .iasi-home-copy {
     width: 100%;
-    margin-right: 0;
   }
 
 }

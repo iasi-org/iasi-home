@@ -5,7 +5,7 @@ title-block-style: none
 ---
 
 ::: {.iasi-page-heading}
-<h1>Ingeniería Asistida por Sistemas Inteligentes (IASI)</h1>
+<div class="iasi-page-title">Ingeniería Asistida por Sistemas Inteligentes (IASI)</div>
 
 ::: {.iasi-epigraph}
 *Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)*
