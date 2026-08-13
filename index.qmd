@@ -4,11 +4,6 @@ lang: es
 title-block-style: none
 ---
 
-::: {.iasi-home-hero}
-
-
-::: {.iasi-home-copy}
-
 ::: {.iasi-page-heading}
 <h1>Ingeniería Asistida por Sistemas Inteligentes (IASI)</h1>
 
@@ -16,6 +11,10 @@ title-block-style: none
 *Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)*
 :::
 :::
+
+::: {.iasi-home-hero}
+
+::: {.iasi-home-copy}
 
 Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. **Ese supuesto empieza a dejar de ser válido.**
 

@@ -5,30 +5,22 @@ lang: es
 
 ::: {.iasi-artifact-page .iasi-artifact-publish}
 ::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="../artifacts.qmd">iasi.quarto</a>
 [Overview](#overview)
+[Publish](#publish)
 [User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
 [Technical Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
 [Repository](https://github.com/iasi-org/iasi_quarto)
 :::
 
-::: {.iasi-artifact-hero}
-<div class="iasi-kicker">IASI QUARTO</div>
+::: {.iasi-artifact-content}
+# IASI.Quarto: Publicación reproducible sobre Quarto
 
-# iasi.quarto
-
-## Publicación reproducible sobre Quarto.
-
-Una capa de ingeniería para descubrir, validar, preparar y construir publicaciones Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.
-
-<div class="iasi-actions">
-<a class="btn btn-primary btn-lg" href="#resources">Recursos</a>
-<a class="btn btn-outline-secondary btn-lg" href="https://github.com/iasi-org/iasi_quarto">Código fuente</a>
-</div>
-:::
+Una capa de ingeniería para **descubrir, comprobar, preparar, construir y publicar** proyectos Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.
 
 ## Overview {#overview}
 
-`iasi.quarto` organiza el ciclo de construcción alrededor de una idea sencilla: Quarto sigue siendo el motor de publicación; IASI añade reconocimiento, comprobación y preparación antes del renderizado.
+Quarto sigue siendo el motor de publicación. `iasi.quarto` añade la ingeniería necesaria para que el proceso sea **explícito, verificable y repetible**, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.
 
 ::: {.iasi-artifact-flow}
 ::: {.iasi-artifact-step}
@@ -54,7 +46,42 @@ Genera únicamente los artefactos derivados que Quarto necesita.
 
 Delega el renderizado final en Quarto para los formatos soportados.
 :::
+
+::: {.iasi-artifact-step}
+### Publish {#publish-stage}
+
+Reúne los resultados construidos en un directorio listo para desplegar.
 :::
+:::
+
+## Construir y publicar {#publish}
+
+Construir y publicar son operaciones deliberadamente distintas:
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-publish}
+**CONSTRUIR**
+
+### `build()`
+
+Valida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.
+:::
+
+::: {.iasi-card .iasi-card-publish}
+**PUBLICAR**
+
+### `publish()`
+
+Toma los resultados ya renderizados y ensambla `publish/`, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.
+:::
+:::
+
+```r
+iasi.quarto::build()
+iasi.quarto::publish()
+```
+
+Esta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue.
 
 ## Recursos {#resources}
 
@@ -75,6 +102,7 @@ Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño
 ### [Repository](https://github.com/iasi-org/iasi_quarto)
 
 Código fuente, pruebas y evolución pública del paquete `iasi.quarto`.
+:::
 :::
 :::
 :::

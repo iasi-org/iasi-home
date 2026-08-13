@@ -4,13 +4,19 @@ lang: es
 title-block-style: none
 ---
 
-::: {.iasi-document}
-
+::: {.iasi-page-heading}
 # Libros y artefactos
 
+::: {.iasi-epigraph}
 *Una idea, varios productos, una misma ingeniería.*
+:::
+:::
 
+::: {.iasi-document}
+
+::: {.iasi-catalog-intro}
 IASI se construye como un ecosistema de piezas independientes. Los **libros** reúnen y ordenan el conocimiento; los **artefactos** convierten ese conocimiento en herramientas, infraestructura, decisiones, trazabilidad y experiencia de uso.
+:::
 
 ## Libros
 

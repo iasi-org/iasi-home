@@ -147,7 +147,6 @@ main.content {
   letter-spacing: -0.045em;
 }
 
-#artefactos,
 #participar,
 #artifacts,
 #contribute {
@@ -290,6 +289,29 @@ main.content {
   padding-top: 0 !important;
 }
 
+.iasi-artifact-content {
+  padding-right: var(--iasi-page-pad);
+  padding-left: var(--iasi-page-pad);
+}
+
+.iasi-artifact-content > h1:first-child {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.iasi-artifact-content .iasi-grid {
+  margin-top: 1.5rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.iasi-artifact-content .iasi-artifact-flow,
+.iasi-artifact-content .iasi-artifact-docs {
+  margin-top: 1.5rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .iasi-artifact-publish {
   --iasi-artifact-accent: var(--iasi-artifact-publish);
 }
@@ -299,13 +321,15 @@ main.content {
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1rem;
   overflow-x: auto;
-  margin: -1px calc(50% - 50vw) 0;
-  padding: 0.8rem var(--iasi-page-pad);
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--iasi-page-pad) 0.5rem;
   border-bottom: 0;
   background: var(--iasi-quarto-blue);
   backdrop-filter: none;
+  font-family: var(--bs-body-font-family);
   white-space: nowrap;
 }
 
@@ -316,15 +340,22 @@ main.content {
 
 .iasi-artifact-subnav a {
   color: #fff;
-  font-size: 0.93rem;
-  font-weight: 600;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
   text-decoration: none;
-  opacity: 0.82;
+  opacity: 1;
+}
+
+.iasi-artifact-subnav .iasi-artifact-subnav-brand {
+  flex: 0 0 calc(9.375rem - 1ch);
+  padding-left: 0;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 
 .iasi-artifact-subnav a:hover {
-  color: #fff;
-  opacity: 1;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .iasi-artifact-hero {
@@ -409,6 +440,10 @@ main.content {
 
   .iasi-artifact-subnav {
     gap: 1.1rem;
+  }
+
+  .iasi-artifact-subnav .iasi-artifact-subnav-brand {
+    flex-basis: auto;
   }
 
   .iasi-artifact-hero {
@@ -566,6 +601,16 @@ main.content {
   text-align: center;
 }
 
+.iasi-catalog-intro {
+  margin-bottom: 2rem;
+}
+
+.iasi-document .iasi-grid {
+  margin-top: 1.5rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .iasi-document h2 {
   margin-top: 3rem !important;
   padding: 0 !important;
@@ -637,4 +682,83 @@ main.content {
 
 .iasi-ai-banner-image {
   height: clamp(75px, 6.5vw, 120px);
+}
+
+
+/* Status pages */
+#title-block-header {
+  margin: 0;
+}
+
+#title-block-header:empty {
+  display: none;
+}
+
+.iasi-status-page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 15rem);
+  padding: clamp(3rem, 8vw, 7rem) clamp(1.5rem, 5vw, 5rem);
+}
+
+.iasi-status-card {
+  width: min(760px, 100%);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border: 1px solid rgba(31, 41, 51, 0.14);
+  border-left: 0.32rem solid var(--iasi-quarto-blue);
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 18px 50px rgba(31, 41, 51, 0.08);
+}
+
+.iasi-status-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  padding: 0.28rem 0.58rem;
+  border-radius: 999px;
+  background: #f4c95d;
+  color: #2d2a22;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.iasi-status-kicker {
+  margin-bottom: 0.8rem;
+  color: var(--iasi-quarto-blue);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.iasi-status-card h1 {
+  margin: 0;
+  color: #1f2933;
+  font-size: clamp(2.7rem, 8vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.iasi-status-card p {
+  max-width: 58ch;
+  margin: 1.4rem 0 0;
+  color: #66727f;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.iasi-status-actions {
+  margin-top: 2rem;
+}
+
+.iasi-status-actions a {
+  color: var(--iasi-quarto-blue);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.iasi-status-actions a:hover {
+  text-decoration: underline;
 }
