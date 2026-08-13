@@ -6,15 +6,13 @@ title-block-style: none
 
 ::: {.iasi-page-heading}
 # User Guides
-
-::: {.iasi-epigraph}
-*Manuales para instalar, configurar y utilizar los productos IASI.*
-:::
 :::
 
 ::: {.iasi-document}
 
 ::: {.iasi-catalog-intro}
+Manuales para instalar, configurar y utilizar los productos IASI.
+
 Los User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.
 :::
 
@@ -23,7 +21,7 @@ Los User Guides explican las tareas y flujos de trabajo necesarios para utilizar
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### [iasi.quarto](https://github.com/iasi-org/iasi-quarto-docs/tree/main/01-user-guide)
+### [iasi.quarto](https://iasi-org.github.io/iasi-quarto-docs/user-guide/)
 
 Construcción y publicación reproducible de proyectos Quarto.
 :::

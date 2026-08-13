@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -38,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c35465bed47311044648d171c2b0413b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f16cdaa5ddb5d5dfb3a5e1a3bf35ce29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -98,17 +133,78 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../manifesto.html"> 
-<span class="menu-text">Manifiesto</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-libros" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Libros</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-libros">    
+        <li>
+    <a class="dropdown-item" href="../books.html">
+ <span class="dropdown-text">Todos</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../books.html#iasi-i">
+ <span class="dropdown-text">IASI I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../books.html#iasi-ii">
+ <span class="dropdown-text">IASI II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../books.html#iasi-iii">
+ <span class="dropdown-text">IASI III</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Manuales</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-manuales">    
+        <li>
+    <a class="dropdown-item" href="../manuals.html">
+ <span class="dropdown-text">Todos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../manuals/user-guides.html">
+ <span class="dropdown-text">User Guides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../manuals/technical-guides.html">
+ <span class="dropdown-text">Technical Guides</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-artefactos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Artefactos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-artefactos">    
+        <li>
+    <a class="dropdown-item" href="../artifacts.html">
+ <span class="dropdown-text">Todos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../artifacts/iasi-quarto.html">
+ <span class="dropdown-text">IASI Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../artifacts/iasi-lua.html">
+ <span class="dropdown-text">IASI Lua</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../artifacts.html#iasi-tools-dev">
+ <span class="dropdown-text">IASI Tools Dev</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../principles.html"> 
 <span class="menu-text">Principios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../artifacts.html"> 
-<span class="menu-text">Artefactos</span></a>
+    <a class="nav-link" href="../common/manifesto.html"> 
+<span class="menu-text">Manifiesto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -123,8 +219,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="../manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
-    <a href="../contact.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
+    <a href="../common/manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
+    <a href="../common/contact.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
     <a href="https://github.com/iasi-org" title="" class="quarto-navigation-tool px-1" aria-label="Explore IASI on GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -143,26 +239,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="iasi-artifact-page iasi-artifact-publish">
 <div class="iasi-artifact-subnav">
-<p><a href="#overview">Overview</a> <a href="https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide">User Guide</a> <a href="https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide">Technical Guide</a> <a href="https://github.com/iasi-org/iasi_quarto">Repository</a></p>
+<p><a class="iasi-artifact-subnav-brand" href="../artifacts.html">iasi.quarto</a> <a href="#overview">Overview</a> <a href="#publish">Publish</a> <a href="https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide">User Guide</a> <a href="https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide">Technical Guide</a> <a href="https://github.com/iasi-org/iasi_quarto">Repository</a></p>
 </div>
-<div class="iasi-artifact-hero">
-<div class="iasi-kicker">
-IASI QUARTO
-</div>
-<section id="iasi.quarto" class="level1">
-<h1>iasi.quarto</h1>
-<section id="publicación-reproducible-sobre-quarto." class="level2">
-<h2 class="anchored" data-anchor-id="publicación-reproducible-sobre-quarto.">Publicación reproducible sobre Quarto.</h2>
-<p>Una capa de ingeniería para descubrir, validar, preparar y construir publicaciones Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.</p>
-<div class="iasi-actions">
-<p><a class="btn btn-primary btn-lg" href="#resources">Recursos</a> <a class="btn btn-outline-secondary btn-lg" href="https://github.com/iasi-org/iasi_quarto">Código fuente</a></p>
-</div>
-</section>
-</section>
-</div>
+<section id="iasi.quarto-publicación-reproducible-sobre-quarto" class="level1 iasi-artifact-content">
+<h1>IASI.Quarto: Publicación reproducible sobre Quarto</h1>
+<p>Una capa de ingeniería para <strong>descubrir, comprobar, preparar, construir y publicar</strong> proyectos Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><code>iasi.quarto</code> organiza el ciclo de construcción alrededor de una idea sencilla: Quarto sigue siendo el motor de publicación; IASI añade reconocimiento, comprobación y preparación antes del renderizado.</p>
+<p>Quarto sigue siendo el motor de publicación. <code>iasi.quarto</code> añade la ingeniería necesaria para que el proceso sea <strong>explícito, verificable y repetible</strong>, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.</p>
 <div class="iasi-artifact-flow">
 <section id="discover" class="level3 iasi-artifact-step">
 <h3 class="anchored" data-anchor-id="discover">Discover</h3>
@@ -180,7 +264,34 @@ IASI QUARTO
 <h3 class="anchored" data-anchor-id="build">Build</h3>
 <p>Delega el renderizado final en Quarto para los formatos soportados.</p>
 </section>
+<section id="publish-stage" class="level3 iasi-artifact-step">
+<h3 class="anchored" data-anchor-id="publish-stage">Publish</h3>
+<p>Reúne los resultados construidos en un directorio listo para desplegar.</p>
+</section>
 </div>
+</section>
+<section id="publish" class="level2">
+<h2 class="anchored" data-anchor-id="publish">Construir y publicar</h2>
+<p>Construir y publicar son operaciones deliberadamente distintas:</p>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-publish">
+<p><strong>CONSTRUIR</strong></p>
+<section id="build-1" class="level3">
+<h3 class="anchored" data-anchor-id="build-1"><code>build()</code></h3>
+<p>Valida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-publish">
+<p><strong>PUBLICAR</strong></p>
+<section id="publish-1" class="level3">
+<h3 class="anchored" data-anchor-id="publish-1"><code>publish()</code></h3>
+<p>Toma los resultados ya renderizados y ensambla <code>publish/</code>, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.</p>
+</section>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>iasi.quarto<span class="sc">::</span><span class="fu">build</span>()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>iasi.quarto<span class="sc">::</span><span class="fu">publish</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Esta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue.</p>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Recursos</h2>
@@ -198,6 +309,7 @@ IASI QUARTO
 <p>Código fuente, pruebas y evolución pública del paquete <code>iasi.quarto</code>.</p>
 </section>
 </div>
+</section>
 </section>
 </div>
 

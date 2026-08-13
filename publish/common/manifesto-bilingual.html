@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iasi-lua · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>manifesto-bilingual – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,17 +41,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-f16cdaa5ddb5d5dfb3a5e1a3bf35ce29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -128,7 +93,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -237,83 +202,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div class="iasi-artifact-page iasi-artifact-publish">
-<div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../artifacts.html">iasi-lua</a> <a href="#overview">Overview</a> <a href="#plantuml">PlantUML</a> <a href="https://github.com/iasi-org/iasi-lua-docs/tree/main/01-user-guide">User Guide</a> <a href="#resources">Recursos</a> <a href="https://github.com/iasi-org/iasi-lua">Repository</a></p>
-</div>
-<section id="iasi.lua-extensiones-reutilizables-para-quarto" class="level1 iasi-artifact-content">
-<h1>IASI.Lua: Extensiones reutilizables para Quarto</h1>
-<p>Una plataforma común para <strong>desarrollar, construir y distribuir</strong> extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.</p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><code>iasi-lua</code> mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.</p>
-<div class="iasi-artifact-flow">
-<section id="core" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="core">Core</h3>
-<p>Proporciona configuración, caché, sistema de archivos, metadatos y gestión del <em>mediabag</em>.</p>
-</section>
-<section id="extension" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="extension">Extension</h3>
-<p>Mantiene la lógica específica de cada integración en una fuente legible y editable.</p>
-</section>
-<section id="build" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="build">Build</h3>
-<p>Combina la extensión con el núcleo compartido y genera una distribución autónoma.</p>
-</section>
-<section id="install" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="install">Install</h3>
-<p>Materializa la extensión construida dentro del proyecto Quarto consumidor.</p>
-</section>
-</div>
-<p><img src="iasi-lua_files\mediabag\plantuml/1952431ee8d3e8518041d941ee439eb7220194c2.png" class="img-fluid" style="width:82.0%"></p>
-<p><code>_extensions/</code> es un artefacto generado: se construye desde la fuente y no se edita manualmente.</p>
-</section>
-<section id="plantuml" class="level2">
-<h2 class="anchored" data-anchor-id="plantuml">IASI PlantUML</h2>
-<p>La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.</p>
-<div class="iasi-grid">
-<div class="iasi-card iasi-card-extend">
-<p><strong>ESCRIBIR</strong></p>
-<section id="diagrama-como-código" class="level3">
-<h3 class="anchored" data-anchor-id="diagrama-como-código">Diagrama como código</h3>
-<p>El documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.</p>
-</section>
-</div>
-<div class="iasi-card iasi-card-extend">
-<p><strong>RENDERIZAR</strong></p>
-<section id="imagen-integrada" class="level3">
-<h3 class="anchored" data-anchor-id="imagen-integrada">Imagen integrada</h3>
-<p>El filtro solicita la imagen al servidor PlantUML y la incorpora al <em>mediabag</em> de Pandoc durante el renderizado.</p>
-</section>
-</div>
-</div>
-<p>La extensión se activa explícitamente en el proyecto:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> iasi-plantuml</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Recursos</h2>
-<div class="iasi-artifact-docs">
-<section id="user-guide" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="user-guide"><a href="https://github.com/iasi-org/iasi-lua-docs/tree/main/01-user-guide">User Guide</a></h3>
-<p>Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.</p>
-</section>
-<section id="repository" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="repository"><a href="https://github.com/iasi-org/iasi-lua">Repository</a></h3>
-<p>Código fuente, extensiones generadas, pruebas y scripts de construcción.</p>
-</section>
-<section id="architecture" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="architecture"><a href="https://github.com/iasi-org/iasi-lua/blob/main/docs/architecture.md">Architecture</a></h3>
-<p>Responsabilidades del núcleo, estructura de las extensiones y modelo de distribución.</p>
-</section>
-<section id="adding-an-extension" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="adding-an-extension"><a href="https://github.com/iasi-org/iasi-lua/blob/main/docs/adding-an-extension.md">Adding an extension</a></h3>
-<p>Guía para incorporar una nueva extensión a la plataforma.</p>
-</section>
-</div>
-</section>
-</section>
-</div>
+<p>This book is deliberately written in Spanish.</p>
+<p>There are two main reasons:</p>
+<ol type="1">
+<li>The first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.</li>
+<li>The second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.</li>
+</ol>
+<p>This is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.</p>
+<p>And in engineering, nuance matters.</p>
+<p>Translations can come later. Original thought cannot.</p>
+<p>Nevertheless, if you need any part of this work translated into English, we will be happy to provide it.</p>
+<hr>
+<p>Este libro está escrito conscientemente en castellano.</p>
+<p>Hay dos razones principales:</p>
+<ol type="1">
+<li>La primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.</li>
+<li>La segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.</li>
+</ol>
+<p>No se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.</p>
+<p>Y en ingeniería, los matices importan.</p>
+<p>Las traducciones podrán venir después. El pensamiento original, no.</p>
 
 
 
@@ -343,12 +251,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
