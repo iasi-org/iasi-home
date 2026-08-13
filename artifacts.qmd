@@ -19,25 +19,25 @@ Tres volúmenes independientes forman la colección IASI. Cada uno vive en su pr
 ::: {.iasi-grid}
 
 ::: {.iasi-card .iasi-card-think .iasi-card-book}
-**LIBRO · VOLUMEN VI**
+**LIBRO VOLUMEN I**
 
-### [iasi-book-VI](https://github.com/iasi-org/iasi-book-VI)
+### [iasi-book-I](status/to-be-done.html)
 
 Primer volumen de la colección IASI y repositorio independiente de publicación.
 :::
 
 ::: {.iasi-card .iasi-card-think .iasi-card-book}
-**LIBRO · VOLUMEN VII**
+**LIBRO VOLUMEN II**
 
-### [iasi-book-VII](https://github.com/iasi-org/iasi-book-VII)
+### [iasi-book-II](status/to-be-done.html)
 
 Segundo volumen de la colección IASI y repositorio independiente de publicación.
 :::
 
 ::: {.iasi-card .iasi-card-think .iasi-card-book}
-**LIBRO · VOLUMEN VIII**
+**LIBRO · VOLUMEN III**
 
-### [iasi-book-VIII](https://github.com/iasi-org/iasi-book-VIII)
+### [iasi-book-III](status/to-be-done.html)
 
 Tercer volumen de la colección IASI y repositorio independiente de publicación.
 :::
@@ -53,7 +53,7 @@ Los artefactos son productos de ingeniería. Cada repositorio resuelve una respo
 ::: {.iasi-card .iasi-card-publish}
 **PUBLICAR**
 
-### [iasi-quarto](https://github.com/iasi-org/iasi-quarto)
+### [iasi-quarto](artifacts/iasi-quarto.qmd)
 
 Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
 :::
@@ -61,7 +61,7 @@ Infraestructura reproducible para descubrir, validar, construir y publicar proye
 ::: {.iasi-card .iasi-card-extend}
 **EXTENDER**
 
-### [iasi-lua](https://github.com/iasi-org/iasi-lua)
+### [iasi-lua](artifacts/iasi-lua.qmd)
 
 Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.
 :::
@@ -69,7 +69,7 @@ Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentr
 ::: {.iasi-card .iasi-card-environment}
 **PREPARAR EL ENTORNO**
 
-### [iasi-infra](https://github.com/iasi-org/iasi-infra)
+### [iasi-infra](status/under_construction.html)
 
 Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina hasta una plataforma preparada para trabajar con IASI.
 :::
@@ -77,7 +77,7 @@ Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina 
 ::: {.iasi-card .iasi-card-publish}
 **OPERAR**
 
-### [iasi-tools-dev](https://github.com/iasi-org/iasi-tools-dev)
+### [iasi-tools-dev](status/under_construction.html)
 
 Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.
 :::
@@ -85,7 +85,7 @@ Herramientas y comandos de soporte que simplifican las operaciones habituales de
 ::: {.iasi-card .iasi-card-think}
 **TRAZAR EL PROCESO**
 
-### [iasi-journey](https://github.com/iasi-org/iasi-journey)
+### [iasi-journey](status/under_construction.html)
 
 Registro del proceso real de trabajo: conversaciones, alternativas, discusión y evolución hasta llegar a una decisión o a un resultado.
 :::
@@ -93,17 +93,9 @@ Registro del proceso real de trabajo: conversaciones, alternativas, discusión y
 ::: {.iasi-card .iasi-card-extend}
 **DECIDIR**
 
-### [iasi-adr](https://github.com/iasi-org/iasi-adr)
+### [iasi-adr](status/under_construction.html)
 
 Registro estructurado de decisiones de arquitectura: contexto, alternativas, decisión adoptada y consecuencias.
-:::
-
-::: {.iasi-card .iasi-card-environment}
-**ENTRAR**
-
-### [iasi-home](https://github.com/iasi-org/iasi-home)
-
-Portada y mapa navegable del ecosistema IASI: el punto de entrada a los libros, los artefactos y el resto de recursos.
 :::
 
 :::
