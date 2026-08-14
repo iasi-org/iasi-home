@@ -110,6 +110,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </script>
 
+<script>
+(() => {
+  window.addEventListener("DOMContentLoaded", async () => {
+    const target = document.getElementById("iasi-published-at");
+    const css = document.querySelector(
+      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
+    );
+
+    if (!target || !css) return;
+
+    const marker = css.href.replace(
+      /site_libs\/bootstrap\/[^/]+$/,
+      ".publish"
+    );
+
+    try {
+      const response = await fetch(marker, { cache: "no-store" });
+      if (!response.ok) return;
+
+      const publishedAt = new Date((await response.text()).trim());
+      if (Number.isNaN(publishedAt.getTime())) return;
+
+      const language = document.documentElement.lang || "es";
+      const label = language.startsWith("en")
+        ? "Last published"
+        : "Última publicación";
+      const value = new Intl.DateTimeFormat(language, {
+        dateStyle: "long",
+        timeStyle: "short"
+      }).format(publishedAt);
+
+      target.textContent = `${label}: ${value}`;
+    } catch (_) {
+      // The marker does not exist in a plain local render; keep the footer empty.
+    }
+  });
+})();
+</script>
 
 
 </head>
@@ -143,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../iasi-book-I/">
+    <a class="dropdown-item" href="../../iasi-book-I/">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
@@ -277,7 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="iasi-artifact-page iasi-artifact-publish">
 <div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../artifacts.html">iasi.quarto</a> <a href="#overview">Overview</a> <a href="#publish">Publish</a> <a href="..\iasi-quarto-docs/user-guide/">User Guide</a> <a href="..\iasi-quarto-docs/technical-guide/">Technical Guide</a> <a href="https://github.com/iasi-org/iasi_quarto">Repository</a></p>
+<p><a class="iasi-artifact-subnav-brand" href="../artifacts.html">iasi.quarto</a> <a href="#overview">Overview</a> <a href="#publish">Publish</a> <a href="../iasi-quarto-docs/user-guide/">User Guide</a> <a href="../iasi-quarto-docs/technical-guide/">Technical Guide</a> <a href="https://github.com/iasi-org/iasi_quarto">Repository</a></p>
 </div>
 <section id="iasi.quarto-publicación-reproducible-sobre-quarto" class="level1 iasi-artifact-content">
 <h1>IASI.Quarto: Publicación reproducible sobre Quarto</h1>
@@ -335,11 +373,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="resources">Recursos</h2>
 <div class="iasi-artifact-docs">
 <section id="user-guide" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="user-guide"><a href="..\iasi-quarto-docs/user-guide/">User Guide</a></h3>
+<h3 class="anchored" data-anchor-id="user-guide"><a href="../iasi-quarto-docs/user-guide/">User Guide</a></h3>
 <p>Instalación, configuración y uso de <code>iasi.quarto</code> para construir publicaciones y multiproyectos.</p>
 </section>
 <section id="technical-guide" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="technical-guide"><a href="..\iasi-quarto-docs/technical-guide/">Technical Guide</a></h3>
+<h3 class="anchored" data-anchor-id="technical-guide"><a href="../iasi-quarto-docs/technical-guide/">Technical Guide</a></h3>
 <p>Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.</p>
 </section>
 <section id="repository" class="level3 iasi-artifact-doc">
@@ -755,6 +793,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>IASI · Ingeniería Asistida por Sistemas Inteligentes</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><span id="iasi-published-at"></span></p>
+</div>
+  </div>
+</footer>
 
 
 

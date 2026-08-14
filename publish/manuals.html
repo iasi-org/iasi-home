@@ -75,6 +75,44 @@ ul.task-list li input[type="checkbox"] {
 
 </script>
 
+<script>
+(() => {
+  window.addEventListener("DOMContentLoaded", async () => {
+    const target = document.getElementById("iasi-published-at");
+    const css = document.querySelector(
+      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
+    );
+
+    if (!target || !css) return;
+
+    const marker = css.href.replace(
+      /site_libs\/bootstrap\/[^/]+$/,
+      ".publish"
+    );
+
+    try {
+      const response = await fetch(marker, { cache: "no-store" });
+      if (!response.ok) return;
+
+      const publishedAt = new Date((await response.text()).trim());
+      if (Number.isNaN(publishedAt.getTime())) return;
+
+      const language = document.documentElement.lang || "es";
+      const label = language.startsWith("en")
+        ? "Last published"
+        : "Última publicación";
+      const value = new Intl.DateTimeFormat(language, {
+        dateStyle: "long",
+        timeStyle: "short"
+      }).format(publishedAt);
+
+      target.textContent = `${label}: ${value}`;
+    } catch (_) {
+      // The marker does not exist in a plain local render; keep the footer empty.
+    }
+  });
+})();
+</script>
 
 
 </head>
@@ -108,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./iasi-book-I/">
+    <a class="dropdown-item" href="./../iasi-book-I/">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
@@ -256,14 +294,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="iasi-card iasi-card-publish">
 <p><strong>USER GUIDE</strong></p>
 <section id="iasi.quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.quarto"><a href=".\iasi-quarto-docs/user-guide/">iasi.quarto</a></h3>
+<h3 class="anchored" data-anchor-id="iasi.quarto"><a href="./iasi-quarto-docs/user-guide/">iasi.quarto</a></h3>
 <p>Uso de <code>iasi.quarto</code> para construir y publicar proyectos Quarto reproducibles.</p>
 </section>
 </div>
 <div class="iasi-card iasi-card-extend">
 <p><strong>USER GUIDE</strong></p>
 <section id="iasi-lua" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-lua"><a href=".\iasi-lua-docs/user-guide/">iasi-lua</a></h3>
+<h3 class="anchored" data-anchor-id="iasi-lua"><a href="./iasi-lua-docs/user-guide/">iasi-lua</a></h3>
 <p>Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.</p>
 </section>
 </div>
@@ -275,14 +313,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="iasi-card iasi-card-publish">
 <p><strong>TECHNICAL GUIDE</strong></p>
 <section id="iasi.quarto-1" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.quarto-1"><a href=".\iasi-quarto-docs/technical-guide/">iasi.quarto</a></h3>
+<h3 class="anchored" data-anchor-id="iasi.quarto-1"><a href="./iasi-quarto-docs/technical-guide/">iasi.quarto</a></h3>
 <p>Arquitectura, estrategias de publicación y diseño interno de <code>iasi.quarto</code>.</p>
 </section>
 </div>
 <div class="iasi-card iasi-card-extend">
 <p><strong>TECHNICAL GUIDE</strong></p>
 <section id="iasi-lua-1" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-lua-1"><a href=".\iasi-lua-docs/technical-guide/">iasi-lua</a></h3>
+<h3 class="anchored" data-anchor-id="iasi-lua-1"><a href="./iasi-lua-docs/technical-guide/">iasi-lua</a></h3>
 <p>Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.</p>
 </section>
 </div>
@@ -694,6 +732,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>IASI · Ingeniería Asistida por Sistemas Inteligentes</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><span id="iasi-published-at"></span></p>
+</div>
+  </div>
+</footer>
 
 
 

@@ -75,6 +75,44 @@ ul.task-list li input[type="checkbox"] {
 
 </script>
 
+<script>
+(() => {
+  window.addEventListener("DOMContentLoaded", async () => {
+    const target = document.getElementById("iasi-published-at");
+    const css = document.querySelector(
+      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
+    );
+
+    if (!target || !css) return;
+
+    const marker = css.href.replace(
+      /site_libs\/bootstrap\/[^/]+$/,
+      ".publish"
+    );
+
+    try {
+      const response = await fetch(marker, { cache: "no-store" });
+      if (!response.ok) return;
+
+      const publishedAt = new Date((await response.text()).trim());
+      if (Number.isNaN(publishedAt.getTime())) return;
+
+      const language = document.documentElement.lang || "es";
+      const label = language.startsWith("en")
+        ? "Last published"
+        : "Última publicación";
+      const value = new Intl.DateTimeFormat(language, {
+        dateStyle: "long",
+        timeStyle: "short"
+      }).format(publishedAt);
+
+      target.textContent = `${label}: ${value}`;
+    } catch (_) {
+      // The marker does not exist in a plain local render; keep the footer empty.
+    }
+  });
+})();
+</script>
 
 
 </head>
@@ -108,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../iasi-book-I/">
+    <a class="dropdown-item" href="../../iasi-book-I/">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
@@ -675,6 +713,19 @@ All of this through <strong>foundations, experimentation and real-world cases</s
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>IASI · Ingeniería Asistida por Sistemas Inteligentes</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><span id="iasi-published-at"></span></p>
+</div>
+  </div>
+</footer>
 
 
 
