@@ -122,6 +122,48 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-productos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Productos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-productos">    
+        <li>
+    <a class="dropdown-item" href="./products.html">
+ <span class="dropdown-text">Todos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./products.html#iasi-quarto">
+ <span class="dropdown-text">IASI Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./products.html#iasi-lua">
+ <span class="dropdown-text">IASI Lua</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./products.html#iasi-graphics">
+ <span class="dropdown-text">IASI Graphics</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-artefactos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Artefactos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-artefactos">    
+        <li>
+    <a class="dropdown-item" href="./artifacts.html">
+ <span class="dropdown-text">Todos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./artifacts.html#iasi-tools-dev">
+ <span class="dropdown-text">IASI Tools Dev</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./artifacts.html#iasi-rstudio">
+ <span class="dropdown-text">IASI RStudio</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Manuales</span>
     </a>
@@ -138,28 +180,24 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./manuals/technical-guides.html">
  <span class="dropdown-text">Technical Guides</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./status/under-construction.html">
+ <span class="dropdown-text">Desarrollo del ecosistema</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-artefactos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Artefactos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-viaje" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Viaje</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-artefactos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-viaje">    
         <li>
-    <a class="dropdown-item" href="./artifacts.html">
- <span class="dropdown-text">Todos</span></a>
+    <a class="dropdown-item" href="./status/under-construction.html">
+ <span class="dropdown-text">Decisiones de ingeniería</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./artifacts/iasi-quarto.html">
- <span class="dropdown-text">IASI Quarto</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./artifacts/iasi-lua.html">
- <span class="dropdown-text">IASI Lua</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./artifacts.html#iasi-tools-dev">
- <span class="dropdown-text">IASI Tools Dev</span></a>
+    <a class="dropdown-item" href="./status/under-construction.html">
+ <span class="dropdown-text">Historia del viaje</span></a>
   </li>  
     </ul>
   </li>
@@ -210,30 +248,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <div class="iasi-document">
 <div class="iasi-catalog-intro">
-<p>Los artefactos son productos de ingeniería. Cada repositorio resuelve una responsabilidad concreta y puede utilizarse, probarse y evolucionar de forma independiente.</p>
+<p>Los artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.</p>
 </div>
 <div class="iasi-grid">
-<div class="iasi-card iasi-card-publish">
-<p><strong>PUBLICAR</strong></p>
-<section id="iasi-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-quarto"><a href="./artifacts/iasi-quarto.html">iasi-quarto</a></h3>
-<p>Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.</p>
-</section>
-</div>
-<div class="iasi-card iasi-card-extend">
-<p><strong>EXTENDER</strong></p>
-<section id="iasi-lua" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-lua"><a href="./artifacts/iasi-lua.html">iasi-lua</a></h3>
-<p>Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.</p>
-</section>
-</div>
-<div class="iasi-card iasi-card-environment">
-<p><strong>PREPARAR EL ENTORNO</strong></p>
-<section id="iasi-infra" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-infra"><a href="status/under-construction.html">iasi-infra</a></h3>
-<p>Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina hasta una plataforma preparada para trabajar con IASI.</p>
-</section>
-</div>
 <div id="iasi-tools-dev" class="iasi-card iasi-card-publish">
 <p><strong>OPERAR</strong></p>
 <section id="iasi-tools-dev" class="level3">
@@ -241,18 +258,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.</p>
 </section>
 </div>
-<div class="iasi-card iasi-card-think">
-<p><strong>TRAZAR EL PROCESO</strong></p>
-<section id="iasi-journey" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-journey"><a href="status/under-construction.html">iasi-journey</a></h3>
-<p>Registro del proceso real de trabajo: conversaciones, alternativas, discusión y evolución hasta llegar a una decisión o a un resultado.</p>
-</section>
-</div>
-<div class="iasi-card iasi-card-extend">
-<p><strong>DECIDIR</strong></p>
-<section id="iasi-adr" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-adr"><a href="status/under-construction.html">iasi-adr</a></h3>
-<p>Registro estructurado de decisiones de arquitectura: contexto, alternativas, decisión adoptada y consecuencias.</p>
+<div id="iasi-rstudio" class="iasi-card iasi-card-environment">
+<p><strong>DESARROLLAR</strong></p>
+<section id="iasi-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-rstudio"><a href="status/under-construction.html">iasi-rstudio</a></h3>
+<p>Entorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio.</p>
 </section>
 </div>
 </div>
