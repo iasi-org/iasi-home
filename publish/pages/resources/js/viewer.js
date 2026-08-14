@@ -14,7 +14,14 @@
 
   try {
     documentUrl = new URL(requested || "", allowedOrigin);
-    const allowedPath = documentUrl.pathname.startsWith("/iasi-quarto-docs/");
+    const allowedRepositories = [
+      "/iasi-quarto-docs/",
+      "/iasi-lua-docs/",
+      "/iasi-tools-dev-docs/"
+    ];
+    const allowedPath = allowedRepositories.some((path) =>
+      documentUrl.pathname.startsWith(path)
+    );
 
     if (documentUrl.origin !== allowedOrigin || !allowedPath) {
       throw new Error("Documentación no permitida");

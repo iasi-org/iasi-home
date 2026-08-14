@@ -29,7 +29,7 @@ Construcción y publicación reproducible de proyectos Quarto.
 ::: {.iasi-card .iasi-card-extend}
 **USER GUIDE**
 
-### <a href="/iasi-lua-docs/user-guide/">iasi-lua</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi-lua%20User%20Guide">iasi-lua</a>
 
 Instalación, configuración y uso de extensiones Lua.
 :::
@@ -37,7 +37,7 @@ Instalación, configuración y uso de extensiones Lua.
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### <a href="/iasi-tools-dev-docs/user-guide/">iasi-tools-dev</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&title=iasi-tools-dev%20User%20Guide">iasi-tools-dev</a>
 
 Instalación, comandos y flujos de trabajo de `iasi-dev`.
 :::

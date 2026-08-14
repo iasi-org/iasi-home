@@ -23,7 +23,7 @@ Los Technical Guides describen el diseño interno y proporcionan la base necesar
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-quarto-docs/technical-guide/">iasi.quarto</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&title=iasi.quarto%20Technical%20Guide">iasi.quarto</a>
 
 Arquitectura y estrategias del motor de publicación.
 :::
@@ -31,7 +31,7 @@ Arquitectura y estrategias del motor de publicación.
 ::: {.iasi-card .iasi-card-extend}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-lua-docs/technical-guide/">iasi-lua</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi-lua%20Technical%20Guide">iasi-lua</a>
 
 Arquitectura y desarrollo de extensiones Lua.
 :::
@@ -39,7 +39,7 @@ Arquitectura y desarrollo de extensiones Lua.
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-tools-dev-docs/technical-guide/">iasi-tools-dev</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&title=iasi-tools-dev%20Technical%20Guide">iasi-tools-dev</a>
 
 Arquitectura y mantenimiento de las herramientas operativas del ecosistema.
 :::

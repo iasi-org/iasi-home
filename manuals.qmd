@@ -33,7 +33,7 @@ Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
 ::: {.iasi-card .iasi-card-extend}
 **USER GUIDE**
 
-### <a href="/iasi-lua-docs/user-guide/">iasi-lua</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi-lua%20User%20Guide">iasi-lua</a>
 
 Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
 :::
@@ -41,7 +41,7 @@ Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### <a href="/iasi-tools-dev-docs/user-guide/">iasi-tools-dev</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&title=iasi-tools-dev%20User%20Guide">iasi-tools-dev</a>
 
 Instalación y uso de `iasi-dev` para operar sobre proyectos y repositorios IASI.
 :::
@@ -55,7 +55,7 @@ Instalación y uso de `iasi-dev` para operar sobre proyectos y repositorios IASI
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-quarto-docs/technical-guide/">iasi.quarto</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&title=iasi.quarto%20Technical%20Guide">iasi.quarto</a>
 
 Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
 :::
@@ -63,7 +63,7 @@ Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
 ::: {.iasi-card .iasi-card-extend}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-lua-docs/technical-guide/">iasi-lua</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi-lua%20Technical%20Guide">iasi-lua</a>
 
 Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.
 :::
@@ -71,7 +71,7 @@ Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### <a href="/iasi-tools-dev-docs/technical-guide/">iasi-tools-dev</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&title=iasi-tools-dev%20Technical%20Guide">iasi-tools-dev</a>
 
 Arquitectura y mantenimiento de la automatización operativa del ecosistema.
 :::
