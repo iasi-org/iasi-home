@@ -35,6 +35,13 @@
     "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
   },
   {
+    "objectID": "publish/publish/publish/publish/publish/status/under-construction.html",
+    "href": "publish/publish/publish/publish/publish/status/under-construction.html",
+    "title": "Under construction",
+    "section": "",
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
+  },
+  {
     "objectID": "principles.html",
     "href": "principles.html",
     "title": "Decálogo IASI",
@@ -243,6 +250,13 @@
     "title": "Manuales",
     "section": "Technical Guides",
     "text": "Technical Guides\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura, estrategias de publicación y diseño interno de iasi.quarto.\n\n\n\nTECHNICAL GUIDE\n\niasi-lua\nArquitectura y desarrollo de extensiones Lua para el ecosistema IASI."
+  },
+  {
+    "objectID": "publish/publish/publish/publish/publish/status/to-be-done.html",
+    "href": "publish/publish/publish/publish/publish/status/to-be-done.html",
+    "title": "To be done",
+    "section": "",
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nTo be done\nThis artifact is planned, but its implementation and public documentation have not started yet.\n\n← Back to IASI"
   },
   {
     "objectID": "publish/publish/publish/publish/status/to-be-done.html",

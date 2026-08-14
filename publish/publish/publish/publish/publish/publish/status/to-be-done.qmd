@@ -1,0 +1,25 @@
+---
+pagetitle: "To be done · IASI"
+title-block-style: none
+---
+::::: {.iasi-status-page}
+:::: {.iasi-status-card}
+::: {.iasi-status-badge}
+🚧 WORK IN PROGRESS
+:::
+
+::: {.iasi-status-kicker}
+IASI artifact
+:::
+
+# To be done
+
+This artifact is planned, but its implementation and public documentation have not started yet.
+
+::: {.iasi-status-actions}
+[← Back to IASI](../index.qmd)
+:::
+
+::::
+
+:::::
