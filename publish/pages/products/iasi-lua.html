@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>iasi-lua · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>iasi.lua · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     const marker = css.href.replace(
       /site_libs\/bootstrap\/[^/]+$/,
-      ".publish"
+      "published-at.txt"
     );
 
     try {
@@ -180,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../iasi-book-I/">
+    <a class="dropdown-item" href="../../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&amp;title=IASI I">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
@@ -204,15 +204,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../pages/products/iasi-quarto.html">
- <span class="dropdown-text">IASI Quarto</span></a>
+ <span class="dropdown-text">iasi.quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-lua.html">
- <span class="dropdown-text">IASI Lua</span></a>
+    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#plantuml">
+ <span class="dropdown-text">IASI PlantUML</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
- <span class="dropdown-text">IASI Graphics</span></a>
+    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#shinylive">
+ <span class="dropdown-text">IASI Shiny</span></a>
   </li>  
     </ul>
   </li>
@@ -314,33 +314,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="iasi-artifact-page iasi-artifact-publish">
 <div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../../pages/products/index.html">iasi-lua</a> <a href="#overview">Overview</a> <a href="#plantuml">PlantUML</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi-lua User Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi-lua Technical Guide">Technical Guide</a> <a href="#resources">Recursos</a> <a href="https://github.com/iasi-org/iasi-lua">Repository</a></p>
+<p><a class="iasi-artifact-subnav-brand" href="../../pages/products/index.html">iasi.lua</a> <a href="#overview">Overview</a> <a href="#plantuml">PlantUML</a> <a href="#shinylive">Shinylive</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">Technical Guide</a> <a href="#resources">Recursos</a> <a href="https://github.com/iasi-org/iasi-lua">Repository</a></p>
 </div>
 <section id="iasi.lua-extensiones-reutilizables-para-quarto" class="level1 iasi-artifact-content">
-<h1>IASI.Lua: Extensiones reutilizables para Quarto</h1>
+<h1>iasi.lua: Extensiones reutilizables para Quarto</h1>
 <p>Una plataforma común para <strong>desarrollar, construir y distribuir</strong> extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><code>iasi-lua</code> mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.</p>
-<div class="iasi-artifact-flow">
-<section id="core" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="core">Core</h3>
-<p>Proporciona configuración, caché, sistema de archivos, metadatos y gestión del <em>mediabag</em>.</p>
-</section>
-<section id="extension" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="extension">Extension</h3>
-<p>Mantiene la lógica específica de cada integración en una fuente legible y editable.</p>
-</section>
-<section id="build" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="build">Build</h3>
-<p>Combina la extensión con el núcleo compartido y genera una distribución autónoma.</p>
-</section>
-<section id="install" class="level3 iasi-artifact-step">
-<h3 class="anchored" data-anchor-id="install">Install</h3>
-<p>Materializa la extensión construida dentro del proyecto Quarto consumidor.</p>
+<p><code>iasi.lua</code> mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es <code>iasi-lua</code>.</p>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-extend">
+<p><strong>PLATAFORMA</strong></p>
+<section id="iasi.lua" class="level3">
+<h3 class="anchored" data-anchor-id="iasi.lua">iasi.lua</h3>
+<p>Proporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.</p>
 </section>
 </div>
-<p><img src="iasi-lua_files\mediabag\plantuml/1952431ee8d3e8518041d941ee439eb7220194c2.png" class="img-fluid" style="width:82.0%"></p>
+<div class="iasi-card iasi-card-extend">
+<p><strong>DIAGRAMAS</strong></p>
+<section id="iasi-plantuml" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-plantuml"><a href="#plantuml">IASI PlantUML</a></h3>
+<p>Convierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-extend">
+<p><strong>APLICACIONES</strong></p>
+<section id="iasi-shiny" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-shiny"><a href="#shinylive">IASI Shiny</a></h3>
+<p>Incorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.</p>
+</section>
+</div>
+</div>
+<p><img src="iasi-lua_files\mediabag\plantuml/24de6755c450e0c0349b71e5b11482414a64523f.png" class="img-fluid" style="width:82.0%"></p>
 <p><code>_extensions/</code> es un artefacto generado: se construye desde la fuente y no se edita manualmente.</p>
 </section>
 <section id="plantuml" class="level2">
@@ -366,15 +371,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> iasi-plantuml</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
+<section id="shinylive" class="level2">
+<h2 class="anchored" data-anchor-id="shinylive">IASI Shiny</h2>
+<p>La extensión <code>iasi-shiny</code> incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.</p>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-extend">
+<p><strong>CREAR</strong></p>
+<section id="aplicación-interactiva" class="level3">
+<h3 class="anchored" data-anchor-id="aplicación-interactiva">Aplicación interactiva</h3>
+<p>El documento define la aplicación en un bloque <code>{shinylive-r}</code> junto al contenido que la explica.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-extend">
+<p><strong>PUBLICAR</strong></p>
+<section id="ejecución-en-el-navegador" class="level3">
+<h3 class="anchored" data-anchor-id="ejecución-en-el-navegador">Ejecución en el navegador</h3>
+<p>Shinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.</p>
+</section>
+</div>
+</div>
+<p>La extensión se activa explícitamente en el proyecto:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> iasi-shiny</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Recursos</h2>
 <div class="iasi-artifact-docs">
 <section id="user-guide" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="user-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi-lua User Guide">User Guide</a></h3>
-<p>Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.</p>
+<h3 class="anchored" data-anchor-id="user-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">User Guide</a></h3>
+<p>Instalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.</p>
 </section>
 <section id="technical-guide" class="level3 iasi-artifact-doc">
-<h3 class="anchored" data-anchor-id="technical-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi-lua Technical Guide">Technical Guide</a></h3>
+<h3 class="anchored" data-anchor-id="technical-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">Technical Guide</a></h3>
 <p>Arquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.</p>
 </section>
 <section id="repository" class="level3 iasi-artifact-doc">

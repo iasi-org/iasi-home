@@ -18,35 +18,42 @@
     "href": "pages/products/index.html",
     "title": "Productos",
     "section": "",
-    "text": "Productos\n\nSoluciones reutilizables construidas dentro del ecosistema IASI.\n\n\n\n\nLos productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente.\n\n\n\nPUBLICAR\n\niasi-quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.\n\n\n\nEXTENDER\n\niasi-lua\nPlataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.\n\n\n\nCOMUNICAR\n\niasi-graphics\nRecursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI."
+    "text": "Productos\n\nSoluciones reutilizables construidas dentro del ecosistema IASI.\n\n\n\n\nLos productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente. IASI PlantUML e IASI Shiny se construyen y distribuyen desde la plataforma común iasi.lua.\n\n\n\nPUBLICAR\n\niasi.quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.\n\n\n\nDIAGRAMAR\n\nIASI PlantUML\nDiagramas como código integrados en documentos Quarto mediante la extensión iasi-plantuml de iasi.lua.\n\n\n\nINTERACTUAR\n\nIASI Shiny\nAplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión iasi-shiny de iasi.lua.\n\n\n\nPRÓXIMAMENTE\n\nIASI Graphics\nRecursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI."
   },
   {
     "objectID": "pages/products/iasi-lua.html",
     "href": "pages/products/iasi-lua.html",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
-    "text": "iasi-lua Overview PlantUML User Guide Technical Guide Recursos Repository\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\n\n\n\nInstalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
+    "text": "iasi.lua Overview PlantUML Shinylive User Guide Technical Guide Recursos Repository\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nPLATAFORMA\n\n\nProporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.\n\n\n\nDIAGRAMAS\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nAPLICACIONES\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\nLa extensión iasi-shiny incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.\n\n\nCREAR\n\n\nEl documento define la aplicación en un bloque {shinylive-r} junto al contenido que la explica.\n\n\n\nPUBLICAR\n\n\nShinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-shiny\n\n\n\n\n\n\nInstalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
   },
   {
     "objectID": "pages/products/iasi-lua.html#overview",
     "href": "pages/products/iasi-lua.html#overview",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
-    "text": "iasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
+    "text": "iasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nPLATAFORMA\n\n\nProporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.\n\n\n\nDIAGRAMAS\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nAPLICACIONES\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
   },
   {
     "objectID": "pages/products/iasi-lua.html#plantuml",
     "href": "pages/products/iasi-lua.html#plantuml",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
     "text": "La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml"
   },
   {
+    "objectID": "pages/products/iasi-lua.html#shinylive",
+    "href": "pages/products/iasi-lua.html#shinylive",
+    "title": "iasi.lua: Extensiones reutilizables para Quarto",
+    "section": "",
+    "text": "La extensión iasi-shiny incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.\n\n\nCREAR\n\n\nEl documento define la aplicación en un bloque {shinylive-r} junto al contenido que la explica.\n\n\n\nPUBLICAR\n\n\nShinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-shiny"
+  },
+  {
     "objectID": "pages/products/iasi-lua.html#resources",
     "href": "pages/products/iasi-lua.html#resources",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
-    "text": "Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
+    "text": "Instalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
   },
   {
     "objectID": "pages/en/contact.html",
@@ -102,7 +109,7 @@
     "href": "manuals/user-guides.html",
     "title": "User Guides",
     "section": "",
-    "text": "User Guides\n\n\n\nManuales para instalar, configurar y utilizar los productos IASI.\nLos User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.\n\n\n\nUSER GUIDE\n\niasi.quarto\nConstrucción y publicación reproducible de proyectos Quarto.\n\n\n\nUSER GUIDE\n\niasi-lua\nInstalación, configuración y uso de extensiones Lua.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación, comandos y flujos de trabajo de iasi-dev."
+    "text": "User Guides\n\n\n\nManuales para instalar, configurar y utilizar los productos IASI.\nLos User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.\n\n\n\nUSER GUIDE\n\niasi.quarto\nConstrucción y publicación reproducible de proyectos Quarto.\n\n\n\nUSER GUIDE\n\niasi.lua\nInstalación, configuración y uso de extensiones Lua.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación, comandos y flujos de trabajo de iasi-dev."
   },
   {
     "objectID": "index.html",
@@ -130,7 +137,7 @@
     "href": "manuals/technical-guides.html",
     "title": "Technical Guides",
     "section": "",
-    "text": "Technical Guides\n\nArquitectura, mantenimiento y evolución de los productos IASI.\n\n\n\n\nLos Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.\n\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura y estrategias del motor de publicación.\n\n\n\nTECHNICAL GUIDE\n\niasi-lua\nArquitectura y desarrollo de extensiones Lua.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de las herramientas operativas del ecosistema."
+    "text": "Technical Guides\n\nArquitectura, mantenimiento y evolución de los productos IASI.\n\n\n\n\nLos Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.\n\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura y estrategias del motor de publicación.\n\n\n\nTECHNICAL GUIDE\n\niasi.lua\nArquitectura y desarrollo de extensiones Lua.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de las herramientas operativas del ecosistema."
   },
   {
     "objectID": "manuals.html",
@@ -144,14 +151,14 @@
     "href": "manuals.html#user-guides",
     "title": "Manuales",
     "section": "User Guides",
-    "text": "User Guides\n\n\nUSER GUIDE\n\niasi.quarto\nUso de iasi.quarto para construir y publicar proyectos Quarto reproducibles.\n\n\n\nUSER GUIDE\n\niasi-lua\nInstalación, configuración y uso de las extensiones Lua distribuidas por IASI.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación y uso de iasi-dev para operar sobre proyectos y repositorios IASI."
+    "text": "User Guides\n\n\nUSER GUIDE\n\niasi.quarto\nUso de iasi.quarto para construir y publicar proyectos Quarto reproducibles.\n\n\n\nUSER GUIDE\n\niasi.lua\nInstalación, configuración y uso de las extensiones Lua distribuidas por IASI.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación y uso de iasi-dev para operar sobre proyectos y repositorios IASI."
   },
   {
     "objectID": "manuals.html#technical-guides",
     "href": "manuals.html#technical-guides",
     "title": "Manuales",
     "section": "Technical Guides",
-    "text": "Technical Guides\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura, estrategias de publicación y diseño interno de iasi.quarto.\n\n\n\nTECHNICAL GUIDE\n\niasi-lua\nArquitectura y desarrollo de extensiones Lua para el ecosistema IASI.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de la automatización operativa del ecosistema."
+    "text": "Technical Guides\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura, estrategias de publicación y diseño interno de iasi.quarto.\n\n\n\nTECHNICAL GUIDE\n\niasi.lua\nArquitectura y desarrollo de extensiones Lua para el ecosistema IASI.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de la automatización operativa del ecosistema."
   },
   {
     "objectID": "pages/artifacts/iasi-tools-dev.html",
@@ -284,6 +291,6 @@
     "href": "pages/viewer.html",
     "title": "Documentación",
     "section": "",
-    "text": "Documentación integrada Cargando documentación…\n\n↗\n\n\nLa documentación se está cargando. Si no aparece, utilice el icono ↗ para abrir el sitio original.\n\n\n\n\nEste visor necesita JavaScript. Abrir la documentación original ↗"
+    "text": "Contenido integrado Cargando documentación…\n\n↗\n\n\nLa documentación se está cargando. Si no aparece, utilice el icono ↗ para abrir el sitio original.\n\n\n\n\nEste visor necesita JavaScript. Abrir la documentación original ↗"
   }
 ]
