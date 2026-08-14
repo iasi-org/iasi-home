@@ -1,22 +1,23 @@
 ---
 pagetitle: "Artefactos · IASI"
 lang: es
-title-block-style: none
 ---
 
-::: {.iasi-page-heading}
-# Artefactos
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.html">Artefactos</a>
+[IASI Tools Dev](iasi-tools-dev.qmd)
+[IASI RStudio](iasi-rstudio.qmd)
+::::
 
-::: {.iasi-epigraph}
-*Una idea, varios productos, una misma ingeniería.*
-:::
-:::
+:::: {.iasi-artifact-content}
+# Artefactos IASI {#todos}
 
-::: {.iasi-document}
-
-::: {.iasi-catalog-intro}
 Los artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.
-:::
+
+A diferencia de los subproductos, no nacen para convertirse en soluciones públicas con identidad y ciclo de vida propios. Son elementos vinculados al funcionamiento interno del ecosistema y a la ingeniería que hace posible construirlo de manera consistente.
+
+> **Los subproductos reutilizan soluciones. Los artefactos sostienen el entorno en el que esas soluciones se desarrollan.**
 
 ::: {.iasi-grid}
 
@@ -38,4 +39,7 @@ Entorno de trabajo preparado para desarrollar y validar publicaciones y producto
 
 :::
 
+![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
 :::

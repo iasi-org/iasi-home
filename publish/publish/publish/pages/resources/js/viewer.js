@@ -17,7 +17,8 @@
     const allowedRepositories = [
       "/iasi-quarto-docs/",
       "/iasi-lua-docs/",
-      "/iasi-tools-dev-docs/"
+      "/iasi-tools-dev-docs/",
+      "/iasi-book-I/"
     ];
     const allowedPath = allowedRepositories.some((path) =>
       documentUrl.pathname.startsWith(path)

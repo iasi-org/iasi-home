@@ -1,0 +1,27 @@
+---
+pagetitle: "Manuales · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-manual}
+:::: {.iasi-artifact-subnav .iasi-manual-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.html">Manuales</a>
+<details><summary>User Guides</summary><div class="iasi-manual-subnav-menu"><a href="user-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi.lua%20User%20Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&title=iasi-tools-dev%20User%20Guide">IASI Tools Dev</a></div></details>
+<details><summary>Technical Guides</summary><div class="iasi-manual-subnav-menu"><a href="technical-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&title=iasi.quarto%20Technical%20Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi.lua%20Technical%20Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&title=iasi-tools-dev%20Technical%20Guide">IASI Tools Dev</a></div></details>
+::::
+
+:::: {.iasi-artifact-content}
+# Manuales IASI {#todos}
+
+Aquí se reúne la documentación necesaria para utilizar, comprender y ampliar las herramientas del ecosistema IASI.
+
+Los **User Guides** están orientados a quienes quieren instalar, configurar y usar cada herramienta. Explican las tareas habituales, las opciones disponibles y los flujos de trabajo recomendados.
+
+Los **Technical Guides** describen cómo están construidas esas herramientas. Recogen su arquitectura, sus decisiones de diseño y la información necesaria para mantenerlas y hacerlas evolucionar.
+
+> **Los User Guides explican cómo trabajar con IASI. Los Technical Guides explican cómo funciona por dentro.**
+
+![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
+:::

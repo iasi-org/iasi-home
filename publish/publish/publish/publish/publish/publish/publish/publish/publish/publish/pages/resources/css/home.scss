@@ -158,7 +158,7 @@ main.content {
 .iasi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-  gap: clamp(1rem, 2vw, 1.6rem);
+  gap: clamp(0.8rem, 1.5vw, 1.25rem);
   padding: 0 var(--iasi-page-pad) 2rem;
 }
 
@@ -171,41 +171,39 @@ main.content {
 
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-  min-height: 13rem;
-  padding: clamp(1.5rem, 2.2vw, 2rem);
-  border: 0;
-  border-radius: 1.4rem;
-  background: color-mix(in srgb, var(--bs-body-bg) 96%, var(--iasi-card-accent));
-  box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.05),
-    0 16px 40px rgba(15, 23, 42, 0.07);
+
+  min-height: 0;
+  padding: 1.45rem 1.55rem 1.5rem;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--iasi-card-accent) 22%,
+    var(--iasi-border)
+  );
+  border-radius: 1rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--iasi-card-accent) 8%, transparent),
+      transparent 48%
+    ),
+    var(--bs-body-bg);
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
 
   transition:
-    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 220ms ease,
-    background-color 220ms ease;
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
 }
 
 .iasi-card::before {
   content: "";
   position: absolute;
-  inset: 0 0 auto;
-  height: 0.28rem;
+  inset: 0 auto 0 0;
+  width: 0.3rem;
   background: var(--iasi-card-accent);
-}
-
-.iasi-card::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 11rem;
-  height: 11rem;
-  right: -5rem;
-  bottom: -6rem;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--iasi-card-accent) 13%, transparent);
-  transition: transform 260ms ease;
 }
 
 .iasi-card-think       { --iasi-card-accent: var(--iasi-artifact-think); }
@@ -214,56 +212,55 @@ main.content {
 .iasi-card-environment { --iasi-card-accent: var(--iasi-artifact-environment); }
 
 .iasi-card:hover {
-  transform: translateY(-6px);
-  background: color-mix(in srgb, var(--bs-body-bg) 93%, var(--iasi-card-accent));
-  box-shadow:
-    0 2px 4px rgba(15, 23, 42, 0.05),
-    0 24px 56px rgba(15, 23, 42, 0.13);
-}
-
-.iasi-card:hover::after {
-  transform: scale(1.18);
+  transform: translateY(-4px);
+  border-color: color-mix(
+    in srgb,
+    var(--iasi-card-accent) 45%,
+    var(--iasi-border)
+  );
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
 }
 
 /* PUBLICAR · EXTENDER · OPERAR... */
 .iasi-card > p:first-child {
-  margin: 0 0 1.2rem;
-  padding: 0 !important;
+  width: fit-content;
+  margin: 0 0 0.85rem;
+  padding: 0.32rem 0.55rem !important;
+
+  border-radius: 999px;
+  background: color-mix(
+    in srgb,
+    var(--iasi-card-accent) 11%,
+    transparent
+  );
+
   color: var(--iasi-card-accent);
-  font-size: 0.68rem !important;
+  font-size: 0.7rem !important;
   line-height: 1 !important;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .iasi-card h3 {
-  margin: 0 0 0.85rem;
-  font-size: clamp(1.45rem, 2vw, 1.8rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  margin: 0 0 0.7rem;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
 }
 
 .iasi-card h3 a {
-  color: var(--bs-body-color);
-  text-decoration: none;
-}
-
-.iasi-card h3 a::after {
-  content: " ↗";
   color: var(--iasi-card-accent);
-  font-size: 0.7em;
-  font-weight: 500;
+  text-decoration: none;
 }
 
 .iasi-card h3 a:hover {
-  color: var(--iasi-card-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .iasi-card > p:last-child {
   margin-bottom: 0;
-  line-height: 1.65;
-  opacity: 0.72;
+  line-height: 1.55;
+  opacity: 0.78;
 }
 
 /******************************************************************************/
@@ -278,10 +275,6 @@ main.content {
 }
 
 .iasi-artifact-content {
-  width: 100%;
-  max-width: $grid-body-width;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: var(--iasi-page-pad);
   padding-left: var(--iasi-page-pad);
 }
@@ -306,14 +299,6 @@ main.content {
 
 .iasi-artifact-publish {
   --iasi-artifact-accent: var(--iasi-artifact-publish);
-}
-
-.iasi-artifact-environment {
-  --iasi-artifact-accent: var(--iasi-artifact-environment);
-}
-
-.iasi-artifact-manual {
-  --iasi-artifact-accent: var(--iasi-artifact-extend);
 }
 
 .iasi-artifact-subnav {
@@ -356,67 +341,6 @@ main.content {
 
 .iasi-artifact-subnav a:hover {
   color: rgba(255, 255, 255, 0.82);
-}
-
-.iasi-manual-subnav {
-  overflow: visible;
-}
-
-.iasi-manual-subnav details {
-  position: relative;
-}
-
-.iasi-manual-subnav summary {
-  padding: 0;
-  color: #fff;
-  cursor: pointer;
-  list-style: none;
-}
-
-.iasi-manual-subnav summary::-webkit-details-marker {
-  display: none;
-}
-
-.iasi-manual-subnav summary::after {
-  content: "▾";
-  margin-left: 0.45rem;
-  font-size: 0.72em;
-}
-
-.iasi-manual-subnav details[open] summary,
-.iasi-manual-subnav summary:hover {
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.iasi-manual-subnav-menu {
-  position: absolute;
-  top: calc(100% + 0.25rem);
-  left: 0;
-  z-index: 10;
-  display: grid;
-  min-width: 15rem;
-  padding: 0.45rem;
-  border: 1px solid var(--iasi-border);
-  border-radius: 0.75rem;
-  background: var(--bs-body-bg);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
-}
-
-.iasi-manual-subnav .iasi-manual-subnav-menu a {
-  padding: 0.55rem 0.75rem;
-  border-radius: 0.45rem;
-  color: var(--bs-body-color);
-  font-size: 0.92rem;
-}
-
-.iasi-manual-subnav .iasi-manual-subnav-menu a:first-child {
-  color: var(--iasi-artifact-accent);
-  font-weight: 750;
-}
-
-.iasi-manual-subnav .iasi-manual-subnav-menu a:hover {
-  background: color-mix(in srgb, var(--bs-body-bg) 92%, var(--iasi-artifact-accent));
-  color: var(--iasi-artifact-accent);
 }
 
 .iasi-artifact-hero {
@@ -489,182 +413,6 @@ main.content {
   line-height: 1.6;
 }
 
-/* Modern subproduct landing pages. */
-.iasi-product-hero {
-  position: relative;
-  overflow: hidden;
-  margin: 2rem 0 4rem;
-  padding: clamp(2rem, 6vw, 5rem);
-  border-radius: clamp(1.25rem, 2.5vw, 2rem);
-  background:
-    radial-gradient(circle at 88% 15%, rgba(255, 255, 255, 0.18), transparent 28%),
-    linear-gradient(135deg, var(--iasi-artifact-accent), color-mix(in srgb, var(--iasi-artifact-accent) 72%, #111827));
-  color: #fff;
-  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.18);
-}
-
-.iasi-product-hero h1 {
-  max-width: 15ch;
-  margin: 0.65rem 0 1rem !important;
-  color: #fff !important;
-  font-family: var(--bs-body-font-family);
-  font-size: clamp(2.5rem, 6vw, 5.2rem);
-  font-weight: 750;
-  line-height: 0.98;
-  letter-spacing: -0.065em;
-  text-align: left !important;
-}
-
-.iasi-product-kicker {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  opacity: 0.72;
-}
-
-.iasi-product-lead {
-  max-width: 48rem;
-  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.84);
-}
-
-.iasi-product-actions,
-.iasi-product-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.iasi-product-actions {
-  margin-top: 2rem;
-}
-
-.iasi-product-actions p,
-.iasi-product-tags p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  margin: 0;
-}
-
-.iasi-product-action {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 0.7rem;
-  color: #fff;
-  font-weight: 650;
-  text-decoration: none;
-  transition: transform 160ms ease, background-color 160ms ease;
-}
-
-.iasi-product-action:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-}
-
-.iasi-product-action-primary {
-  border-color: #fff;
-  background: #fff;
-  color: var(--iasi-artifact-accent);
-}
-
-.iasi-product-action-primary:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--iasi-artifact-accent);
-}
-
-.iasi-product-tags {
-  margin-top: 2.5rem;
-}
-
-.iasi-product-tags span {
-  padding: 0.32rem 0.62rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  font-size: 0.75rem;
-  font-weight: 650;
-}
-
-.iasi-product-workflow {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin: 1.5rem 0 3rem;
-  border-top: 1px solid var(--iasi-border);
-}
-
-.iasi-product-workflow-step {
-  padding: 1.25rem 1rem 0;
-  border-top: 0.22rem solid var(--iasi-artifact-accent);
-  transform: translateY(-1px);
-}
-
-.iasi-product-workflow-step > p:first-child,
-.iasi-product-workflow-step > span {
-  color: var(--iasi-artifact-accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-
-.iasi-product-workflow-step h3 {
-  margin: 0.7rem 0 0.45rem;
-  font-size: 1.1rem;
-}
-
-.iasi-product-workflow-step p:last-child {
-  margin: 0;
-  padding: 0 !important;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  opacity: 0.72;
-}
-
-.iasi-product-split {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
-  margin: 1.5rem 0;
-}
-
-.iasi-product-operation {
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  border-radius: 1.35rem;
-  background: color-mix(in srgb, var(--bs-body-bg) 96%, var(--iasi-artifact-accent));
-  box-shadow: 0 14px 38px rgba(15, 23, 42, 0.07);
-}
-
-.iasi-product-operation-number {
-  color: var(--iasi-artifact-accent);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-}
-
-.iasi-product-operation h3 {
-  margin: 0.65rem 0;
-  font-size: 1.65rem;
-}
-
-.iasi-product-operation p {
-  padding: 0 !important;
-}
-
-.iasi-product-operation pre {
-  margin-bottom: 0;
-  border: 0;
-}
-
-.iasi-subproducts-banner {
-  display: block;
-  width: 100%;
-  margin: clamp(3rem, 7vw, 6rem) 0 0;
-  border-radius: clamp(1rem, 2vw, 1.6rem);
-}
-
 @media (max-width: 760px) {
   .iasi-hero {
     padding-top: 4rem;
@@ -685,22 +433,6 @@ main.content {
 
   .iasi-artifact-hero {
     padding-top: 4rem;
-  }
-
-  .iasi-product-workflow {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    border-top: 0;
-  }
-
-  .iasi-product-workflow-step {
-    border-top: 0;
-    border-left: 0.22rem solid var(--iasi-artifact-accent);
-    transform: none;
-  }
-
-  .iasi-product-split {
-    grid-template-columns: 1fr;
   }
 }
 

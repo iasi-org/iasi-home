@@ -5,6 +5,7 @@ website:
 
   navbar:
     title: IASI
+    pinned: true
 
     left:
       - text: "Libros"
@@ -20,13 +21,13 @@ website:
       - text: "Subproductos"
         menu:
           - text: "Todos"
-            href: pages/products/index.qmd
+            href: pages/subproducts/index.qmd
           - text: "Herramientas"
-            href: pages/products/index.qmd#herramientas
+            href: pages/status/to-be-done.qmd
           - text: "Extensiones"
-            href: pages/products/index.qmd#extensiones
+            href: pages/status/to-be-done.qmd
           - text: "Servidores MCP"
-            href: pages/products/index.qmd#servidores-mcp
+            href: pages/status/to-be-done.qmd
       - text: "Artefactos"
         menu:
           - text: "Todos"
@@ -38,11 +39,11 @@ website:
       - text: "Manuales"
         menu:
           - text: "Todos"
-            href: manuals.qmd
+            href: pages/manuals/index.qmd
           - text: "User Guides"
-            href: manuals/user-guides.qmd
+            href: pages/manuals/user-guides.qmd
           - text: "Technical Guides"
-            href: manuals/technical-guides.qmd
+            href: pages/manuals/technical-guides.qmd
           - text: "Desarrollo del ecosistema"
             href: pages/status/under-construction.html
       - text: "Viaje"

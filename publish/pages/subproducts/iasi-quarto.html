@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Subproductos · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>IASI Quarto · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,11 +23,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -38,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-80ac265fe481f7145263c70f50e9c7fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-12f212de80485892e74d24ea52ea2c65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -164,19 +198,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-subproductos">    
         <li>
-    <a class="dropdown-item" href="../../pages/products/index.html">
+    <a class="dropdown-item" href="../../pages/subproducts/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/index.html#herramientas">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Herramientas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/index.html#extensiones">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Extensiones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/index.html#servidores-mcp">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Servidores MCP</span></a>
   </li>  
     </ul>
@@ -206,15 +240,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-manuales">    
         <li>
-    <a class="dropdown-item" href="../../manuals.html">
+    <a class="dropdown-item" href="../../pages/manuals/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../manuals/user-guides.html">
+    <a class="dropdown-item" href="../../pages/manuals/user-guides.html">
  <span class="dropdown-text">User Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../manuals/technical-guides.html">
+    <a class="dropdown-item" href="../../pages/manuals/technical-guides.html">
  <span class="dropdown-text">Technical Guides</span></a>
   </li>  
         <li>
@@ -277,67 +311,139 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="subproductos" class="level1 iasi-page-heading">
-<h1>Subproductos</h1>
-<div class="iasi-epigraph">
-<p><em>Soluciones reutilizables construidas dentro del ecosistema IASI.</em></p>
+<div class="iasi-artifact-page iasi-artifact-publish">
+<div class="iasi-artifact-subnav">
+<p><a class="iasi-artifact-subnav-brand" href="index.html">IASI Quarto</a> <a href="#overview">Qué aporta</a> <a href="#workflow">Workflow</a> <a href="#build-publish">Construir y publicar</a> <a href="#resources">Manuales</a> <a href="https://github.com/iasi-org/iasi_quarto">Repository</a></p>
+</div>
+<div class="iasi-artifact-content">
+<div class="iasi-product-hero">
+<div class="iasi-product-kicker">
+<p>HERRAMIENTA DE PUBLICACIÓN</p>
+</div>
+<section id="publicaciones-quarto-con-un-proceso-en-el-que-confiar" class="level1">
+<h1>Publicaciones Quarto, con un proceso en el que confiar</h1>
+<div class="iasi-product-lead">
+<p>IASI Quarto convierte la construcción y publicación de documentos Quarto en un proceso <strong>explícito, verificable y repetible</strong>, desde un proyecto individual hasta un repositorio con varios manuales.</p>
+</div>
+<div class="iasi-product-actions">
+<p><a class="iasi-product-action iasi-product-action-primary" href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&amp;title=iasi.quarto User Guide">Abrir User Guide</a> <a class="iasi-product-action" href="https://github.com/iasi-org/iasi_quarto">Ver repositorio ↗</a></p>
+</div>
+<div class="iasi-product-tags">
+<p><span>HTML</span><span>PDF</span><span>Multiproyecto</span><span>Quarto nativo</span></p>
 </div>
 </section>
-<div class="iasi-document">
-<div class="iasi-catalog-intro">
-<p>Los subproductos IASI tienen identidad y ciclo de vida propios. Se organizan en herramientas, extensiones para Quarto y servidores MCP. Los elementos internos que sostienen el trabajo del ecosistema se recogen por separado como artefactos.</p>
 </div>
-<section id="herramientas" class="level2">
-<h2 class="anchored" data-anchor-id="herramientas">Herramientas</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Qué aporta</h2>
 <div class="iasi-grid">
-<div id="iasi-quarto" class="iasi-card iasi-card-publish">
+<div class="iasi-card iasi-card-publish">
+<p><strong>ORGANIZAR</strong></p>
+<section id="una-estructura-predecible" class="level3">
+<h3 class="anchored" data-anchor-id="una-estructura-predecible">Una estructura predecible</h3>
+<p>Reconoce publicaciones individuales y repositorios con varios proyectos sin convertirlos en un único libro.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-publish">
+<p><strong>COMPROBAR</strong></p>
+<section id="errores-antes-del-render" class="level3">
+<h3 class="anchored" data-anchor-id="errores-antes-del-render">Errores antes del render</h3>
+<p>Detecta configuraciones y estructuras incoherentes antes de iniciar una construcción costosa.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-publish">
 <p><strong>PUBLICAR</strong></p>
-<section id="iasi-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-quarto"><a href="../../pages/products/iasi-quarto.html">IASI Quarto</a></h3>
-<p>Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.</p>
+<section id="un-destino-listo-para-desplegar" class="level3">
+<h3 class="anchored" data-anchor-id="un-destino-listo-para-desplegar">Un destino listo para desplegar</h3>
+<p>Reúne HTML, PDF y recursos en <code>publish/</code> con una organización estable para GitHub Pages.</p>
 </section>
 </div>
 </div>
 </section>
-<section id="extensiones" class="level2">
-<h2 class="anchored" data-anchor-id="extensiones">Extensiones</h2>
-<p>Las extensiones actuales se desarrollan y distribuyen desde <a href="../../pages/products/iasi-lua.html">IASI Lua</a>, su plataforma común.</p>
-<div class="iasi-grid">
-<div id="iasi-plantuml" class="iasi-card iasi-card-extend">
-<p><strong>DIAGRAMAR</strong></p>
-<section id="iasi-plantuml" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-plantuml"><a href="../../pages/products/iasi-lua.html#plantuml">IASI PlantUML</a></h3>
-<p>Diagramas como código integrados en documentos Quarto mediante <code>iasi-plantuml</code>.</p>
+<section id="workflow" class="level2">
+<h2 class="anchored" data-anchor-id="workflow">Un workflow visible</h2>
+<p>Cada etapa tiene una responsabilidad clara. Se puede entender qué ha ocurrido y detener el proceso antes de publicar un resultado incorrecto.</p>
+<div class="iasi-product-workflow">
+<div class="iasi-product-workflow-step">
+<p><span>01</span></p>
+<section id="descubrir" class="level3">
+<h3 class="anchored" data-anchor-id="descubrir">Descubrir</h3>
+<p>Localiza las publicaciones disponibles.</p>
 </section>
 </div>
-<div id="iasi-shiny" class="iasi-card iasi-card-extend">
-<p><strong>INTERACTUAR</strong></p>
-<section id="iasi-shiny" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-shiny"><a href="../../pages/products/iasi-lua.html#shinylive">IASI Shiny</a></h3>
-<p>Aplicaciones Shinylive de R ejecutadas en el navegador mediante <code>iasi-shiny</code> y webR.</p>
+<div class="iasi-product-workflow-step">
+<p><span>02</span></p>
+<section id="comprobar" class="level3">
+<h3 class="anchored" data-anchor-id="comprobar">Comprobar</h3>
+<p>Valida su configuración y estructura.</p>
 </section>
 </div>
-<div id="iasi-graphics" class="iasi-card iasi-card-think">
-<p><strong>PRÓXIMAMENTE</strong></p>
-<section id="iasi-graphics" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-graphics"><a href="../../pages/status/to-be-done.html">IASI Graphics</a></h3>
-<p>Recursos gráficos reutilizables para documentos y publicaciones del ecosistema.</p>
+<div class="iasi-product-workflow-step">
+<p><span>03</span></p>
+<section id="preparar" class="level3">
+<h3 class="anchored" data-anchor-id="preparar">Preparar</h3>
+<p>Genera los archivos derivados necesarios.</p>
+</section>
+</div>
+<div class="iasi-product-workflow-step">
+<p><span>04</span></p>
+<section id="construir" class="level3">
+<h3 class="anchored" data-anchor-id="construir">Construir</h3>
+<p>Delega en Quarto el renderizado final.</p>
+</section>
+</div>
+<div class="iasi-product-workflow-step">
+<p><span>05</span></p>
+<section id="publicar" class="level3">
+<h3 class="anchored" data-anchor-id="publicar">Publicar</h3>
+<p>Ensambla el contenido desplegable.</p>
 </section>
 </div>
 </div>
 </section>
-<section id="servidores-mcp" class="level2">
-<h2 class="anchored" data-anchor-id="servidores-mcp">Servidores MCP</h2>
-<div class="iasi-grid">
-<div class="iasi-card iasi-card-think">
-<p><strong>PRÓXIMAMENTE</strong></p>
-<section id="servidores-mcp-1" class="level3">
-<h3 class="anchored" data-anchor-id="servidores-mcp-1"><a href="../../pages/status/to-be-done.html">Servidores MCP</a></h3>
-<p>Esta familia recogerá los servidores MCP publicados por IASI cuando estén disponibles.</p>
+<section id="build-publish" class="level2">
+<h2 class="anchored" data-anchor-id="build-publish">Construir no es publicar</h2>
+<div class="iasi-product-split">
+<div class="iasi-product-operation">
+<div class="iasi-product-operation-number">
+<p>01</p>
+</div>
+<section id="construir-1" class="level3">
+<h3 class="anchored" data-anchor-id="construir-1">Construir</h3>
+<p>Lee las fuentes locales, comprueba el proyecto y genera los formatos configurados en <code>_outputs/</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>iasi.quarto<span class="sc">::</span><span class="fu">build</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</div>
+<div class="iasi-product-operation">
+<div class="iasi-product-operation-number">
+<p>02</p>
+</div>
+<section id="publicar-1" class="level3">
+<h3 class="anchored" data-anchor-id="publicar-1">Publicar</h3>
+<p>Toma los resultados ya construidos y prepara en <code>publish/</code> el contenido que se desplegará.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>iasi.quarto<span class="sc">::</span><span class="fu">publish</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </div>
 </div>
+<p>Separar ambas operaciones permite revisar el resultado antes de convertirlo en la publicación que verá el usuario.</p>
 </section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Manuales y código</h2>
+<div class="iasi-artifact-docs">
+<section id="user-guide" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="user-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&amp;title=iasi.quarto User Guide">User Guide</a></h3>
+<p>Conceptos, configuración, comandos y workflow recomendado para utilizar IASI Quarto.</p>
+</section>
+<section id="technical-guide" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="technical-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&amp;title=iasi.quarto Technical Guide">Technical Guide</a></h3>
+<p>Arquitectura, estrategias de publicación, mantenimiento y próximos pasos.</p>
+</section>
+<section id="repository" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="repository"><a href="https://github.com/iasi-org/iasi_quarto">Repository</a></h3>
+<p>Código fuente, pruebas y evolución pública del paquete.</p>
+</section>
+</div>
+</section>
+</div>
 </div>
 
 

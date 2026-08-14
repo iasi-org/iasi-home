@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>User Guides · Manuales · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>iasi.lua · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,22 +23,56 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-80ac265fe481f7145263c70f50e9c7fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-12f212de80485892e74d24ea52ea2c65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -121,12 +155,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <div id="quarto-announcement" data-announcement-id="82e687b0055c287857a448af1ba1d6e3" class="alert alert-light hidden"><div class="quarto-announcement-content">
-<p><img src="..\pages/resources/images/ants.png" class="iasi-ants-image img-fluid"></p>
+<p><img src="../..\pages/resources/images/ants.png" class="iasi-ants-image img-fluid"></p>
 </div></div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">IASI</span>
     </a>
   </div>
@@ -141,19 +175,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-libros">    
         <li>
-    <a class="dropdown-item" href="../books.html">
+    <a class="dropdown-item" href="../../books.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&amp;title=IASI I">
+    <a class="dropdown-item" href="../../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&amp;title=IASI I">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">IASI II</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">IASI III</span></a>
   </li>  
     </ul>
@@ -164,19 +198,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-subproductos">    
         <li>
-    <a class="dropdown-item" href="../pages/products/index.html">
+    <a class="dropdown-item" href="../../pages/subproducts/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/products/index.html#herramientas">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Herramientas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/products/index.html#extensiones">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Extensiones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/products/index.html#servidores-mcp">
+    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
  <span class="dropdown-text">Servidores MCP</span></a>
   </li>  
     </ul>
@@ -187,15 +221,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-artefactos">    
         <li>
-    <a class="dropdown-item" href="../pages/artifacts/index.html">
+    <a class="dropdown-item" href="../../pages/artifacts/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/artifacts/iasi-tools-dev.html">
+    <a class="dropdown-item" href="../../pages/artifacts/iasi-tools-dev.html">
  <span class="dropdown-text">IASI Tools Dev</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/artifacts/iasi-rstudio.html">
+    <a class="dropdown-item" href="../../pages/artifacts/iasi-rstudio.html">
  <span class="dropdown-text">IASI RStudio</span></a>
   </li>  
     </ul>
@@ -206,19 +240,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-manuales">    
         <li>
-    <a class="dropdown-item" href="../manuals.html">
+    <a class="dropdown-item" href="../../pages/manuals/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../manuals/user-guides.html">
+    <a class="dropdown-item" href="../../pages/manuals/user-guides.html">
  <span class="dropdown-text">User Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../manuals/technical-guides.html">
+    <a class="dropdown-item" href="../../pages/manuals/technical-guides.html">
  <span class="dropdown-text">Technical Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/status/under-construction.html">
+    <a class="dropdown-item" href="../../pages/status/under-construction.html">
  <span class="dropdown-text">Desarrollo del ecosistema</span></a>
   </li>  
     </ul>
@@ -229,38 +263,38 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-viaje">    
         <li>
-    <a class="dropdown-item" href="../pages/status/under-construction.html">
+    <a class="dropdown-item" href="../../pages/status/under-construction.html">
  <span class="dropdown-text">Decisiones de ingeniería</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/status/under-construction.html">
+    <a class="dropdown-item" href="../../pages/status/under-construction.html">
  <span class="dropdown-text">Historia del viaje</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../principles.html"> 
+    <a class="nav-link" href="../../principles.html"> 
 <span class="menu-text">Principios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/common/manifesto.html"> 
+    <a class="nav-link" href="../../pages/common/manifesto.html"> 
 <span class="menu-text">Manifiesto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">ES</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/en/index.html"> 
+    <a class="nav-link" href="../../pages/en/index.html"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="../pages/common/manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
-    <a href="../pages/common/contact.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
+    <a href="../../pages/common/manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
+    <a href="../../pages/common/contact.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
     <a href="https://github.com/iasi-org" title="" class="quarto-navigation-tool px-1" aria-label="Explore IASI on GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -277,37 +311,114 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="user-guides" class="level1 iasi-page-heading">
-<h1>User Guides</h1>
-</section>
-<div class="iasi-document">
-<div class="iasi-catalog-intro">
-<p>Manuales para instalar, configurar y utilizar los productos IASI.</p>
-<p>Los User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.</p>
+<div class="iasi-artifact-page iasi-artifact-publish">
+<div class="iasi-artifact-subnav">
+<p><a class="iasi-artifact-subnav-brand" href="../../pages/subproducts/index.html">iasi.lua</a> <a href="#plantuml">IASI PlantUML</a> <a href="#shinylive">IASI Shiny</a> <a href="../../pages/status/to-be-done.html">IASI Graphics</a></p>
 </div>
+<section id="iasi.lua-extensiones-reutilizables-para-quarto" class="level1 iasi-artifact-content">
+<h1>iasi.lua: Extensiones reutilizables para Quarto</h1>
+<p>Una plataforma común para <strong>desarrollar, construir y distribuir</strong> extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><code>iasi.lua</code> mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es <code>iasi-lua</code>.</p>
 <div class="iasi-grid">
-<div class="iasi-card iasi-card-publish">
-<p><strong>USER GUIDE</strong></p>
-<section id="iasi.quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.quarto"><a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&amp;title=iasi.quarto User Guide">iasi.quarto</a></h3>
-<p>Construcción y publicación reproducible de proyectos Quarto.</p>
+<div class="iasi-card iasi-card-extend">
+<p><strong>DIAGRAMAR</strong></p>
+<section id="iasi-plantuml" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-plantuml"><a href="#plantuml">IASI PlantUML</a></h3>
+<p>Convierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.</p>
 </section>
 </div>
 <div class="iasi-card iasi-card-extend">
-<p><strong>USER GUIDE</strong></p>
-<section id="iasi.lua" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.lua"><a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">iasi.lua</a></h3>
-<p>Instalación, configuración y uso de extensiones Lua.</p>
+<p><strong>INTERACTUAR</strong></p>
+<section id="iasi-shiny" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-shiny"><a href="#shinylive">IASI Shiny</a></h3>
+<p>Incorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.</p>
 </section>
 </div>
-<div class="iasi-card iasi-card-publish">
-<p><strong>USER GUIDE</strong></p>
-<section id="iasi-tools-dev" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-tools-dev"><a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&amp;title=iasi-tools-dev User Guide">iasi-tools-dev</a></h3>
-<p>Instalación, comandos y flujos de trabajo de <code>iasi-dev</code>.</p>
+<div class="iasi-card iasi-card-think">
+<p><strong>PRÓXIMAMENTE</strong></p>
+<section id="iasi-graphics" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-graphics"><a href="../../pages/status/to-be-done.html">IASI Graphics</a></h3>
+<p>Incorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.</p>
 </section>
 </div>
 </div>
+<p><img src="iasi-lua_files\mediabag\plantuml/24de6755c450e0c0349b71e5b11482414a64523f.png" class="img-fluid" style="width:82.0%"></p>
+<p><code>_extensions/</code> es un artefacto generado: se construye desde la fuente y no se edita manualmente.</p>
+</section>
+<section id="plantuml" class="level2">
+<h2 class="anchored" data-anchor-id="plantuml">IASI PlantUML</h2>
+<p>La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.</p>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-extend">
+<p><strong>ESCRIBIR</strong></p>
+<section id="diagrama-como-código" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-como-código">Diagrama como código</h3>
+<p>El documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-extend">
+<p><strong>RENDERIZAR</strong></p>
+<section id="imagen-integrada" class="level3">
+<h3 class="anchored" data-anchor-id="imagen-integrada">Imagen integrada</h3>
+<p>El filtro solicita la imagen al servidor PlantUML y la incorpora al <em>mediabag</em> de Pandoc durante el renderizado.</p>
+</section>
+</div>
+</div>
+<p>La extensión se activa explícitamente en el proyecto:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> iasi-plantuml</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="shinylive" class="level2">
+<h2 class="anchored" data-anchor-id="shinylive">IASI Shiny</h2>
+<p>La extensión <code>iasi-shiny</code> incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.</p>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-extend">
+<p><strong>CREAR</strong></p>
+<section id="aplicación-interactiva" class="level3">
+<h3 class="anchored" data-anchor-id="aplicación-interactiva">Aplicación interactiva</h3>
+<p>El documento define la aplicación en un bloque <code>{shinylive-r}</code> junto al contenido que la explica.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-extend">
+<p><strong>PUBLICAR</strong></p>
+<section id="ejecución-en-el-navegador" class="level3">
+<h3 class="anchored" data-anchor-id="ejecución-en-el-navegador">Ejecución en el navegador</h3>
+<p>Shinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.</p>
+</section>
+</div>
+</div>
+<p>La extensión se activa explícitamente en el proyecto:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> iasi-shiny</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Recursos</h2>
+<div class="iasi-artifact-docs">
+<section id="user-guide" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="user-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">User Guide</a></h3>
+<p>Instalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.</p>
+</section>
+<section id="technical-guide" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="technical-guide"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">Technical Guide</a></h3>
+<p>Arquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.</p>
+</section>
+<section id="repository" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="repository"><a href="https://github.com/iasi-org/iasi-lua">Repository</a></h3>
+<p>Código fuente, extensiones generadas, pruebas y scripts de construcción.</p>
+</section>
+<section id="architecture" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="architecture"><a href="https://github.com/iasi-org/iasi-lua/blob/main/docs/architecture.md">Architecture</a></h3>
+<p>Responsabilidades del núcleo, estructura de las extensiones y modelo de distribución.</p>
+</section>
+<section id="adding-an-extension" class="level3 iasi-artifact-doc">
+<h3 class="anchored" data-anchor-id="adding-an-extension"><a href="https://github.com/iasi-org/iasi-lua/blob/main/docs/adding-an-extension.md">Adding an extension</a></h3>
+<p>Guía para incorporar una nueva extensión a la plataforma.</p>
+</section>
+</div>
+</section>
+</section>
 </div>
 
 
@@ -731,5 +842,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

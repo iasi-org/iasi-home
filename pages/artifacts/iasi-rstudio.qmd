@@ -3,18 +3,31 @@ pagetitle: "iasi-rstudio · IASI"
 lang: es
 ---
 
-::: {.iasi-artifact-page .iasi-artifact-publish}
+::: {.iasi-artifact-page .iasi-artifact-environment}
 ::: {.iasi-artifact-subnav}
-<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-rstudio</a>
+<a class="iasi-artifact-subnav-brand" href="index.html">iasi-rstudio</a>
 [Overview](#overview)
-<a href="/iasi-home/pages/status/to-be-done.html">Documentación prevista</a>
+<a href="../status/to-be-done.html">Documentación prevista</a>
 [Repository](https://github.com/iasi-org/iasi-rstudio)
 :::
 
 ::: {.iasi-artifact-content}
+::: {.iasi-product-hero}
+::: {.iasi-product-kicker}
+ENTORNO DE DESARROLLO
+:::
+
 # IASI RStudio: El ecosistema IASI dentro de RStudio
 
+::: {.iasi-product-lead}
 Un addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.
+:::
+
+::: {.iasi-product-actions}
+<a class="iasi-product-action iasi-product-action-primary" href="../status/to-be-done.html">Documentación prevista</a>
+<a class="iasi-product-action" href="https://github.com/iasi-org/iasi-rstudio">Ver repositorio ↗</a>
+:::
+:::
 
 ## Overview {#overview}
 
@@ -24,7 +37,7 @@ Un addin que acerca las operaciones y herramientas de IASI al entorno habitual d
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### <a href="/iasi-home/pages/status/to-be-done.html">Documentación prevista</a>
+### <a href="../status/to-be-done.html">Documentación prevista</a>
 
 La documentación de instalación, configuración y uso del addin todavía no está publicada.
 :::
