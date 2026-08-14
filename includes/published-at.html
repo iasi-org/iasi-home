@@ -1,0 +1,38 @@
+<script>
+(() => {
+  window.addEventListener("DOMContentLoaded", async () => {
+    const target = document.getElementById("iasi-published-at");
+    const css = document.querySelector(
+      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
+    );
+
+    if (!target || !css) return;
+
+    const marker = css.href.replace(
+      /site_libs\/bootstrap\/[^/]+$/,
+      ".publish"
+    );
+
+    try {
+      const response = await fetch(marker, { cache: "no-store" });
+      if (!response.ok) return;
+
+      const publishedAt = new Date((await response.text()).trim());
+      if (Number.isNaN(publishedAt.getTime())) return;
+
+      const language = document.documentElement.lang || "es";
+      const label = language.startsWith("en")
+        ? "Last published"
+        : "Última publicación";
+      const value = new Intl.DateTimeFormat(language, {
+        dateStyle: "long",
+        timeStyle: "short"
+      }).format(publishedAt);
+
+      target.textContent = `${label}: ${value}`;
+    } catch (_) {
+      // The marker does not exist in a plain local render; keep the footer empty.
+    }
+  });
+})();
+</script>

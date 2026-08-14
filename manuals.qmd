@@ -25,7 +25,7 @@ Los manuales documentan el uso y la arquitectura de los artefactos IASI. El cat�
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### [iasi.quarto](/iasi-quarto-docs/user-guide/)
+### <a href="/iasi-quarto-docs/user-guide/">iasi.quarto</a>
 
 Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
 :::
@@ -33,7 +33,7 @@ Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
 ::: {.iasi-card .iasi-card-extend}
 **USER GUIDE**
 
-### [iasi-lua](/iasi-lua-docs/user-guide/)
+### <a href="/iasi-lua-docs/user-guide/">iasi-lua</a>
 
 Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
 :::
@@ -47,7 +47,7 @@ Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### [iasi.quarto](/iasi-quarto-docs/technical-guide/)
+### <a href="/iasi-quarto-docs/technical-guide/">iasi.quarto</a>
 
 Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
 :::
@@ -55,7 +55,7 @@ Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
 ::: {.iasi-card .iasi-card-extend}
 **TECHNICAL GUIDE**
 
-### [iasi-lua](/iasi-lua-docs/technical-guide/)
+### <a href="/iasi-lua-docs/technical-guide/">iasi-lua</a>
 
 Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.
 :::

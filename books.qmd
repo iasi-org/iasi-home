@@ -23,7 +23,7 @@ Los libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su pr
 ::: {#iasi-i .iasi-card .iasi-card-think .iasi-card-book}
 **LIBRO · VOLUMEN I**
 
-### [iasi-book-I](status/to-be-done.html)
+### [iasi-book-I](../iasi-book-I/)
 
 Primer volumen de la colección IASI y repositorio independiente de publicación.
 :::

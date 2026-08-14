@@ -1,4 +1,8 @@
 website:
+  page-footer:
+    left: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
+    right: '<span id="iasi-published-at"></span>'
+
   navbar:
     title: IASI
 
@@ -8,7 +12,7 @@ website:
           - text: "Todos"
             href: books.qmd
           - text: "IASI I"
-            href: iasi-book-I/
+            href: ../iasi-book-I/
           - text: "IASI II"
             href: status/to-be-done.html
           - text: "IASI III"
@@ -82,3 +86,4 @@ format:
     smooth-scroll: true
     include-in-header:
       - includes/language.html
+      - includes/published-at.html

@@ -23,7 +23,7 @@ Los Technical Guides describen el diseño interno y proporcionan la base necesar
 ::: {.iasi-card .iasi-card-publish}
 **TECHNICAL GUIDE**
 
-### [iasi.quarto](/iasi-quarto-docs/technical-guide/)
+### <a href="/iasi-quarto-docs/technical-guide/">iasi.quarto</a>
 
 Arquitectura y estrategias del motor de publicación.
 :::
@@ -31,7 +31,7 @@ Arquitectura y estrategias del motor de publicación.
 ::: {.iasi-card .iasi-card-extend}
 **TECHNICAL GUIDE**
 
-### [iasi-lua](/iasi-lua-docs/technical-guide/)
+### <a href="/iasi-lua-docs/technical-guide/">iasi-lua</a>
 
 Arquitectura y desarrollo de extensiones Lua.
 :::
