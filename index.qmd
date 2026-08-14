@@ -52,5 +52,5 @@ IASI empieza aquí. **Lo que llegue a ser dependerá también de quienes quieran
 
 
 ::: {.iasi-ai-banner}
-![](resources/images/ai-banner.png){.iasi-ai-banner-image}
+![](pages/resources/images/ai-banner.png){.iasi-ai-banner-image}
 :::

@@ -10,7 +10,7 @@ filter-options:
 
 ::: {.iasi-artifact-page .iasi-artifact-publish}
 ::: {.iasi-artifact-subnav}
-<a class="iasi-artifact-subnav-brand" href="../artifacts.qmd">iasi-lua</a>
+<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-lua</a>
 [Overview](#overview)
 [PlantUML](#plantuml)
 <a href="/iasi-lua-docs/user-guide/">User Guide</a>

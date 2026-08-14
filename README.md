@@ -8,7 +8,7 @@ Página de entrada del ecosistema IASI.
 - `_quarto-html.yml`: configuración específica del formato HTML.
 - `iasi.yml`: configuración específica de IASI Quarto.
 - `index.qmd`: portada en castellano.
-- `en/index.qmd`: portada en inglés.
+- `pages/en/index.qmd`: portada en inglés.
 - `styles.css`: estilos comunes.
 
 ## Desarrollo local

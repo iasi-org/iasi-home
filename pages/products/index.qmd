@@ -23,7 +23,7 @@ Los productos IASI resuelven capacidades concretas y pueden utilizarse y evoluci
 ::: {#iasi-quarto .iasi-card .iasi-card-publish}
 **PUBLICAR**
 
-### [iasi-quarto](artifacts/iasi-quarto.qmd)
+### [iasi-quarto](iasi-quarto.qmd)
 
 Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
 :::
@@ -31,7 +31,7 @@ Infraestructura reproducible para descubrir, validar, construir y publicar proye
 ::: {#iasi-lua .iasi-card .iasi-card-extend}
 **EXTENDER**
 
-### [iasi-lua](artifacts/iasi-lua.qmd)
+### [iasi-lua](iasi-lua.qmd)
 
 Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.
 :::
@@ -39,7 +39,7 @@ Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentr
 ::: {#iasi-graphics .iasi-card .iasi-card-think}
 **COMUNICAR**
 
-### [iasi-graphics](status/under-construction.html)
+### [iasi-graphics](../status/to-be-done.qmd)
 
 Recursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI.
 :::

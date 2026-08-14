@@ -23,7 +23,7 @@ Los artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el e
 ::: {#iasi-tools-dev .iasi-card .iasi-card-publish}
 **OPERAR**
 
-### [iasi-tools-dev](status/under-construction.html)
+### [iasi-tools-dev](iasi-tools-dev.qmd)
 
 Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.
 :::
@@ -31,7 +31,7 @@ Herramientas y comandos de soporte que simplifican las operaciones habituales de
 ::: {#iasi-rstudio .iasi-card .iasi-card-environment}
 **DESARROLLAR**
 
-### [iasi-rstudio](status/under-construction.html)
+### [iasi-rstudio](iasi-rstudio.qmd)
 
 Entorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio.
 :::

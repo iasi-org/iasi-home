@@ -1,0 +1,39 @@
+---
+pagetitle: "iasi-rstudio · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-rstudio</a>
+[Overview](#overview)
+<a href="/iasi-rstudio-docs/">Documentación</a>
+[Repository](https://github.com/iasi-org/iasi-rstudio)
+:::
+
+::: {.iasi-artifact-content}
+# IASI RStudio: El ecosistema IASI dentro de RStudio
+
+Un addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.
+
+## Overview {#overview}
+
+`iasi-rstudio` proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.
+
+## Recursos {#resources}
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### <a href="/iasi-rstudio-docs/">Documentación</a>
+
+Instalación, configuración y uso del addin para RStudio.
+:::
+
+::: {.iasi-artifact-doc}
+### [Repository](https://github.com/iasi-org/iasi-rstudio)
+
+Código fuente y evolución pública de la integración.
+:::
+:::
+:::
+:::

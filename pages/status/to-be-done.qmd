@@ -1,5 +1,5 @@
 ---
-pagetitle: "Under construction · IASI"
+pagetitle: "To be done · IASI"
 title-block-style: none
 ---
 ::::: {.iasi-status-page}
@@ -12,12 +12,12 @@ title-block-style: none
 IASI artifact
 :::
 
-# Under construction
+# To be done
 
-This artifact already has a place in the IASI ecosystem, but its public landing page is still being built.
+This artifact is planned, but its implementation and public documentation have not started yet.
 
 ::: {.iasi-status-actions}
-[← Back to IASI](../index.qmd)
+[← Back to IASI](../../index.qmd)
 :::
 
 ::::

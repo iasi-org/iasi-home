@@ -1,0 +1,68 @@
+---
+pagetitle: "iasi-tools-dev · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-tools-dev</a>
+[Overview](#overview)
+[Ciclo](#cycle)
+<a href="/iasi-tools-dev-docs/">Documentación</a>
+[Repository](https://github.com/iasi-org/iasi-tools-dev)
+:::
+
+::: {.iasi-artifact-content}
+# IASI Tools Dev: Operaciones coherentes para el ecosistema
+
+Una interfaz de línea de comandos para **construir, publicar, desplegar y mantener** los proyectos IASI de forma consistente.
+
+## Overview {#overview}
+
+`iasi-tools-dev` reúne en el comando `iasi-dev` las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.
+
+::: {.iasi-artifact-flow}
+::: {.iasi-artifact-step}
+### Build
+
+Construye los proyectos y valida sus resultados.
+:::
+
+::: {.iasi-artifact-step}
+### Publish
+
+Prepara los archivos que deben desplegarse.
+:::
+
+::: {.iasi-artifact-step}
+### Deploy
+
+Registra y sube la publicación; con `--full`, ejecuta el ciclo completo.
+:::
+:::
+
+## Ciclo de trabajo {#cycle}
+
+```text
+iasi-dev build [repositorio...]
+iasi-dev publish [repositorio...]
+iasi-dev deploy [-f|--full] [-m "mensaje"] [repositorio...]
+```
+
+## Recursos {#resources}
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### <a href="/iasi-tools-dev-docs/">Documentación</a>
+
+Instalación, comandos, opciones y flujos de trabajo de `iasi-dev`.
+:::
+
+::: {.iasi-artifact-doc}
+### [Repository](https://github.com/iasi-org/iasi-tools-dev)
+
+Código fuente y evolución pública de las herramientas de desarrollo.
+:::
+:::
+:::
+:::

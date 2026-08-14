@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _outputs/html
   resources:
-    - resources/**
+    - pages/resources/**
     - status/**
 
 profile:
@@ -14,7 +14,7 @@ website:
 
   announcement:
     dismissable: false
-    content: "![](/resources/images/ants.png){.iasi-ants-image}"
+    content: "![](/pages/resources/images/ants.png){.iasi-ants-image}"
     type: light
     position: above-navbar
 
@@ -31,7 +31,7 @@ website:
       - text: "ES"
         href: index.qmd
       - text: "EN"
-        href: en/index.qmd
+        href: pages/en/index.qmd
       - icon: github
         href: https://github.com/iasi-org
         aria-label: GitHub

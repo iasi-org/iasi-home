@@ -14,27 +14,27 @@ website:
           - text: "IASI I"
             href: ../iasi-book-I/
           - text: "IASI II"
-            href: status/to-be-done.html
+            href: pages/status/to-be-done.html
           - text: "IASI III"
-            href: status/to-be-done.html
+            href: pages/status/to-be-done.html
       - text: "Productos"
         menu:
           - text: "Todos"
-            href: products.qmd
+            href: pages/products/index.qmd
           - text: "IASI Quarto"
-            href: products.qmd#iasi-quarto
+            href: pages/products/iasi-quarto.qmd
           - text: "IASI Lua"
-            href: products.qmd#iasi-lua
+            href: pages/products/iasi-lua.qmd
           - text: "IASI Graphics"
-            href: products.qmd#iasi-graphics
+            href: pages/status/to-be-done.qmd
       - text: "Artefactos"
         menu:
           - text: "Todos"
-            href: artifacts.qmd
+            href: pages/artifacts/index.qmd
           - text: "IASI Tools Dev"
-            href: artifacts.qmd#iasi-tools-dev
+            href: pages/artifacts/iasi-tools-dev.qmd
           - text: "IASI RStudio"
-            href: artifacts.qmd#iasi-rstudio
+            href: pages/artifacts/iasi-rstudio.qmd
       - text: "Manuales"
         menu:
           - text: "Todos"
@@ -44,32 +44,32 @@ website:
           - text: "Technical Guides"
             href: manuals/technical-guides.qmd
           - text: "Desarrollo del ecosistema"
-            href: status/under-construction.html
+            href: pages/status/under-construction.html
       - text: "Viaje"
         menu:
           - text: "Decisiones de ingeniería"
-            href: status/under-construction.html
+            href: pages/status/under-construction.html
           - text: "Historia del viaje"
-            href: status/under-construction.html
+            href: pages/status/under-construction.html
       - text: "Principios"
         href: principles.qmd
       - text: "Manifiesto"
-        href: common/manifesto.qmd
+        href: pages/common/manifesto.qmd
 
     right:
       - text: "ES"
         href: index.qmd
         aria-label: "Español"
       - text: "EN"
-        href: en/index.qmd
+        href: pages/en/index.qmd
         aria-label: "English"
 
     tools:
       - icon: translate
-        href: common/manifesto-bilingual.qmd
+        href: pages/common/manifesto-bilingual.qmd
         aria-label: "Idioma / Language"
       - icon: envelope
-        href: common/contact.qmd
+        href: pages/common/contact.qmd
         aria-label: "Contact us"
       - icon: github
         href: https://github.com/iasi-org
@@ -79,8 +79,8 @@ format:
   html:
     theme:
       - cosmo
-      - resources/css/iasi.scss
-      - resources/css/home.scss
+      - pages/resources/css/iasi.scss
+      - pages/resources/css/home.scss
     toc: false
     page-layout: full
     smooth-scroll: true

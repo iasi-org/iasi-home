@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _outputs/html
   resources:
-    - resources/**
+    - pages/resources/**
 
 profile:
   default: html
@@ -14,6 +14,6 @@ website:
 
   announcement:
     dismissable: false
-    content: "![](/resources/images/ants.png){.iasi-ants-image}"
+    content: "![](/pages/resources/images/ants.png){.iasi-ants-image}"
     type: light
     position: above-navbar

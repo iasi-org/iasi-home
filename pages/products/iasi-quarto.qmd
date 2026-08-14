@@ -5,7 +5,7 @@ lang: es
 
 ::: {.iasi-artifact-page .iasi-artifact-publish}
 ::: {.iasi-artifact-subnav}
-<a class="iasi-artifact-subnav-brand" href="../artifacts.qmd">iasi.quarto</a>
+<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi.quarto</a>
 [Overview](#overview)
 [Publish](#publish)
 <a href="/iasi-quarto-docs/user-guide/">User Guide</a>

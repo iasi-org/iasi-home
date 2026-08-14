@@ -31,7 +31,7 @@ Primer volumen de la colección IASI y repositorio independiente de publicación
 ::: {#iasi-ii .iasi-card .iasi-card-think .iasi-card-book}
 **LIBRO · VOLUMEN II**
 
-### [iasi-book-II](status/to-be-done.html)
+### [iasi-book-II](pages/status/to-be-done.html)
 
 Segundo volumen de la colección IASI y repositorio independiente de publicación.
 :::
@@ -39,7 +39,7 @@ Segundo volumen de la colección IASI y repositorio independiente de publicació
 ::: {#iasi-iii .iasi-card .iasi-card-think .iasi-card-book}
 **LIBRO · VOLUMEN III**
 
-### [iasi-book-III](status/to-be-done.html)
+### [iasi-book-III](pages/status/to-be-done.html)
 
 Tercer volumen de la colección IASI y repositorio independiente de publicación.
 :::
