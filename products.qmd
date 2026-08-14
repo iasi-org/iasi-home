@@ -1,0 +1,49 @@
+---
+pagetitle: "Productos · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-page-heading}
+# Productos
+
+::: {.iasi-epigraph}
+*Soluciones reutilizables construidas dentro del ecosistema IASI.*
+:::
+:::
+
+::: {.iasi-document}
+
+::: {.iasi-catalog-intro}
+Los productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente.
+:::
+
+::: {.iasi-grid}
+
+::: {#iasi-quarto .iasi-card .iasi-card-publish}
+**PUBLICAR**
+
+### [iasi-quarto](artifacts/iasi-quarto.qmd)
+
+Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
+:::
+
+::: {#iasi-lua .iasi-card .iasi-card-extend}
+**EXTENDER**
+
+### [iasi-lua](artifacts/iasi-lua.qmd)
+
+Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.
+:::
+
+::: {#iasi-graphics .iasi-card .iasi-card-think}
+**COMUNICAR**
+
+### [iasi-graphics](status/under-construction.html)
+
+Recursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI.
+:::
+
+:::
+
+:::

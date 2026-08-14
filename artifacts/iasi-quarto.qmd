@@ -8,8 +8,8 @@ lang: es
 <a class="iasi-artifact-subnav-brand" href="../artifacts.qmd">iasi.quarto</a>
 [Overview](#overview)
 [Publish](#publish)
-[User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
-[Technical Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
+[User Guide](/iasi-quarto-docs/user-guide/)
+[Technical Guide](/iasi-quarto-docs/technical-guide/)
 [Repository](https://github.com/iasi-org/iasi_quarto)
 :::
 
@@ -87,13 +87,13 @@ Esta separación permite comprobar la construcción antes de preparar el resulta
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### [User Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/01-user-guide)
+### [User Guide](/iasi-quarto-docs/user-guide/)
 
 Instalación, configuración y uso de `iasi.quarto` para construir publicaciones y multiproyectos.
 :::
 
 ::: {.iasi-artifact-doc}
-### [Technical Guide](https://github.com/iasi-org/iasi_quarto/tree/main/quarto-docs/02-technical-guide)
+### [Technical Guide](/iasi-quarto-docs/technical-guide/)
 
 Arquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.
 :::

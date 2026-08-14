@@ -13,7 +13,7 @@ filter-options:
 <a class="iasi-artifact-subnav-brand" href="../artifacts.qmd">iasi-lua</a>
 [Overview](#overview)
 [PlantUML](#plantuml)
-[User Guide](https://github.com/iasi-org/iasi-lua-docs/tree/main/01-user-guide)
+[User Guide](/iasi-lua-docs/user-guide/)
 [Recursos](#resources)
 [Repository](https://github.com/iasi-org/iasi-lua)
 :::
@@ -116,7 +116,7 @@ filters:
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### [User Guide](https://github.com/iasi-org/iasi-lua-docs/tree/main/01-user-guide)
+### [User Guide](/iasi-lua-docs/user-guide/)
 
 Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.
 :::

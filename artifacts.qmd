@@ -15,34 +15,10 @@ title-block-style: none
 ::: {.iasi-document}
 
 ::: {.iasi-catalog-intro}
-Los artefactos son productos de ingeniería. Cada repositorio resuelve una responsabilidad concreta y puede utilizarse, probarse y evolucionar de forma independiente.
+Los artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.
 :::
 
 ::: {.iasi-grid}
-
-::: {.iasi-card .iasi-card-publish}
-**PUBLICAR**
-
-### [iasi-quarto](artifacts/iasi-quarto.qmd)
-
-Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
-:::
-
-::: {.iasi-card .iasi-card-extend}
-**EXTENDER**
-
-### [iasi-lua](artifacts/iasi-lua.qmd)
-
-Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.
-:::
-
-::: {.iasi-card .iasi-card-environment}
-**PREPARAR EL ENTORNO**
-
-### [iasi-infra](status/under-construction.html)
-
-Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina hasta una plataforma preparada para trabajar con IASI.
-:::
 
 ::: {#iasi-tools-dev .iasi-card .iasi-card-publish}
 **OPERAR**
@@ -52,20 +28,12 @@ Entorno de desarrollo aislado, reproducible y extensible que lleva una máquina 
 Herramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.
 :::
 
-::: {.iasi-card .iasi-card-think}
-**TRAZAR EL PROCESO**
+::: {#iasi-rstudio .iasi-card .iasi-card-environment}
+**DESARROLLAR**
 
-### [iasi-journey](status/under-construction.html)
+### [iasi-rstudio](status/under-construction.html)
 
-Registro del proceso real de trabajo: conversaciones, alternativas, discusión y evolución hasta llegar a una decisión o a un resultado.
-:::
-
-::: {.iasi-card .iasi-card-extend}
-**DECIDIR**
-
-### [iasi-adr](status/under-construction.html)
-
-Registro estructurado de decisiones de arquitectura: contexto, alternativas, decisión adoptada y consecuencias.
+Entorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio.
 :::
 
 :::

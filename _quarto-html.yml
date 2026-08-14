@@ -1,3 +1,76 @@
+website:
+  navbar:
+    title: IASI
+
+    left:
+      - text: "Libros"
+        menu:
+          - text: "Todos"
+            href: books.qmd
+          - text: "IASI I"
+            href: books.qmd#iasi-i
+          - text: "IASI II"
+            href: books.qmd#iasi-ii
+          - text: "IASI III"
+            href: books.qmd#iasi-iii
+      - text: "Productos"
+        menu:
+          - text: "Todos"
+            href: products.qmd
+          - text: "IASI Quarto"
+            href: products.qmd#iasi-quarto
+          - text: "IASI Lua"
+            href: products.qmd#iasi-lua
+          - text: "IASI Graphics"
+            href: products.qmd#iasi-graphics
+      - text: "Artefactos"
+        menu:
+          - text: "Todos"
+            href: artifacts.qmd
+          - text: "IASI Tools Dev"
+            href: artifacts.qmd#iasi-tools-dev
+          - text: "IASI RStudio"
+            href: artifacts.qmd#iasi-rstudio
+      - text: "Manuales"
+        menu:
+          - text: "Todos"
+            href: manuals.qmd
+          - text: "User Guides"
+            href: manuals/user-guides.qmd
+          - text: "Technical Guides"
+            href: manuals/technical-guides.qmd
+          - text: "Desarrollo del ecosistema"
+            href: status/under-construction.html
+      - text: "Viaje"
+        menu:
+          - text: "Decisiones de ingeniería"
+            href: status/under-construction.html
+          - text: "Historia del viaje"
+            href: status/under-construction.html
+      - text: "Principios"
+        href: principles.qmd
+      - text: "Manifiesto"
+        href: common/manifesto.qmd
+
+    right:
+      - text: "ES"
+        href: index.qmd
+        aria-label: "Español"
+      - text: "EN"
+        href: en/index.qmd
+        aria-label: "English"
+
+    tools:
+      - icon: translate
+        href: common/manifesto-bilingual.qmd
+        aria-label: "Idioma / Language"
+      - icon: envelope
+        href: common/contact.qmd
+        aria-label: "Contact us"
+      - icon: github
+        href: https://github.com/iasi-org
+        aria-label: "Explore IASI on GitHub"
+
 format:
   html:
     theme:
