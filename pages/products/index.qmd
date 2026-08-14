@@ -15,7 +15,7 @@ title-block-style: none
 ::: {.iasi-document}
 
 ::: {.iasi-catalog-intro}
-Los productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente.
+Los productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente. `IASI PlantUML` e `IASI Shiny` se construyen y distribuyen desde la plataforma común `iasi.lua`.
 :::
 
 ::: {.iasi-grid}
@@ -23,23 +23,31 @@ Los productos IASI resuelven capacidades concretas y pueden utilizarse y evoluci
 ::: {#iasi-quarto .iasi-card .iasi-card-publish}
 **PUBLICAR**
 
-### [iasi-quarto](iasi-quarto.qmd)
+### [iasi.quarto](iasi-quarto.qmd)
 
 Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
 :::
 
-::: {#iasi-lua .iasi-card .iasi-card-extend}
-**EXTENDER**
+::: {#iasi-plantuml .iasi-card .iasi-card-extend}
+**DIAGRAMAR**
 
-### [iasi-lua](iasi-lua.qmd)
+### [IASI PlantUML](iasi-lua.qmd#plantuml)
 
-Plataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.
+Diagramas como código integrados en documentos Quarto mediante la extensión `iasi-plantuml` de `iasi.lua`.
+:::
+
+::: {#iasi-shiny .iasi-card .iasi-card-extend}
+**INTERACTUAR**
+
+### [IASI Shiny](iasi-lua.qmd#shinylive)
+
+Aplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión `iasi-shiny` de `iasi.lua`.
 :::
 
 ::: {#iasi-graphics .iasi-card .iasi-card-think}
-**COMUNICAR**
+**PRÓXIMAMENTE**
 
-### [iasi-graphics](../status/to-be-done.qmd)
+### [IASI Graphics](../status/to-be-done.qmd)
 
 Recursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI.
 :::

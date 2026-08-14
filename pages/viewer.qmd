@@ -10,7 +10,7 @@ format:
 ::: {.iasi-doc-viewer aria-live="polite"}
 ::: {.iasi-doc-viewer-toolbar}
 <div>
-  <span class="iasi-doc-viewer-label">Documentación integrada</span>
+  <span class="iasi-doc-viewer-label">Contenido integrado</span>
   <strong id="iasi-doc-title">Cargando documentación…</strong>
 </div>
 

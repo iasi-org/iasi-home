@@ -29,7 +29,7 @@ Construcción y publicación reproducible de proyectos Quarto.
 ::: {.iasi-card .iasi-card-extend}
 **USER GUIDE**
 
-### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi-lua%20User%20Guide">iasi-lua</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi.lua%20User%20Guide">iasi.lua</a>
 
 Instalación, configuración y uso de extensiones Lua.
 :::

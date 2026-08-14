@@ -12,7 +12,7 @@ website:
           - text: "Todos"
             href: books.qmd
           - text: "IASI I"
-            href: ../iasi-book-I/
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&title=IASI%20I
           - text: "IASI II"
             href: pages/status/to-be-done.html
           - text: "IASI III"
@@ -21,12 +21,12 @@ website:
         menu:
           - text: "Todos"
             href: pages/products/index.qmd
-          - text: "IASI Quarto"
+          - text: "iasi.quarto"
             href: pages/products/iasi-quarto.qmd
-          - text: "IASI Lua"
-            href: pages/products/iasi-lua.qmd
-          - text: "IASI Graphics"
-            href: pages/status/to-be-done.qmd
+          - text: "IASI PlantUML"
+            href: pages/products/iasi-lua.qmd#plantuml
+          - text: "IASI Shiny"
+            href: pages/products/iasi-lua.qmd#shinylive
       - text: "Artefactos"
         menu:
           - text: "Todos"
