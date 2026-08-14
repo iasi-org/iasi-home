@@ -16,23 +16,44 @@
   {
     "objectID": "pages/products/index.html",
     "href": "pages/products/index.html",
-    "title": "Productos",
+    "title": "Subproductos",
     "section": "",
-    "text": "Productos\n\nSoluciones reutilizables construidas dentro del ecosistema IASI.\n\n\n\n\nLos productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente. IASI PlantUML e IASI Shiny se construyen y distribuyen desde la plataforma común iasi.lua.\n\n\n\nPUBLICAR\n\niasi.quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.\n\n\n\nDIAGRAMAR\n\nIASI PlantUML\nDiagramas como código integrados en documentos Quarto mediante la extensión iasi-plantuml de iasi.lua.\n\n\n\nINTERACTUAR\n\nIASI Shiny\nAplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión iasi-shiny de iasi.lua.\n\n\n\nPRÓXIMAMENTE\n\nIASI Graphics\nRecursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI."
+    "text": "Soluciones reutilizables construidas dentro del ecosistema IASI."
+  },
+  {
+    "objectID": "pages/products/index.html#herramientas",
+    "href": "pages/products/index.html#herramientas",
+    "title": "Subproductos",
+    "section": "Herramientas",
+    "text": "Herramientas\n\n\nPUBLICAR\n\nIASI Quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente."
+  },
+  {
+    "objectID": "pages/products/index.html#extensiones",
+    "href": "pages/products/index.html#extensiones",
+    "title": "Subproductos",
+    "section": "Extensiones",
+    "text": "Extensiones\nLas extensiones actuales se desarrollan y distribuyen desde IASI Lua, su plataforma común.\n\n\nDIAGRAMAR\n\nIASI PlantUML\nDiagramas como código integrados en documentos Quarto mediante iasi-plantuml.\n\n\n\nINTERACTUAR\n\nIASI Shiny\nAplicaciones Shinylive de R ejecutadas en el navegador mediante iasi-shiny y webR.\n\n\n\nPRÓXIMAMENTE\n\nIASI Graphics\nRecursos gráficos reutilizables para documentos y publicaciones del ecosistema."
+  },
+  {
+    "objectID": "pages/products/index.html#servidores-mcp",
+    "href": "pages/products/index.html#servidores-mcp",
+    "title": "Subproductos",
+    "section": "Servidores MCP",
+    "text": "Servidores MCP\n\n\nPRÓXIMAMENTE\n\nServidores MCP\nEsta familia recogerá los servidores MCP publicados por IASI cuando estén disponibles."
   },
   {
     "objectID": "pages/products/iasi-lua.html",
     "href": "pages/products/iasi-lua.html",
     "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
-    "text": "iasi.lua Overview PlantUML Shinylive User Guide Technical Guide Recursos Repository\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nPLATAFORMA\n\n\nProporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.\n\n\n\nDIAGRAMAS\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nAPLICACIONES\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\nLa extensión iasi-shiny incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.\n\n\nCREAR\n\n\nEl documento define la aplicación en un bloque {shinylive-r} junto al contenido que la explica.\n\n\n\nPUBLICAR\n\n\nShinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-shiny\n\n\n\n\n\n\nInstalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
+    "text": "iasi.lua IASI PlantUML IASI Shiny IASI Graphics\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nDIAGRAMAR\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nINTERACTUAR\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\nPRÓXIMAMENTE\n\n\nIncorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\nLa extensión iasi-shiny incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.\n\n\nCREAR\n\n\nEl documento define la aplicación en un bloque {shinylive-r} junto al contenido que la explica.\n\n\n\nPUBLICAR\n\n\nShinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-shiny\n\n\n\n\n\n\nInstalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
   },
   {
     "objectID": "pages/products/iasi-lua.html#overview",
     "href": "pages/products/iasi-lua.html#overview",
     "title": "iasi.lua: Extensiones reutilizables para Quarto",
     "section": "",
-    "text": "iasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nPLATAFORMA\n\n\nProporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.\n\n\n\nDIAGRAMAS\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nAPLICACIONES\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
+    "text": "iasi.lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es iasi-lua.\n\n\nDIAGRAMAR\n\n\nConvierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.\n\n\n\nINTERACTUAR\n\n\nIncorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.\n\n\n\nPRÓXIMAMENTE\n\n\nIncorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.\n\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
   },
   {
     "objectID": "pages/products/iasi-lua.html#plantuml",

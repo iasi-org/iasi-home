@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Productos · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>Subproductos · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c3b9aab480765aa32e3b8dc9ea4c02fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-80ac265fe481f7145263c70f50e9c7fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -159,25 +159,25 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-productos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Productos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-subproductos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Subproductos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-productos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-subproductos">    
         <li>
     <a class="dropdown-item" href="../../pages/products/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-quarto.html">
- <span class="dropdown-text">iasi.quarto</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#herramientas">
+ <span class="dropdown-text">Herramientas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#plantuml">
- <span class="dropdown-text">IASI PlantUML</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#extensiones">
+ <span class="dropdown-text">Extensiones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#shinylive">
- <span class="dropdown-text">IASI Shiny</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#servidores-mcp">
+ <span class="dropdown-text">Servidores MCP</span></a>
   </li>  
     </ul>
   </li>
@@ -277,46 +277,67 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="productos" class="level1 iasi-page-heading">
-<h1>Productos</h1>
+<section id="subproductos" class="level1 iasi-page-heading">
+<h1>Subproductos</h1>
 <div class="iasi-epigraph">
 <p><em>Soluciones reutilizables construidas dentro del ecosistema IASI.</em></p>
 </div>
 </section>
 <div class="iasi-document">
 <div class="iasi-catalog-intro">
-<p>Los productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente. <code>IASI PlantUML</code> e <code>IASI Shiny</code> se construyen y distribuyen desde la plataforma común <code>iasi.lua</code>.</p>
+<p>Los subproductos IASI tienen identidad y ciclo de vida propios. Se organizan en herramientas, extensiones para Quarto y servidores MCP. Los elementos internos que sostienen el trabajo del ecosistema se recogen por separado como artefactos.</p>
 </div>
+<section id="herramientas" class="level2">
+<h2 class="anchored" data-anchor-id="herramientas">Herramientas</h2>
 <div class="iasi-grid">
 <div id="iasi-quarto" class="iasi-card iasi-card-publish">
 <p><strong>PUBLICAR</strong></p>
-<section id="iasi.quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.quarto"><a href="../../pages/products/iasi-quarto.html">iasi.quarto</a></h3>
+<section id="iasi-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-quarto"><a href="../../pages/products/iasi-quarto.html">IASI Quarto</a></h3>
 <p>Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.</p>
 </section>
 </div>
+</div>
+</section>
+<section id="extensiones" class="level2">
+<h2 class="anchored" data-anchor-id="extensiones">Extensiones</h2>
+<p>Las extensiones actuales se desarrollan y distribuyen desde <a href="../../pages/products/iasi-lua.html">IASI Lua</a>, su plataforma común.</p>
+<div class="iasi-grid">
 <div id="iasi-plantuml" class="iasi-card iasi-card-extend">
 <p><strong>DIAGRAMAR</strong></p>
 <section id="iasi-plantuml" class="level3">
 <h3 class="anchored" data-anchor-id="iasi-plantuml"><a href="../../pages/products/iasi-lua.html#plantuml">IASI PlantUML</a></h3>
-<p>Diagramas como código integrados en documentos Quarto mediante la extensión <code>iasi-plantuml</code> de <code>iasi.lua</code>.</p>
+<p>Diagramas como código integrados en documentos Quarto mediante <code>iasi-plantuml</code>.</p>
 </section>
 </div>
 <div id="iasi-shiny" class="iasi-card iasi-card-extend">
 <p><strong>INTERACTUAR</strong></p>
 <section id="iasi-shiny" class="level3">
 <h3 class="anchored" data-anchor-id="iasi-shiny"><a href="../../pages/products/iasi-lua.html#shinylive">IASI Shiny</a></h3>
-<p>Aplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión <code>iasi-shiny</code> de <code>iasi.lua</code>.</p>
+<p>Aplicaciones Shinylive de R ejecutadas en el navegador mediante <code>iasi-shiny</code> y webR.</p>
 </section>
 </div>
 <div id="iasi-graphics" class="iasi-card iasi-card-think">
 <p><strong>PRÓXIMAMENTE</strong></p>
 <section id="iasi-graphics" class="level3">
 <h3 class="anchored" data-anchor-id="iasi-graphics"><a href="../../pages/status/to-be-done.html">IASI Graphics</a></h3>
-<p>Recursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI.</p>
+<p>Recursos gráficos reutilizables para documentos y publicaciones del ecosistema.</p>
 </section>
 </div>
 </div>
+</section>
+<section id="servidores-mcp" class="level2">
+<h2 class="anchored" data-anchor-id="servidores-mcp">Servidores MCP</h2>
+<div class="iasi-grid">
+<div class="iasi-card iasi-card-think">
+<p><strong>PRÓXIMAMENTE</strong></p>
+<section id="servidores-mcp-1" class="level3">
+<h3 class="anchored" data-anchor-id="servidores-mcp-1"><a href="../../pages/status/to-be-done.html">Servidores MCP</a></h3>
+<p>Esta familia recogerá los servidores MCP publicados por IASI cuando estén disponibles.</p>
+</section>
+</div>
+</div>
+</section>
 </div>
 
 

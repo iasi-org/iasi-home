@@ -11,13 +11,9 @@ filter-options:
 ::: {.iasi-artifact-page .iasi-artifact-publish}
 ::: {.iasi-artifact-subnav}
 <a class="iasi-artifact-subnav-brand" href="index.qmd">iasi.lua</a>
-[Overview](#overview)
-[PlantUML](#plantuml)
-[Shinylive](#shinylive)
-<a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi.lua%20User%20Guide">User Guide</a>
-<a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi.lua%20Technical%20Guide">Technical Guide</a>
-[Recursos](#resources)
-[Repository](https://github.com/iasi-org/iasi-lua)
+[IASI PlantUML](#plantuml)
+[IASI Shiny](#shinylive)
+[IASI Graphics](../status/to-be-done.qmd)
 :::
 
 ::: {.iasi-artifact-content}
@@ -31,15 +27,7 @@ Una plataforma común para **desarrollar, construir y distribuir** extensiones L
 
 ::: {.iasi-grid}
 ::: {.iasi-card .iasi-card-extend}
-**PLATAFORMA**
-
-### iasi.lua
-
-Proporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.
-:::
-
-::: {.iasi-card .iasi-card-extend}
-**DIAGRAMAS**
+**DIAGRAMAR**
 
 ### [IASI PlantUML](#plantuml)
 
@@ -47,11 +35,19 @@ Convierte descripciones PlantUML en imágenes integradas dentro de los documento
 :::
 
 ::: {.iasi-card .iasi-card-extend}
-**APLICACIONES**
+**INTERACTUAR**
 
 ### [IASI Shiny](#shinylive)
 
 Incorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.
+:::
+
+::: {.iasi-card .iasi-card-think}
+**PRÓXIMAMENTE**
+
+### [IASI Graphics](../status/to-be-done.qmd)
+
+Incorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.
 :::
 :::
 

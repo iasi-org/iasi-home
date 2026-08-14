@@ -1,11 +1,11 @@
 ---
-pagetitle: "Productos · IASI"
+pagetitle: "Subproductos · IASI"
 lang: es
 title-block-style: none
 ---
 
 ::: {.iasi-page-heading}
-# Productos
+# Subproductos
 
 ::: {.iasi-epigraph}
 *Soluciones reutilizables construidas dentro del ecosistema IASI.*
@@ -15,25 +15,35 @@ title-block-style: none
 ::: {.iasi-document}
 
 ::: {.iasi-catalog-intro}
-Los productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente. `IASI PlantUML` e `IASI Shiny` se construyen y distribuyen desde la plataforma común `iasi.lua`.
+Los subproductos IASI tienen identidad y ciclo de vida propios. Se organizan en herramientas, extensiones para Quarto y servidores MCP. Los elementos internos que sostienen el trabajo del ecosistema se recogen por separado como artefactos.
 :::
+
+## Herramientas {#herramientas}
 
 ::: {.iasi-grid}
 
 ::: {#iasi-quarto .iasi-card .iasi-card-publish}
 **PUBLICAR**
 
-### [iasi.quarto](iasi-quarto.qmd)
+### [IASI Quarto](iasi-quarto.qmd)
 
 Infraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.
 :::
+
+:::
+
+## Extensiones {#extensiones}
+
+Las extensiones actuales se desarrollan y distribuyen desde [IASI Lua](iasi-lua.qmd), su plataforma común.
+
+::: {.iasi-grid}
 
 ::: {#iasi-plantuml .iasi-card .iasi-card-extend}
 **DIAGRAMAR**
 
 ### [IASI PlantUML](iasi-lua.qmd#plantuml)
 
-Diagramas como código integrados en documentos Quarto mediante la extensión `iasi-plantuml` de `iasi.lua`.
+Diagramas como código integrados en documentos Quarto mediante `iasi-plantuml`.
 :::
 
 ::: {#iasi-shiny .iasi-card .iasi-card-extend}
@@ -41,7 +51,7 @@ Diagramas como código integrados en documentos Quarto mediante la extensión `i
 
 ### [IASI Shiny](iasi-lua.qmd#shinylive)
 
-Aplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión `iasi-shiny` de `iasi.lua`.
+Aplicaciones Shinylive de R ejecutadas en el navegador mediante `iasi-shiny` y webR.
 :::
 
 ::: {#iasi-graphics .iasi-card .iasi-card-think}
@@ -49,7 +59,21 @@ Aplicaciones Shinylive de R ejecutadas en el navegador mediante la extensión `i
 
 ### [IASI Graphics](../status/to-be-done.qmd)
 
-Recursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI.
+Recursos gráficos reutilizables para documentos y publicaciones del ecosistema.
+:::
+
+:::
+
+## Servidores MCP {#servidores-mcp}
+
+::: {.iasi-grid}
+
+::: {.iasi-card .iasi-card-think}
+**PRÓXIMAMENTE**
+
+### [Servidores MCP](../status/to-be-done.qmd)
+
+Esta familia recogerá los servidores MCP publicados por IASI cuando estén disponibles.
 :::
 
 :::

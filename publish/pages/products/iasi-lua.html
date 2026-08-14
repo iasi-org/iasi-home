@@ -73,7 +73,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6c72d6b53882a14c236126cb3345ad56.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-bb3417a909dcc2db0888bf6b8a3811f4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -194,25 +194,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-productos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Productos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-subproductos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Subproductos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-productos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-subproductos">    
         <li>
     <a class="dropdown-item" href="../../pages/products/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-quarto.html">
- <span class="dropdown-text">iasi.quarto</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#herramientas">
+ <span class="dropdown-text">Herramientas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#plantuml">
- <span class="dropdown-text">IASI PlantUML</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#extensiones">
+ <span class="dropdown-text">Extensiones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/products/iasi-lua.html#shinylive">
- <span class="dropdown-text">IASI Shiny</span></a>
+    <a class="dropdown-item" href="../../pages/products/index.html#servidores-mcp">
+ <span class="dropdown-text">Servidores MCP</span></a>
   </li>  
     </ul>
   </li>
@@ -314,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="iasi-artifact-page iasi-artifact-publish">
 <div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../../pages/products/index.html">iasi.lua</a> <a href="#overview">Overview</a> <a href="#plantuml">PlantUML</a> <a href="#shinylive">Shinylive</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">Technical Guide</a> <a href="#resources">Recursos</a> <a href="https://github.com/iasi-org/iasi-lua">Repository</a></p>
+<p><a class="iasi-artifact-subnav-brand" href="../../pages/products/index.html">iasi.lua</a> <a href="#plantuml">IASI PlantUML</a> <a href="#shinylive">IASI Shiny</a> <a href="../../pages/status/to-be-done.html">IASI Graphics</a></p>
 </div>
 <section id="iasi.lua-extensiones-reutilizables-para-quarto" class="level1 iasi-artifact-content">
 <h1>iasi.lua: Extensiones reutilizables para Quarto</h1>
@@ -324,24 +324,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><code>iasi.lua</code> mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es <code>iasi-lua</code>.</p>
 <div class="iasi-grid">
 <div class="iasi-card iasi-card-extend">
-<p><strong>PLATAFORMA</strong></p>
-<section id="iasi.lua" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.lua">iasi.lua</h3>
-<p>Proporciona el núcleo común y el proceso para construir, distribuir e instalar extensiones autónomas.</p>
-</section>
-</div>
-<div class="iasi-card iasi-card-extend">
-<p><strong>DIAGRAMAS</strong></p>
+<p><strong>DIAGRAMAR</strong></p>
 <section id="iasi-plantuml" class="level3">
 <h3 class="anchored" data-anchor-id="iasi-plantuml"><a href="#plantuml">IASI PlantUML</a></h3>
 <p>Convierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.</p>
 </section>
 </div>
 <div class="iasi-card iasi-card-extend">
-<p><strong>APLICACIONES</strong></p>
+<p><strong>INTERACTUAR</strong></p>
 <section id="iasi-shiny" class="level3">
 <h3 class="anchored" data-anchor-id="iasi-shiny"><a href="#shinylive">IASI Shiny</a></h3>
 <p>Incorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.</p>
+</section>
+</div>
+<div class="iasi-card iasi-card-think">
+<p><strong>PRÓXIMAMENTE</strong></p>
+<section id="iasi-graphics" class="level3">
+<h3 class="anchored" data-anchor-id="iasi-graphics"><a href="../../pages/status/to-be-done.html">IASI Graphics</a></h3>
+<p>Incorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.</p>
 </section>
 </div>
 </div>

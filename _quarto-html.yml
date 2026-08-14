@@ -17,16 +17,16 @@ website:
             href: pages/status/to-be-done.html
           - text: "IASI III"
             href: pages/status/to-be-done.html
-      - text: "Productos"
+      - text: "Subproductos"
         menu:
           - text: "Todos"
             href: pages/products/index.qmd
-          - text: "iasi.quarto"
-            href: pages/products/iasi-quarto.qmd
-          - text: "IASI PlantUML"
-            href: pages/products/iasi-lua.qmd#plantuml
-          - text: "IASI Shiny"
-            href: pages/products/iasi-lua.qmd#shinylive
+          - text: "Herramientas"
+            href: pages/products/index.qmd#herramientas
+          - text: "Extensiones"
+            href: pages/products/index.qmd#extensiones
+          - text: "Servidores MCP"
+            href: pages/products/index.qmd#servidores-mcp
       - text: "Artefactos"
         menu:
           - text: "Todos"
