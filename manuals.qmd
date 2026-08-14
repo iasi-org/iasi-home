@@ -38,6 +38,14 @@ Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
 Instalación, configuración y uso de las extensiones Lua distribuidas por IASI.
 :::
 
+::: {.iasi-card .iasi-card-publish}
+**USER GUIDE**
+
+### <a href="/iasi-tools-dev-docs/user-guide/">iasi-tools-dev</a>
+
+Instalación y uso de `iasi-dev` para operar sobre proyectos y repositorios IASI.
+:::
+
 :::
 
 ## Technical Guides
@@ -58,6 +66,14 @@ Arquitectura, estrategias de publicación y diseño interno de `iasi.quarto`.
 ### <a href="/iasi-lua-docs/technical-guide/">iasi-lua</a>
 
 Arquitectura y desarrollo de extensiones Lua para el ecosistema IASI.
+:::
+
+::: {.iasi-card .iasi-card-publish}
+**TECHNICAL GUIDE**
+
+### <a href="/iasi-tools-dev-docs/technical-guide/">iasi-tools-dev</a>
+
+Arquitectura y mantenimiento de la automatización operativa del ecosistema.
 :::
 
 :::

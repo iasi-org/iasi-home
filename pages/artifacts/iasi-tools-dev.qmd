@@ -8,7 +8,8 @@ lang: es
 <a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-tools-dev</a>
 [Overview](#overview)
 [Ciclo](#cycle)
-<a href="/iasi-tools-dev-docs/">Documentación</a>
+<a href="/iasi-tools-dev-docs/user-guide/">User Guide</a>
+<a href="/iasi-tools-dev-docs/technical-guide/">Technical Guide</a>
 [Repository](https://github.com/iasi-org/iasi-tools-dev)
 :::
 
@@ -53,9 +54,15 @@ iasi-dev deploy [-f|--full] [-m "mensaje"] [repositorio...]
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### <a href="/iasi-tools-dev-docs/">Documentación</a>
+### <a href="/iasi-tools-dev-docs/user-guide/">User Guide</a>
 
 Instalación, comandos, opciones y flujos de trabajo de `iasi-dev`.
+:::
+
+::: {.iasi-artifact-doc}
+### <a href="/iasi-tools-dev-docs/technical-guide/">Technical Guide</a>
+
+Arquitectura, mantenimiento y evolución de las herramientas operativas.
 :::
 
 ::: {.iasi-artifact-doc}

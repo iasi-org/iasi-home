@@ -36,6 +36,14 @@ Arquitectura y estrategias del motor de publicación.
 Arquitectura y desarrollo de extensiones Lua.
 :::
 
+::: {.iasi-card .iasi-card-publish}
+**TECHNICAL GUIDE**
+
+### <a href="/iasi-tools-dev-docs/technical-guide/">iasi-tools-dev</a>
+
+Arquitectura y mantenimiento de las herramientas operativas del ecosistema.
+:::
+
 :::
 
 :::

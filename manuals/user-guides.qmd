@@ -34,6 +34,14 @@ Construcción y publicación reproducible de proyectos Quarto.
 Instalación, configuración y uso de extensiones Lua.
 :::
 
+::: {.iasi-card .iasi-card-publish}
+**USER GUIDE**
+
+### <a href="/iasi-tools-dev-docs/user-guide/">iasi-tools-dev</a>
+
+Instalación, comandos y flujos de trabajo de `iasi-dev`.
+:::
+
 :::
 
 :::

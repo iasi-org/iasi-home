@@ -14,6 +14,7 @@ filter-options:
 [Overview](#overview)
 [PlantUML](#plantuml)
 <a href="/iasi-lua-docs/user-guide/">User Guide</a>
+<a href="/iasi-lua-docs/technical-guide/">Technical Guide</a>
 [Recursos](#resources)
 [Repository](https://github.com/iasi-org/iasi-lua)
 :::
@@ -119,6 +120,12 @@ filters:
 ### <a href="/iasi-lua-docs/user-guide/">User Guide</a>
 
 Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.
+:::
+
+::: {.iasi-artifact-doc}
+### <a href="/iasi-lua-docs/technical-guide/">Technical Guide</a>
+
+Arquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.
 :::
 
 ::: {.iasi-artifact-doc}

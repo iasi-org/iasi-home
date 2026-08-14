@@ -7,7 +7,7 @@ lang: es
 ::: {.iasi-artifact-subnav}
 <a class="iasi-artifact-subnav-brand" href="index.qmd">iasi-rstudio</a>
 [Overview](#overview)
-<a href="/iasi-rstudio-docs/">Documentación</a>
+<a href="/iasi-home/pages/status/to-be-done.html">Documentación prevista</a>
 [Repository](https://github.com/iasi-org/iasi-rstudio)
 :::
 
@@ -24,9 +24,9 @@ Un addin que acerca las operaciones y herramientas de IASI al entorno habitual d
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### <a href="/iasi-rstudio-docs/">Documentación</a>
+### <a href="/iasi-home/pages/status/to-be-done.html">Documentación prevista</a>
 
-Instalación, configuración y uso del addin para RStudio.
+La documentación de instalación, configuración y uso del addin todavía no está publicada.
 :::
 
 ::: {.iasi-artifact-doc}
