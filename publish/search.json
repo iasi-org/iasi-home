@@ -1,17 +1,136 @@
 [
   {
-    "objectID": "status/under-construction.html",
-    "href": "status/under-construction.html",
-    "title": "Under construction",
+    "objectID": "principles.html",
+    "href": "principles.html",
+    "title": "Decálogo IASI",
     "section": "",
-    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
+    "text": "Decálogo IASI\nLos principios que orientan el diseño, desarrollo y evolución de IASI.\n\n\n\n1. La ingeniería es el objetivo.\n\nLas herramientas, tecnologías y sistemas inteligentes son medios. El objetivo sigue siendo resolver problemas mediante una ingeniería rigurosa, comprensible y sostenible.\n\n\n\n2. Los Sistemas Inteligentes son asistentes de ingeniería.\n\nNo son únicamente herramientas de generación. Pueden participar en el análisis, diseño, implementación, validación y evolución del sistema como parte activa del proceso de ingeniería.\n\n\n\n3. El conocimiento debe ser abierto.\n\nLas decisiones, aprendizajes y resultados deben poder compartirse, discutirse y reutilizarse siempre que sea posible.\n\n\n\n4. La documentación es un artefacto de ingeniería.\n\nDocumentar no es una actividad posterior al desarrollo. La documentación forma parte del sistema y de su proceso de construcción.\n\n\n\n5. La automatización debe ser consecuencia del diseño, no un fin en sí misma.\n\nAutomatizar tiene valor cuando simplifica un proceso correctamente entendido y diseñado. Automatizar un proceso deficiente solo permite equivocarse más deprisa.\n\n\n\n6. Los componentes deben ser reutilizables.\n\nCuando una solución puede generalizarse, debe convertirse en un componente capaz de servir a otros proyectos y contextos.\n\n\n\n7. Las decisiones deben poder cuestionarse.\n\nNinguna decisión se considera correcta por autoridad o costumbre. Debe poder explicarse, revisarse y sustituirse cuando aparezca una alternativa mejor.\n\n\n\n8. La metodología también evoluciona.\n\nLa metodología no es un marco rígido impuesto al problema. Aprende de la experiencia y cambia cuando la evidencia demuestra que existe una forma mejor de trabajar.\n\n\n\n9. El contexto debe ser explícito, compartido y gobernado.\n\nUn Sistema Inteligente solo puede participar de forma fiable en ingeniería cuando dispone del contexto adecuado. Ese contexto debe formar parte explícita del proceso y poder mantenerse, compartirse y controlarse.\n\n\n\n10. La complejidad debe encapsularse, no trasladarse al usuario.\n\nUna solución puede ser internamente sofisticada, pero esa complejidad no debe convertirse innecesariamente en complejidad de uso. La buena ingeniería ofrece interfaces simples sobre mecanismos complejos."
   },
   {
-    "objectID": "products.html",
-    "href": "products.html",
-    "title": "Productos",
+    "objectID": "pages/status/to-be-done.html",
+    "href": "pages/status/to-be-done.html",
+    "title": "To be done",
     "section": "",
-    "text": "Productos\n\nSoluciones reutilizables construidas dentro del ecosistema IASI.\n\n\n\n\nLos productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente.\n\n\n\nPUBLICAR\n\niasi-quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.\n\n\n\nEXTENDER\n\niasi-lua\nPlataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.\n\n\n\nCOMUNICAR\n\niasi-graphics\nRecursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI."
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nTo be done\nThis artifact is planned, but its implementation and public documentation have not started yet.\n\n← Back to IASI"
+  },
+  {
+    "objectID": "pages/products/iasi-quarto.html",
+    "href": "pages/products/iasi-quarto.html",
+    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
+    "section": "",
+    "text": "iasi.quarto Overview Publish User Guide Technical Guide Repository\n\n\n\nUna capa de ingeniería para descubrir, comprobar, preparar, construir y publicar proyectos Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.\n\n\nQuarto sigue siendo el motor de publicación. iasi.quarto añade la ingeniería necesaria para que el proceso sea explícito, verificable y repetible, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.\n\n\n\nReconoce la publicación y su configuración.\n\n\n\nComprueba que estructura y contrato sean coherentes.\n\n\n\nGenera únicamente los artefactos derivados que Quarto necesita.\n\n\n\nDelega el renderizado final en Quarto para los formatos soportados.\n\n\n\nReúne los resultados construidos en un directorio listo para desplegar.\n\n\n\n\n\nConstruir y publicar son operaciones deliberadamente distintas:\n\n\nCONSTRUIR\n\n\nValida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.\n\n\n\nPUBLICAR\n\n\nToma los resultados ya renderizados y ensambla publish/, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.\n\n\n\niasi.quarto::build()\niasi.quarto::publish()\nEsta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue.\n\n\n\n\n\n\nInstalación, configuración y uso de iasi.quarto para construir publicaciones y multiproyectos.\n\n\n\nArquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.\n\n\n\nCódigo fuente, pruebas y evolución pública del paquete iasi.quarto."
+  },
+  {
+    "objectID": "pages/products/iasi-quarto.html#overview",
+    "href": "pages/products/iasi-quarto.html#overview",
+    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
+    "section": "",
+    "text": "Quarto sigue siendo el motor de publicación. iasi.quarto añade la ingeniería necesaria para que el proceso sea explícito, verificable y repetible, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.\n\n\n\nReconoce la publicación y su configuración.\n\n\n\nComprueba que estructura y contrato sean coherentes.\n\n\n\nGenera únicamente los artefactos derivados que Quarto necesita.\n\n\n\nDelega el renderizado final en Quarto para los formatos soportados.\n\n\n\nReúne los resultados construidos en un directorio listo para desplegar."
+  },
+  {
+    "objectID": "pages/products/iasi-quarto.html#publish",
+    "href": "pages/products/iasi-quarto.html#publish",
+    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
+    "section": "",
+    "text": "Construir y publicar son operaciones deliberadamente distintas:\n\n\nCONSTRUIR\n\n\nValida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.\n\n\n\nPUBLICAR\n\n\nToma los resultados ya renderizados y ensambla publish/, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.\n\n\n\niasi.quarto::build()\niasi.quarto::publish()\nEsta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue."
+  },
+  {
+    "objectID": "pages/products/iasi-quarto.html#resources",
+    "href": "pages/products/iasi-quarto.html#resources",
+    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
+    "section": "",
+    "text": "Instalación, configuración y uso de iasi.quarto para construir publicaciones y multiproyectos.\n\n\n\nArquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.\n\n\n\nCódigo fuente, pruebas y evolución pública del paquete iasi.quarto."
+  },
+  {
+    "objectID": "pages/en/index.html",
+    "href": "pages/en/index.html",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)\n\nCurrent software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. That assumption is beginning to no longer hold.\nToday we can, and should, incorporate intelligent systems as part of the engineering team, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated explicitly, systematically and under governance within engineering processes.\nIASI was created to define how software engineering should be practiced in this new context.\nIts objectives are:\n\n\nTeach how to use intelligent systems coherently, productively and in alignment with engineering processes.\nDefine a methodology that integrates intelligent systems as part of the team and the engineering process.\nEstablish a set of principles, patterns and good practices for their use.\nBuild a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.\n\n\n\nAll of this through foundations, experimentation and real-world cases."
+  },
+  {
+    "objectID": "pages/en/index.html#engineering-assisted-by-intelligent-systems-iasi",
+    "href": "pages/en/index.html#engineering-assisted-by-intelligent-systems-iasi",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)\n\nCurrent software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. That assumption is beginning to no longer hold.\nToday we can, and should, incorporate intelligent systems as part of the engineering team, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated explicitly, systematically and under governance within engineering processes.\nIASI was created to define how software engineering should be practiced in this new context.\nIts objectives are:\n\n\nTeach how to use intelligent systems coherently, productively and in alignment with engineering processes.\nDefine a methodology that integrates intelligent systems as part of the team and the engineering process.\nEstablish a set of principles, patterns and good practices for their use.\nBuild a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.\n\n\n\nAll of this through foundations, experimentation and real-world cases."
+  },
+  {
+    "objectID": "pages/en/index.html#contribute",
+    "href": "pages/en/index.html#contribute",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "Open by design",
+    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it.\nView IASI on GitHub →"
+  },
+  {
+    "objectID": "pages/common/manifesto.html",
+    "href": "pages/common/manifesto.html",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería. Creemos que la aparición de los Sistemas Inteligentes representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.\nIASI nace para recorrer ese camino.\n\n\nIASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema.\n\n\n\nIASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto.\n\n\n\nIASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#nuestra-aproximación",
+    "href": "pages/common/manifesto.html#nuestra-aproximación",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
+    "href": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#un-proyecto-abierto",
+    "href": "pages/common/manifesto.html#un-proyecto-abierto",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
+  },
+  {
+    "objectID": "pages/common/contact.html",
+    "href": "pages/common/contact.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nJavier G. Grández\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI."
+  },
+  {
+    "objectID": "pages/common/contact.html#correo-electrónico",
+    "href": "pages/common/contact.html#correo-electrónico",
+    "title": "Contacto",
+    "section": "",
+    "text": "Javier G. Grández\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html",
+    "href": "pages/artifacts/iasi-tools-dev.html",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-tools-dev Overview Ciclo Documentación Repository\n\n\n\nUna interfaz de línea de comandos para construir, publicar, desplegar y mantener los proyectos IASI de forma consistente.\n\n\niasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo.\n\n\n\n\n\niasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]\n\n\n\n\n\n\nInstalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#overview",
+    "href": "pages/artifacts/iasi-tools-dev.html#overview",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "href": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]"
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#resources",
+    "href": "pages/artifacts/iasi-tools-dev.html#resources",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
   },
   {
     "objectID": "manuals.html",
@@ -42,158 +161,11 @@
     "text": "Technical Guides\n\nArquitectura, mantenimiento y evolución de los productos IASI.\n\n\n\n\nLos Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.\n\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura y estrategias del motor de publicación.\n\n\n\nTECHNICAL GUIDE\n\niasi-lua\nArquitectura y desarrollo de extensiones Lua."
   },
   {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "Ingeniería Asistida por Sistemas Inteligentes",
-    "section": "",
-    "text": "As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)\n\nCurrent software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. That assumption is beginning to no longer hold.\nToday we can, and should, incorporate intelligent systems as part of the engineering team, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated explicitly, systematically and under governance within engineering processes.\nIASI was created to define how software engineering should be practiced in this new context.\nIts objectives are:\n\n\nTeach how to use intelligent systems coherently, productively and in alignment with engineering processes.\nDefine a methodology that integrates intelligent systems as part of the team and the engineering process.\nEstablish a set of principles, patterns and good practices for their use.\nBuild a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.\n\n\n\nAll of this through foundations, experimentation and real-world cases."
-  },
-  {
-    "objectID": "en/index.html#engineering-assisted-by-intelligent-systems-iasi",
-    "href": "en/index.html#engineering-assisted-by-intelligent-systems-iasi",
-    "title": "Ingeniería Asistida por Sistemas Inteligentes",
-    "section": "",
-    "text": "As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)\n\nCurrent software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. That assumption is beginning to no longer hold.\nToday we can, and should, incorporate intelligent systems as part of the engineering team, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated explicitly, systematically and under governance within engineering processes.\nIASI was created to define how software engineering should be practiced in this new context.\nIts objectives are:\n\n\nTeach how to use intelligent systems coherently, productively and in alignment with engineering processes.\nDefine a methodology that integrates intelligent systems as part of the team and the engineering process.\nEstablish a set of principles, patterns and good practices for their use.\nBuild a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.\n\n\n\nAll of this through foundations, experimentation and real-world cases."
-  },
-  {
-    "objectID": "en/index.html#contribute",
-    "href": "en/index.html#contribute",
-    "title": "Ingeniería Asistida por Sistemas Inteligentes",
-    "section": "Open by design",
-    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it.\nView IASI on GitHub →"
-  },
-  {
-    "objectID": "common/manifesto.html",
-    "href": "common/manifesto.html",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería. Creemos que la aparición de los Sistemas Inteligentes representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.\nIASI nace para recorrer ese camino.\n\n\nIASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema.\n\n\n\nIASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto.\n\n\n\nIASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
-  },
-  {
-    "objectID": "common/manifesto.html#nuestra-aproximación",
-    "href": "common/manifesto.html#nuestra-aproximación",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema."
-  },
-  {
-    "objectID": "common/manifesto.html#el-viaje-también-es-conocimiento",
-    "href": "common/manifesto.html#el-viaje-también-es-conocimiento",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto."
-  },
-  {
-    "objectID": "common/manifesto.html#un-proyecto-abierto",
-    "href": "common/manifesto.html#un-proyecto-abierto",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
-  },
-  {
-    "objectID": "common/contact.html",
-    "href": "common/contact.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nJavier G. Grández\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI."
-  },
-  {
-    "objectID": "common/contact.html#correo-electrónico",
-    "href": "common/contact.html#correo-electrónico",
-    "title": "Contacto",
-    "section": "",
-    "text": "Javier G. Grández\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI."
-  },
-  {
-    "objectID": "artifacts.html",
-    "href": "artifacts.html",
-    "title": "Artefactos",
-    "section": "",
-    "text": "Artefactos\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
-  },
-  {
-    "objectID": "artifacts/iasi-lua.html",
-    "href": "artifacts/iasi-lua.html",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
-    "section": "",
-    "text": "iasi-lua Overview PlantUML User Guide Recursos Repository\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\n\n\n\nInstalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
-  },
-  {
-    "objectID": "artifacts/iasi-lua.html#overview",
-    "href": "artifacts/iasi-lua.html#overview",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
-    "section": "",
-    "text": "iasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
-  },
-  {
-    "objectID": "artifacts/iasi-lua.html#plantuml",
-    "href": "artifacts/iasi-lua.html#plantuml",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
-    "section": "",
-    "text": "La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml"
-  },
-  {
-    "objectID": "artifacts/iasi-lua.html#resources",
-    "href": "artifacts/iasi-lua.html#resources",
-    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
-    "section": "",
-    "text": "Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
-  },
-  {
-    "objectID": "artifacts/iasi-quarto.html",
-    "href": "artifacts/iasi-quarto.html",
-    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
-    "section": "",
-    "text": "iasi.quarto Overview Publish User Guide Technical Guide Repository\n\n\n\nUna capa de ingeniería para descubrir, comprobar, preparar, construir y publicar proyectos Quarto de forma consistente, sin ocultar Quarto ni sustituir su modelo.\n\n\nQuarto sigue siendo el motor de publicación. iasi.quarto añade la ingeniería necesaria para que el proceso sea explícito, verificable y repetible, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.\n\n\n\nReconoce la publicación y su configuración.\n\n\n\nComprueba que estructura y contrato sean coherentes.\n\n\n\nGenera únicamente los artefactos derivados que Quarto necesita.\n\n\n\nDelega el renderizado final en Quarto para los formatos soportados.\n\n\n\nReúne los resultados construidos en un directorio listo para desplegar.\n\n\n\n\n\nConstruir y publicar son operaciones deliberadamente distintas:\n\n\nCONSTRUIR\n\n\nValida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.\n\n\n\nPUBLICAR\n\n\nToma los resultados ya renderizados y ensambla publish/, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.\n\n\n\niasi.quarto::build()\niasi.quarto::publish()\nEsta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue.\n\n\n\n\n\n\nInstalación, configuración y uso de iasi.quarto para construir publicaciones y multiproyectos.\n\n\n\nArquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.\n\n\n\nCódigo fuente, pruebas y evolución pública del paquete iasi.quarto."
-  },
-  {
-    "objectID": "artifacts/iasi-quarto.html#overview",
-    "href": "artifacts/iasi-quarto.html#overview",
-    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
-    "section": "",
-    "text": "Quarto sigue siendo el motor de publicación. iasi.quarto añade la ingeniería necesaria para que el proceso sea explícito, verificable y repetible, desde el reconocimiento del proyecto hasta la preparación de los archivos que se desplegarán.\n\n\n\nReconoce la publicación y su configuración.\n\n\n\nComprueba que estructura y contrato sean coherentes.\n\n\n\nGenera únicamente los artefactos derivados que Quarto necesita.\n\n\n\nDelega el renderizado final en Quarto para los formatos soportados.\n\n\n\nReúne los resultados construidos en un directorio listo para desplegar."
-  },
-  {
-    "objectID": "artifacts/iasi-quarto.html#publish",
-    "href": "artifacts/iasi-quarto.html#publish",
-    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
-    "section": "",
-    "text": "Construir y publicar son operaciones deliberadamente distintas:\n\n\nCONSTRUIR\n\n\nValida el proyecto, prepara los artefactos derivados y renderiza con Quarto los formatos configurados, como HTML y PDF.\n\n\n\nPUBLICAR\n\n\nToma los resultados ya renderizados y ensambla publish/, conservando el sitio HTML y situando los PDF donde puedan descargarse correctamente.\n\n\n\niasi.quarto::build()\niasi.quarto::publish()\nEsta separación permite comprobar la construcción antes de preparar el resultado que consumirá el mecanismo de despliegue."
-  },
-  {
-    "objectID": "artifacts/iasi-quarto.html#resources",
-    "href": "artifacts/iasi-quarto.html#resources",
-    "title": "IASI.Quarto: Publicación reproducible sobre Quarto",
-    "section": "",
-    "text": "Instalación, configuración y uso de iasi.quarto para construir publicaciones y multiproyectos.\n\n\n\nArquitectura, ciclo interno, estrategias de publicación y decisiones de diseño del motor.\n\n\n\nCódigo fuente, pruebas y evolución pública del paquete iasi.quarto."
-  },
-  {
     "objectID": "books.html",
     "href": "books.html",
     "title": "Libros",
     "section": "",
     "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
-  },
-  {
-    "objectID": "common/manifesto-bilingual.html",
-    "href": "common/manifesto-bilingual.html",
-    "title": "Ingeniería Asistida por Sistemas Inteligentes",
-    "section": "",
-    "text": "This book is deliberately written in Spanish.\nThere are two main reasons:\n\nThe first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.\nThe second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.\n\nThis is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.\nAnd in engineering, nuance matters.\nTranslations can come later. Original thought cannot.\nNevertheless, if you need any part of this work translated into English, we will be happy to provide it.\n\nEste libro está escrito conscientemente en castellano.\nHay dos razones principales:\n\nLa primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.\nLa segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.\n\nNo se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.\nY en ingeniería, los matices importan.\nLas traducciones podrán venir después. El pensamiento original, no."
-  },
-  {
-    "objectID": "en/contact.html",
-    "href": "en/contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "IASI is still a growing project.\nWhile new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us with questions, ideas, collaboration proposals, or simply to start a conversation about IASI."
-  },
-  {
-    "objectID": "en/contact.html#email",
-    "href": "en/contact.html#email",
-    "title": "Contact",
-    "section": "",
-    "text": "Javier G. Grández\nYou can write to us with questions, ideas, collaboration proposals, or simply to start a conversation about IASI."
   },
   {
     "objectID": "index.html",
@@ -217,17 +189,94 @@
     "text": "User Guides\n\n\n\nManuales para instalar, configurar y utilizar los productos IASI.\nLos User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.\n\n\n\nUSER GUIDE\n\niasi.quarto\nConstrucción y publicación reproducible de proyectos Quarto.\n\n\n\nUSER GUIDE\n\niasi-lua\nInstalación, configuración y uso de extensiones Lua."
   },
   {
-    "objectID": "principles.html",
-    "href": "principles.html",
-    "title": "Decálogo IASI",
+    "objectID": "pages/artifacts/iasi-rstudio.html",
+    "href": "pages/artifacts/iasi-rstudio.html",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
     "section": "",
-    "text": "Decálogo IASI\nLos principios que orientan el diseño, desarrollo y evolución de IASI.\n\n\n\n1. La ingeniería es el objetivo.\n\nLas herramientas, tecnologías y sistemas inteligentes son medios. El objetivo sigue siendo resolver problemas mediante una ingeniería rigurosa, comprensible y sostenible.\n\n\n\n2. Los Sistemas Inteligentes son asistentes de ingeniería.\n\nNo son únicamente herramientas de generación. Pueden participar en el análisis, diseño, implementación, validación y evolución del sistema como parte activa del proceso de ingeniería.\n\n\n\n3. El conocimiento debe ser abierto.\n\nLas decisiones, aprendizajes y resultados deben poder compartirse, discutirse y reutilizarse siempre que sea posible.\n\n\n\n4. La documentación es un artefacto de ingeniería.\n\nDocumentar no es una actividad posterior al desarrollo. La documentación forma parte del sistema y de su proceso de construcción.\n\n\n\n5. La automatización debe ser consecuencia del diseño, no un fin en sí misma.\n\nAutomatizar tiene valor cuando simplifica un proceso correctamente entendido y diseñado. Automatizar un proceso deficiente solo permite equivocarse más deprisa.\n\n\n\n6. Los componentes deben ser reutilizables.\n\nCuando una solución puede generalizarse, debe convertirse en un componente capaz de servir a otros proyectos y contextos.\n\n\n\n7. Las decisiones deben poder cuestionarse.\n\nNinguna decisión se considera correcta por autoridad o costumbre. Debe poder explicarse, revisarse y sustituirse cuando aparezca una alternativa mejor.\n\n\n\n8. La metodología también evoluciona.\n\nLa metodología no es un marco rígido impuesto al problema. Aprende de la experiencia y cambia cuando la evidencia demuestra que existe una forma mejor de trabajar.\n\n\n\n9. El contexto debe ser explícito, compartido y gobernado.\n\nUn Sistema Inteligente solo puede participar de forma fiable en ingeniería cuando dispone del contexto adecuado. Ese contexto debe formar parte explícita del proceso y poder mantenerse, compartirse y controlarse.\n\n\n\n10. La complejidad debe encapsularse, no trasladarse al usuario.\n\nUna solución puede ser internamente sofisticada, pero esa complejidad no debe convertirse innecesariamente en complejidad de uso. La buena ingeniería ofrece interfaces simples sobre mecanismos complejos."
+    "text": "iasi-rstudio Overview Documentación Repository\n\n\n\nUn addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.\n\n\niasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.\n\n\n\n\n\n\nInstalación, configuración y uso del addin para RStudio.\n\n\n\nCódigo fuente y evolución pública de la integración."
   },
   {
-    "objectID": "status/to-be-done.html",
-    "href": "status/to-be-done.html",
-    "title": "To be done",
+    "objectID": "pages/artifacts/iasi-rstudio.html#overview",
+    "href": "pages/artifacts/iasi-rstudio.html#overview",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
     "section": "",
-    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nTo be done\nThis artifact is planned, but its implementation and public documentation have not started yet.\n\n← Back to IASI"
+    "text": "iasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-rstudio.html#resources",
+    "href": "pages/artifacts/iasi-rstudio.html#resources",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
+    "section": "",
+    "text": "Instalación, configuración y uso del addin para RStudio.\n\n\n\nCódigo fuente y evolución pública de la integración."
+  },
+  {
+    "objectID": "pages/artifacts/index.html",
+    "href": "pages/artifacts/index.html",
+    "title": "Artefactos",
+    "section": "",
+    "text": "Artefactos\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
+  },
+  {
+    "objectID": "pages/common/manifesto-bilingual.html",
+    "href": "pages/common/manifesto-bilingual.html",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "This book is deliberately written in Spanish.\nThere are two main reasons:\n\nThe first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.\nThe second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.\n\nThis is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.\nAnd in engineering, nuance matters.\nTranslations can come later. Original thought cannot.\nNevertheless, if you need any part of this work translated into English, we will be happy to provide it.\n\nEste libro está escrito conscientemente en castellano.\nHay dos razones principales:\n\nLa primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.\nLa segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.\n\nNo se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.\nY en ingeniería, los matices importan.\nLas traducciones podrán venir después. El pensamiento original, no."
+  },
+  {
+    "objectID": "pages/en/contact.html",
+    "href": "pages/en/contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "IASI is still a growing project.\nWhile new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us with questions, ideas, collaboration proposals, or simply to start a conversation about IASI."
+  },
+  {
+    "objectID": "pages/en/contact.html#email",
+    "href": "pages/en/contact.html#email",
+    "title": "Contact",
+    "section": "",
+    "text": "Javier G. Grández\nYou can write to us with questions, ideas, collaboration proposals, or simply to start a conversation about IASI."
+  },
+  {
+    "objectID": "pages/products/iasi-lua.html",
+    "href": "pages/products/iasi-lua.html",
+    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "section": "",
+    "text": "iasi-lua Overview PlantUML User Guide Recursos Repository\n\n\n\nUna plataforma común para desarrollar, construir y distribuir extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.\n\n\niasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente.\n\n\n\nLa primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml\n\n\n\n\n\n\nInstalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
+  },
+  {
+    "objectID": "pages/products/iasi-lua.html#overview",
+    "href": "pages/products/iasi-lua.html#overview",
+    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "section": "",
+    "text": "iasi-lua mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita.\n\n\n\nProporciona configuración, caché, sistema de archivos, metadatos y gestión del mediabag.\n\n\n\nMantiene la lógica específica de cada integración en una fuente legible y editable.\n\n\n\nCombina la extensión con el núcleo compartido y genera una distribución autónoma.\n\n\n\nMaterializa la extensión construida dentro del proyecto Quarto consumidor.\n\n\n\n_extensions/ es un artefacto generado: se construye desde la fuente y no se edita manualmente."
+  },
+  {
+    "objectID": "pages/products/iasi-lua.html#plantuml",
+    "href": "pages/products/iasi-lua.html#plantuml",
+    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "section": "",
+    "text": "La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.\n\n\nESCRIBIR\n\n\nEl documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.\n\n\n\nRENDERIZAR\n\n\nEl filtro solicita la imagen al servidor PlantUML y la incorpora al mediabag de Pandoc durante el renderizado.\n\n\n\nLa extensión se activa explícitamente en el proyecto:\nfilters:\n  - iasi-plantuml"
+  },
+  {
+    "objectID": "pages/products/iasi-lua.html#resources",
+    "href": "pages/products/iasi-lua.html#resources",
+    "title": "IASI.Lua: Extensiones reutilizables para Quarto",
+    "section": "",
+    "text": "Instalación, configuración, diagramas, caché, estilos y solución de problemas para proyectos consumidores.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
+  },
+  {
+    "objectID": "pages/products/index.html",
+    "href": "pages/products/index.html",
+    "title": "Productos",
+    "section": "",
+    "text": "Productos\n\nSoluciones reutilizables construidas dentro del ecosistema IASI.\n\n\n\n\nLos productos IASI resuelven capacidades concretas y pueden utilizarse y evolucionar de forma independiente.\n\n\n\nPUBLICAR\n\niasi-quarto\nInfraestructura reproducible para descubrir, validar, construir y publicar proyectos Quarto de forma consistente.\n\n\n\nEXTENDER\n\niasi-lua\nPlataforma de filtros y extensiones Lua reutilizables para Pandoc y Quarto dentro del ecosistema IASI.\n\n\n\nCOMUNICAR\n\niasi-graphics\nRecursos y herramientas gráficas para comunicar de forma coherente las ideas, productos y publicaciones de IASI."
+  },
+  {
+    "objectID": "pages/status/under-construction.html",
+    "href": "pages/status/under-construction.html",
+    "title": "Under construction",
+    "section": "",
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
   }
 ]
