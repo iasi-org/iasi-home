@@ -8,11 +8,11 @@ website:
           - text: "Todos"
             href: books.qmd
           - text: "IASI I"
-            href: books.qmd#iasi-i
+            href: iasi-book-I/
           - text: "IASI II"
-            href: books.qmd#iasi-ii
+            href: status/to-be-done.html
           - text: "IASI III"
-            href: books.qmd#iasi-iii
+            href: status/to-be-done.html
       - text: "Productos"
         menu:
           - text: "Todos"
