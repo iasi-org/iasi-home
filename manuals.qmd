@@ -25,7 +25,7 @@ Los manuales documentan el uso y la arquitectura de los artefactos IASI. El cat√
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### <a href="/iasi-home/pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">iasi.quarto</a>
+### <a href="pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">iasi.quarto</a>
 
 Uso de `iasi.quarto` para construir y publicar proyectos Quarto reproducibles.
 :::

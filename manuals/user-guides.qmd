@@ -21,7 +21,7 @@ Los User Guides explican las tareas y flujos de trabajo necesarios para utilizar
 ::: {.iasi-card .iasi-card-publish}
 **USER GUIDE**
 
-### <a href="/iasi-home/pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">iasi.quarto</a>
+### <a href="../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">iasi.quarto</a>
 
 Construcción y publicación reproducible de proyectos Quarto.
 :::

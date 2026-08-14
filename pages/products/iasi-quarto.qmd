@@ -8,7 +8,7 @@ lang: es
 <a class="iasi-artifact-subnav-brand" href="index.qmd">iasi.quarto</a>
 [Overview](#overview)
 [Publish](#publish)
-<a href="/iasi-home/pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">User Guide</a>
+<a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">User Guide</a>
 <a href="/iasi-quarto-docs/technical-guide/">Technical Guide</a>
 [Repository](https://github.com/iasi-org/iasi_quarto)
 :::
@@ -87,7 +87,7 @@ Esta separación permite comprobar la construcción antes de preparar el resulta
 
 ::: {.iasi-artifact-docs}
 ::: {.iasi-artifact-doc}
-### <a href="/iasi-home/pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">User Guide</a>
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">User Guide</a>
 
 Instalación, configuración y uso de `iasi.quarto` para construir publicaciones y multiproyectos.
 :::
