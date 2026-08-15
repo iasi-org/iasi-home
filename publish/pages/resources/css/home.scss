@@ -131,7 +131,6 @@ main.content {
   letter-spacing: -0.045em;
 }
 
-#participar,
 #artifacts,
 #contribute {
   padding-right: var(--iasi-page-pad) !important;
@@ -720,7 +719,7 @@ main.content {
 }
 
 #quarto-document-content .iasi-home-copy > p,
-#quarto-document-content #participar > p {
+#quarto-document-content #contribute > p {
   max-width: 133ch;
 }
 
@@ -787,7 +786,7 @@ main.content {
   opacity: 0.72;
 }
 
-#participar {
+#contribute {
   width: min(1200px, 100%);
   margin-right: auto;
   margin-left: auto;
@@ -1006,4 +1005,29 @@ main.content {
 
 .iasi-status-actions a:hover {
   text-decoration: underline;
+}
+
+.iasi-home-copy .construction-banner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.iasi-home-copy .construction-banner figure {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.iasi-home-copy .construction-banner img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
 }

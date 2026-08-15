@@ -40,6 +40,8 @@ website:
         menu:
           - text: "Agentics"
             href: pages/methodology/index.qmd
+          - text: "Adapters"
+            href: pages/methodology/adapters.qmd
       - text: "Manuales"
         menu:
           - text: "Todos"
@@ -66,7 +68,7 @@ website:
         href: index.qmd
         aria-label: "Español"
       - text: "EN"
-        href: pages/en/index.qmd
+        href: index-en.qmd
         aria-label: "English"
 
     tools:

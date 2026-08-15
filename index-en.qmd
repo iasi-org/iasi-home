@@ -1,19 +1,25 @@
 ---
-pagetitle: "IASI · Engineering Assisted by Intelligent Systems"
+pagetitle: "Intelligent Systems Assisted Engineering (IASI)"
 lang: en
 title-block-style: none
 ---
 
+::: {.iasi-page-heading}
+<div class="iasi-page-title">Intelligent Systems Assisted Engineering</div>
+
+:::: {.iasi-epigraph}
+*As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)*
+::::
+
+:::
+
 ::: {.iasi-home-hero}
 
+:::: {.iasi-home-copy}
 
-::: {.iasi-home-copy}
-
-## Engineering Assisted by Intelligent Systems (IASI)
-
-::: {.iasi-epigraph}
-*As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)*
-:::
+::::: {.construction-banner}
+![](pages/resources/images/under-construction-en.png){.construction-banner-image}
+:::::
 
 Current software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. **That assumption is beginning to no longer hold.**
 
@@ -23,7 +29,7 @@ Today we can, and should, incorporate **intelligent systems as part of the engin
 
 Its objectives are:
 
-::: {.iasi-objectives}
+::::: {.iasi-objectives}
 
 A) **Teach** how to use intelligent systems coherently, productively and in alignment with engineering processes.
 
@@ -33,11 +39,11 @@ C) **Establish** a set of principles, patterns and good practices for their use.
 
 D) **Build** a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.
 
-:::
+:::::
 
 <div class="iasi-home-evidence">All of this through <strong>foundations, experimentation and real-world cases</strong>.</div>
 
-:::
+::::
 
 :::
 
@@ -49,4 +55,7 @@ Its ideas, methods and artifacts are developed openly so that they can be used, 
 
 IASI starts here. **What it becomes will also depend on those who choose to build it.**
 
-[View IASI on GitHub →](https://github.com/iasi-org)
+
+::: {.iasi-ai-banner}
+![](pages/resources/images/iasi-banner.png){.iasi-ai-banner-image}
+:::

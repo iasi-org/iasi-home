@@ -7,14 +7,19 @@ title-block-style: none
 ::: {.iasi-page-heading}
 <div class="iasi-page-title">Ingeniería Asistida por Sistemas Inteligentes (IASI)</div>
 
-::: {.iasi-epigraph}
+:::: {.iasi-epigraph}
 *Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)*
-:::
+::::
+
 :::
 
 ::: {.iasi-home-hero}
 
-::: {.iasi-home-copy}
+:::: {.iasi-home-copy}
+
+::::: {.construction-banner}
+![](pages/resources/images/under-construction-es.png){.construction-banner-image}
+:::::
 
 Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. **Ese supuesto empieza a dejar de ser válido.**
 
@@ -24,7 +29,7 @@ Hoy podemos, y debemos, incorporar **sistemas inteligentes como parte del equipo
 
 Sus objetivos son:
 
-::: {.iasi-objectives}
+::::: {.iasi-objectives}
 
 A) **Enseñar** a utilizar los sistemas inteligentes de forma coherente, productiva y alineada con los procesos de ingeniería.
 
@@ -34,15 +39,15 @@ C) **Establecer** un conjunto de principios, patrones y buenas prácticas para s
 
 D) **Construir** un framework que permita aplicar todo lo anterior de forma sistemática, reproducible y evolutiva.
 
-:::
+:::::
 
 <div class="iasi-home-evidence">Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>.</div>
 
-:::
+::::
 
 :::
 
-## Abierto por diseño {#participar}
+## Abierto por diseño {#contribute}
 
 Aunque IASI nace como una iniciativa personal, **no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad**.
 
@@ -52,5 +57,5 @@ IASI empieza aquí. **Lo que llegue a ser dependerá también de quienes quieran
 
 
 ::: {.iasi-ai-banner}
-![](pages/resources/images/ai-banner.png){.iasi-ai-banner-image}
+![](pages/resources/images/iasi-banner.png){.iasi-ai-banner-image}
 :::
