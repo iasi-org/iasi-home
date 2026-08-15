@@ -1,0 +1,31 @@
+---
+pagetitle: "Agentics"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">Agentics</a>
+[Overview](overview.qmd)
+[Instructions](../status/to-be-done.qmd)
+[Commands](../status/to-be-done.qmd)
+[Skills](../status/to-be-done.qmd)
+[MCP](../status/to-be-done.qmd)
+[Instalación](../status/to-be-done.qmd)
+::::
+
+:::: {.iasi-artifact-content}
+# Agentics
+
+Agentics define **cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería**.
+
+IASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.
+
+El objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.
+
+> **La herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable.**
+
+![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
+:::

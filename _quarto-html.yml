@@ -36,6 +36,10 @@ website:
             href: pages/artifacts/iasi-tools-dev.qmd
           - text: "IASI RStudio"
             href: pages/artifacts/iasi-rstudio.qmd
+      - text: "Metodología"
+        menu:
+          - text: "Agentics"
+            href: pages/methodology/index.qmd
       - text: "Manuales"
         menu:
           - text: "Todos"

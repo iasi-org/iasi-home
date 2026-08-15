@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Technical Guides · Manuales · IASI – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>overview – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,17 +40,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-12f212de80485892e74d24ea52ea2c65.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -287,56 +287,127 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="iasi-artifact-page iasi-artifact-manual">
-<div class="iasi-artifact-subnav iasi-manual-subnav">
-<a class="iasi-artifact-subnav-brand" href="index.html">Manuales</a>
-<details>
-<summary>
-User Guides
-</summary>
-<div class="iasi-manual-subnav-menu">
-<a href="user-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&amp;title=iasi.quarto User Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&amp;title=iasi-tools-dev User Guide">IASI Tools Dev</a>
-</div>
-</details>
-<details>
-<summary>
-Technical Guides
-</summary>
-<div class="iasi-manual-subnav-menu">
-<a href="technical-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&amp;title=iasi.quarto Technical Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&amp;title=iasi-tools-dev Technical Guide">IASI Tools Dev</a>
-</div>
-</details>
-</div>
-<section id="technical-guides" class="level1 iasi-artifact-content">
-<h1>Technical Guides</h1>
-<p>Los Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.</p>
-<div class="iasi-grid">
-<div class="iasi-card iasi-card-publish">
-<p><strong>TECHNICAL GUIDE</strong></p>
-<section id="iasi.quarto" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.quarto"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&amp;title=iasi.quarto Technical Guide">iasi.quarto</a></h3>
-<p>Arquitectura y estrategias del motor de publicación.</p>
+<section id="agentics" class="level1">
+<h1>Agentics</h1>
+<p><strong>Agentics</strong> es el área de la metodología IASI que define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.</p>
+<p>Su objetivo no es describir una herramienta concreta ni imponer el funcionamiento de un determinado modelo. Define, de forma independiente de la tecnología, <strong>cómo queremos que trabajen los agentes, qué capacidades pueden utilizar y bajo qué reglas deben hacerlo</strong>.</p>
+<p>La implementación concreta puede cambiar. La metodología permanece.</p>
+<hr>
+<section id="un-modelo-independiente-de-la-herramienta" class="level2">
+<h2 class="anchored" data-anchor-id="un-modelo-independiente-de-la-herramienta">Un modelo independiente de la herramienta</h2>
+<p>Codex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.</p>
+<p>IASI separa esos mecanismos de la definición metodológica.</p>
+<pre class="text"><code>IASI Agentics
+      │
+      ▼
+metodología común
+      │
+      ├── Codex
+      ├── Copilot
+      ├── Claude
+      └── otros sistemas</code></pre>
+<p>Agentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después.</p>
+<hr>
 </section>
-</div>
-<div class="iasi-card iasi-card-extend">
-<p><strong>TECHNICAL GUIDE</strong></p>
-<section id="iasi.lua" class="level3">
-<h3 class="anchored" data-anchor-id="iasi.lua"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">iasi.lua</a></h3>
-<p>Arquitectura y desarrollo de extensiones Lua.</p>
+<section id="componentes" class="level2">
+<h2 class="anchored" data-anchor-id="componentes">Componentes</h2>
+<p>Agentics se organiza inicialmente en cuatro piezas:</p>
+<pre class="text"><code>agentics/
+├── instructions/
+├── commands/
+├── skills/
+└── mcp/</code></pre>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
+<p>Definen <strong>cómo debe comportarse el agente</strong>.</p>
+<p>Incluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.</p>
 </section>
-</div>
-<div class="iasi-card iasi-card-publish">
-<p><strong>TECHNICAL GUIDE</strong></p>
-<section id="iasi-tools-dev" class="level3">
-<h3 class="anchored" data-anchor-id="iasi-tools-dev"><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&amp;title=iasi-tools-dev Technical Guide">iasi-tools-dev</a></h3>
-<p>Arquitectura y mantenimiento de las herramientas operativas del ecosistema.</p>
+<section id="commands" class="level3">
+<h3 class="anchored" data-anchor-id="commands">Commands</h3>
+<p>Definen <strong>acciones explícitas que pueden solicitarse a los agentes</strong>.</p>
+<p>Un command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.</p>
 </section>
-</div>
-</div>
+<section id="skills" class="level3">
+<h3 class="anchored" data-anchor-id="skills">Skills</h3>
+<p>Definen <strong>capacidades reutilizables</strong> que un agente puede aplicar en diferentes tareas y contextos.</p>
+<p>Una skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.</p>
 </section>
-</div>
+<section id="mcp" class="level3">
+<h3 class="anchored" data-anchor-id="mcp">MCP</h3>
+<p>Define la integración con <strong>herramientas y servicios externos expuestos mediante Model Context Protocol</strong>.</p>
+<p>IASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería.</p>
+<hr>
+</section>
+</section>
+<section id="composición" class="level2">
+<h2 class="anchored" data-anchor-id="composición">Composición</h2>
+<p>Los agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.</p>
+<p>La configuración efectiva puede componerse según el contexto.</p>
+<p>Por ejemplo, un agente que trabaja sobre documentación podría recibir:</p>
+<pre class="text"><code>general behavior
++ human control
++ validation
++ documentation style
++ documentation structure</code></pre>
+<p>Mientras que un agente que implementa software podría utilizar:</p>
+<pre class="text"><code>general behavior
++ validation
++ code style
++ testing</code></pre>
+<p>La metodología proporciona las piezas. El contexto determina cuáles se aplican.</p>
+<hr>
+</section>
+<section id="instalación" class="level2">
+<h2 class="anchored" data-anchor-id="instalación">Instalación</h2>
+<p>Agentics puede instalarse en un workspace o en un proyecto mediante IASI.</p>
+<pre class="text"><code>iasi
+ │
+ ▼
+iasi install
+ │
+ ▼
+.iasi/</code></pre>
+<p>Una instalación de workspace contiene la metodología completa disponible.</p>
+<p>Una instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.</p>
+<p>Esto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito.</p>
+<hr>
+</section>
+<section id="control-humano" class="level2">
+<h2 class="anchored" data-anchor-id="control-humano">Control humano</h2>
+<p>La autonomía del agente tiene límites.</p>
+<p>IASI mantiene al humano como autoridad sobre:</p>
+<ul>
+<li>objetivos;</li>
+<li>prioridades;</li>
+<li>decisiones relevantes;</li>
+<li>aceptación final del trabajo.</li>
+</ul>
+<p>El agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.</p>
+<p>La velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido.</p>
+<hr>
+</section>
+<section id="validación" class="level2">
+<h2 class="anchored" data-anchor-id="validación">Validación</h2>
+<p>Ejecutar una tarea no significa haberla completado.</p>
+<p>Agentics distingue entre:</p>
+<pre class="text"><code>implemented
+validated
+accepted</code></pre>
+<p>Una solución puede estar implementada sin estar validada.</p>
+<p>Puede estar validada técnicamente sin haber sido aceptada por el humano.</p>
+<p>La validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos.</p>
+<hr>
+</section>
+<section id="principio" class="level2">
+<h2 class="anchored" data-anchor-id="principio">Principio</h2>
+<blockquote class="blockquote">
+<p><strong>Agentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.</strong></p>
+</blockquote>
+<p>La metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -364,12 +435,12 @@ Technical Guides
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
