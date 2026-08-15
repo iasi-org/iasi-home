@@ -68,7 +68,7 @@ website:
         href: index.qmd
         aria-label: "Español"
       - text: "EN"
-        href: index-en.qmd
+        href: index_en.qmd
         aria-label: "English"
 
     tools:

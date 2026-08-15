@@ -1,11 +1,11 @@
 ---
-pagetitle: "Intelligent Systems Assisted Engineering (IASI)"
+pagetitle: "Intelligence-Assisted Systems Engineering (IASI)"
 lang: en
 title-block-style: none
 ---
 
 ::: {.iasi-page-heading}
-<div class="iasi-page-title">Intelligent Systems Assisted Engineering</div>
+<div class="iasi-page-title">Intelligence-Assisted Systems Engineering</div>
 
 :::: {.iasi-epigraph}
 *As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)*

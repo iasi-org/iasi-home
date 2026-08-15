@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IASI · Ingeniería Asistida por Sistemas Inteligentes – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>Intelligent Systems Assisted Engineering (IASI) – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,17 +40,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-fe8a273e92621161844650e72603c2c6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -77,19 +77,14 @@ ul.task-list li input[type="checkbox"] {
 (() => {
   window.addEventListener("DOMContentLoaded", async () => {
     const target = document.getElementById("iasi-published-at");
-    const css = document.querySelector(
-      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
-    );
 
-    if (!target || !css) return;
+    if (!target) return;
 
-    const marker = css.href.replace(
-      /site_libs\/bootstrap\/[^/]+$/,
-      "published-at.txt"
-    );
+    const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+    if (localHosts.has(window.location.hostname)) return;
 
     try {
-      const response = await fetch(marker, { cache: "no-store" });
+      const response = await fetch("published-at.txt", { cache: "no-store" });
       if (!response.ok) return;
 
       const publishedAt = new Date((await response.text()).trim());
@@ -129,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -267,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">ES</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index-en.html"> 
+    <a class="nav-link" href="./index_en.html"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
@@ -293,39 +288,39 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="iasi-page-heading">
 <div class="iasi-page-title">
-Ingeniería Asistida por Sistemas Inteligentes (IASI)
+Intelligent Systems Assisted Engineering
 </div>
 <div class="iasi-epigraph">
-<p><em>Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)</em></p>
+<p><em>As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)</em></p>
 </div>
 </div>
 <div class="iasi-home-hero">
 <div class="iasi-home-copy">
 <div class="construction-banner">
-<p><img src="pages/resources/images/under-construction-es.png" class="construction-banner-image img-fluid"></p>
+<p><img src="pages/resources/images/under-construction-en.png" class="construction-banner-image img-fluid"></p>
 </div>
-<p>Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. <strong>Ese supuesto empieza a dejar de ser válido.</strong></p>
-<p>Hoy podemos, y debemos, incorporar <strong>sistemas inteligentes como parte del equipo de ingeniería</strong>, capaces de participar en el análisis, el diseño, la implementación, la validación y la evolución del propio sistema, pero es necesario integrarlos de forma <strong>explícita, sistemática y gobernada</strong> dentro de los procesos.</p>
-<p><strong>IASI nace para definir cómo debe hacerse ingeniería de software en este nuevo contexto.</strong></p>
-<p>Sus objetivos son:</p>
+<p>Current software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. <strong>That assumption is beginning to no longer hold.</strong></p>
+<p>Today we can, and should, incorporate <strong>intelligent systems as part of the engineering team</strong>, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated <strong>explicitly, systematically and under governance</strong> within engineering processes.</p>
+<p><strong>IASI was created to define how software engineering should be practiced in this new context.</strong></p>
+<p>Its objectives are:</p>
 <div class="iasi-objectives">
 <ol type="A">
-<li><p><strong>Enseñar</strong> a utilizar los sistemas inteligentes de forma coherente, productiva y alineada con los procesos de ingeniería.</p></li>
-<li><p><strong>Definir</strong> una metodología que integre los sistemas inteligentes como parte del equipo y del proceso de ingeniería.</p></li>
-<li><p><strong>Establecer</strong> un conjunto de principios, patrones y buenas prácticas para su utilización.</p></li>
-<li><p><strong>Construir</strong> un framework que permita aplicar todo lo anterior de forma sistemática, reproducible y evolutiva.</p></li>
+<li><p><strong>Teach</strong> how to use intelligent systems coherently, productively and in alignment with engineering processes.</p></li>
+<li><p><strong>Define</strong> a methodology that integrates intelligent systems as part of the team and the engineering process.</p></li>
+<li><p><strong>Establish</strong> a set of principles, patterns and good practices for their use.</p></li>
+<li><p><strong>Build</strong> a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.</p></li>
 </ol>
 </div>
 <div class="iasi-home-evidence">
-Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>.
+All of this through <strong>foundations, experimentation and real-world cases</strong>.
 </div>
 </div>
 </div>
 <section id="contribute" class="level2">
-<h2 class="anchored" data-anchor-id="contribute">Abierto por diseño</h2>
-<p>Aunque IASI nace como una iniciativa personal, <strong>no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad</strong>.</p>
-<p>Sus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: <strong>Profesionales, Equipos y Organizaciones son bienvenidos a participar</strong>, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.</p>
-<p>IASI empieza aquí. <strong>Lo que llegue a ser dependerá también de quienes quieran construirlo.</strong></p>
+<h2 class="anchored" data-anchor-id="contribute">Open by design</h2>
+<p>Although IASI began as a personal initiative, <strong>it is not intended to be built alone or to belong to a single person, but to the community</strong>.</p>
+<p>Its ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: <strong>Professionals, Teams and Organizations are welcome to participate</strong>, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.</p>
+<p>IASI starts here. <strong>What it becomes will also depend on those who choose to build it.</strong></p>
 <div class="iasi-ai-banner">
 <p><img src="pages/resources/images/iasi-banner.png" class="iasi-ai-banner-image img-fluid"></p>
 </div>
@@ -359,12 +354,12 @@ Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

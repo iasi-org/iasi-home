@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Agentics – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>Intelligence-Assisted Systems Engineering (IASI) – Ingeniería Asistida por Sistemas Inteligentes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,20 +37,20 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5278a8400be39a80802029286a402197.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-fe8a273e92621161844650e72603c2c6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -286,23 +286,47 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="iasi-artifact-page iasi-artifact-publish">
-<div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../../pages/methodology/index.html">Agentics</a> <a href="../../pages/methodology/overview.html">Overview</a> <a href="../../pages/status/to-be-done.html">Instructions</a> <a href="../../pages/status/to-be-done.html">Commands</a> <a href="../../pages/status/to-be-done.html">Skills</a> <a href="../../pages/status/to-be-done.html">MCP</a> <a href="../../pages/status/to-be-done.html">Instalación</a></p>
+<div class="iasi-page-heading">
+<div class="iasi-page-title">
+Intelligence-Assisted Systems Engineering
 </div>
-<section id="agentics" class="level1 iasi-artifact-content">
-<h1>Agentics</h1>
-<p>Agentics define <strong>cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería</strong>.</p>
-<p>IASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.</p>
-<p>El objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.</p>
-<blockquote class="blockquote">
-<p><strong>La herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable.</strong></p>
-</blockquote>
-<p><img src="../resources/images/iasi-banner.png" class="iasi-subproducts-banner img-fluid" alt="Ecosistema de herramientas de inteligencia artificial"></p>
+<div class="iasi-epigraph">
+<p><em>As implementation costs less and less, knowledge becomes more and more valuable. (Grandez)</em></p>
+</div>
+</div>
+<div class="iasi-home-hero">
+<div class="iasi-home-copy">
+<div class="construction-banner">
+<p><img src="pages/resources/images/under-construction-en.png" class="construction-banner-image img-fluid"></p>
+</div>
+<p>Current software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. <strong>That assumption is beginning to no longer hold.</strong></p>
+<p>Today we can, and should, incorporate <strong>intelligent systems as part of the engineering team</strong>, capable of participating in the analysis, design, implementation, validation and evolution of the system itself, but they must be integrated <strong>explicitly, systematically and under governance</strong> within engineering processes.</p>
+<p><strong>IASI was created to define how software engineering should be practiced in this new context.</strong></p>
+<p>Its objectives are:</p>
+<div class="iasi-objectives">
+<ol type="A">
+<li><p><strong>Teach</strong> how to use intelligent systems coherently, productively and in alignment with engineering processes.</p></li>
+<li><p><strong>Define</strong> a methodology that integrates intelligent systems as part of the team and the engineering process.</p></li>
+<li><p><strong>Establish</strong> a set of principles, patterns and good practices for their use.</p></li>
+<li><p><strong>Build</strong> a framework that makes it possible to apply all of the above systematically, reproducibly and evolvably.</p></li>
+</ol>
+</div>
+<div class="iasi-home-evidence">
+All of this through <strong>foundations, experimentation and real-world cases</strong>.
+</div>
+</div>
+</div>
+<section id="contribute" class="level2">
+<h2 class="anchored" data-anchor-id="contribute">Open by design</h2>
+<p>Although IASI began as a personal initiative, <strong>it is not intended to be built alone or to belong to a single person, but to the community</strong>.</p>
+<p>Its ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: <strong>Professionals, Teams and Organizations are welcome to participate</strong>, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.</p>
+<p>IASI starts here. <strong>What it becomes will also depend on those who choose to build it.</strong></p>
+<div class="iasi-ai-banner">
+<p><img src="pages/resources/images/iasi-banner.png" class="iasi-ai-banner-image img-fluid"></p>
+</div>
+
+
 </section>
-</div>
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -330,12 +354,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

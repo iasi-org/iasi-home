@@ -1,6 +1,4 @@
 (() => {
-  // Preferred language is persisted so an explicit ES/EN choice always wins
-  // over the browser language on subsequent visits.
   const STORAGE_KEY = "iasi-language";
 
   const browserLanguage =
@@ -9,67 +7,150 @@
       : "en";
 
   const savedLanguage = localStorage.getItem(STORAGE_KEY);
-  const preferredLanguage = savedLanguage || browserLanguage;
 
-  // Quarto may expose an index page either as /index.html or simply as /.
-  // Normalize both forms so we can compare destinations reliably.
+  const preferredLanguage =
+    savedLanguage === "es" || savedLanguage === "en"
+      ? savedLanguage
+      : browserLanguage;
+
+  /*
+   * language.js vive en:
+   *
+   *   pages/resources/js/language.js
+   *
+   * Tres niveles arriba está la raíz del sitio.
+   * Así funciona también cuando el sitio vive bajo /iasi-home/.
+   */
+  const siteRoot = new URL(
+    "../../../",
+    document.currentScript.src
+  );
+
+  const entryUrl = new URL("index.html", siteRoot);
+
+  const spanishHomeUrl = new URL(
+    "pages/en/index_es.html",
+    siteRoot
+  );
+
+  const englishHomeUrl = new URL(
+    "pages/en/index_en.html",
+    siteRoot
+  );
+
   const canonicalPath = (value) => {
     const url = new URL(value, window.location.href);
-    return url.pathname.replace(/\/index\.html$/i, "/");
+
+    return url.pathname.replace(
+      /\/index\.html$/i,
+      "/"
+    );
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    let spanishLink = null;
-    let englishLink = null;
-
-    // Locate the ES/EN navbar links and remember explicit user choices.
+    /*
+     * Ajustamos los enlaces ES / EN de la navbar.
+     */
     document.querySelectorAll("a").forEach((link) => {
-      const label = link.textContent.trim().toLowerCase();
+      const label = link.textContent
+        .trim()
+        .toLowerCase();
 
       if (label === "es" || label === "español") {
-        spanishLink = link;
+        link.href = spanishHomeUrl.href;
+
         link.addEventListener("click", () => {
-          localStorage.setItem(STORAGE_KEY, "es");
+          localStorage.setItem(
+            STORAGE_KEY,
+            "es"
+          );
         });
       }
 
       if (label === "en" || label === "english") {
-        englishLink = link;
+        link.href = englishHomeUrl.href;
+
         link.addEventListener("click", () => {
-          localStorage.setItem(STORAGE_KEY, "en");
+          localStorage.setItem(
+            STORAGE_KEY,
+            "en"
+          );
         });
       }
     });
 
-    // Automatic language redirection applies ONLY to the two landing pages.
-    // Internal documents such as Manifesto, Principles, Contact, artifacts or
-    // the bilingual manifesto must remain where the user navigated to them.
-    //
-    // This avoids the previous behaviour where opening, for example,
-    // principles.html could be interpreted as a language change and send the
-    // user back to the English or Spanish home page.
-    if (!spanishLink || !englishLink) {
+    const currentPath =
+      canonicalPath(window.location.href);
+
+    const entryPath =
+      canonicalPath(entryUrl.href);
+
+    const spanishHomePath =
+      canonicalPath(spanishHomeUrl.href);
+
+    const englishHomePath =
+      canonicalPath(englishHomeUrl.href);
+
+    const isEntryPage =
+      currentPath === entryPath;
+
+    const isSpanishHome =
+      currentPath === spanishHomePath;
+
+    const isEnglishHome =
+      currentPath === englishHomePath;
+
+    /*
+     * Solo actuamos en:
+     *
+     *   /index.html
+     *   /pages/en/index_es.html
+     *   /pages/en/index_en.html
+     *
+     * Las demás páginas permanecen donde están.
+     */
+    if (
+      !isEntryPage &&
+      !isSpanishHome &&
+      !isEnglishHome
+    ) {
       return;
     }
 
-    const currentPath = canonicalPath(window.location.href);
-    const spanishHomePath = canonicalPath(spanishLink.href);
-    const englishHomePath = canonicalPath(englishLink.href);
+    /*
+     * Entrada inicial.
+     */
+    if (isEntryPage) {
+      window.location.replace(
+        preferredLanguage === "es"
+          ? spanishHomeUrl.href
+          : englishHomeUrl.href
+      );
 
-    const isSpanishHome = currentPath === spanishHomePath;
-    const isEnglishHome = currentPath === englishHomePath;
-
-    if (!isSpanishHome && !isEnglishHome) {
       return;
     }
 
-    if (preferredLanguage === "en" && isSpanishHome) {
-      window.location.replace(englishLink.href);
+    /*
+     * Corrige la home según la preferencia guardada.
+     */
+    if (
+      preferredLanguage === "en" &&
+      isSpanishHome
+    ) {
+      window.location.replace(
+        englishHomeUrl.href
+      );
+
       return;
     }
 
-    if (preferredLanguage === "es" && isEnglishHome) {
-      window.location.replace(spanishLink.href);
+    if (
+      preferredLanguage === "es" &&
+      isEnglishHome
+    ) {
+      window.location.replace(
+        spanishHomeUrl.href
+      );
     }
   });
 })();

@@ -77,6 +77,20 @@
     "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nManuales IASI\nAquí se reúne la documentación necesaria para utilizar, comprender y ampliar las herramientas del ecosistema IASI.\nLos User Guides están orientados a quienes quieren instalar, configurar y usar cada herramienta. Explican las tareas habituales, las opciones disponibles y los flujos de trabajo recomendados.\nLos Technical Guides describen cómo están construidas esas herramientas. Recogen su arquitectura, sus decisiones de diseño y la información necesaria para mantenerlas y hacerlas evolucionar.\n\nLos User Guides explican cómo trabajar con IASI. Los Technical Guides explican cómo funciona por dentro."
   },
   {
+    "objectID": "pages/en/index_en.html",
+    "href": "pages/en/index_en.html",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+  },
+  {
+    "objectID": "pages/en/index_en.html#contribute",
+    "href": "pages/en/index_en.html#contribute",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "Open by design",
+    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
+  },
+  {
     "objectID": "pages/common/manifesto.html",
     "href": "pages/common/manifesto.html",
     "title": "Manifiesto",
@@ -147,18 +161,32 @@
     "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index_es.html",
+    "href": "index_es.html",
     "title": "Ingeniería Asistida por Sistemas Inteligentes",
     "section": "",
     "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
   },
   {
-    "objectID": "index.html#contribute",
-    "href": "index.html#contribute",
+    "objectID": "index_es.html#contribute",
+    "href": "index_es.html#contribute",
     "title": "Ingeniería Asistida por Sistemas Inteligentes",
     "section": "Abierto por diseño",
     "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+  },
+  {
+    "objectID": "index.html#contribute",
+    "href": "index.html#contribute",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "Open by design",
+    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
   },
   {
     "objectID": "books.html",
@@ -168,15 +196,15 @@
     "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
   },
   {
-    "objectID": "index-en.html",
-    "href": "index-en.html",
+    "objectID": "index_en.html",
+    "href": "index_en.html",
     "title": "Ingeniería Asistida por Sistemas Inteligentes",
     "section": "",
-    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
   },
   {
-    "objectID": "index-en.html#contribute",
-    "href": "index-en.html#contribute",
+    "objectID": "index_en.html#contribute",
+    "href": "index_en.html#contribute",
     "title": "Ingeniería Asistida por Sistemas Inteligentes",
     "section": "Open by design",
     "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
@@ -229,6 +257,20 @@
     "title": "Contact",
     "section": "",
     "text": "Javier G. Grández\nYou can write to us with questions, ideas, collaboration proposals, or simply to start a conversation about IASI."
+  },
+  {
+    "objectID": "pages/en/index_es.html",
+    "href": "pages/en/index_es.html",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "",
+    "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
+  },
+  {
+    "objectID": "pages/en/index_es.html#contribute",
+    "href": "pages/en/index_es.html#contribute",
+    "title": "Ingeniería Asistida por Sistemas Inteligentes",
+    "section": "Abierto por diseño",
+    "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
   },
   {
     "objectID": "pages/manuals/technical-guides.html",

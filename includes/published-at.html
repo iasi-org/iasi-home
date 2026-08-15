@@ -2,19 +2,14 @@
 (() => {
   window.addEventListener("DOMContentLoaded", async () => {
     const target = document.getElementById("iasi-published-at");
-    const css = document.querySelector(
-      'link[rel="stylesheet"][href*="site_libs/bootstrap/"]'
-    );
 
-    if (!target || !css) return;
+    if (!target) return;
 
-    const marker = css.href.replace(
-      /site_libs\/bootstrap\/[^/]+$/,
-      "published-at.txt"
-    );
+    const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+    if (localHosts.has(window.location.hostname)) return;
 
     try {
-      const response = await fetch(marker, { cache: "no-store" });
+      const response = await fetch("published-at.txt", { cache: "no-store" });
       if (!response.ok) return;
 
       const publishedAt = new Date((await response.text()).trim());
