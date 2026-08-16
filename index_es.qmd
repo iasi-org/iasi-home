@@ -1,5 +1,5 @@
 ---
-pagetitle: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
+pagetitle: "IASI"
 lang: es
 title-block-style: none
 ---

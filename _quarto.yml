@@ -8,7 +8,7 @@ profile:
   default: html
 
 website:
-  title: "Ingeniería Asistida por Sistemas Inteligentes"
+  title: "IASI"
   page-navigation: true
   search: false
 
