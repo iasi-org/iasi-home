@@ -121,9 +121,16 @@
   {
     "objectID": "pages/methodology/adapters.html",
     "href": "pages/methodology/adapters.html",
-    "title": "Agentics",
+    "title": "Adapters",
     "section": "",
-    "text": "Metodologia Overview Instructions Commands Skills MCP Instalación\n\n\nAgentics\nAgentics define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nIASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.\nEl objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.\n\nLa herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable."
+    "text": "Adapters es la capa que adapta la metodología IASI a agentes y entornos concretos.\nIASI define en Agentics cómo queremos que participen los agentes en el proceso de ingeniería, de forma independiente de una herramienta determinada. Cada agente, sin embargo, ofrece mecanismos propios para recibir instrucciones, incorporar capacidades, ejecutar herramientas, mantener contexto o integrarse con el entorno de desarrollo.\nLos adaptadores traducen esa definición común a las particularidades de cada plataforma.\nIASI Agentics\n     │\n     ├── Codex adapter\n     └── GitHub Copilot adapter\nLa metodología permanece estable. El adaptador es la pieza que conoce al agente.\n\n\n\n\nAdapta Agentics a los mecanismos y capacidades disponibles en Codex.\n\n\n\nAdapta Agentics a los mecanismos y capacidades disponibles en GitHub Copilot.\nLos adaptadores se incorporarán a medida que IASI necesite trabajar de forma reproducible con nuevos agentes. No forman parte del núcleo de la metodología y pueden evolucionar de manera independiente de ella.\n\nAgentics define la forma de trabajar. Los adapters la traducen al lenguaje de cada agente."
+  },
+  {
+    "objectID": "pages/methodology/adapters.html#adaptadores",
+    "href": "pages/methodology/adapters.html#adaptadores",
+    "title": "Adapters",
+    "section": "",
+    "text": "Adapta Agentics a los mecanismos y capacidades disponibles en Codex.\n\n\n\nAdapta Agentics a los mecanismos y capacidades disponibles en GitHub Copilot.\nLos adaptadores se incorporarán a medida que IASI necesite trabajar de forma reproducible con nuevos agentes. No forman parte del núcleo de la metodología y pueden evolucionar de manera independiente de ella.\n\nAgentics define la forma de trabajar. Los adapters la traducen al lenguaje de cada agente."
   },
   {
     "objectID": "pages/manuals/technical-guides.html",
