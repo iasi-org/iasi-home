@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Agentics – IASI</title>
+<title>Adapters · IASI – IASI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -286,24 +286,38 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Adapters</h1></header>
 
 
 
 
 <div class="iasi-artifact-page iasi-artifact-publish">
-<div class="iasi-artifact-subnav">
-<p><a class="iasi-artifact-subnav-brand" href="../../pages/methodology/index.html">Metodologia</a> <a href="../../pages/methodology/overview.html">Overview</a> <a href="../../pages/status/to-be-done.html">Instructions</a> <a href="../../pages/status/to-be-done.html">Commands</a> <a href="../../pages/status/to-be-done.html">Skills</a> <a href="../../pages/status/to-be-done.html">MCP</a> <a href="../../pages/status/to-be-done.html">Instalación</a></p>
-</div>
-<section id="agentics" class="level1 iasi-artifact-content">
-<h1>Agentics</h1>
-<p>Agentics define <strong>cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería</strong>.</p>
-<p>IASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.</p>
-<p>El objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.</p>
+<section id="adapters" class="level1 iasi-artifact-content">
+
+<p><strong>Adapters</strong> es la capa que adapta la metodología IASI a agentes y entornos concretos.</p>
+<p>IASI define en <strong>Agentics</strong> cómo queremos que participen los agentes en el proceso de ingeniería, de forma independiente de una herramienta determinada. Cada agente, sin embargo, ofrece mecanismos propios para recibir instrucciones, incorporar capacidades, ejecutar herramientas, mantener contexto o integrarse con el entorno de desarrollo.</p>
+<p>Los adaptadores traducen esa definición común a las particularidades de cada plataforma.</p>
+<pre class="text"><code>IASI Agentics
+     │
+     ├── Codex adapter
+     └── GitHub Copilot adapter</code></pre>
+<p>La metodología permanece estable. <strong>El adaptador es la pieza que conoce al agente.</strong></p>
+<section id="adaptadores" class="level2">
+<h2 class="anchored" data-anchor-id="adaptadores">Adaptadores</h2>
+<section id="codex" class="level3">
+<h3 class="anchored" data-anchor-id="codex">Codex</h3>
+<p>Adapta Agentics a los mecanismos y capacidades disponibles en Codex.</p>
+</section>
+<section id="github-copilot" class="level3">
+<h3 class="anchored" data-anchor-id="github-copilot">GitHub Copilot</h3>
+<p>Adapta Agentics a los mecanismos y capacidades disponibles en GitHub Copilot.</p>
+<p>Los adaptadores se incorporarán a medida que IASI necesite trabajar de forma reproducible con nuevos agentes. No forman parte del núcleo de la metodología y pueden evolucionar de manera independiente de ella.</p>
 <blockquote class="blockquote">
-<p><strong>La herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable.</strong></p>
+<p><strong>Agentics define la forma de trabajar. Los adapters la traducen al lenguaje de cada agente.</strong></p>
 </blockquote>
 <p><img src="../../resources/images/iasi-banner.png" class="iasi-subproducts-banner img-fluid" alt="Ecosistema de herramientas de inteligencia artificial"></p>
+</section>
+</section>
 </section>
 </div>
 
