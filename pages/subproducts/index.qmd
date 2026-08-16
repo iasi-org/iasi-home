@@ -6,10 +6,9 @@ lang: es
 ::: {.iasi-artifact-page .iasi-artifact-publish}
 :::: {.iasi-artifact-subnav}
 <a class="iasi-artifact-subnav-brand" href="index.qmd">Subproductos</a>
-[IASI Quarto](iasi-quarto.qmd)
-[IASI PlantUML](iasi-lua.qmd#plantuml)
-[IASI Shiny](iasi-lua.qmd#shinylive)
-[IASI Graphics](../status/to-be-done.qmd)
+[Herramientas](tools.qmd)
+[Filtros](filters.qmd)
+[Servidores MCP](mcp.qmd)
 ::::
 
 :::: {.iasi-artifact-content}
@@ -28,11 +27,37 @@ IASI parte de un principio sencillo:
 
 Los **subproductos** nacen precisamente de ese proceso.
 
-Cuando la resolución de una necesidad da lugar a una herramienta, extensión, componente, servidor MCP, aplicación u otro elemento con entidad propia y capacidad de reutilización, ese resultado deja de ser únicamente una pieza interna del producto y se convierte en un **subproducto IASI**.
+Cuando la resolución de una necesidad da lugar a una herramienta, filtro, componente, servidor MCP, aplicación u otro elemento con entidad propia y capacidad de reutilización, ese resultado deja de ser únicamente una pieza interna del producto y se convierte en un **subproducto IASI**.
 
 Los subproductos, por tanto, no se diseñan de antemano como un catálogo cerrado. **Emergen de las necesidades reales que aparecen durante el desarrollo de los productos IASI.**
 
 Pueden adoptar formas muy diferentes y utilizar tecnologías distintas. Lo que los une no es su implementación, sino su origen: todos son soluciones reutilizables surgidas al resolver problemas concretos encontrados durante el desarrollo y aplicación de IASI.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-publish}
+**AUTOMATIZAR**
+
+### [Herramientas](tools.qmd)
+
+Utilidades y componentes ejecutables que convierten tareas repetibles del proceso de ingeniería en capacidades reutilizables.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**EXTENDER**
+
+### [Filtros](filters.qmd)
+
+Filtros que amplían Quarto y Pandoc con comportamientos específicos necesarios dentro del ecosistema IASI.
+:::
+
+::: {.iasi-card .iasi-card-think}
+**CONECTAR**
+
+### [Servidores MCP](mcp.qmd)
+
+Servidores que exponen herramientas, recursos o capacidades mediante Model Context Protocol.
+:::
+:::
 
 > **Los productos desarrollan el conocimiento. Los subproductos convierten parte de ese conocimiento en soluciones reutilizables.**
 

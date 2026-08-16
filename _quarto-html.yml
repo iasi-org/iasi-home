@@ -23,11 +23,11 @@ website:
           - text: "Todos"
             href: pages/subproducts/index.qmd
           - text: "Herramientas"
-            href: pages/status/to-be-done.qmd
-          - text: "Extensiones"
-            href: pages/status/to-be-done.qmd
+            href: pages/subproducts/tools.qmd
+          - text: "Filtros"
+            href: pages/subproducts/filters.qmd
           - text: "Servidores MCP"
-            href: pages/status/to-be-done.qmd
+            href: pages/subproducts/mcp.qmd
       - text: "Artefactos"
         menu:
           - text: "Todos"

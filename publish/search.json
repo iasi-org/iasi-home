@@ -7,11 +7,18 @@
     "text": "Decálogo IASI\nLos principios que orientan el diseño, desarrollo y evolución de IASI.\n\n\n\n1. La ingeniería es el objetivo.\n\nLas herramientas, tecnologías y sistemas inteligentes son medios. El objetivo sigue siendo resolver problemas mediante una ingeniería rigurosa, comprensible y sostenible.\n\n\n\n2. Los Sistemas Inteligentes son asistentes de ingeniería.\n\nNo son únicamente herramientas de generación. Pueden participar en el análisis, diseño, implementación, validación y evolución del sistema como parte activa del proceso de ingeniería.\n\n\n\n3. El conocimiento debe ser abierto.\n\nLas decisiones, aprendizajes y resultados deben poder compartirse, discutirse y reutilizarse siempre que sea posible.\n\n\n\n4. La documentación es un artefacto de ingeniería.\n\nDocumentar no es una actividad posterior al desarrollo. La documentación forma parte del sistema y de su proceso de construcción.\n\n\n\n5. La automatización debe ser consecuencia del diseño, no un fin en sí misma.\n\nAutomatizar tiene valor cuando simplifica un proceso correctamente entendido y diseñado. Automatizar un proceso deficiente solo permite equivocarse más deprisa.\n\n\n\n6. Los componentes deben ser reutilizables.\n\nCuando una solución puede generalizarse, debe convertirse en un componente capaz de servir a otros proyectos y contextos.\n\n\n\n7. Las decisiones deben poder cuestionarse.\n\nNinguna decisión se considera correcta por autoridad o costumbre. Debe poder explicarse, revisarse y sustituirse cuando aparezca una alternativa mejor.\n\n\n\n8. La metodología también evoluciona.\n\nLa metodología no es un marco rígido impuesto al problema. Aprende de la experiencia y cambia cuando la evidencia demuestra que existe una forma mejor de trabajar.\n\n\n\n9. El contexto debe ser explícito, compartido y gobernado.\n\nUn Sistema Inteligente solo puede participar de forma fiable en ingeniería cuando dispone del contexto adecuado. Ese contexto debe formar parte explícita del proceso y poder mantenerse, compartirse y controlarse.\n\n\n\n10. La complejidad debe encapsularse, no trasladarse al usuario.\n\nUna solución puede ser internamente sofisticada, pero esa complejidad no debe convertirse innecesariamente en complejidad de uso. La buena ingeniería ofrece interfaces simples sobre mecanismos complejos."
   },
   {
+    "objectID": "pages/subproducts/tools.html",
+    "href": "pages/subproducts/tools.html",
+    "title": "Herramientas IASI",
+    "section": "",
+    "text": "Herramientas IASI Quarto IASI Graphics\n\n\nHerramientas IASI\nLas herramientas son subproductos ejecutables o utilizables directamente que aparecen cuando una necesidad del proceso merece convertirse en una capacidad reusable.\nNo nacen para completar un catálogo. Nacen porque, durante el desarrollo de IASI, una solución deja de ser circunstancial y pasa a tener valor más allá del problema que la originó.\n\n\nPUBLICAR\n\nIASI Quarto\nConvierte la construcción, validación y publicación de proyectos Quarto en un proceso explícito, verificable y repetible.\n\n\n\nCOMUNICAR\n\nIASI Graphics\nRecursos para generar gráficos sencillos, claros y repetibles en documentación y presentaciones IASI."
+  },
+  {
     "objectID": "pages/subproducts/index.html",
     "href": "pages/subproducts/index.html",
     "title": "Subproductos IASI",
     "section": "",
-    "text": "Subproductos IASI Quarto IASI PlantUML IASI Shiny IASI Graphics\n\n\nSubproductos IASI\nLos productos IASI son los libros. Durante su desarrollo aparecen necesidades concretas que deben resolverse para poder avanzar.\nIASI parte de un principio sencillo:\n\nCada necesidad será analizada de forma independiente.\nSi una metodología existente ofrece una buena respuesta, la utilizaremos. Si necesita adaptarse, la adaptaremos. Si varias aportan valor, las combinaremos. Y cuando ninguna resulte suficiente, construiremos una nueva, que pasará a formar parte de los assets de la compañía o se publicará como open source.\n\nLos subproductos nacen precisamente de ese proceso.\nCuando la resolución de una necesidad da lugar a una herramienta, extensión, componente, servidor MCP, aplicación u otro elemento con entidad propia y capacidad de reutilización, ese resultado deja de ser únicamente una pieza interna del producto y se convierte en un subproducto IASI.\nLos subproductos, por tanto, no se diseñan de antemano como un catálogo cerrado. Emergen de las necesidades reales que aparecen durante el desarrollo de los productos IASI.\nPueden adoptar formas muy diferentes y utilizar tecnologías distintas. Lo que los une no es su implementación, sino su origen: todos son soluciones reutilizables surgidas al resolver problemas concretos encontrados durante el desarrollo y aplicación de IASI.\n\nLos productos desarrollan el conocimiento. Los subproductos convierten parte de ese conocimiento en soluciones reutilizables."
+    "text": "Subproductos Herramientas Filtros Servidores MCP\n\n\nSubproductos IASI\nLos productos IASI son los libros. Durante su desarrollo aparecen necesidades concretas que deben resolverse para poder avanzar.\nIASI parte de un principio sencillo:\n\nCada necesidad será analizada de forma independiente.\nSi una metodología existente ofrece una buena respuesta, la utilizaremos. Si necesita adaptarse, la adaptaremos. Si varias aportan valor, las combinaremos. Y cuando ninguna resulte suficiente, construiremos una nueva, que pasará a formar parte de los assets de la compañía o se publicará como open source.\n\nLos subproductos nacen precisamente de ese proceso.\nCuando la resolución de una necesidad da lugar a una herramienta, filtro, componente, servidor MCP, aplicación u otro elemento con entidad propia y capacidad de reutilización, ese resultado deja de ser únicamente una pieza interna del producto y se convierte en un subproducto IASI.\nLos subproductos, por tanto, no se diseñan de antemano como un catálogo cerrado. Emergen de las necesidades reales que aparecen durante el desarrollo de los productos IASI.\nPueden adoptar formas muy diferentes y utilizar tecnologías distintas. Lo que los une no es su implementación, sino su origen: todos son soluciones reutilizables surgidas al resolver problemas concretos encontrados durante el desarrollo y aplicación de IASI.\n\n\nAUTOMATIZAR\n\nHerramientas\nUtilidades y componentes ejecutables que convierten tareas repetibles del proceso de ingeniería en capacidades reutilizables.\n\n\n\nEXTENDER\n\nFiltros\nFiltros que amplían Quarto y Pandoc con comportamientos específicos necesarios dentro del ecosistema IASI.\n\n\n\nCONECTAR\n\nServidores MCP\nServidores que exponen herramientas, recursos o capacidades mediante Model Context Protocol.\n\n\n\n\nLos productos desarrollan el conocimiento. Los subproductos convierten parte de ese conocimiento en soluciones reutilizables."
   },
   {
     "objectID": "pages/subproducts/iasi-lua.html",
@@ -49,102 +56,193 @@
     "text": "Instalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.\n\n\n\nArquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.\n\n\n\nCódigo fuente, extensiones generadas, pruebas y scripts de construcción.\n\n\n\nResponsabilidades del núcleo, estructura de las extensiones y modelo de distribución.\n\n\n\nGuía para incorporar una nueva extensión a la plataforma."
   },
   {
-    "objectID": "pages/status/to-be-done.html",
-    "href": "pages/status/to-be-done.html",
-    "title": "To be done",
+    "objectID": "pages/status/under-construction.html",
+    "href": "pages/status/under-construction.html",
+    "title": "Under construction",
     "section": "",
-    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nTo be done\nThis artifact is planned, but its implementation and public documentation have not started yet.\n\n← Back to IASI"
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
   },
   {
-    "objectID": "pages/methodology/index.html",
-    "href": "pages/methodology/index.html",
+    "objectID": "pages/methodology/overview.html",
+    "href": "pages/methodology/overview.html",
     "title": "Agentics",
     "section": "",
-    "text": "Agentics Overview Instructions Commands Skills MCP Instalación\n\n\nAgentics\nAgentics define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nIASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.\nEl objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.\n\nLa herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable."
+    "text": "Agentics es el área de la metodología IASI que define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nSu objetivo no es describir una herramienta concreta ni imponer el funcionamiento de un determinado modelo. Define, de forma independiente de la tecnología, cómo queremos que trabajen los agentes, qué capacidades pueden utilizar y bajo qué reglas deben hacerlo.\nLa implementación concreta puede cambiar. La metodología permanece.\n\n\n\nCodex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.\nIASI separa esos mecanismos de la definición metodológica.\nIASI Agentics\n      │\n      ▼\nmetodología común\n      │\n      ├── Codex\n      ├── Copilot\n      ├── Claude\n      └── otros sistemas\nAgentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después.\n\n\n\n\nAgentics se organiza inicialmente en cuatro piezas:\nagentics/\n├── instructions/\n├── commands/\n├── skills/\n└── mcp/\n\n\nDefinen cómo debe comportarse el agente.\nIncluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.\n\n\n\nDefinen acciones explícitas que pueden solicitarse a los agentes.\nUn command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.\n\n\n\nDefinen capacidades reutilizables que un agente puede aplicar en diferentes tareas y contextos.\nUna skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.\n\n\n\nDefine la integración con herramientas y servicios externos expuestos mediante Model Context Protocol.\nIASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería.\n\n\n\n\n\nLos agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.\nLa configuración efectiva puede componerse según el contexto.\nPor ejemplo, un agente que trabaja sobre documentación podría recibir:\ngeneral behavior\n+ human control\n+ validation\n+ documentation style\n+ documentation structure\nMientras que un agente que implementa software podría utilizar:\ngeneral behavior\n+ validation\n+ code style\n+ testing\nLa metodología proporciona las piezas. El contexto determina cuáles se aplican.\n\n\n\n\nAgentics puede instalarse en un workspace o en un proyecto mediante IASI.\niasi\n │\n ▼\niasi install\n │\n ▼\n.iasi/\nUna instalación de workspace contiene la metodología completa disponible.\nUna instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.\nEsto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito.\n\n\n\n\nLa autonomía del agente tiene límites.\nIASI mantiene al humano como autoridad sobre:\n\nobjetivos;\nprioridades;\ndecisiones relevantes;\naceptación final del trabajo.\n\nEl agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.\nLa velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido.\n\n\n\n\nEjecutar una tarea no significa haberla completado.\nAgentics distingue entre:\nimplemented\nvalidated\naccepted\nUna solución puede estar implementada sin estar validada.\nPuede estar validada técnicamente sin haber sido aceptada por el humano.\nLa validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos.\n\n\n\n\n\nAgentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.\n\nLa metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla."
   },
   {
-    "objectID": "pages/manuals/user-guides.html",
-    "href": "pages/manuals/user-guides.html",
-    "title": "User Guides",
+    "objectID": "pages/methodology/overview.html#un-modelo-independiente-de-la-herramienta",
+    "href": "pages/methodology/overview.html#un-modelo-independiente-de-la-herramienta",
+    "title": "Agentics",
     "section": "",
-    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nUser Guides\nManuales para instalar, configurar y utilizar los productos IASI.\nLos User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.\n\n\nUSER GUIDE\n\niasi.quarto\nConstrucción y publicación reproducible de proyectos Quarto.\n\n\n\nUSER GUIDE\n\niasi.lua\nInstalación, configuración y uso de extensiones Lua.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación, comandos y flujos de trabajo de iasi-dev."
+    "text": "Codex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.\nIASI separa esos mecanismos de la definición metodológica.\nIASI Agentics\n      │\n      ▼\nmetodología común\n      │\n      ├── Codex\n      ├── Copilot\n      ├── Claude\n      └── otros sistemas\nAgentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después."
   },
   {
-    "objectID": "pages/manuals/index.html",
-    "href": "pages/manuals/index.html",
-    "title": "Manuales IASI",
+    "objectID": "pages/methodology/overview.html#componentes",
+    "href": "pages/methodology/overview.html#componentes",
+    "title": "Agentics",
     "section": "",
-    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nManuales IASI\nAquí se reúne la documentación necesaria para utilizar, comprender y ampliar las herramientas del ecosistema IASI.\nLos User Guides están orientados a quienes quieren instalar, configurar y usar cada herramienta. Explican las tareas habituales, las opciones disponibles y los flujos de trabajo recomendados.\nLos Technical Guides describen cómo están construidas esas herramientas. Recogen su arquitectura, sus decisiones de diseño y la información necesaria para mantenerlas y hacerlas evolucionar.\n\nLos User Guides explican cómo trabajar con IASI. Los Technical Guides explican cómo funciona por dentro."
+    "text": "Agentics se organiza inicialmente en cuatro piezas:\nagentics/\n├── instructions/\n├── commands/\n├── skills/\n└── mcp/\n\n\nDefinen cómo debe comportarse el agente.\nIncluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.\n\n\n\nDefinen acciones explícitas que pueden solicitarse a los agentes.\nUn command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.\n\n\n\nDefinen capacidades reutilizables que un agente puede aplicar en diferentes tareas y contextos.\nUna skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.\n\n\n\nDefine la integración con herramientas y servicios externos expuestos mediante Model Context Protocol.\nIASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería."
   },
   {
-    "objectID": "pages/common/manifesto-bilingual.html",
-    "href": "pages/common/manifesto-bilingual.html",
+    "objectID": "pages/methodology/overview.html#composición",
+    "href": "pages/methodology/overview.html#composición",
+    "title": "Agentics",
+    "section": "",
+    "text": "Los agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.\nLa configuración efectiva puede componerse según el contexto.\nPor ejemplo, un agente que trabaja sobre documentación podría recibir:\ngeneral behavior\n+ human control\n+ validation\n+ documentation style\n+ documentation structure\nMientras que un agente que implementa software podría utilizar:\ngeneral behavior\n+ validation\n+ code style\n+ testing\nLa metodología proporciona las piezas. El contexto determina cuáles se aplican."
+  },
+  {
+    "objectID": "pages/methodology/overview.html#instalación",
+    "href": "pages/methodology/overview.html#instalación",
+    "title": "Agentics",
+    "section": "",
+    "text": "Agentics puede instalarse en un workspace o en un proyecto mediante IASI.\niasi\n │\n ▼\niasi install\n │\n ▼\n.iasi/\nUna instalación de workspace contiene la metodología completa disponible.\nUna instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.\nEsto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito."
+  },
+  {
+    "objectID": "pages/methodology/overview.html#control-humano",
+    "href": "pages/methodology/overview.html#control-humano",
+    "title": "Agentics",
+    "section": "",
+    "text": "La autonomía del agente tiene límites.\nIASI mantiene al humano como autoridad sobre:\n\nobjetivos;\nprioridades;\ndecisiones relevantes;\naceptación final del trabajo.\n\nEl agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.\nLa velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido."
+  },
+  {
+    "objectID": "pages/methodology/overview.html#validación",
+    "href": "pages/methodology/overview.html#validación",
+    "title": "Agentics",
+    "section": "",
+    "text": "Ejecutar una tarea no significa haberla completado.\nAgentics distingue entre:\nimplemented\nvalidated\naccepted\nUna solución puede estar implementada sin estar validada.\nPuede estar validada técnicamente sin haber sido aceptada por el humano.\nLa validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos."
+  },
+  {
+    "objectID": "pages/methodology/overview.html#principio",
+    "href": "pages/methodology/overview.html#principio",
+    "title": "Agentics",
+    "section": "",
+    "text": "Agentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.\n\nLa metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla."
+  },
+  {
+    "objectID": "pages/methodology/adapters.html",
+    "href": "pages/methodology/adapters.html",
+    "title": "Agentics",
+    "section": "",
+    "text": "Metodologia Overview Instructions Commands Skills MCP Instalación\n\n\nAgentics\nAgentics define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nIASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.\nEl objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.\n\nLa herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable."
+  },
+  {
+    "objectID": "pages/manuals/technical-guides.html",
+    "href": "pages/manuals/technical-guides.html",
+    "title": "Technical Guides",
+    "section": "",
+    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\nLos Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura y estrategias del motor de publicación.\n\n\n\nTECHNICAL GUIDE\n\niasi.lua\nArquitectura y desarrollo de extensiones Lua.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de las herramientas operativas del ecosistema."
+  },
+  {
+    "objectID": "pages/common/manifesto.html",
+    "href": "pages/common/manifesto.html",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería. Creemos que la aparición de los Sistemas Inteligentes representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.\nIASI nace para recorrer ese camino.\n\n\nIASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema.\n\n\n\nIASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto.\n\n\n\nIASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#nuestra-aproximación",
+    "href": "pages/common/manifesto.html#nuestra-aproximación",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
+    "href": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto."
+  },
+  {
+    "objectID": "pages/common/manifesto.html#un-proyecto-abierto",
+    "href": "pages/common/manifesto.html#un-proyecto-abierto",
+    "title": "Manifiesto",
+    "section": "",
+    "text": "IASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
+  },
+  {
+    "objectID": "pages/common/contact_es.html",
+    "href": "pages/common/contact_es.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/common/contact_es.html#correo-electrónico",
+    "href": "pages/common/contact_es.html#correo-electrónico",
+    "title": "Contacto",
+    "section": "",
+    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/common/contact.html",
+    "href": "pages/common/contact.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/common/contact.html#correo-electrónico",
+    "href": "pages/common/contact.html#correo-electrónico",
+    "title": "Contacto",
+    "section": "",
+    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html",
+    "href": "pages/artifacts/iasi-tools-dev.html",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-tools-dev Overview Ciclo User Guide Technical Guide Repository\n\n\n\n\nHERRAMIENTAS DE OPERACIÓN\n\n\n\n\nUna interfaz de línea de comandos para construir, publicar, desplegar y mantener los proyectos IASI de forma consistente.\n\n\nAbrir User Guide Ver repositorio ↗\n\n\n\n\n\niasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo.\n\n\n\n\n\niasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]\n\n\n\n\n\n\nInstalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#overview",
+    "href": "pages/artifacts/iasi-tools-dev.html#overview",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "href": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "iasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]"
+  },
+  {
+    "objectID": "pages/artifacts/iasi-tools-dev.html#resources",
+    "href": "pages/artifacts/iasi-tools-dev.html#resources",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "section": "",
+    "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
+  },
+  {
+    "objectID": "index_es.html",
+    "href": "index_es.html",
     "title": "IASI",
     "section": "",
-    "text": "This book is deliberately written in Spanish.\nThere are two main reasons:\n\nThe first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.\nThe second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.\n\nThis is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.\nAnd in engineering, nuance matters.\nTranslations can come later. Original thought cannot.\nNevertheless, if you need any part of this work translated into English, we will be happy to provide it.\n\nEste libro está escrito conscientemente en castellano.\nHay dos razones principales:\n\nLa primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.\nLa segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.\n\nNo se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.\nY en ingeniería, los matices importan.\nLas traducciones podrán venir después. El pensamiento original, no."
+    "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
   },
   {
-    "objectID": "pages/common/contact_en.html",
-    "href": "pages/common/contact_en.html",
-    "title": "Contact",
-    "section": "",
-    "text": "IASI is still a growing project. While new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+    "objectID": "index_es.html#contribute",
+    "href": "index_es.html#contribute",
+    "title": "IASI",
+    "section": "Abierto por diseño",
+    "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
   },
   {
-    "objectID": "pages/common/contact_en.html#email",
-    "href": "pages/common/contact_en.html#email",
-    "title": "Contact",
-    "section": "",
-    "text": "Javier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
-  },
-  {
-    "objectID": "pages/artifacts/index.html",
-    "href": "pages/artifacts/index.html",
-    "title": "Artefactos IASI",
-    "section": "",
-    "text": "Artefactos IASI Tools Dev IASI RStudio\n\n\nArtefactos IASI\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\nA diferencia de los subproductos, no nacen para convertirse en soluciones públicas con identidad y ciclo de vida propios. Son elementos vinculados al funcionamiento interno del ecosistema y a la ingeniería que hace posible construirlo de manera consistente.\n\nLos subproductos reutilizan soluciones. Los artefactos sostienen el entorno en el que esas soluciones se desarrollan.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-rstudio.html",
-    "href": "pages/artifacts/iasi-rstudio.html",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
-    "section": "",
-    "text": "iasi-rstudio Overview Documentación prevista Repository\n\n\n\n\nENTORNO DE DESARROLLO\n\n\n\n\nUn addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.\n\n\nDocumentación prevista Ver repositorio ↗\n\n\n\n\n\niasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.\n\n\n\n\n\n\nLa documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-rstudio.html#overview",
-    "href": "pages/artifacts/iasi-rstudio.html#overview",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
-    "section": "",
-    "text": "iasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-rstudio.html#resources",
-    "href": "pages/artifacts/iasi-rstudio.html#resources",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
-    "section": "",
-    "text": "La documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
-  },
-  {
-    "objectID": "index_en.html",
-    "href": "index_en.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "IASI",
     "section": "",
-    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
   },
   {
-    "objectID": "index_en.html#contribute",
-    "href": "index_en.html#contribute",
+    "objectID": "index.html#contribute",
+    "href": "index.html#contribute",
     "title": "IASI",
     "section": "Open by design",
     "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
-  },
-  {
-    "objectID": "books.html",
-    "href": "books.html",
-    "title": "Libros",
-    "section": "",
-    "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
   },
   {
     "objectID": "about.html",
@@ -217,193 +315,109 @@
     "text": "Un sistema que aprende a construirse\nIASI es por tanto dos cosas al mismo tiempo. Es una propuesta sobre cómo puede evolucionar la ingeniería cuando los Sistemas Inteligentes se integran de manera real en el proceso, y es un experimento continuo en el que esa propuesta se utiliza para construir sus propios libros, herramientas, decisiones, agentes, prácticas e infraestructura.\nNo estamos escribiendo primero una metodología para intentar demostrar después que funciona. Estamos construyendo, observando, cuestionando, decidiendo, formalizando y volviendo a construir.\nEl ciclo no termina cuando aparece una nueva herramienta.\nPrecisamente ahí empieza la siguiente vuelta.\nIASI no se diseña primero y se aplica después. IASI se está utilizando para construir IASI."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IASI",
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Libros",
     "section": "",
-    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+    "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
   },
   {
-    "objectID": "index.html#contribute",
-    "href": "index.html#contribute",
+    "objectID": "index_en.html",
+    "href": "index_en.html",
+    "title": "IASI",
+    "section": "",
+    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+  },
+  {
+    "objectID": "index_en.html#contribute",
+    "href": "index_en.html#contribute",
     "title": "IASI",
     "section": "Open by design",
     "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
   },
   {
-    "objectID": "index_es.html",
-    "href": "index_es.html",
+    "objectID": "pages/artifacts/iasi-rstudio.html",
+    "href": "pages/artifacts/iasi-rstudio.html",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
+    "section": "",
+    "text": "iasi-rstudio Overview Documentación prevista Repository\n\n\n\n\nENTORNO DE DESARROLLO\n\n\n\n\nUn addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.\n\n\nDocumentación prevista Ver repositorio ↗\n\n\n\n\n\niasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.\n\n\n\n\n\n\nLa documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-rstudio.html#overview",
+    "href": "pages/artifacts/iasi-rstudio.html#overview",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
+    "section": "",
+    "text": "iasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos."
+  },
+  {
+    "objectID": "pages/artifacts/iasi-rstudio.html#resources",
+    "href": "pages/artifacts/iasi-rstudio.html#resources",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
+    "section": "",
+    "text": "La documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
+  },
+  {
+    "objectID": "pages/artifacts/index.html",
+    "href": "pages/artifacts/index.html",
+    "title": "Artefactos IASI",
+    "section": "",
+    "text": "Artefactos IASI Tools Dev IASI RStudio\n\n\nArtefactos IASI\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\nA diferencia de los subproductos, no nacen para convertirse en soluciones públicas con identidad y ciclo de vida propios. Son elementos vinculados al funcionamiento interno del ecosistema y a la ingeniería que hace posible construirlo de manera consistente.\n\nLos subproductos reutilizan soluciones. Los artefactos sostienen el entorno en el que esas soluciones se desarrollan.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
+  },
+  {
+    "objectID": "pages/common/contact_en.html",
+    "href": "pages/common/contact_en.html",
+    "title": "Contact",
+    "section": "",
+    "text": "IASI is still a growing project. While new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+  },
+  {
+    "objectID": "pages/common/contact_en.html#email",
+    "href": "pages/common/contact_en.html#email",
+    "title": "Contact",
+    "section": "",
+    "text": "Javier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+  },
+  {
+    "objectID": "pages/common/manifesto-bilingual.html",
+    "href": "pages/common/manifesto-bilingual.html",
     "title": "IASI",
     "section": "",
-    "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
+    "text": "This book is deliberately written in Spanish.\nThere are two main reasons:\n\nThe first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.\nThe second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.\n\nThis is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.\nAnd in engineering, nuance matters.\nTranslations can come later. Original thought cannot.\nNevertheless, if you need any part of this work translated into English, we will be happy to provide it.\n\nEste libro está escrito conscientemente en castellano.\nHay dos razones principales:\n\nLa primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.\nLa segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.\n\nNo se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.\nY en ingeniería, los matices importan.\nLas traducciones podrán venir después. El pensamiento original, no."
   },
   {
-    "objectID": "index_es.html#contribute",
-    "href": "index_es.html#contribute",
-    "title": "IASI",
-    "section": "Abierto por diseño",
-    "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-tools-dev.html",
-    "href": "pages/artifacts/iasi-tools-dev.html",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "objectID": "pages/manuals/index.html",
+    "href": "pages/manuals/index.html",
+    "title": "Manuales IASI",
     "section": "",
-    "text": "iasi-tools-dev Overview Ciclo User Guide Technical Guide Repository\n\n\n\n\nHERRAMIENTAS DE OPERACIÓN\n\n\n\n\nUna interfaz de línea de comandos para construir, publicar, desplegar y mantener los proyectos IASI de forma consistente.\n\n\nAbrir User Guide Ver repositorio ↗\n\n\n\n\n\niasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo.\n\n\n\n\n\niasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]\n\n\n\n\n\n\nInstalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
+    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nManuales IASI\nAquí se reúne la documentación necesaria para utilizar, comprender y ampliar las herramientas del ecosistema IASI.\nLos User Guides están orientados a quienes quieren instalar, configurar y usar cada herramienta. Explican las tareas habituales, las opciones disponibles y los flujos de trabajo recomendados.\nLos Technical Guides describen cómo están construidas esas herramientas. Recogen su arquitectura, sus decisiones de diseño y la información necesaria para mantenerlas y hacerlas evolucionar.\n\nLos User Guides explican cómo trabajar con IASI. Los Technical Guides explican cómo funciona por dentro."
   },
   {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#overview",
-    "href": "pages/artifacts/iasi-tools-dev.html#overview",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "objectID": "pages/manuals/user-guides.html",
+    "href": "pages/manuals/user-guides.html",
+    "title": "User Guides",
     "section": "",
-    "text": "iasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo."
+    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nUser Guides\nManuales para instalar, configurar y utilizar los productos IASI.\nLos User Guides explican las tareas y flujos de trabajo necesarios para utilizar cada producto.\n\n\nUSER GUIDE\n\niasi.quarto\nConstrucción y publicación reproducible de proyectos Quarto.\n\n\n\nUSER GUIDE\n\niasi.lua\nInstalación, configuración y uso de extensiones Lua.\n\n\n\nUSER GUIDE\n\niasi-tools-dev\nInstalación, comandos y flujos de trabajo de iasi-dev."
   },
   {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#cycle",
-    "href": "pages/artifacts/iasi-tools-dev.html#cycle",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
-    "section": "",
-    "text": "iasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]"
-  },
-  {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#resources",
-    "href": "pages/artifacts/iasi-tools-dev.html#resources",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
-    "section": "",
-    "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
-  },
-  {
-    "objectID": "pages/common/contact.html",
-    "href": "pages/common/contact.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact.html#correo-electrónico",
-    "href": "pages/common/contact.html#correo-electrónico",
-    "title": "Contacto",
-    "section": "",
-    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact_es.html",
-    "href": "pages/common/contact_es.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact_es.html#correo-electrónico",
-    "href": "pages/common/contact_es.html#correo-electrónico",
-    "title": "Contacto",
-    "section": "",
-    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/manifesto.html",
-    "href": "pages/common/manifesto.html",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI es un ecosistema abierto dedicado a explorar una nueva forma de hacer ingeniería. Creemos que la aparición de los Sistemas Inteligentes representa un cambio de paradigma comparable a la llegada de Internet, la orientación a objetos o el software libre. No se trata únicamente de incorporar nuevas herramientas, sino de replantear cómo concebimos, diseñamos, construimos y evolucionamos sistemas de software.\nIASI nace para recorrer ese camino.\n\n\nIASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema.\n\n\n\nIASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto.\n\n\n\nIASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
-  },
-  {
-    "objectID": "pages/common/manifesto.html#nuestra-aproximación",
-    "href": "pages/common/manifesto.html#nuestra-aproximación",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI no parte de una metodología predefinida. Partimos del problema sin precondiciones. Creemos que la aparición de los Sistemas Inteligentes obliga a replantear cómo hacemos ingeniería y, por tanto, no queremos asumir que las metodologías actuales constituyan, por sí solas, la respuesta.\n\nNo adoptamos metodologías para resolver problemas. Partimos de los problemas para descubrir la metodología.\n\nCada necesidad será analizada de forma independiente.\n\nSi una metodología existente ofrece una buena respuesta, la utilizaremos.\nSi necesita adaptarse, la adaptaremos.\nSi varias aportan valor, las combinaremos.\nY cuando ninguna resulte suficiente, construiremos una nueva.\n\nNo buscamos una metodología universal. Buscamos la mejor solución para cada problema."
-  },
-  {
-    "objectID": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
-    "href": "pages/common/manifesto.html#el-viaje-también-es-conocimiento",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI no solo publica resultados. También documenta el camino recorrido:\n\nlas decisiones de arquitectura;\nlos experimentos;\nlas dudas;\nlos errores;\nlos cambios de dirección;\nlas herramientas descartadas;\nlas ideas que funcionaron y las que no.\n\nCreemos que comprender cómo se construye una solución es tan valioso como la propia solución.\nPor eso, en IASI, el viaje también forma parte del producto."
-  },
-  {
-    "objectID": "pages/common/manifesto.html#un-proyecto-abierto",
-    "href": "pages/common/manifesto.html#un-proyecto-abierto",
-    "title": "Manifiesto",
-    "section": "",
-    "text": "IASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
-  },
-  {
-    "objectID": "pages/manuals/technical-guides.html",
-    "href": "pages/manuals/technical-guides.html",
-    "title": "Technical Guides",
-    "section": "",
-    "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\nLos Technical Guides describen el diseño interno y proporcionan la base necesaria para mantener y ampliar cada producto.\n\n\nTECHNICAL GUIDE\n\niasi.quarto\nArquitectura y estrategias del motor de publicación.\n\n\n\nTECHNICAL GUIDE\n\niasi.lua\nArquitectura y desarrollo de extensiones Lua.\n\n\n\nTECHNICAL GUIDE\n\niasi-tools-dev\nArquitectura y mantenimiento de las herramientas operativas del ecosistema."
-  },
-  {
-    "objectID": "pages/methodology/adapters.html",
-    "href": "pages/methodology/adapters.html",
+    "objectID": "pages/methodology/index.html",
+    "href": "pages/methodology/index.html",
     "title": "Agentics",
     "section": "",
-    "text": "Metodologia Overview Instructions Commands Skills MCP Instalación\n\n\nAgentics\nAgentics define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nIASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.\nEl objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.\n\nLa herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable."
+    "text": "Agentics Overview Instructions Commands Skills MCP Instalación\n\n\nAgentics\nAgentics define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nIASI separa esta definición de las herramientas concretas que la ejecutan. Codex, Copilot, Claude u otros sistemas pueden implementar mecanismos diferentes, pero la metodología debe permanecer independiente de ellos.\nEl objetivo es hacer explícita y reutilizable la forma en que los agentes reciben instrucciones, adquieren capacidades, utilizan herramientas, colaboran con el humano y validan su trabajo.\n\nLa herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable."
   },
   {
-    "objectID": "pages/methodology/overview.html",
-    "href": "pages/methodology/overview.html",
-    "title": "Agentics",
+    "objectID": "pages/status/to-be-done.html",
+    "href": "pages/status/to-be-done.html",
+    "title": "To be done",
     "section": "",
-    "text": "Agentics es el área de la metodología IASI que define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.\nSu objetivo no es describir una herramienta concreta ni imponer el funcionamiento de un determinado modelo. Define, de forma independiente de la tecnología, cómo queremos que trabajen los agentes, qué capacidades pueden utilizar y bajo qué reglas deben hacerlo.\nLa implementación concreta puede cambiar. La metodología permanece.\n\n\n\nCodex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.\nIASI separa esos mecanismos de la definición metodológica.\nIASI Agentics\n      │\n      ▼\nmetodología común\n      │\n      ├── Codex\n      ├── Copilot\n      ├── Claude\n      └── otros sistemas\nAgentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después.\n\n\n\n\nAgentics se organiza inicialmente en cuatro piezas:\nagentics/\n├── instructions/\n├── commands/\n├── skills/\n└── mcp/\n\n\nDefinen cómo debe comportarse el agente.\nIncluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.\n\n\n\nDefinen acciones explícitas que pueden solicitarse a los agentes.\nUn command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.\n\n\n\nDefinen capacidades reutilizables que un agente puede aplicar en diferentes tareas y contextos.\nUna skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.\n\n\n\nDefine la integración con herramientas y servicios externos expuestos mediante Model Context Protocol.\nIASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería.\n\n\n\n\n\nLos agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.\nLa configuración efectiva puede componerse según el contexto.\nPor ejemplo, un agente que trabaja sobre documentación podría recibir:\ngeneral behavior\n+ human control\n+ validation\n+ documentation style\n+ documentation structure\nMientras que un agente que implementa software podría utilizar:\ngeneral behavior\n+ validation\n+ code style\n+ testing\nLa metodología proporciona las piezas. El contexto determina cuáles se aplican.\n\n\n\n\nAgentics puede instalarse en un workspace o en un proyecto mediante IASI.\niasi\n │\n ▼\niasi install\n │\n ▼\n.iasi/\nUna instalación de workspace contiene la metodología completa disponible.\nUna instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.\nEsto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito.\n\n\n\n\nLa autonomía del agente tiene límites.\nIASI mantiene al humano como autoridad sobre:\n\nobjetivos;\nprioridades;\ndecisiones relevantes;\naceptación final del trabajo.\n\nEl agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.\nLa velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido.\n\n\n\n\nEjecutar una tarea no significa haberla completado.\nAgentics distingue entre:\nimplemented\nvalidated\naccepted\nUna solución puede estar implementada sin estar validada.\nPuede estar validada técnicamente sin haber sido aceptada por el humano.\nLa validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos.\n\n\n\n\n\nAgentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.\n\nLa metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla."
+    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nTo be done\nThis artifact is planned, but its implementation and public documentation have not started yet.\n\n← Back to IASI"
   },
   {
-    "objectID": "pages/methodology/overview.html#un-modelo-independiente-de-la-herramienta",
-    "href": "pages/methodology/overview.html#un-modelo-independiente-de-la-herramienta",
-    "title": "Agentics",
+    "objectID": "pages/subproducts/filters.html",
+    "href": "pages/subproducts/filters.html",
+    "title": "Filtros IASI",
     "section": "",
-    "text": "Codex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.\nIASI separa esos mecanismos de la definición metodológica.\nIASI Agentics\n      │\n      ▼\nmetodología común\n      │\n      ├── Codex\n      ├── Copilot\n      ├── Claude\n      └── otros sistemas\nAgentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#componentes",
-    "href": "pages/methodology/overview.html#componentes",
-    "title": "Agentics",
-    "section": "",
-    "text": "Agentics se organiza inicialmente en cuatro piezas:\nagentics/\n├── instructions/\n├── commands/\n├── skills/\n└── mcp/\n\n\nDefinen cómo debe comportarse el agente.\nIncluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.\n\n\n\nDefinen acciones explícitas que pueden solicitarse a los agentes.\nUn command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.\n\n\n\nDefinen capacidades reutilizables que un agente puede aplicar en diferentes tareas y contextos.\nUna skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.\n\n\n\nDefine la integración con herramientas y servicios externos expuestos mediante Model Context Protocol.\nIASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#composición",
-    "href": "pages/methodology/overview.html#composición",
-    "title": "Agentics",
-    "section": "",
-    "text": "Los agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.\nLa configuración efectiva puede componerse según el contexto.\nPor ejemplo, un agente que trabaja sobre documentación podría recibir:\ngeneral behavior\n+ human control\n+ validation\n+ documentation style\n+ documentation structure\nMientras que un agente que implementa software podría utilizar:\ngeneral behavior\n+ validation\n+ code style\n+ testing\nLa metodología proporciona las piezas. El contexto determina cuáles se aplican."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#instalación",
-    "href": "pages/methodology/overview.html#instalación",
-    "title": "Agentics",
-    "section": "",
-    "text": "Agentics puede instalarse en un workspace o en un proyecto mediante IASI.\niasi\n │\n ▼\niasi install\n │\n ▼\n.iasi/\nUna instalación de workspace contiene la metodología completa disponible.\nUna instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.\nEsto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#control-humano",
-    "href": "pages/methodology/overview.html#control-humano",
-    "title": "Agentics",
-    "section": "",
-    "text": "La autonomía del agente tiene límites.\nIASI mantiene al humano como autoridad sobre:\n\nobjetivos;\nprioridades;\ndecisiones relevantes;\naceptación final del trabajo.\n\nEl agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.\nLa velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#validación",
-    "href": "pages/methodology/overview.html#validación",
-    "title": "Agentics",
-    "section": "",
-    "text": "Ejecutar una tarea no significa haberla completado.\nAgentics distingue entre:\nimplemented\nvalidated\naccepted\nUna solución puede estar implementada sin estar validada.\nPuede estar validada técnicamente sin haber sido aceptada por el humano.\nLa validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos."
-  },
-  {
-    "objectID": "pages/methodology/overview.html#principio",
-    "href": "pages/methodology/overview.html#principio",
-    "title": "Agentics",
-    "section": "",
-    "text": "Agentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.\n\nLa metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla."
-  },
-  {
-    "objectID": "pages/status/under-construction.html",
-    "href": "pages/status/under-construction.html",
-    "title": "Under construction",
-    "section": "",
-    "text": "🚧 WORK IN PROGRESS\n\n\nIASI artifact\n\n\nUnder construction\nThis artifact already has a place in the IASI ecosystem, but its public landing page is still being built.\n\n← Back to IASI"
+    "text": "Filtros IASI PlantUML IASI Shiny\n\n\nFiltros IASI\nLos filtros amplían el proceso de transformación y publicación de contenidos cuando Quarto y Pandoc necesitan un comportamiento específico que merece reutilizarse.\nSe desarrollan como piezas autónomas: cada proyecto incorpora únicamente los filtros que necesita.\n\n\nDIAGRAMAR\n\nIASI PlantUML\nTransforma bloques PlantUML en imágenes integradas directamente en publicaciones Quarto.\n\n\n\nINTERACTUAR\n\nIASI Shiny\nIntegra aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR dentro de publicaciones estáticas."
   },
   {
     "objectID": "pages/subproducts/iasi-quarto.html",
@@ -439,6 +453,13 @@
     "title": "Publicaciones Quarto, con un proceso en el que confiar",
     "section": "",
     "text": "Conceptos, configuración, comandos y workflow recomendado para utilizar IASI Quarto.\n\n\n\nArquitectura, estrategias de publicación, mantenimiento y próximos pasos.\n\n\n\nCódigo fuente, pruebas y evolución pública del paquete."
+  },
+  {
+    "objectID": "pages/subproducts/mcp.html",
+    "href": "pages/subproducts/mcp.html",
+    "title": "Servidores MCP IASI",
+    "section": "",
+    "text": "Servidores MCP\n\n\nServidores MCP IASI\nLos servidores MCP son subproductos que exponen herramientas, recursos o capacidades mediante Model Context Protocol (MCP) para que puedan ser utilizados por sistemas inteligentes y agentes.\nComo el resto de subproductos IASI, no se crean para llenar una categoría. Aparecen cuando una capacidad real necesita una interfaz estable y reutilizable hacia el exterior.\nActualmente no hay servidores MCP publicados en esta categoría."
   },
   {
     "objectID": "pages/viewer.html",
