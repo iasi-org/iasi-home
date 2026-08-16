@@ -65,7 +65,7 @@ website:
 
     right:
       - text: "ES"
-        href: index.qmd
+        href: index_es.qmd
         aria-label: "Español"
       - text: "EN"
         href: index_en.qmd
@@ -76,7 +76,7 @@ website:
         href: pages/common/manifesto-bilingual.qmd
         aria-label: "Idioma / Language"
       - icon: envelope
-        href: pages/common/contact.qmd
+        href: pages/common/contact_es.qmd
         aria-label: "Contact us"
       - icon: github
         href: https://github.com/iasi-org
@@ -86,8 +86,8 @@ format:
   html:
     theme:
       - cosmo
-      - pages/resources/css/iasi.scss
-      - pages/resources/css/home.scss
+      - resources/css/iasi.scss
+      - resources/css/home.scss
     toc: false
     page-layout: full
     smooth-scroll: true

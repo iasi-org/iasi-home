@@ -18,7 +18,7 @@ title-block-style: none
 :::: {.iasi-home-copy}
 
 ::::: {.construction-banner}
-![](pages/resources/images/under-construction-en.png){.construction-banner-image}
+![](resources/images/under-construction-en.png){.construction-banner-image}
 :::::
 
 Current software engineering methodologies were conceived for human teams designing and building fundamentally passive systems. **That assumption is beginning to no longer hold.**
@@ -57,5 +57,5 @@ IASI starts here. **What it becomes will also depend on those who choose to buil
 
 
 ::: {.iasi-ai-banner}
-![](pages/resources/images/iasi-banner.png){.iasi-ai-banner-image}
+![](resources/images/iasi-banner.png){.iasi-ai-banner-image}
 :::

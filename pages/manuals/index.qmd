@@ -21,7 +21,7 @@ Los **Technical Guides** describen cómo están construidas esas herramientas. R
 
 > **Los User Guides explican cómo trabajar con IASI. Los Technical Guides explican cómo funciona por dentro.**
 
-![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
 
 ::::
 :::

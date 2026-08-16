@@ -39,7 +39,7 @@ Entorno de trabajo preparado para desarrollar y validar publicaciones y producto
 
 :::
 
-![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
 
 ::::
 :::

@@ -4,7 +4,7 @@ page-layout: full
 toc: false
 format:
   html:
-    css: resources/css/viewer.css
+    css: ../resources/css/viewer.css
 ---
 
 ::: {.iasi-doc-viewer aria-live="polite"}
@@ -28,4 +28,4 @@ Este visor necesita JavaScript. <a href="https://iasi-org.github.io/iasi-quarto-
 </noscript>
 :::
 
-<script src="resources/js/viewer.js"></script>
+<script src="../resources/js/viewer.js"></script>

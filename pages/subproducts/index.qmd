@@ -36,7 +36,7 @@ Pueden adoptar formas muy diferentes y utilizar tecnologías distintas. Lo que l
 
 > **Los productos desarrollan el conocimiento. Los subproductos convierten parte de ese conocimiento en soluciones reutilizables.**
 
-![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
 
 ::::
 :::

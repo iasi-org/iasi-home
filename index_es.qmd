@@ -18,7 +18,7 @@ title-block-style: none
 :::: {.iasi-home-copy}
 
 ::::: {.construction-banner}
-![](pages/resources/images/under-construction-es.png){.construction-banner-image}
+![](resources/images/under-construction-es.png){.construction-banner-image}
 :::::
 
 Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. **Ese supuesto empieza a dejar de ser válido.**
@@ -57,5 +57,5 @@ IASI empieza aquí. **Lo que llegue a ser dependerá también de quienes quieran
 
 
 ::: {.iasi-ai-banner}
-![](pages/resources/images/iasi-banner.png){.iasi-ai-banner-image}
+![](resources/images/iasi-banner.png){.iasi-ai-banner-image}
 :::

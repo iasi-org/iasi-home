@@ -25,7 +25,7 @@ El objetivo es hacer explícita y reutilizable la forma en que los agentes recib
 
 > **La herramienta puede cambiar. La forma de trabajar debe permanecer comprensible, reproducible y evolucionable.**
 
-![](../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
 
 ::::
 :::
