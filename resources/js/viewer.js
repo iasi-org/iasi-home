@@ -14,32 +14,29 @@
 
   try {
     documentUrl = new URL(requested || "", allowedOrigin);
-    const allowedRepositories = [
-      "/iasi-quarto-docs/",
-      "/iasi-lua-docs/",
-      "/iasi-tools-dev-docs/",
-      "/iasi-book-I/"
-    ];
-    const allowedPath = allowedRepositories.some((path) =>
-      documentUrl.pathname.startsWith(path)
-    );
 
-    if (documentUrl.origin !== allowedOrigin || !allowedPath) {
+    if (documentUrl.origin !== allowedOrigin) {
       throw new Error("Documentación no permitida");
     }
   } catch (_error) {
     title.textContent = "Documentación no disponible";
     message.dataset.state = "error";
-    message.textContent = "No se ha indicado una dirección de documentación válida.";
+    message.textContent =
+      "No se ha indicado una dirección de documentación válida.";
     frame.remove();
     return;
   }
 
   title.textContent = requestedTitle;
   document.title = `${requestedTitle} – IASI`;
+
   openLink.href = documentUrl.href;
-  openLink.setAttribute("aria-label", `Abrir ${requestedTitle} en una pestaña nueva`);
+  openLink.setAttribute(
+    "aria-label",
+    `Abrir ${requestedTitle} en una pestaña nueva`
+  );
   openLink.title = `Abrir ${requestedTitle} en una pestaña nueva`;
+
   frame.title = requestedTitle;
 
   frame.addEventListener("load", () => {
@@ -48,7 +45,8 @@
 
   frame.addEventListener("error", () => {
     message.dataset.state = "error";
-    message.textContent = "No se pudo mostrar la documentación integrada. Ábrala con el icono ↗.";
+    message.textContent =
+      "No se pudo mostrar la documentación integrada. Ábrala con el icono ↗.";
   });
 
   frame.src = documentUrl.href;
