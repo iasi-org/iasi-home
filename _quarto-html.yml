@@ -50,8 +50,8 @@ website:
             href: pages/manuals/user-guides.qmd
           - text: "Technical Guides"
             href: pages/manuals/technical-guides.qmd
-          - text: "Desarrollo del ecosistema"
-            href: pages/status/under-construction.html
+          - text: "Developer Guides"
+            href: pages/manuals/developer-guides.qmd
       - text: "Viaje"
         menu:
           - text: "Decisiones de ingeniería"

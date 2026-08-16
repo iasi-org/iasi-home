@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Under construction · IASI – IASI</title>
+<title>Developer Guides · Manuales · IASI – IASI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,20 +37,20 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe8a273e92621161844650e72603c2c6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-5278a8400be39a80802029286a402197.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -291,22 +291,40 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="iasi-status-page">
-<div class="iasi-status-card">
-<div class="iasi-status-badge">
-<p>🚧 WORK IN PROGRESS</p>
+<div class="iasi-artifact-page iasi-artifact-manual">
+<div class="iasi-artifact-subnav iasi-manual-subnav">
+<a class="iasi-artifact-subnav-brand" href="index.html">Manuales</a>
+<details>
+<summary>
+User Guides
+</summary>
+<div class="iasi-manual-subnav-menu">
+<a href="user-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&amp;title=iasi.quarto User Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&amp;title=iasi.lua User Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&amp;title=iasi-tools-dev User Guide">IASI Tools Dev</a>
 </div>
-<div class="iasi-status-kicker">
-<p>IASI artifact</p>
+</details>
+<details>
+<summary>
+Technical Guides
+</summary>
+<div class="iasi-manual-subnav-menu">
+<a href="technical-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&amp;title=iasi.quarto Technical Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&amp;title=iasi.lua Technical Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&amp;title=iasi-tools-dev Technical Guide">IASI Tools Dev</a>
 </div>
-<section id="under-construction" class="level1">
-<h1>Under construction</h1>
-<p>This artifact already has a place in the IASI ecosystem, but its public landing page is still being built.</p>
-<div class="iasi-status-actions">
-<p><a href="../../index.html">← Back to IASI</a></p>
+</details>
+<details>
+<summary>
+Developer Guides
+</summary>
+<div class="iasi-manual-subnav-menu">
+<a href="developer-guides.html">Todos</a>
 </div>
+</details>
+</div>
+<section id="developer-guides" class="level1 iasi-artifact-content">
+<h1>Developer Guides</h1>
+<p>Los Developer Guides están orientados a quienes desarrollan, extienden o contribuyen a los productos y al ecosistema IASI.</p>
+<p>Recogen la información necesaria para preparar el entorno de desarrollo, seguir las convenciones del proyecto, incorporar nuevas capacidades y contribuir de forma reproducible.</p>
+<p>Actualmente no hay Developer Guides publicados en esta categoría.</p>
 </section>
-</div>
 </div>
 
 
@@ -337,12 +355,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

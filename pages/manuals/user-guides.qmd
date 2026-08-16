@@ -8,6 +8,7 @@ lang: es
 <a class="iasi-artifact-subnav-brand" href="index.html">Manuales</a>
 <details><summary>User Guides</summary><div class="iasi-manual-subnav-menu"><a href="user-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Fuser-guide%2F&title=iasi.quarto%20User%20Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi.lua%20User%20Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Fuser-guide%2F&title=iasi-tools-dev%20User%20Guide">IASI Tools Dev</a></div></details>
 <details><summary>Technical Guides</summary><div class="iasi-manual-subnav-menu"><a href="technical-guides.html">Todos</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-quarto-docs%2Ftechnical-guide%2F&title=iasi.quarto%20Technical%20Guide">IASI Quarto</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi.lua%20Technical%20Guide">IASI Lua</a><a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-tools-dev-docs%2Ftechnical-guide%2F&title=iasi-tools-dev%20Technical%20Guide">IASI Tools Dev</a></div></details>
+<details><summary>Developer Guides</summary><div class="iasi-manual-subnav-menu"><a href="developer-guides.html">Todos</a></div></details>
 ::::
 
 :::: {.iasi-artifact-content}
