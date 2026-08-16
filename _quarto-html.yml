@@ -58,6 +58,8 @@ website:
             href: pages/status/under-construction.html
           - text: "Historia del viaje"
             href: pages/status/under-construction.html
+      - text: "Sobre IASI"
+        href: about.qmd
       - text: "Principios"
         href: principles.qmd
       - text: "Manifiesto"

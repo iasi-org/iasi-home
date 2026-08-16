@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IASI · Ingeniería Asistida por Sistemas Inteligentes – Ingeniería Asistida por Sistemas Inteligentes</title>
+<title>Cómo se construye IASI – IASI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,31 +26,31 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe8a273e92621161844650e72603c2c6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5278a8400be39a80802029286a402197.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -66,7 +66,8 @@ ul.task-list li input[type="checkbox"] {
 
   const script = document.createElement("script");
 
-  script.src = css.href.replace(/site_libs\/bootstrap\/[^/]+$/, "pages/resources/js/language.js");
+  script.src = css.href.replace(/site_libs\/bootstrap\/[^/]+$/, "resources/js/language.js");
+
   document.head.appendChild(script);
 
 })();
@@ -114,17 +115,17 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <div id="quarto-announcement" data-announcement-id="82e687b0055c287857a448af1ba1d6e3" class="alert alert-light hidden"><div class="quarto-announcement-content">
-<p><img src="../..\pages/resources/images/ants.png" class="iasi-ants-image img-fluid"></p>
+    <div id="quarto-announcement" data-announcement-id="83f987c8566534cfe530500f42976bc9" class="alert alert-light hidden"><div class="quarto-announcement-content">
+<p><img src=".\resources/images/ants.png" class="iasi-ants-image img-fluid"></p>
 </div></div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IASI</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -135,19 +136,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-libros">    
         <li>
-    <a class="dropdown-item" href="../../books.html">
+    <a class="dropdown-item" href="./books.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&amp;title=IASI I">
+    <a class="dropdown-item" href="./pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&amp;title=IASI I">
  <span class="dropdown-text">IASI I</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="./pages/status/to-be-done.html">
  <span class="dropdown-text">IASI II</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="./pages/status/to-be-done.html">
  <span class="dropdown-text">IASI III</span></a>
   </li>  
     </ul>
@@ -158,19 +159,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-subproductos">    
         <li>
-    <a class="dropdown-item" href="../../pages/subproducts/index.html">
+    <a class="dropdown-item" href="./pages/subproducts/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="./pages/status/to-be-done.html">
  <span class="dropdown-text">Herramientas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="./pages/status/to-be-done.html">
  <span class="dropdown-text">Extensiones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/to-be-done.html">
+    <a class="dropdown-item" href="./pages/status/to-be-done.html">
  <span class="dropdown-text">Servidores MCP</span></a>
   </li>  
     </ul>
@@ -181,15 +182,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-artefactos">    
         <li>
-    <a class="dropdown-item" href="../../pages/artifacts/index.html">
+    <a class="dropdown-item" href="./pages/artifacts/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/artifacts/iasi-tools-dev.html">
+    <a class="dropdown-item" href="./pages/artifacts/iasi-tools-dev.html">
  <span class="dropdown-text">IASI Tools Dev</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/artifacts/iasi-rstudio.html">
+    <a class="dropdown-item" href="./pages/artifacts/iasi-rstudio.html">
  <span class="dropdown-text">IASI RStudio</span></a>
   </li>  
     </ul>
@@ -200,11 +201,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-metodología">    
         <li>
-    <a class="dropdown-item" href="../../pages/methodology/index.html">
+    <a class="dropdown-item" href="./pages/methodology/index.html">
  <span class="dropdown-text">Agentics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/methodology/adapters.html">
+    <a class="dropdown-item" href="./pages/methodology/adapters.html">
  <span class="dropdown-text">Adapters</span></a>
   </li>  
     </ul>
@@ -215,19 +216,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-manuales">    
         <li>
-    <a class="dropdown-item" href="../../pages/manuals/index.html">
+    <a class="dropdown-item" href="./pages/manuals/index.html">
  <span class="dropdown-text">Todos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/manuals/user-guides.html">
+    <a class="dropdown-item" href="./pages/manuals/user-guides.html">
  <span class="dropdown-text">User Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/manuals/technical-guides.html">
+    <a class="dropdown-item" href="./pages/manuals/technical-guides.html">
  <span class="dropdown-text">Technical Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/under-construction.html">
+    <a class="dropdown-item" href="./pages/status/under-construction.html">
  <span class="dropdown-text">Desarrollo del ecosistema</span></a>
   </li>  
     </ul>
@@ -238,38 +239,42 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-viaje">    
         <li>
-    <a class="dropdown-item" href="../../pages/status/under-construction.html">
+    <a class="dropdown-item" href="./pages/status/under-construction.html">
  <span class="dropdown-text">Decisiones de ingeniería</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pages/status/under-construction.html">
+    <a class="dropdown-item" href="./pages/status/under-construction.html">
  <span class="dropdown-text">Historia del viaje</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../principles.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
+<span class="menu-text">Sobre IASI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./principles.html"> 
 <span class="menu-text">Principios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/common/manifesto.html"> 
+    <a class="nav-link" href="./pages/common/manifesto.html"> 
 <span class="menu-text">Manifiesto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index_es.html"> 
 <span class="menu-text">ES</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../index_en.html"> 
+    <a class="nav-link" href="./index_en.html"> 
 <span class="menu-text">EN</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="../../pages/common/manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
-    <a href="../../pages/common/contact.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
+    <a href="./pages/common/manifesto-bilingual.html" title="manifesto-bilingual.html" class="quarto-navigation-tool px-1" aria-label="Idioma / Language"><i class="bi bi-translate"></i></a>
+    <a href="./pages/common/contact_es.html" title="Contacto" class="quarto-navigation-tool px-1" aria-label="Contact us"><i class="bi bi-envelope"></i></a>
     <a href="https://github.com/iasi-org" title="" class="quarto-navigation-tool px-1" aria-label="Explore IASI on GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -281,49 +286,129 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cómo se construye IASI</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page">
 
-<div class="iasi-page-heading">
-<div class="iasi-page-title">
-Ingeniería Asistida por Sistemas Inteligentes (IASI)
-</div>
-<div class="iasi-epigraph">
-<p><em>Si la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)</em></p>
-</div>
-</div>
-<div class="iasi-home-hero">
-<div class="iasi-home-copy">
-<div class="construction-banner">
-<p><img src="pages/resources/images/under-construction-es.png" class="construction-banner-image img-fluid"></p>
-</div>
-<p>Las metodologías actuales de ingeniería de software fueron concebidas para equipos humanos que diseñan y construyen sistemas fundamentalmente pasivos. <strong>Ese supuesto empieza a dejar de ser válido.</strong></p>
-<p>Hoy podemos, y debemos, incorporar <strong>sistemas inteligentes como parte del equipo de ingeniería</strong>, capaces de participar en el análisis, el diseño, la implementación, la validación y la evolución del propio sistema, pero es necesario integrarlos de forma <strong>explícita, sistemática y gobernada</strong> dentro de los procesos.</p>
-<p><strong>IASI nace para definir cómo debe hacerse ingeniería de software en este nuevo contexto.</strong></p>
-<p>Sus objetivos son:</p>
-<div class="iasi-objectives">
-<ol type="A">
-<li><p><strong>Enseñar</strong> a utilizar los sistemas inteligentes de forma coherente, productiva y alineada con los procesos de ingeniería.</p></li>
-<li><p><strong>Definir</strong> una metodología que integre los sistemas inteligentes como parte del equipo y del proceso de ingeniería.</p></li>
-<li><p><strong>Establecer</strong> un conjunto de principios, patrones y buenas prácticas para su utilización.</p></li>
-<li><p><strong>Construir</strong> un framework que permita aplicar todo lo anterior de forma sistemática, reproducible y evolutiva.</p></li>
-</ol>
-</div>
-<div class="iasi-home-evidence">
-Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>.
-</div>
-</div>
-</div>
-<section id="contribute" class="level2">
-<h2 class="anchored" data-anchor-id="contribute">Abierto por diseño</h2>
-<p>Aunque IASI nace como una iniciativa personal, <strong>no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad</strong>.</p>
-<p>Sus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: <strong>Profesionales, Equipos y Organizaciones son bienvenidos a participar</strong>, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.</p>
-<p>IASI empieza aquí. <strong>Lo que llegue a ser dependerá también de quienes quieran construirlo.</strong></p>
-<div class="iasi-ai-banner">
-<p><img src="pages/resources/images/iasi-banner.png" class="iasi-ai-banner-image img-fluid"></p>
-</div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>IASI no se está diseñando primero para aplicarse después. Se está construyendo utilizando la propia forma de ingeniería que pretende definir. Eso significa que IASI es, al mismo tiempo, una propuesta metodológica y uno de los primeros sistemas sobre los que esa metodología se está poniendo a prueba.</p>
+<p>No partimos de una metodología terminada, acompañada por un conjunto cerrado de herramientas, para después buscar un proyecto sobre el que demostrar que funciona. Estamos recorriendo el camino contrario. Construimos IASI y, mientras lo hacemos, observamos qué problemas aparecen, qué decisiones tenemos que tomar, qué prácticas resultan útiles y qué capacidades necesitamos incorporar. Algunas de esas capacidades terminan convirtiéndose en herramientas, otras en automatizaciones, especificaciones, skills, agentes, productos o nuevas piezas de la propia metodología.</p>
+<p>Por eso el desarrollo de IASI es deliberadamente recursivo. Cada nueva capacidad que emerge del proceso puede ser utilizada inmediatamente para continuar construyendo el propio sistema. IASI no solo produce resultados: progresivamente produce también los medios con los que será capaz de producir sus siguientes resultados.</p>
+<section id="bootstrapping" class="level2">
+<h2 class="anchored" data-anchor-id="bootstrapping">Bootstrapping</h2>
+<p>La referencia conceptual más cercana está en la construcción de los primeros compiladores.</p>
+<p>Existe un problema aparentemente circular cuando queremos construir un compilador utilizando el mismo lenguaje que ese compilador debe procesar: para compilar el compilador necesitamos un compilador que todavía no existe. La forma de romper ese círculo consiste en empezar desde fuera. Una primera versión puede construirse con otro lenguaje, con herramientas anteriores o mediante procedimientos parcialmente manuales. Esa versión inicial no tiene que ser perfecta ni contener todas las capacidades imaginables. Solo necesita ser suficientemente útil para permitir construir la siguiente.</p>
+<p>A partir de ahí comienza el <em>bootstrapping</em>. Una generación del sistema permite construir una versión mejor, esa versión proporciona nuevas capacidades y esas nuevas capacidades permiten producir la siguiente. Llega un momento en el que la herramienta participa directamente en su propia evolución.</p>
+<p>IASI sigue deliberadamente ese mismo principio. Al principio muchas cosas se hacen a mano, no porque pensemos que deban hacerse así para siempre, sino porque todavía estamos aprendiendo cuál es realmente el problema que tenemos delante. Automatizar antes de comprender no elimina complejidad: muchas veces simplemente congela nuestras primeras suposiciones y las convierte prematuramente en arquitectura.</p>
+<p>Hacer algo manualmente tiene por tanto una función metodológica. Nos permite descubrir qué parte de una tarea es realmente repetible, qué decisiones importan, qué información necesita una futura herramienta, dónde aparecen las fricciones y qué aspectos deberían permanecer bajo control humano. Solo cuando ese conocimiento empieza a estabilizarse tiene sentido preguntarnos si debemos formalizarlo o automatizarlo.</p>
+</section>
+<section id="de-una-necesidad-a-una-capacidad" class="level2">
+<h2 class="anchored" data-anchor-id="de-una-necesidad-a-una-capacidad">De una necesidad a una capacidad</h2>
+<p>El ciclo suele comenzar con algo mucho más modesto que una nueva herramienta: aparece una necesidad concreta.</p>
+<p>Primero intentamos resolverla de la forma más directa posible. Utilizamos lo que ya tenemos y hacemos manualmente aquello que todavía no está resuelto. Después observamos el resultado. Puede ocurrir que aquella necesidad fuera completamente circunstancial y no vuelva a aparecer. En ese caso, probablemente no haya nada más que construir.</p>
+<p>Pero a veces el problema vuelve. O encontramos otro problema diferente con una estructura sorprendentemente parecida. Entonces empieza a aparecer un patrón. Lo que originalmente era una solución local comienza a convertirse en conocimiento de ingeniería.</p>
+<p>Ese es el momento en el que dejamos de preguntarnos únicamente cómo resolver el problema inmediato y empezamos a cuestionar qué necesitamos realmente. No partimos de las herramientas disponibles para intentar encajar el problema dentro de ellas. Primero definimos la necesidad. Después evaluamos si existe una herramienta que la resuelva correctamente, si podemos adaptar algo que ya tenemos o si merece la pena construir una capacidad nueva.</p>
+<p>Cuando esa decisión se estabiliza, la formalizamos. Dependiendo de su naturaleza puede acabar convertida en un Engineering Decision Record, una especificación, una práctica metodológica, una extensión, una skill, un agente, una herramienta o una nueva pieza de infraestructura. No existe un artefacto predeterminado para todos los problemas. La forma aparece como consecuencia de la necesidad.</p>
+<p>Y solo entonces automatizamos aquello que realmente hemos entendido.</p>
+<pre class="{plantuml}"><code>@startuml
+
+skinparam shadowing false
+skinparam roundcorner 18
+
+rectangle "Necesidad real" as need
+rectangle "Solución manual" as manual
+rectangle "Aprendizaje" as learning
+rectangle "Decisión" as decision
+rectangle "Formalización" as formal
+rectangle "Automatización\nHerramienta · Skill · Agente · Artefacto" as automation
+rectangle "IASI utiliza la nueva capacidad\npara seguir construyéndose" as bootstrap
+
+need --&gt; manual
+manual --&gt; learning
+learning --&gt; decision
+decision --&gt; formal
+formal --&gt; automation
+automation --&gt; bootstrap
+bootstrap --&gt; need : nueva necesidad
+
+@enduml</code></pre>
+<p>La parte importante del diagrama no es la automatización. Es la última flecha.</p>
+<p>Una vez que la nueva capacidad existe, deja de ser únicamente un resultado del proceso anterior. Pasa a formar parte de los medios disponibles para resolver la siguiente necesidad. En otras palabras, <strong>cada capacidad que emerge de IASI puede convertirse en parte del mecanismo con el que IASI construye su siguiente versión</strong>.</p>
+<p>Y entonces el ciclo vuelve a empezar.</p>
+</section>
+<section id="iasi-como-laboratorio-de-iasi" class="level2">
+<h2 class="anchored" data-anchor-id="iasi-como-laboratorio-de-iasi">IASI como laboratorio de IASI</h2>
+<p>Esta forma de trabajar explica por qué el propio proyecto se ha convertido en nuestro principal laboratorio.</p>
+<p>No necesitamos inventar un caso artificial para demostrar la metodología. Construir IASI genera problemas reales continuamente. Publicar los libros provoca necesidades editoriales y problemas relacionados con Quarto. Mantener esas publicaciones genera decisiones sobre configuración, perfiles, validación y automatización. Conservar las decisiones nos llevó a crear los Engineering Decision Records. La necesidad de conservar no solo el resultado final, sino también el camino que condujo hasta él, dio lugar al Journey.</p>
+<p>Lo mismo ocurre con las herramientas. Cuando comenzaron a aparecer necesidades gráficas repetibles surgió <code>iasi.graphics</code>. Cuando necesitamos trabajar de forma más estructurada con agentes, comandos y skills empezó a aparecer una capa agentic propia. Cuando necesitamos expresar diagramas de manera automática incorporamos PlantUML. Ninguna de estas piezas necesitaba existir el primer día.</p>
+<p>Aparecieron porque construir IASI las hizo necesarias.</p>
+<p>Y esa diferencia es importante. No estamos diseñando una colección de repositorios para llenar posteriormente sus carpetas. Estamos dejando que el ecosistema aparezca a medida que el trabajo real demuestra que necesita nuevas capacidades.</p>
+</section>
+<section id="el-proceso-también-es-conocimiento" class="level2">
+<h2 class="anchored" data-anchor-id="el-proceso-también-es-conocimiento">El proceso también es conocimiento</h2>
+<p>Esta forma de construcción explica también por qué IASI conserva artefactos diferentes para momentos diferentes del proceso.</p>
+<p>El Journey guarda el recorrido. Allí importa qué pensábamos cuando todavía no conocíamos la solución, qué hipótesis probamos, dónde nos equivocamos y qué información nos hizo cambiar de dirección. No queremos reescribir ese pasado para hacer que parezca que siempre supimos cuál era la respuesta correcta. El proceso efectivo contiene conocimiento que desaparecería si solo conserváramos el resultado final.</p>
+<p>Los Engineering Decision Records ocupan otro punto del ciclo. Aparecen cuando una discusión o un proceso de descubrimiento termina produciendo una decisión suficientemente estable como para ser registrada. El Journey conserva cómo llegamos hasta ella; el EDR conserva qué decidimos y por qué.</p>
+<p>Los libros representan un momento diferente. Allí ya no necesitamos reproducir cada alternativa descartada ni cada discusión que ocurrió durante la construcción. Los libros contienen el conocimiento consolidado, la versión que consideramos correcta en ese momento.</p>
+<p>Y los productos son otra consecuencia de ese mismo proceso. Son capacidades que empezaron resolviendo necesidades concretas y que, tras demostrar utilidad y repetición suficiente, adquirieron entidad propia.</p>
+<p>Por eso Book, Journey, EDR y productos no son formas diferentes de documentar lo mismo. Son huellas distintas de un mismo ciclo de ingeniería.</p>
+</section>
+<section id="la-metodología-tampoco-es-intocable" class="level2">
+<h2 class="anchored" data-anchor-id="la-metodología-tampoco-es-intocable">La metodología tampoco es intocable</h2>
+<p>Hay una consecuencia especialmente importante de todo esto: si IASI se utiliza para construir IASI, entonces la propia metodología está sometida a sus propios principios.</p>
+<p>IASI tampoco tiene derecho a dar nada por supuesto.</p>
+<p>Una práctica metodológica puede ser cuestionada si el trabajo real demuestra que introduce fricción. Una herramienta puede desaparecer si deja de ser útil. Una decisión puede ser sustituida por otra mejor. Una hipótesis que parecía razonable puede resultar equivocada cuando aparece evidencia nueva.</p>
+<p>Eso no significa que la metodología haya fallado. Significa que está funcionando como un sistema de ingeniería vivo.</p>
+<p>La metodología no debe defenderse de la evidencia. Debe ser capaz de cambiar cuando la evidencia lo exige.</p>
+</section>
+<section id="construir-lo-necesario-cuando-sea-necesario" class="level2">
+<h2 class="anchored" data-anchor-id="construir-lo-necesario-cuando-sea-necesario">Construir lo necesario, cuando sea necesario</h2>
+<p>Trabajar de esta manera también limita una tentación habitual en ingeniería: construir por adelantado sistemas destinados a resolver problemas que todavía no tenemos.</p>
+<p>No sabemos cuáles serán todas las herramientas de IASI dentro de varios años. Tampoco sabemos qué agentes, skills, integraciones o artefactos necesitaremos. Intentar diseñarlos ahora probablemente produciría una arquitectura muy elegante para problemas imaginarios.</p>
+<p>No necesitamos anticipar todo el ecosistema. Necesitamos que el ecosistema pueda evolucionar cuando aparezcan necesidades reales.</p>
+<p>Por eso preferimos empezar con algo pequeño y suficiente. Después lo utilizamos. Lo observamos. Aprendemos. Si el patrón se repite, lo formalizamos. Y solamente cuando ese conocimiento es suficientemente estable lo convertimos en una capacidad más general.</p>
+<p>La generalización no es el punto de partida. Es una consecuencia de haber aprendido.</p>
+</section>
+<section id="esta-misma-página-es-un-ejemplo" class="level2">
+<h2 class="anchored" data-anchor-id="esta-misma-página-es-un-ejemplo">Esta misma página es un ejemplo</h2>
+<p>Incluso esta página contiene un pequeño ejemplo del proceso que describe.</p>
+<p>Necesitábamos representar visualmente el ciclo de construcción de IASI. Actualmente tenemos PlantUML y resuelve correctamente esa necesidad, por lo que utilizamos PlantUML. No necesitamos interrumpir el trabajo para ampliar antes <code>iasi.graphics</code>.</p>
+<p>Puede ocurrir que más adelante descubramos que este tipo de diagramas editoriales aparece repetidamente y que existe una estructura suficientemente clara como para automatizarla. Entonces tendrá sentido incorporar esa capacidad a <code>iasi.graphics</code>.</p>
+<p>Cuando eso ocurra probablemente volveremos a esta página y sustituiremos el diagrama. La idea que queremos comunicar será la misma, pero IASI habrá adquirido una nueva capacidad para expresarla.</p>
+<p>Y esa capacidad habrá surgido precisamente porque, en algún momento anterior, IASI la necesitó.</p>
+<p>Es un ejemplo pequeño, pero contiene todo el ciclo.</p>
+</section>
+<section id="una-ingeniería-que-observa-cómo-hace-ingeniería" class="level2">
+<h2 class="anchored" data-anchor-id="una-ingeniería-que-observa-cómo-hace-ingeniería">Una ingeniería que observa cómo hace ingeniería</h2>
+<p>IASI no pretende observar únicamente qué software, documentos o herramientas produce. También quiere observar cómo los produce.</p>
+<p>Nos interesa saber qué decisiones terminan siendo importantes, qué tareas se repiten, cuáles merece la pena automatizar y cuáles es preferible mantener bajo control humano. Nos interesa comprender qué ocurre cuando los sistemas inteligentes dejan de ser una herramienta ocasional y empiezan a participar de forma natural en el proceso de ingeniería.</p>
+<p>También nos interesa algo todavía más profundo: qué ocurre con el valor relativo de cada actividad cuando la implementación puede producirse cada vez más rápidamente.</p>
+<p>Porque si la implementación cada vez cuesta menos, <strong>el pensamiento cada vez vale más</strong>.</p>
+<p>Por eso IASI intenta conservar ese pensamiento. El resultado final importa, pero también importan las decisiones, los razonamientos y el proceso que permitió llegar hasta él.</p>
+</section>
+<section id="un-sistema-que-aprende-a-construirse" class="level2">
+<h2 class="anchored" data-anchor-id="un-sistema-que-aprende-a-construirse">Un sistema que aprende a construirse</h2>
+<p>IASI es por tanto dos cosas al mismo tiempo. Es una propuesta sobre cómo puede evolucionar la ingeniería cuando los Sistemas Inteligentes se integran de manera real en el proceso, y es un experimento continuo en el que esa propuesta se utiliza para construir sus propios libros, herramientas, decisiones, agentes, prácticas e infraestructura.</p>
+<p>No estamos escribiendo primero una metodología para intentar demostrar después que funciona. Estamos construyendo, observando, cuestionando, decidiendo, formalizando y volviendo a construir.</p>
+<p>El ciclo no termina cuando aparece una nueva herramienta.</p>
+<p>Precisamente ahí empieza la siguiente vuelta.</p>
+<p><strong>IASI no se diseña primero y se aplica después. IASI se está utilizando para construir IASI.</strong></p>
 
 
 </section>
@@ -354,12 +439,12 @@ Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -747,5 +832,5 @@ Todo ello mediante <strong>fundamentos, experimentación y casos reales</strong>
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
