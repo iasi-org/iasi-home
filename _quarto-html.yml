@@ -15,9 +15,9 @@ website:
           - text: "IASI I"
             href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&title=IASI%20I
           - text: "IASI II"
-            href: pages/status/to-be-done.html
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-II%2F&title=IASI%20II
           - text: "IASI III"
-            href: pages/status/to-be-done.html
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-III%2F&title=IASI%20III
       - text: "Subproductos"
         menu:
           - text: "Todos"
@@ -55,7 +55,7 @@ website:
       - text: "Viaje"
         menu:
           - text: "Decisiones de ingeniería"
-            href: pages/status/under-construction.html
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-edr%2F&title=EDR
           - text: "Historia del viaje"
             href: pages/status/under-construction.html
       - text: "Sobre IASI"
