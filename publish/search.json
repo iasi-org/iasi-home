@@ -151,7 +151,7 @@
     "href": "about.html",
     "title": "Cómo se construye IASI",
     "section": "",
-    "text": "IASI no se está diseñando primero para aplicarse después. Se está construyendo utilizando la propia forma de ingeniería que pretende definir. Eso significa que IASI es, al mismo tiempo, una propuesta metodológica y uno de los primeros sistemas sobre los que esa metodología se está poniendo a prueba.\nNo partimos de una metodología terminada, acompañada por un conjunto cerrado de herramientas, para después buscar un proyecto sobre el que demostrar que funciona. Estamos recorriendo el camino contrario. Construimos IASI y, mientras lo hacemos, observamos qué problemas aparecen, qué decisiones tenemos que tomar, qué prácticas resultan útiles y qué capacidades necesitamos incorporar. Algunas de esas capacidades terminan convirtiéndose en herramientas, otras en automatizaciones, especificaciones, skills, agentes, productos o nuevas piezas de la propia metodología.\nPor eso el desarrollo de IASI es deliberadamente recursivo. Cada nueva capacidad que emerge del proceso puede ser utilizada inmediatamente para continuar construyendo el propio sistema. IASI no solo produce resultados: progresivamente produce también los medios con los que será capaz de producir sus siguientes resultados."
+    "text": "IASI se está utilizando para construir IASI."
   },
   {
     "objectID": "about.html#bootstrapping",
