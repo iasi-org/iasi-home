@@ -147,6 +147,62 @@
     "text": "Manuales\n\n\nUser Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nTechnical Guides\n\n\nTodosIASI QuartoIASI LuaIASI Tools Dev\n\n\n\n\nDeveloper Guides\n\n\nTodos\n\n\n\n\nDeveloper Guides\nLos Developer Guides están orientados a quienes desarrollan, extienden o contribuyen a los productos y al ecosistema IASI.\nRecogen la información necesaria para preparar el entorno de desarrollo, seguir las convenciones del proyecto, incorporar nuevas capacidades y contribuir de forma reproducible.\nActualmente no hay Developer Guides publicados en esta categoría."
   },
   {
+    "objectID": "pages/locale/es/contact.html",
+    "href": "pages/locale/es/contact.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/locale/es/contact.html#correo-electrónico",
+    "href": "pages/locale/es/contact.html#correo-electrónico",
+    "title": "Contacto",
+    "section": "",
+    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+  },
+  {
+    "objectID": "pages/locale/en/index.html",
+    "href": "pages/locale/en/index.html",
+    "title": "IASI",
+    "section": "",
+    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+  },
+  {
+    "objectID": "pages/locale/en/index.html#contribute",
+    "href": "pages/locale/en/index.html#contribute",
+    "title": "IASI",
+    "section": "Open by design",
+    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
+  },
+  {
+    "objectID": "pages/locale/en/challenge.html",
+    "href": "pages/locale/en/challenge.html",
+    "title": "The Challenge",
+    "section": "",
+    "text": "At a certain point in the journey of this initiative and in our relationship with Intelligent Systems, two questions emerged naturally:\nIn this context, autonomous does not mean automatic. The system can analyse, propose, plan, execute and verify, while decisions requiring judgement remain human decisions.\n\n\nIASI was created as a methodology for integrating Intelligent Systems into software engineering. But there is a question that takes that idea one step further:\nCan a methodology and the software that implements it be used to recreate themselves?\n\n\n\nThis question is a natural consequence of the previous one, if the answer to the first is yes:\nCan a system use its methodology, tools and knowledge to design an improved version of itself?\nIn other words: Can IASI 1.0 build IASI 2.0?\n\n\n\nThese questions have been asked many times and in many places. What if we could demonstrate empirically that the answer is yes?\nThat is The Challenge and the end of the journey."
+  },
+  {
+    "objectID": "pages/locale/en/challenge.html#can-software-recreate-itself-autonomously",
+    "href": "pages/locale/en/challenge.html#can-software-recreate-itself-autonomously",
+    "title": "The Challenge",
+    "section": "",
+    "text": "IASI was created as a methodology for integrating Intelligent Systems into software engineering. But there is a question that takes that idea one step further:\nCan a methodology and the software that implements it be used to recreate themselves?"
+  },
+  {
+    "objectID": "pages/locale/en/challenge.html#can-software-improve-itself",
+    "href": "pages/locale/en/challenge.html#can-software-improve-itself",
+    "title": "The Challenge",
+    "section": "",
+    "text": "This question is a natural consequence of the previous one, if the answer to the first is yes:\nCan a system use its methodology, tools and knowledge to design an improved version of itself?\nIn other words: Can IASI 1.0 build IASI 2.0?"
+  },
+  {
+    "objectID": "pages/locale/en/challenge.html#the-challenge",
+    "href": "pages/locale/en/challenge.html#the-challenge",
+    "title": "The Challenge",
+    "section": "",
+    "text": "These questions have been asked many times and in many places. What if we could demonstrate empirically that the answer is yes?\nThat is The Challenge and the end of the journey."
+  },
+  {
     "objectID": "pages/common/manifesto-bilingual.html",
     "href": "pages/common/manifesto-bilingual.html",
     "title": "IASI",
@@ -154,67 +210,46 @@
     "text": "This book is deliberately written in Spanish.\nThere are two main reasons:\n\nThe first one is simple; Spanish is one of the most widely spoken native languages in the world, second only to Mandarin Chinese. It is therefore not a marginal language for thinking, explaining, or building technical knowledge.\nThe second is personal, but also methodological: it is the language I use and the one in which I can express myself with the greatest precision and consistency.\n\nThis is not a rejection of English, nor does it ignore the fact that much of technology is first developed and documented in English. It is a choice to work in the language in which I can think, question, discuss, and capture nuance most accurately.\nAnd in engineering, nuance matters.\nTranslations can come later. Original thought cannot.\nNevertheless, if you need any part of this work translated into English, we will be happy to provide it.\n\nEste libro está escrito conscientemente en castellano.\nHay dos razones principales:\n\nLa primera es sencilla: el castellano es una de las lenguas maternas más habladas del mundo, solo por detrás del chino mandarín. No es, por tanto, una lengua marginal para pensar, explicar o construir conocimiento técnico.\nLa segunda es personal, pero también metodológica: es la lengua que uso y en la que puedo expresarme con mayor exactitud y coherencia.\n\nNo se trata de rechazar el inglés ni de ignorar que gran parte de la tecnología se desarrolla y documenta primero en ese idioma. Se trata de elegir la lengua en la que puedo pensar, dudar, discutir y encontrar mejor los matices.\nY en ingeniería, los matices importan.\nLas traducciones podrán venir después. El pensamiento original, no."
   },
   {
-    "objectID": "pages/common/contact_en.html",
-    "href": "pages/common/contact_en.html",
-    "title": "Contact",
+    "objectID": "pages/artifacts/iasi-tools-dev.html",
+    "href": "pages/artifacts/iasi-tools-dev.html",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
     "section": "",
-    "text": "IASI is still a growing project. While new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+    "text": "iasi-tools-dev Overview Ciclo User Guide Technical Guide Repository\n\n\n\n\nHERRAMIENTAS DE OPERACIÓN\n\n\n\n\nUna interfaz de línea de comandos para construir, publicar, desplegar y mantener los proyectos IASI de forma consistente.\n\n\nAbrir User Guide Ver repositorio ↗\n\n\n\n\n\niasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo.\n\n\n\n\n\niasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]\n\n\n\n\n\n\nInstalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
   },
   {
-    "objectID": "pages/common/contact_en.html#email",
-    "href": "pages/common/contact_en.html#email",
-    "title": "Contact",
+    "objectID": "pages/artifacts/iasi-tools-dev.html#overview",
+    "href": "pages/artifacts/iasi-tools-dev.html#overview",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
     "section": "",
-    "text": "Javier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+    "text": "iasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo."
   },
   {
-    "objectID": "pages/artifacts/index.html",
-    "href": "pages/artifacts/index.html",
-    "title": "Artefactos IASI",
+    "objectID": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "href": "pages/artifacts/iasi-tools-dev.html#cycle",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
     "section": "",
-    "text": "Artefactos IASI Tools Dev IASI RStudio\n\n\nArtefactos IASI\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\nA diferencia de los subproductos, no nacen para convertirse en soluciones públicas con identidad y ciclo de vida propios. Son elementos vinculados al funcionamiento interno del ecosistema y a la ingeniería que hace posible construirlo de manera consistente.\n\nLos subproductos reutilizan soluciones. Los artefactos sostienen el entorno en el que esas soluciones se desarrollan.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
+    "text": "iasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]"
   },
   {
-    "objectID": "pages/artifacts/iasi-rstudio.html",
-    "href": "pages/artifacts/iasi-rstudio.html",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
+    "objectID": "pages/artifacts/iasi-tools-dev.html#resources",
+    "href": "pages/artifacts/iasi-tools-dev.html#resources",
+    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
     "section": "",
-    "text": "iasi-rstudio Overview Documentación prevista Repository\n\n\n\n\nENTORNO DE DESARROLLO\n\n\n\n\nUn addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.\n\n\nDocumentación prevista Ver repositorio ↗\n\n\n\n\n\niasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.\n\n\n\n\n\n\nLa documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
+    "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
   },
   {
-    "objectID": "pages/artifacts/iasi-rstudio.html#overview",
-    "href": "pages/artifacts/iasi-rstudio.html#overview",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
-    "section": "",
-    "text": "iasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-rstudio.html#resources",
-    "href": "pages/artifacts/iasi-rstudio.html#resources",
-    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
-    "section": "",
-    "text": "La documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
-  },
-  {
-    "objectID": "index_en.html",
-    "href": "index_en.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "IASI",
     "section": "",
-    "text": "Intelligence-Assisted Systems Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
   },
   {
-    "objectID": "index_en.html#contribute",
-    "href": "index_en.html#contribute",
+    "objectID": "index.html#contribute",
+    "href": "index.html#contribute",
     "title": "IASI",
     "section": "Open by design",
     "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
-  },
-  {
-    "objectID": "books.html",
-    "href": "books.html",
-    "title": "Libros",
-    "section": "",
-    "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
   },
   {
     "objectID": "about.html",
@@ -287,88 +322,39 @@
     "text": "Un sistema que aprende a construirse\nIASI es por tanto dos cosas al mismo tiempo. Es una propuesta sobre cómo puede evolucionar la ingeniería cuando los Sistemas Inteligentes se integran de manera real en el proceso, y es un experimento continuo en el que esa propuesta se utiliza para construir sus propios libros, herramientas, decisiones, agentes, prácticas e infraestructura.\nNo estamos escribiendo primero una metodología para intentar demostrar después que funciona. Estamos construyendo, observando, cuestionando, decidiendo, formalizando y volviendo a construir.\nEl ciclo no termina cuando aparece una nueva herramienta.\nPrecisamente ahí empieza la siguiente vuelta.\nIASI no se diseña primero y se aplica después. IASI se está utilizando para construir IASI."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IASI",
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Libros",
     "section": "",
-    "text": "Intelligent Systems Assisted Engineering\n\n\nAs implementation costs less and less, knowledge becomes more and more valuable. (Grandez)"
+    "text": "Libros\n\nUna idea, varios productos, una misma ingeniería.\n\n\n\n\nLos libros reúnen y ordenan el conocimiento de IASI. Cada volumen vive en su propio repositorio y puede evolucionar de forma independiente.\n\n\n\nLIBRO · VOLUMEN I\n\niasi-book-I\nPrimer volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN II\n\niasi-book-II\nSegundo volumen de la colección IASI y repositorio independiente de publicación.\n\n\n\nLIBRO · VOLUMEN III\n\niasi-book-III\nTercer volumen de la colección IASI y repositorio independiente de publicación."
   },
   {
-    "objectID": "index.html#contribute",
-    "href": "index.html#contribute",
-    "title": "IASI",
-    "section": "Open by design",
-    "text": "Open by design\nAlthough IASI began as a personal initiative, it is not intended to be built alone or to belong to a single person, but to the community.\nIts ideas, methods and artifacts are developed openly so that they can be used, discussed, challenged and improved by others: Professionals, Teams and Organizations are welcome to participate, whether by contributing knowledge, proposing problems, developing new artifacts or experimenting with this way of understanding engineering.\nIASI starts here. What it becomes will also depend on those who choose to build it."
-  },
-  {
-    "objectID": "index_es.html",
-    "href": "index_es.html",
-    "title": "IASI",
+    "objectID": "pages/artifacts/iasi-rstudio.html",
+    "href": "pages/artifacts/iasi-rstudio.html",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
     "section": "",
-    "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
+    "text": "iasi-rstudio Overview Documentación prevista Repository\n\n\n\n\nENTORNO DE DESARROLLO\n\n\n\n\nUn addin que acerca las operaciones y herramientas de IASI al entorno habitual de trabajo con RStudio.\n\n\nDocumentación prevista Ver repositorio ↗\n\n\n\n\n\niasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos.\n\n\n\n\n\n\nLa documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
   },
   {
-    "objectID": "index_es.html#contribute",
-    "href": "index_es.html#contribute",
-    "title": "IASI",
-    "section": "Abierto por diseño",
-    "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
-  },
-  {
-    "objectID": "pages/artifacts/iasi-tools-dev.html",
-    "href": "pages/artifacts/iasi-tools-dev.html",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "objectID": "pages/artifacts/iasi-rstudio.html#overview",
+    "href": "pages/artifacts/iasi-rstudio.html#overview",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
     "section": "",
-    "text": "iasi-tools-dev Overview Ciclo User Guide Technical Guide Repository\n\n\n\n\nHERRAMIENTAS DE OPERACIÓN\n\n\n\n\nUna interfaz de línea de comandos para construir, publicar, desplegar y mantener los proyectos IASI de forma consistente.\n\n\nAbrir User Guide Ver repositorio ↗\n\n\n\n\n\niasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo.\n\n\n\n\n\niasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]\n\n\n\n\n\n\nInstalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
+    "text": "iasi-rstudio proporciona una integración específica para utilizar capacidades del ecosistema IASI desde RStudio. Su interfaz permite incorporarlas al flujo de desarrollo sin depender exclusivamente de la línea de comandos."
   },
   {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#overview",
-    "href": "pages/artifacts/iasi-tools-dev.html#overview",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "objectID": "pages/artifacts/iasi-rstudio.html#resources",
+    "href": "pages/artifacts/iasi-rstudio.html#resources",
+    "title": "IASI RStudio: El ecosistema IASI dentro de RStudio",
     "section": "",
-    "text": "iasi-tools-dev reúne en el comando iasi-dev las operaciones habituales del ecosistema. Cada comando mantiene explícita su responsabilidad y permite aplicar el mismo flujo de trabajo a uno o varios repositorios.\n\n\n\nConstruye los proyectos y valida sus resultados.\n\n\n\nPrepara los archivos que deben desplegarse.\n\n\n\nRegistra y sube la publicación; con --full, ejecuta el ciclo completo."
+    "text": "La documentación de instalación, configuración y uso del addin todavía no está publicada.\n\n\n\nCódigo fuente y evolución pública de la integración."
   },
   {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#cycle",
-    "href": "pages/artifacts/iasi-tools-dev.html#cycle",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
+    "objectID": "pages/artifacts/index.html",
+    "href": "pages/artifacts/index.html",
+    "title": "Artefactos IASI",
     "section": "",
-    "text": "iasi-dev build [repositorio...]\niasi-dev publish [repositorio...]\niasi-dev deploy [-f|--full] [-m \"mensaje\"] [repositorio...]"
-  },
-  {
-    "objectID": "pages/artifacts/iasi-tools-dev.html#resources",
-    "href": "pages/artifacts/iasi-tools-dev.html#resources",
-    "title": "IASI Tools Dev: Operaciones coherentes para el ecosistema",
-    "section": "",
-    "text": "Instalación, comandos, opciones y flujos de trabajo de iasi-dev.\n\n\n\nArquitectura, mantenimiento y evolución de las herramientas operativas.\n\n\n\nCódigo fuente y evolución pública de las herramientas de desarrollo."
-  },
-  {
-    "objectID": "pages/common/contact.html",
-    "href": "pages/common/contact.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact.html#correo-electrónico",
-    "href": "pages/common/contact.html#correo-electrónico",
-    "title": "Contacto",
-    "section": "",
-    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact_es.html",
-    "href": "pages/common/contact_es.html",
-    "title": "Contacto",
-    "section": "",
-    "text": "IASI es todavía un proyecto en crecimiento. Mientras se desarrollan nuevos canales de participación y colaboración, el correo electrónico es la mejor forma de contactar con el equipo.\n\n\nPuedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
-  },
-  {
-    "objectID": "pages/common/contact_es.html#correo-electrónico",
-    "href": "pages/common/contact_es.html#correo-electrónico",
-    "title": "Contacto",
-    "section": "",
-    "text": "Puedes escribirnos para plantear preguntas, proponer ideas, colaborar en el proyecto o simplemente iniciar una conversación sobre IASI a la siguiente direccion:\nJavier G. Grández\nPara facilitar nuestro trabajo, inicia el asunto del correo con la palabra clave IASI."
+    "text": "Artefactos IASI Tools Dev IASI RStudio\n\n\nArtefactos IASI\nLos artefactos sostienen el trabajo cotidiano del ecosistema IASI. Preparan el entorno y ofrecen las herramientas necesarias para desarrollar, probar y operar sus productos.\nA diferencia de los subproductos, no nacen para convertirse en soluciones públicas con identidad y ciclo de vida propios. Son elementos vinculados al funcionamiento interno del ecosistema y a la ingeniería que hace posible construirlo de manera consistente.\n\nLos subproductos reutilizan soluciones. Los artefactos sostienen el entorno en el que esas soluciones se desarrollan.\n\n\n\nOPERAR\n\niasi-tools-dev\nHerramientas y comandos de soporte que simplifican las operaciones habituales del ecosistema IASI y unifican su forma de trabajo.\n\n\n\nDESARROLLAR\n\niasi-rstudio\nEntorno de trabajo preparado para desarrollar y validar publicaciones y productos del ecosistema IASI con RStudio."
   },
   {
     "objectID": "pages/common/manifesto.html",
@@ -397,6 +383,62 @@
     "title": "Manifiesto",
     "section": "",
     "text": "IASI nace como una iniciativa personal, pero no pretende ser un proyecto personal. Está concebido para crecer de forma abierta, incorporando nuevas ideas, herramientas, metodologías y colaboradores.\nToda aportación fundamentada será bienvenida.\nPorque creemos que la Ingeniería Asistida por Sistemas Inteligentes solo puede construirse desde la colaboración, el pensamiento crítico y la experimentación.\n\nLa mejor metodología no es la que seguimos, sino la que descubrimos mientras resolvemos el problema adecuado."
+  },
+  {
+    "objectID": "pages/locale/en/contact.html",
+    "href": "pages/locale/en/contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "IASI is still a growing project. While new channels for participation and collaboration are being developed, email is currently the best way to contact the team.\n\n\nJavier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+  },
+  {
+    "objectID": "pages/locale/en/contact.html#email",
+    "href": "pages/locale/en/contact.html#email",
+    "title": "Contact",
+    "section": "",
+    "text": "Javier G. Grández\nYou can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.\nTo make our work easier, please start the email subject line with the keyword IASI."
+  },
+  {
+    "objectID": "pages/locale/es/challenge.html",
+    "href": "pages/locale/es/challenge.html",
+    "title": "The Challenge",
+    "section": "",
+    "text": "En cierto momento del viaje de esta iniciativa y nuestra relación con los Sistemas Inteligentes, surgieron, de forma natural, dos preguntas:\nEn este contexto Autónomo no significa automático. El sistema puede analizar, proponer, planificar, ejecutar y verificar, mientras las decisiones que requieren criterio siguen perteneciendo al humano.\n\n\nIASI nace como una metodología para integrar Sistemas Inteligentes en la ingeniería de software. Pero hay una pregunta que lleva esa idea un paso más allá:\n¿Puede una metodología y el software que la implementa utilizarse para recrearse a sí mismos?\n\n\n\nEsta pregunta es consecuencia natural de la anterior, si la primera se cumple:\n¿Puede un sistema utilizar su metodología, herramientas y conocimiento para diseñar una versión mejorada?\nDicho de otro modo: ¿Puede IASI 1.0 construir IASI 2.0?\n\n\n\nEsas preguntas se han hecho muchas veces y en muchos lugares. ¿Y si pudiéramos demostrar empíricamente que la respuesta es sí?\nEse es The Challenge y el final del viaje."
+  },
+  {
+    "objectID": "pages/locale/es/challenge.html#puede-un-software-recrearse-a-sí-mismo-de-manera-autónoma",
+    "href": "pages/locale/es/challenge.html#puede-un-software-recrearse-a-sí-mismo-de-manera-autónoma",
+    "title": "The Challenge",
+    "section": "",
+    "text": "IASI nace como una metodología para integrar Sistemas Inteligentes en la ingeniería de software. Pero hay una pregunta que lleva esa idea un paso más allá:\n¿Puede una metodología y el software que la implementa utilizarse para recrearse a sí mismos?"
+  },
+  {
+    "objectID": "pages/locale/es/challenge.html#puede-un-software-mejorarse-a-sí-mismo",
+    "href": "pages/locale/es/challenge.html#puede-un-software-mejorarse-a-sí-mismo",
+    "title": "The Challenge",
+    "section": "",
+    "text": "Esta pregunta es consecuencia natural de la anterior, si la primera se cumple:\n¿Puede un sistema utilizar su metodología, herramientas y conocimiento para diseñar una versión mejorada?\nDicho de otro modo: ¿Puede IASI 1.0 construir IASI 2.0?"
+  },
+  {
+    "objectID": "pages/locale/es/challenge.html#el-reto",
+    "href": "pages/locale/es/challenge.html#el-reto",
+    "title": "The Challenge",
+    "section": "",
+    "text": "Esas preguntas se han hecho muchas veces y en muchos lugares. ¿Y si pudiéramos demostrar empíricamente que la respuesta es sí?\nEse es The Challenge y el final del viaje."
+  },
+  {
+    "objectID": "pages/locale/es/index.html",
+    "href": "pages/locale/es/index.html",
+    "title": "IASI",
+    "section": "",
+    "text": "Ingeniería Asistida por Sistemas Inteligentes (IASI)\n\n\nSi la implementación cada vez cuesta menos, el conocimiento cada vez vale más (Grandez)"
+  },
+  {
+    "objectID": "pages/locale/es/index.html#contribute",
+    "href": "pages/locale/es/index.html#contribute",
+    "title": "IASI",
+    "section": "Abierto por diseño",
+    "text": "Abierto por diseño\nAunque IASI nace como una iniciativa personal, no está pensada para construirse en solitario ni para pertenecer a una sola persona, sino a la comunidad.\nSus ideas, métodos y artefactos se desarrollan de forma abierta, con la intención de que puedan ser utilizados, discutidos, cuestionados y mejorados por otros: Profesionales, Equipos y Organizaciones son bienvenidos a participar, ya sea aportando conocimiento, proponiendo problemas, desarrollando nuevos artefactos o experimentando con esta forma de entender la ingeniería.\nIASI empieza aquí. Lo que llegue a ser dependerá también de quienes quieran construirlo."
   },
   {
     "objectID": "pages/manuals/index.html",

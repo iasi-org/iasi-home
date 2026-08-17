@@ -46,7 +46,7 @@ Cuando esa decisión se estabiliza, la formalizamos. Dependiendo de su naturalez
 
 Y solo entonces automatizamos aquello que realmente hemos entendido.
 
-```{plantuml}
+```{.plantuml}
 @startuml
 
 skinparam shadowing false

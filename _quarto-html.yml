@@ -66,11 +66,13 @@ website:
         href: pages/common/manifesto.qmd
 
     right:
+      - text: "The Challenge"
+        href: pages/locale/es/challenge.qmd
       - text: "ES"
-        href: index_es.qmd
+        href: pages/locale/es/index.qmd
         aria-label: "Español"
       - text: "EN"
-        href: index_en.qmd
+        href: pages/locale/en/index.qmd
         aria-label: "English"
 
     tools:
@@ -78,7 +80,7 @@ website:
         href: pages/common/manifesto-bilingual.qmd
         aria-label: "Idioma / Language"
       - icon: envelope
-        href: pages/common/contact_es.qmd
+        href: pages/locale/es/contact.qmd
         aria-label: "Contact us"
       - icon: github
         href: https://github.com/iasi-org

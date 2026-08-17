@@ -1,0 +1,39 @@
+---
+title: "The Challenge"
+lang: en
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+
+:::: {.iasi-artifact-content}
+
+At a certain point in the journey of this initiative and in our relationship with Intelligent Systems,
+two questions emerged naturally:
+
+In this context, **autonomous does not mean automatic.** The system can analyse, propose, plan, execute and verify, while decisions requiring judgement remain human decisions.
+
+## Can software recreate itself autonomously?
+
+IASI was created as a methodology for integrating Intelligent Systems into software engineering. But there is a question that takes that idea one step further:
+
+**Can a methodology and the software that implements it be used to recreate themselves?**
+
+## Can software improve itself?
+
+This question is a natural consequence of the previous one, if the answer to the first is yes:
+
+**Can a system use its methodology, tools and knowledge to design an improved version of itself?**
+
+In other words: **Can IASI 1.0 build IASI 2.0?**
+
+## The Challenge
+
+These questions have been asked many times and in many places. **What if we could demonstrate empirically that the answer is yes?**
+
+That is ***The Challenge*** and the end of the journey.
+
+![](/resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+:::: 
+
+:::

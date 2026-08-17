@@ -1,0 +1,39 @@
+---
+title: "The Challenge"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+
+:::: {.iasi-artifact-content}
+
+En cierto momento del viaje de esta iniciativa y nuestra relación con los Sistemas Inteligentes, 
+surgieron, de forma natural, dos preguntas: 
+
+En este contexto **Autónomo no significa automático**. El sistema puede analizar, proponer, planificar, ejecutar y verificar, mientras las decisiones que requieren criterio siguen perteneciendo al humano.
+
+## ¿Puede un software recrearse a sí mismo de manera autónoma?
+
+IASI nace como una metodología para integrar Sistemas Inteligentes en la ingeniería de software. Pero hay una pregunta que lleva esa idea un paso más allá:
+
+**¿Puede una metodología y el software que la implementa utilizarse para recrearse a sí mismos?**
+
+## ¿Puede un software mejorarse a sí mismo?
+
+Esta pregunta es consecuencia natural de la anterior, si la primera se cumple:
+
+**¿Puede un sistema utilizar su metodología, herramientas y conocimiento para diseñar una versión mejorada?**
+
+Dicho de otro modo: **¿Puede IASI 1.0 construir IASI 2.0?**
+
+## El reto
+
+Esas preguntas se han hecho muchas veces y en muchos lugares. **¿Y si pudiéramos demostrar empíricamente que la respuesta es sí?**
+
+Ese es ***The Challenge*** y el final del viaje.
+
+![](/resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
+
+:::
