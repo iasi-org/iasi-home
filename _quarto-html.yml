@@ -57,7 +57,7 @@ website:
           - text: "Decisiones de ingeniería"
             href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-edr%2F&title=EDR
           - text: "Historia del viaje"
-            href: pages/status/under-construction.html
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-journey%2F&title=Journey
       - text: "Sobre IASI"
         href: about.qmd
       - text: "Principios"
