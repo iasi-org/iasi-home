@@ -1031,3 +1031,29 @@ main.content {
   object-position: center;
   margin: 0;
 }
+
+/****************************************************************************/
+/* IASI DOCUMENT VIEWER                                                     */
+/****************************************************************************/
+
+.content-column-page {
+  grid-column: screen-start / screen-end !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.iasi-doc-viewer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 9.5rem);
+}
+
+.iasi-doc-frame {
+  flex: 1 1 auto;
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-height: calc(100vh - 13rem);
+  border: 0;
+}

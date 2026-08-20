@@ -2,9 +2,6 @@
 title: "Documentación"
 page-layout: full
 toc: false
-format:
-  html:
-    css: ../resources/css/viewer.css
 ---
 
 ::: {.iasi-doc-viewer aria-live="polite"}
