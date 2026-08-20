@@ -4,8 +4,10 @@ page-layout: full
 toc: false
 ---
 
-::: {.iasi-doc-viewer}
-<iframe id="iasi-doc-frame" class="iasi-doc-frame" title="Documentación integrada de IASI" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-:::
+<iframe id="iasi-doc-frame"
+        class="iasi-doc-frame"
+        title="Documentación integrada de IASI"
+        loading="eager"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 <script src="../resources/js/viewer.js"></script>

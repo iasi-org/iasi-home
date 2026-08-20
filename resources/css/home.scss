@@ -821,56 +821,6 @@ main.content {
 
 }
 
-
-/* --------------------------------------------------------------------------
-   IASI conceptual documents
-   -------------------------------------------------------------------------- */
-
-.iasi-document {
-  width: min(1200px, 100%);
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1.25rem var(--iasi-page-pad) 5rem;
-}
-
-.iasi-document > h1 {
-  margin: 0 0 2.25rem;
-  font-family: var(--iasi-title-font-family);
-  font-size: var(--iasi-title-font-size);
-  font-weight: var(--iasi-title-font-weight);
-  line-height: var(--iasi-title-line-height);
-  letter-spacing: var(--iasi-title-letter-spacing);
-  color: var(--iasi-quarto-blue);
-  text-align: center;
-}
-
-.iasi-catalog-intro {
-  margin-bottom: 2rem;
-}
-
-.iasi-document .iasi-grid {
-  margin-top: 1.5rem;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.iasi-document h2 {
-  margin-top: 3rem !important;
-  padding: 0 !important;
-  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  font-size: clamp(1.55rem, 2.4vw, 2.05rem) !important;
-  line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-}
-
-.iasi-document blockquote {
-  margin: 2rem 0;
-  padding: 0.3rem 0 0.3rem 1.4rem;
-  border-left: 0.25rem solid var(--iasi-quarto-blue);
-}
-
 .navbar .nav-link i[aria-label] {
   position: relative;
 }
@@ -1042,18 +992,10 @@ main.content {
   max-width: none !important;
 }
 
-.iasi-doc-viewer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: calc(100vh - 9.5rem);
-}
-
 .iasi-doc-frame {
-  flex: 1 1 auto;
   display: block;
   width: 100%;
   max-width: none;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 7rem);
   border: 0;
 }
