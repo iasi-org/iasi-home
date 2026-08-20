@@ -4,25 +4,8 @@ page-layout: full
 toc: false
 ---
 
-::: {.iasi-doc-viewer aria-live="polite"}
-::: {.iasi-doc-viewer-toolbar}
-<div>
-  <span class="iasi-doc-viewer-label">Contenido integrado</span>
-  <strong id="iasi-doc-title">Cargando documentación…</strong>
-</div>
-
-<a id="iasi-doc-open" class="iasi-doc-open" href="https://iasi-org.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Abrir la documentación original en una pestaña nueva" title="Abrir en una pestaña nueva">↗</a>
-:::
-
-<div id="iasi-doc-message" class="iasi-doc-message">
-La documentación se está cargando. Si no aparece, utilice el icono ↗ para abrir el sitio original.
-</div>
-
+::: {.iasi-doc-viewer}
 <iframe id="iasi-doc-frame" class="iasi-doc-frame" title="Documentación integrada de IASI" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-<noscript>
-Este visor necesita JavaScript. <a href="https://iasi-org.github.io/iasi-quarto-docs/user-guide/" target="_blank" rel="noopener noreferrer">Abrir la documentación original ↗</a>
-</noscript>
 :::
 
 <script src="../resources/js/viewer.js"></script>
