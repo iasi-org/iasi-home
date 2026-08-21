@@ -55,26 +55,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script>
-
-(() => {
-
-  const css = document.querySelector('link[rel="stylesheet"][href*="site_libs/bootstrap/"]');
-
-  if (!css) return;
-
-
-
-  const script = document.createElement("script");
-
-  script.src = css.href.replace(/site_libs\/bootstrap\/[^/]+$/, "resources/js/language.js");
-
-  document.head.appendChild(script);
-
-})();
-
-</script>
-
-<script>
 (() => {
   window.addEventListener("DOMContentLoaded", async () => {
     const target = document.getElementById("iasi-published-at");
