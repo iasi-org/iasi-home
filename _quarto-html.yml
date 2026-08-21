@@ -12,11 +12,11 @@ website:
         menu:
           - text: "Todos"
             href: books.qmd
-          - text: "IASI I"
+          - text: "IASI Vol. I"
             href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&title=IASI%20I
-          - text: "IASI II"
+          - text: "IASI Vol. II"
             href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-II%2F&title=IASI%20II
-          - text: "IASI III"
+          - text: "IASI Vol. III"
             href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-III%2F&title=IASI%20III
       - text: "Subproductos"
         menu:
@@ -88,6 +88,8 @@ website:
 
 format:
   html:
+    pagetitle: "IASI"
+    title-prefix: ""
     theme:
       - cosmo
       - resources/css/iasi.scss
