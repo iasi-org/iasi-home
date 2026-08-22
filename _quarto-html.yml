@@ -1,7 +1,8 @@
 website:
   page-footer:
-    left: "© 2026 Javier G. Grandez · IASI Rocks 🤘"
+    left: "© 2026 Javier G. Grandez"
     center: '<span id="iasi-publish-date"></span>'
+    right: "IASI Rocks 🤘"
 
   navbar:
     title: IASI
