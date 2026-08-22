@@ -1,7 +1,7 @@
 website:
   page-footer:
-    left: "IASI · Ingeniería Asistida por Sistemas Inteligentes"
-    right: '<span id="iasi-published-at"></span>'
+    left: "© 2026 Javier G. Grandez · IASI Rocks 🤘"
+    center: '<span id="iasi-publish-date"></span>'
 
   navbar:
     title: IASI
