@@ -1,0 +1,39 @@
+---
+pagetitle: "Herramientas · Subproductos · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="tools.qmd">Herramientas</a>
+[IASI Quarto](iasi-quarto.qmd)
+[IASI Graphics](../status/to-be-done.qmd)
+::::
+
+:::: {.iasi-artifact-content}
+# Herramientas IASI
+
+Las **herramientas** son subproductos ejecutables o utilizables directamente que aparecen cuando una necesidad del proceso merece convertirse en una capacidad reusable.
+
+No nacen para completar un catálogo. Nacen porque, durante el desarrollo de IASI, una solución deja de ser circunstancial y pasa a tener valor más allá del problema que la originó.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-publish}
+**PUBLICAR**
+
+### [IASI Quarto](iasi-quarto.qmd)
+
+Convierte la construcción, validación y publicación de proyectos Quarto en un proceso explícito, verificable y repetible.
+:::
+
+::: {.iasi-card .iasi-card-think}
+**COMUNICAR**
+
+### [IASI Graphics](../status/to-be-done.qmd)
+
+Recursos para generar gráficos sencillos, claros y repetibles en documentación y presentaciones IASI.
+:::
+:::
+
+::::
+:::

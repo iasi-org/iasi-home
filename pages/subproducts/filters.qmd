@@ -1,0 +1,39 @@
+---
+pagetitle: "Filtros · Subproductos · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="filters.qmd">Filtros</a>
+[IASI PlantUML](iasi-lua.qmd#plantuml)
+[IASI Shiny](iasi-lua.qmd#shinylive)
+::::
+
+:::: {.iasi-artifact-content}
+# Filtros IASI
+
+Los **filtros** amplían el proceso de transformación y publicación de contenidos cuando Quarto y Pandoc necesitan un comportamiento específico que merece reutilizarse.
+
+Se desarrollan como piezas autónomas: cada proyecto incorpora únicamente los filtros que necesita.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-extend}
+**DIAGRAMAR**
+
+### [IASI PlantUML](iasi-lua.qmd#plantuml)
+
+Transforma bloques PlantUML en imágenes integradas directamente en publicaciones Quarto.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**INTERACTUAR**
+
+### [IASI Shiny](iasi-lua.qmd#shinylive)
+
+Integra aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR dentro de publicaciones estáticas.
+:::
+:::
+
+::::
+:::

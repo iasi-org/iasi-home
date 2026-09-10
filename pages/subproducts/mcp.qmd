@@ -1,0 +1,21 @@
+---
+pagetitle: "Servidores MCP · Subproductos · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="mcp.qmd">Servidores MCP</a>
+::::
+
+:::: {.iasi-artifact-content}
+# Servidores MCP IASI
+
+Los **servidores MCP** son subproductos que exponen herramientas, recursos o capacidades mediante **Model Context Protocol (MCP)** para que puedan ser utilizados por sistemas inteligentes y agentes.
+
+Como el resto de subproductos IASI, no se crean para llenar una categoría. Aparecen cuando una capacidad real necesita una interfaz estable y reutilizable hacia el exterior.
+
+Actualmente no hay servidores MCP publicados en esta categoría.
+
+::::
+:::

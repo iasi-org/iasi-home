@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+(() => {
+  const css = document.querySelector('link[rel="stylesheet"][href*="site_libs/bootstrap/"]');
+  if (!css) return;
+
+  const script = document.createElement("script");
+  script.src = css.href.replace(/site_libs\/bootstrap\/[^/]+$/, "resources/js/language.js");
+  document.head.appendChild(script);
+})();
+</script>
+</head></html>

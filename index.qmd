@@ -1,0 +1,40 @@
+---
+title: "<span class='title-icon'></span> IASI at a glance"
+css: resources/css/glance.css
+resources:
+  - resources/images/buho-emoji.png
+---
+
+![](resources/images/banner_construction_2.png){width=100%}
+
+::: {.column-page}
+
+**IASI is an engineering methodology for working with Intelligent Systems as part of the real engineering process.**
+
+It is not a collection of prompts. It is not an AI tool. It is not an agent framework. It is not a way to generate code faster.
+
+**IASI is a way to think, structure, execute, validate and preserve engineering work when Intelligent Systems are part of the process.**
+
+At its core, IASI turns engineering work into an explicit and traceable flow:
+
+:::: {.flow}
+**Inputs → Definitions → Planning → Execution → Validation → Acceptance → Artifacts**
+::::
+
+The objective is not to automate engineering away, it's to make better use of Intelligent Systems while preserving what still matters most: **understanding, decisions, engineering judgement, verification and responsibility.**
+
+IASI is also executable, its methodology is supported by commands, skills, validations, workflows and conventions that allow projects to apply the methodology instead of merely documenting it. Around the methodology, an ecosystem is growing:
+
+**Books. Tools. Labs. Skills. Commands. Infrastructure. Supporting artifacts.**
+
+Some explain IASI. Some implement it. Some validate it. Some are useful on their own.
+
+**The methodology is the core. Everything else exists to make it understandable, usable, executable and verifiable.**
+
+And one principle sits underneath all of it:
+
+**As implementation becomes cheaper, acknowledge becomes more valuable.**
+
+![](../../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+:::

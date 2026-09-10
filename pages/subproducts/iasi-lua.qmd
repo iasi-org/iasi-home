@@ -1,0 +1,176 @@
+---
+pagetitle: "iasi.lua · IASI"
+lang: es
+filters:
+  - iasi-plantuml
+filter-options:
+  plantuml:
+    server: http://localhost:10025
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">iasi.lua</a>
+[IASI PlantUML](#plantuml)
+[IASI Shiny](#shinylive)
+[IASI Graphics](../status/to-be-done.qmd)
+:::
+
+::: {.iasi-artifact-content}
+# iasi.lua: Extensiones reutilizables para Quarto
+
+Una plataforma común para **desarrollar, construir y distribuir** extensiones Lua del ecosistema IASI sin acoplar los proyectos consumidores a su código fuente.
+
+## Overview {#overview}
+
+`iasi.lua` mantiene separadas la plataforma compartida, la fuente de cada extensión y su distribución. El resultado son extensiones autónomas que cada proyecto instala únicamente cuando las necesita. Su repositorio técnico es `iasi-lua`.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-extend}
+**DIAGRAMAR**
+
+### [IASI PlantUML](#plantuml)
+
+Convierte descripciones PlantUML en imágenes integradas dentro de los documentos Quarto.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**INTERACTUAR**
+
+### [IASI Shiny](#shinylive)
+
+Incorpora aplicaciones Shinylive de R que se ejecutan en el navegador mediante webR.
+:::
+
+::: {.iasi-card .iasi-card-think}
+**PRÓXIMAMENTE**
+
+### [IASI Graphics](../status/to-be-done.qmd)
+
+Incorporará recursos gráficos reutilizables para comunicar de forma coherente en documentos Quarto.
+:::
+:::
+
+```{.plantuml width="82%"}
+@startuml
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam ArrowColor #39729e
+skinparam rectangle {
+  BorderColor #39729e
+  BackgroundColor #f7f9fb
+  FontColor #1f2933
+  RoundCorner 12
+}
+
+left to right direction
+
+rectangle "Core común\ncore/" as core
+rectangle "Fuentes de extensiones\nplantuml/ · shiny/" as source
+rectangle "Construcción\nscripts/build-all.sh" as build
+rectangle "Extensiones autónomas\niasi-plantuml · iasi-shiny" as extension
+rectangle "Proyecto consumidor\nproyecto/_extensions/" as project
+
+core --> build
+source --> build
+build --> extension
+extension --> project
+@enduml
+```
+
+`_extensions/` es un artefacto generado: se construye desde la fuente y no se edita manualmente.
+
+## IASI PlantUML {#plantuml}
+
+La primera extensión distribuida por la plataforma integra diagramas PlantUML en documentos Quarto.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-extend}
+**ESCRIBIR**
+
+### Diagrama como código
+
+El documento conserva una descripción PlantUML legible, versionable y cercana al contenido que explica.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**RENDERIZAR**
+
+### Imagen integrada
+
+El filtro solicita la imagen al servidor PlantUML y la incorpora al *mediabag* de Pandoc durante el renderizado.
+:::
+:::
+
+La extensión se activa explícitamente en el proyecto:
+
+```yaml
+filters:
+  - iasi-plantuml
+```
+
+## IASI Shiny {#shinylive}
+
+La extensión `iasi-shiny` incorpora aplicaciones interactivas de R en documentos Quarto. Las aplicaciones se ejecutan directamente en el navegador mediante Shinylive y webR, por lo que la publicación resultante sigue siendo un sitio estático compatible con GitHub Pages.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-extend}
+**CREAR**
+
+### Aplicación interactiva
+
+El documento define la aplicación en un bloque `{shinylive-r}` junto al contenido que la explica.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**PUBLICAR**
+
+### Ejecución en el navegador
+
+Shinylive prepara los recursos durante el renderizado y webR ejecuta la aplicación en el navegador, sin servidor Shiny propio.
+:::
+:::
+
+La extensión se activa explícitamente en el proyecto:
+
+```yaml
+filters:
+  - iasi-shiny
+```
+
+## Recursos {#resources}
+
+::: {.iasi-artifact-docs}
+::: {.iasi-artifact-doc}
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Fuser-guide%2F&title=iasi.lua%20User%20Guide">User Guide</a>
+
+Instalación, configuración, diagramas PlantUML, aplicaciones Shinylive y solución de problemas para proyectos consumidores.
+:::
+
+::: {.iasi-artifact-doc}
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua-docs%2Ftechnical-guide%2F&title=iasi.lua%20Technical%20Guide">Technical Guide</a>
+
+Arquitectura del núcleo, construcción de extensiones y decisiones internas de diseño.
+:::
+
+::: {.iasi-artifact-doc}
+### [Repository](https://github.com/iasi-org/iasi-lua)
+
+Código fuente, extensiones generadas, pruebas y scripts de construcción.
+:::
+
+::: {.iasi-artifact-doc}
+### [Architecture](https://github.com/iasi-org/iasi-lua/blob/main/docs/architecture.md)
+
+Responsabilidades del núcleo, estructura de las extensiones y modelo de distribución.
+:::
+
+::: {.iasi-artifact-doc}
+### [Adding an extension](https://github.com/iasi-org/iasi-lua/blob/main/docs/adding-an-extension.md)
+
+Guía para incorporar una nueva extensión a la plataforma.
+:::
+:::
+:::
+:::

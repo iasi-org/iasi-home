@@ -1,0 +1,164 @@
+# Agentics
+
+**Agentics** es el área de la metodología IASI que define cómo participan los agentes de Sistemas Inteligentes en el proceso de ingeniería.
+
+Su objetivo no es describir una herramienta concreta ni imponer el funcionamiento de un determinado modelo. Define, de forma independiente de la tecnología, **cómo queremos que trabajen los agentes, qué capacidades pueden utilizar y bajo qué reglas deben hacerlo**.
+
+La implementación concreta puede cambiar. La metodología permanece.
+
+---
+
+## Un modelo independiente de la herramienta
+
+Codex, Copilot, Claude u otros sistemas pueden disponer de mecanismos distintos para configurar agentes, proporcionar contexto, ejecutar herramientas o definir capacidades.
+
+IASI separa esos mecanismos de la definición metodológica.
+
+```text
+IASI Agentics
+      │
+      ▼
+metodología común
+      │
+      ├── Codex
+      ├── Copilot
+      ├── Claude
+      └── otros sistemas
+```
+
+Agentics actúa como fuente metodológica. Las adaptaciones necesarias para cada plataforma se construyen después.
+
+---
+
+## Componentes
+
+Agentics se organiza inicialmente en cuatro piezas:
+
+```text
+agentics/
+├── instructions/
+├── commands/
+├── skills/
+└── mcp/
+```
+
+### Instructions
+
+Definen **cómo debe comportarse el agente**.
+
+Incluyen reglas generales de comportamiento, validación, control humano y tratamiento de incertidumbre, pero también instrucciones específicas según el tipo de trabajo: estilo documental, código, pruebas, diagramas o uso de fuentes.
+
+### Commands
+
+Definen **acciones explícitas que pueden solicitarse a los agentes**.
+
+Un command expresa una operación reconocible y reproducible, independientemente de cómo la implemente posteriormente cada plataforma.
+
+### Skills
+
+Definen **capacidades reutilizables** que un agente puede aplicar en diferentes tareas y contextos.
+
+Una skill encapsula conocimiento y forma de actuar sobre un problema concreto sin convertirlo en comportamiento general del agente.
+
+### MCP
+
+Define la integración con **herramientas y servicios externos expuestos mediante Model Context Protocol**.
+
+IASI distingue entre el protocolo, los servidores MCP disponibles y la forma en que los agentes utilizan esas herramientas dentro del proceso de ingeniería.
+
+---
+
+## Composición
+
+Los agentes no necesitan utilizar todas las piezas de Agentics en todas las tareas.
+
+La configuración efectiva puede componerse según el contexto.
+
+Por ejemplo, un agente que trabaja sobre documentación podría recibir:
+
+```text
+general behavior
++ human control
++ validation
++ documentation style
++ documentation structure
+```
+
+Mientras que un agente que implementa software podría utilizar:
+
+```text
+general behavior
++ validation
++ code style
++ testing
+```
+
+La metodología proporciona las piezas. El contexto determina cuáles se aplican.
+
+---
+
+## Instalación
+
+Agentics puede instalarse en un workspace o en un proyecto mediante IASI.
+
+```text
+iasi
+ │
+ ▼
+iasi install
+ │
+ ▼
+.iasi/
+```
+
+Una instalación de workspace contiene la metodología completa disponible.
+
+Una instalación de proyecto puede seleccionar o especializar únicamente las partes necesarias para ese proyecto.
+
+Esto permite que humanos y agentes trabajen sobre una definición metodológica explícita y reproducible, en lugar de depender de instrucciones dispersas o conocimiento implícito.
+
+---
+
+## Control humano
+
+La autonomía del agente tiene límites.
+
+IASI mantiene al humano como autoridad sobre:
+
+* objetivos;
+* prioridades;
+* decisiones relevantes;
+* aceptación final del trabajo.
+
+El agente puede actuar autónomamente dentro de un ámbito claramente delegado, pero debe hacer visibles las decisiones que modifiquen de forma significativa el alcance, el riesgo o la solución.
+
+La velocidad de los agentes no determina por sí sola la velocidad sostenible del sistema. El humano debe poder comprender, revisar, decidir y asimilar el trabajo producido.
+
+---
+
+## Validación
+
+Ejecutar una tarea no significa haberla completado.
+
+Agentics distingue entre:
+
+```text
+implemented
+validated
+accepted
+```
+
+Una solución puede estar implementada sin estar validada.
+
+Puede estar validada técnicamente sin haber sido aceptada por el humano.
+
+La validación debe basarse, siempre que sea posible, en resultados observables y criterios explícitos.
+
+---
+
+## Principio
+
+> **Agentics define cómo participan los agentes en la ingeniería, no cómo funciona una herramienta concreta.**
+
+La metodología debe poder evolucionar independientemente de los modelos, proveedores y plataformas que utilicemos para ejecutarla.
+

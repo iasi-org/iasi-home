@@ -1,0 +1,30 @@
+---
+pagetitle: "iasi-agent · Subproductos · IASI"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">Subproductos</a>
+::::
+
+:::: {.iasi-artifact-content}
+# iasi-agent
+
+::::: {.construction-banner}
+![](/resources/images/under-construction-es.png){.construction-banner-image}
+:::::
+
+`iasi-agent` proporciona un agente capaz de **ejecutar trabajo dentro de un proyecto IASI**.
+
+Un modelo de lenguaje puede recibir un prompt y producir una respuesta, pero eso no basta para realizar trabajo de ingeniería sobre un proyecto real. `iasi-agent` añade la capa de ejecución necesaria para que el modelo pueda trabajar con el **workspace**.
+
+El agente puede comprender una tarea, inspeccionar el proyecto, leer los artefactos relevantes, utilizar las capacidades disponibles y materializar los resultados solicitados, siempre dentro de las reglas y permisos definidos por IASI.
+
+`iasi-agent` no define el workflow ni sustituye a IASI. Es uno de los posibles **ejecutores** capaces de realizar el trabajo definido por el proyecto.
+
+Su objetivo es permitir que distintos modelos, incluidos modelos locales, puedan convertirse en ejecutores reales de trabajo IASI sin acoplar la metodología a un modelo, proveedor o agente concreto.
+
+::::
+:::

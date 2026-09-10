@@ -1,0 +1,67 @@
+---
+pagetitle: "Subproductos · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.qmd">Subproductos</a>
+[Herramientas](tools.qmd)
+[Filtros](filters.qmd)
+[Servidores MCP](mcp.qmd)
+::::
+
+:::: {.iasi-artifact-content}
+# Subproductos IASI {#todos}
+
+Los productos IASI son los libros. Durante su desarrollo aparecen necesidades concretas que deben resolverse para poder avanzar.
+
+IASI parte de un principio sencillo:
+
+> **Cada necesidad será analizada de forma independiente.**
+>
+> Si una metodología existente ofrece una buena respuesta, la utilizaremos.
+> Si necesita adaptarse, la adaptaremos.
+> Si varias aportan valor, las combinaremos.
+> Y cuando ninguna resulte suficiente, construiremos una nueva, que pasará a formar parte de los *assets* de la compañía o se publicará como *open source*.
+
+Los **subproductos** nacen precisamente de ese proceso.
+
+Cuando la resolución de una necesidad da lugar a una herramienta, filtro, componente, servidor MCP, aplicación u otro elemento con entidad propia y capacidad de reutilización, ese resultado deja de ser únicamente una pieza interna del producto y se convierte en un **subproducto IASI**.
+
+Los subproductos, por tanto, no se diseñan de antemano como un catálogo cerrado. **Emergen de las necesidades reales que aparecen durante el desarrollo de los productos IASI.**
+
+Pueden adoptar formas muy diferentes y utilizar tecnologías distintas. Lo que los une no es su implementación, sino su origen: todos son soluciones reutilizables surgidas al resolver problemas concretos encontrados durante el desarrollo y aplicación de IASI.
+
+::: {.iasi-grid}
+::: {.iasi-card .iasi-card-publish}
+**AUTOMATIZAR**
+
+### [Herramientas](tools.qmd)
+
+Utilidades y componentes ejecutables que convierten tareas repetibles del proceso de ingeniería en capacidades reutilizables.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**EXTENDER**
+
+### [Filtros](filters.qmd)
+
+Filtros que amplían Quarto y Pandoc con comportamientos específicos necesarios dentro del ecosistema IASI.
+:::
+
+::: {.iasi-card .iasi-card-think}
+**CONECTAR**
+
+### [Servidores MCP](mcp.qmd)
+
+Servidores que exponen herramientas, recursos o capacidades mediante Model Context Protocol.
+:::
+:::
+
+> **Los productos desarrollan el conocimiento. Los subproductos convierten parte de ese conocimiento en soluciones reutilizables.**
+
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
+:::
