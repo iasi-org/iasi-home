@@ -1,0 +1,42 @@
+---
+pagetitle: "Adapters · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-content}
+# Adapters
+
+**Adapters** es la capa que adapta la metodología IASI a agentes y entornos concretos.
+
+IASI define en **Agentics** cómo queremos que participen los agentes en el proceso de ingeniería, de forma independiente de una herramienta determinada. Cada agente, sin embargo, ofrece mecanismos propios para recibir instrucciones, incorporar capacidades, ejecutar herramientas, mantener contexto o integrarse con el entorno de desarrollo.
+
+Los adaptadores traducen esa definición común a las particularidades de cada plataforma.
+
+```text
+IASI Agentics
+     │
+     ├── Codex adapter
+     └── GitHub Copilot adapter
+```
+
+La metodología permanece estable. **El adaptador es la pieza que conoce al agente.**
+
+## Adaptadores
+
+### Codex
+
+Adapta Agentics a los mecanismos y capacidades disponibles en Codex.
+
+### GitHub Copilot
+
+Adapta Agentics a los mecanismos y capacidades disponibles en GitHub Copilot.
+
+Los adaptadores se incorporarán a medida que IASI necesite trabajar de forma reproducible con nuevos agentes. No forman parte del núcleo de la metodología y pueden evolucionar de manera independiente de ella.
+
+> **Agentics define la forma de trabajar. Los adapters la traducen al lenguaje de cada agente.**
+
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de herramientas de inteligencia artificial"}
+
+::::
+:::

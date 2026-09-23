@@ -1,0 +1,32 @@
+.quarto-title h1.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.title-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 1em;
+
+  background-color: #c56a3a;
+
+  -webkit-mask-image: url("../images/buho-silvia-5.png");
+  mask-image: url("../images/buho-silvia-5.png");
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  mask-mode: alpha;
+}
+
+.flow {
+  text-align: center;
+}

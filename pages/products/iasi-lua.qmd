@@ -1,0 +1,188 @@
+---
+pagetitle: "IASI-Lua"
+lang: es
+---
+
+
+::::::::::::::::::: {.iasi-artifact-page .iasi-artifact-publish}
+::: iasi-artifact-subnav
+<a class="iasi-artifact-subnav-brand" href="index.html">iasi-lua</a> [Overview](#overview) [Principio RAC](#rac) [Ciclo](#cycle) [IASI Graphics](#graphics) [IASI PlantUML](#plantuml) [IASI Shiny](#shiny) [Modelo fuente](#source-model) <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Fuser-guide%2F&title=iasi-lua%20User%20Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Fdeveloper-guide%2F&title=iasi-lua%20Developer%20Guide">Developer Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Ftechnical-guide%2F&title=iasi-lua%20Technical%20Guide">Technical Guide</a> [Repository](https://github.com/iasi-org/iasi-lua)
+:::
+
+::::::::::::::::: iasi-artifact-content
+
+# IASI Lua: herramientas ligeras para ingeniería
+
+::: iasi-product-lead
+![](../../resources/images/banner_under_construction_en.png){fig-align="center" width="100%"}
+
+`iasi-lua` reúne extensiones Lua que amplían las capacidades de Quarto dentro de IASI. La fuente se organiza alrededor de un **core compartido** y de directorios independientes para cada extensión; durante el proceso de build, estas extensiones se materializan como distribuciones Quarto autocontenidas bajo `_extensions/`.
+
+Además de su integración nativa con Quarto, las extensiones seguirán también el **modelo MCP**, de forma que sus capacidades puedan exponerse e integrarse de manera homogénea con otros componentes y Sistemas Inteligentes del ecosistema IASI.
+:::
+
+
+
+## Overview {#overview}
+
+`iasi-lua` agrupa extensiones Lua concebidas para ampliar Quarto dentro del ecosistema IASI. Cada extensión mantiene su fuente de forma independiente, reutilizando un **core compartido** cuando corresponde, y se materializa como una distribución autocontenida bajo `_extensions/`.
+
+Entre las extensiones se encuentran **`iasi-graphics`**, orientada a generar diagramas simples con **estilo de presentación**; **`iasi-plantuml`**, que integra PlantUML como lenguaje de diagramación textual dentro de Quarto; e **`iasi-shiny`**, que aporta un servidor web Shiny embebido para incorporar gráficos y experiencias interactivas en los artefactos IASI.
+
+El diseño mantiene la misma separación conceptual utilizada en otros componentes IASI: el modelo fuente describe la intención y la extensión se responsabiliza de transformarlo en un artefacto. Las capacidades que resulte útil exponer fuera de Quarto seguirán también el **modelo MCP**.
+
+::::::: iasi-artifact-flow
+::: iasi-artifact-step
+### Modelo
+
+Describe de forma compacta el contenido y la estructura que se desea representar.
+:::
+
+::: iasi-artifact-step
+### Generación
+
+`iasi-graphics` interpreta el modelo y construye la representación gráfica.
+:::
+
+::: iasi-artifact-step
+### Presentación
+
+El resultado se orienta a diagramas simples, legibles y adecuados para documentación y presentaciones.
+:::
+:::::::
+
+## Principio RAC {#rac}
+
+`iasi-lua` aplica el **Principio RAC · Reuse, Adapt, Create**, un principio transversal de IASI:
+
+> **Si existe, lo usamos. Si no llega, lo adaptamos. Si no existe, lo creamos.**
+
+La prioridad es aprovechar primero las capacidades disponibles en Quarto y en su ecosistema. Cuando una capacidad existente cubre parcialmente la necesidad, se adapta o extiende. Solo cuando ninguna de esas opciones resulta suficiente se crea una nueva extensión IASI.
+
+Este criterio evita duplicar capacidades innecesariamente y favorece que `iasi-lua` actúe como una capa de integración y extensión antes que como un ecosistema paralelo. El mismo principio se aplica a la exposición de capacidades mediante MCP.
+
+## Ciclo de desarrollo {#cycle}
+
+El ciclo de desarrollo sigue el mismo patrón general utilizado por los componentes IASI:
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "validate" as validate
+rectangle "build" as build
+rectangle "publish" as publish
+rectangle "release" as release
+cloud "remoto" as remote
+
+validate --> build
+build --> publish
+publish --> release
+release --> remote
+
+@enduml
+```
+
+Cada fase mantiene una responsabilidad diferenciada: validar, construir, preparar la publicación, reunir la release y, finalmente, permitir su consumo o despliegue externo.
+
+## IASI Graphics {#graphics}
+
+`iasi-graphics` es una herramienta para generar **diagramas simples con estilo de presentación**.
+
+No parte de un editor gráfico. Parte de un **modelo fuente textual**, pequeño y reproducible, que puede mantenerse junto al resto de fuentes del proyecto.
+
+El modelo fuente utiliza PlantUML.
+
+
+## IASI PlantUML {#plantuml}
+
+`iasi-plantuml` integra **PlantUML** en el flujo de autoría de Quarto como lenguaje fuente para diagramas versionables y reproducibles.
+
+La extensión permite tratar un diagrama como parte del propio documento: la fuente describe la estructura o relación que se quiere representar y el render de Quarto materializa su representación gráfica. De este modo, los diagramas permanecen junto al resto de fuentes del proyecto y participan del mismo ciclo de edición, revisión y publicación.
+
+`iasi-plantuml` proporciona también la base de diagramación utilizada por otras extensiones, como `iasi-graphics`, cuando PlantUML resulta suficiente como lenguaje fuente.
+
+## IASI Shiny {#shiny}
+
+`iasi-shiny` integra **Shiny** como servidor web embebido para aquellas representaciones que necesitan ir más allá de una salida estática.
+
+Su función es proporcionar a los artefactos IASI una capa de visualización interactiva capaz de servir gráficos, controles y vistas dinámicas desde el propio entorno de trabajo. Quarto conserva el papel de documento y estructura de publicación, mientras Shiny aporta la ejecución interactiva cuando el contenido necesita responder al usuario, explorar datos o modificar una visualización en tiempo real.
+
+La intención no es convertir cada gráfico en una aplicación web, sino disponer de una capacidad interactiva cuando una representación estática deja de ser suficiente, siguiendo el **Principio RAC**.
+
+## Modelo fuente {#source-model}
+
+Un modelo mínimo puede ser:
+
+```{.plantuml}
+@startfiles
+/c.txt
+/b.txt
+/a.txt
+/c
+/b
+/a
+@endfiles
+```
+
+El modelo expresa únicamente la estructura que se desea representar. `iasi-graphics` se ocupa de convertir esa descripción en una representación gráfica preparada para su uso en documentación o presentaciones.
+
+La separación es deliberada:
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "modelo fuente\nPlantUML" as source
+rectangle "iasi-graphics" as graphics
+rectangle "diagrama" as diagram
+
+source --> graphics
+graphics --> diagram
+
+@enduml
+```
+
+De este modo, el contenido del diagrama permanece como fuente versionable y la representación visual se trata como un artefacto generado.
+
+## Recursos {#resources}
+
+::::::: iasi-artifact-docs
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Fuser-guide%2F&title=iasi-lua%20User%20Guide">User Guide</a>
+
+Uso de las herramientas incluidas en `iasi-lua`, modelos fuente y generación de artefactos.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Fdeveloper-guide%2F&title=iasi-lua%20Developer%20Guide">Developer Guide</a>
+
+Principios de diseño, Principio RAC, modelo MCP, convenciones y criterios para desarrollar y evolucionar extensiones Lua dentro de IASI.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-lua%2Ftechnical-guide%2F&title=iasi-lua%20Technical%20Guide">Technical Guide</a>
+
+Arquitectura interna, ejecución, modelos fuente y contratos técnicos de las herramientas de `iasi-lua`.
+:::
+
+::: iasi-artifact-doc
+### [Repository](https://github.com/iasi-org/iasi-lua)
+
+Código fuente, extensiones Lua, documentación y evolución pública de `iasi-lua`.
+:::
+:::::::
+:::::::::::::::::
+:::::::::::::::::::

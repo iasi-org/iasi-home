@@ -1,0 +1,111 @@
+website:
+  page-footer:
+    left: "© 2026 Javier G. Grandez"
+    center: '<span id="iasi-publish-date"></span>'
+    right: "IASI Rocks 🤘"
+
+  navbar:
+    title: IASI
+    pinned: true
+
+    left:
+      - text: "Intro"
+        href: pages/locale/en/intro.qmd
+      - text: "Libros"
+        menu:
+          - text: "Todos"
+            href: books.qmd
+          - text: "IASI Vol. I"
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-I%2F&title=IASI%20I
+          - text: "IASI Vol. II"
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-II%2F&title=IASI%20II
+          - text: "IASI Vol. III"
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-book-III%2F&title=IASI%20III
+      - text: "Productos"
+        menu:
+          - text: "Todos"
+            href: pages/products/index.qmd
+          - text: "IASI R"
+            href: pages/products/iasi-r.qmd
+          - text: "IASI Dev Tools"
+            href: pages/products/iasi-dev-tools.qmd
+          - text: "IASI RStudio"
+            href: pages/products/iasi-rstudio.qmd
+          - text: "IASI Lua"
+            href: pages/products/iasi-lua.qmd
+      - text: "Manuales"
+        menu:
+          - text: "Todos"
+            href: pages/manuals/index.qmd
+          - text: "User Guides"
+            href: pages/manuals/user-guides.qmd
+          - text: "Technical Guides"
+            href: pages/manuals/technical-guides.qmd
+          - text: "Developer Guides"
+            href: pages/manuals/developer-guides.qmd
+      - text: "Viaje"
+        menu:
+          - text: "Decisiones de ingeniería"
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-edr%2F&title=EDR
+          - text: "Historia del viaje"
+            href: pages/viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-journey%2F&title=Journey
+      - text: "Instalación"
+        menu:
+          - text: "IASI Plataforma"
+            href: pages/aznar.qmd
+          - text: "IASI Ecosistema"
+            href: pages/aznar.qmd
+      - text: "Introducing IASI"
+        menu:
+          - text: "Metodología"
+            icon: easel2
+            href: "https://1drv.ms/p/c/a07f15822e16273b/IQABDnXsoiFaSITQjgnkUD8wATQ36S1oRHzF4N0YMZI0cSY?e=nRzMFc"
+            target: "_blank"                        
+          - text: "Ecosistema"
+            icon: diagram-3
+            href: "https://1drv.ms/p/c/a07f15822e16273b/IQAFsr4Sqp-mTaE7uciJUwbeAYvi5G5f9SIyoURgqZDEyzM?e=87feLO"
+            target: "_blank"            
+
+    right:
+      - text: "Manifiesto"
+        href: pages/common/manifesto.qmd
+      - text: "Principios"
+        href: principles.qmd
+      - text: "Sobre IASI"
+        href: about.qmd
+      - text: "The Challenge"
+        href: pages/locale/es/challenge.qmd
+      - text: "ES"
+        href: pages/locale/es/index.qmd
+        aria-label: "Español"
+
+      - text: "EN"
+        href: pages/locale/en/index.qmd
+        aria-label: "English"
+
+    tools:
+      - icon: translate
+        href: pages/common/manifesto-bilingual.qmd
+        aria-label: "Idioma / Language"
+      - icon: envelope
+        href: pages/locale/es/contact.qmd
+        aria-label: "Contact us"
+      - icon: github
+        href: https://github.com/iasi-org
+        aria-label: "Explore IASI on GitHub"
+
+format:
+  html:
+    pagetitle: "IASI"
+    title-prefix: ""
+    theme:
+      - cosmo
+      - resources/css/iasi.scss
+      - resources/css/home.scss
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    include-in-header:
+      - language.html
+    nclude-after-body:
+      - resources/js/navbar.js      

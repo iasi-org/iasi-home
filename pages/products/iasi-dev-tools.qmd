@@ -1,0 +1,152 @@
+---
+pagetitle: "IASI Dev Tools"
+lang: es
+---
+
+
+::::::::::::::::::: {.iasi-artifact-page .iasi-artifact-publish}
+::: iasi-artifact-subnav
+<a class="iasi-artifact-subnav-brand" href="index.html">iasi-dev-tools</a> [Overview](#overview) [Arquitectura](#architecture) [Flujo](#workflow) [Materialize](#materialize) [Infraestructura](#infrastructure) [Repository](https://github.com/iasi-org/iasi-dev-tools)
+:::
+
+::::::::::::::::: iasi-artifact-content
+
+# IASI Dev Tools: Ingeniería y operación del ecosistema
+
+::: iasi-product-lead
+![](/resources/images/banner_under_construction_en.png)
+
+El conjunto de herramientas de desarrollo de IASI para **descubrir proyectos, orquestar su ciclo de ingeniería, materializar organizaciones y automatizar infraestructura reproducible**.
+:::
+
+
+
+## Overview {#overview}
+
+`iasi-dev-tools` es el repositorio que reúne las herramientas utilizadas para construir, operar y evolucionar el ecosistema IASI.
+
+No define un único motor para todos los tipos de proyecto. Separa la **orquestación** de la **ejecución concreta**: `iasi-dev` descubre repositorios y proyectos, determina qué debe ejecutarse y en qué orden, y delega cada operación en el componente responsable del tipo de proyecto.
+
+La configuración propia de IASI se expresa en **TOML**. YAML se reserva para herramientas externas que lo requieran.
+
+## Arquitectura {#architecture}
+
+::::::: iasi-artifact-flow
+::: iasi-artifact-step
+### iasi-dev
+
+Descubre repositorios y proyectos IASI, resuelve los targets solicitados y orquesta operaciones y workflows.
+:::
+
+::: iasi-artifact-step
+### Engines
+
+Cada tipo de proyecto ejecuta su operación concreta mediante el componente correspondiente. Por ejemplo, `iasi-r` gestiona proyectos R y Quarto.
+:::
+
+::: iasi-artifact-step
+### iasi-builder
+
+Componente de construcción y generación actualmente estabilizado, sin ampliar responsabilidades mientras se consolida el flujo general.
+:::
+
+::: iasi-artifact-step
+### Infrastructure {#infrastructure-layer}
+
+Scripts y configuración reproducible para preparar el entorno IASI, incluidas las máquinas virtuales y servicios de infraestructura.
+:::
+:::::::
+
+`iasi-dev` mantiene separados los argumentos solicitados por el usuario de los targets finalmente descubiertos. El discovery recorre los repositorios, identifica proyectos IASI por su configuración y deja que el tipo de proyecto determine la operación concreta.
+
+## Flujo de trabajo {#workflow}
+
+Las operaciones básicas siguen siendo independientes:
+
+``` text
+iasi-dev build   [target...]
+iasi-dev publish [target...]
+iasi-dev release [target...]
+iasi-dev commit
+```
+
+Los workflows encadenan esas operaciones cuando se necesita recorrer el ciclo completo:
+
+``` text
+iasi-dev workflow release -a
+```
+
+Con `-a`, el workflow de release ejecuta:
+
+``` text
+build  →  publish  →  release  →  commit
+```
+
+La orquestación se realiza **proyecto a proyecto**. `iasi-dev` decide el orden y el target; el engine correspondiente ejecuta la operación sobre ese proyecto.
+
+`release` es una operación atómica. Los commits y el push no forman parte de `build`, `publish` o `release`; pertenecen al workflow o a las operaciones Git explícitas.
+
+## Materialize {#materialize}
+
+`materialize` crea una organización materializada a partir del estado activo de otra organización local:
+
+``` text
+iasi-dev materialize [-l] <destino> [origen]
+```
+
+El **destino es obligatorio**. Si se omite el origen, se utiliza la organización desde la que se ejecuta el comando.
+
+La materialización trabaja sobre el estado actual de los repositorios, no sobre un tag: copia el contenido, excluye el repositorio Git original, inicializa un nuevo repositorio, configura sus remotos y deja un único estado materializado coherente.
+
+Las rutas pueden ser relativas. `--path` pertenece al procesamiento global de la CLI y se resuelve antes de interpretar los argumentos del verbo.
+
+Con `-l`, la materialización permanece local y no continúa con la publicación remota.
+
+## Infraestructura {#infrastructure}
+
+`iasi-dev-tools` también contiene las herramientas de infraestructura necesarias para reproducir el entorno de desarrollo IASI.
+
+Los scripts de infraestructura se organizan por familia de entorno:
+
+- `bin/ps/`: scripts PowerShell para entornos **Microsoft Windows**, con funciones compartidas en `bin/ps/common/`.
+- `bin/sh/`: scripts de shell equivalentes para entornos ***nix**, con funciones compartidas en `bin/sh/common/`.
+
+Ambos directorios siguen el mismo modelo funcional, adaptado a las herramientas y convenciones propias de cada plataforma. La configuración propia se mantiene en TOML y los scripts específicos de una máquina o servicio conservan únicamente la configuración que les corresponde.
+
+Este nivel permite construir de forma reproducible elementos como la red privada IASI, las máquinas virtuales y su provisioning, sin mezclar esa responsabilidad con la lógica de los engines de proyecto.
+
+## Recursos {#resources}
+
+::::::: iasi-artifact-docs
+::: iasi-artifact-doc
+### `iasi-dev`
+
+CLI de orquestación: discovery, targets, operaciones, workflows, materialización y coordinación entre repositorios.
+:::
+
+::: iasi-artifact-doc
+### `iasi-builder`
+
+Componente de construcción y generación mantenido dentro de `iasi-dev-tools`.
+:::
+
+::: iasi-artifact-doc
+### `bin/ps`
+
+Scripts PowerShell para infraestructura en entornos Microsoft Windows, con utilidades compartidas en `bin/ps/common/`.
+:::
+
+::: iasi-artifact-doc
+### `bin/sh`
+
+Scripts de shell equivalentes para infraestructura en entornos *nix, con utilidades compartidas en `bin/sh/common/`.
+:::
+
+::: iasi-artifact-doc
+### [Repository](https://github.com/iasi-org/iasi-dev-tools)
+
+Código fuente, herramientas, scripts, documentación y evolución pública de `iasi-dev-tools`.
+:::
+:::::::
+:::::::::::::::::
+:::::::::::::::::::

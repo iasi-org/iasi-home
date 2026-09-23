@@ -1,0 +1,23 @@
+---
+title: "Estamos trabajando en ello"
+format: html
+---
+
+<video id="aznar"
+       controls
+       autoplay
+       loop
+       playsinline
+       preload="auto"
+       style="display: block; width: min(100%, 640px); margin: 2rem auto; border-radius: 0.5rem;">
+  <source
+    src="../resources/videos/estamos-trabajando-en-ello.mp4"
+    type="video/mp4">
+</video>
+
+<img
+  src="../resources/images/banner_under_construction_en.png"
+  alt="Under construction"
+  height="256"
+  style="display: block; margin: 2rem auto;">
+  

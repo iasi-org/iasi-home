@@ -1,0 +1,87 @@
+---
+pagetitle: "Principios"
+lang: es
+title-block-style: none
+---
+
+::: {.iasi-document}
+
+# Decálogo IASI
+
+Los principios que orientan el diseño, desarrollo y evolución de IASI.
+
+::: {.iasi-principles}
+
+<details>
+<summary><strong>1. La ingeniería es el objetivo.</strong></summary>
+
+Las herramientas, tecnologías y sistemas inteligentes son medios. El objetivo sigue siendo resolver problemas mediante una ingeniería rigurosa, comprensible y sostenible.
+
+</details>
+
+<details>
+<summary><strong>2. Los Sistemas Inteligentes son asistentes de ingeniería.</strong></summary>
+
+No son únicamente herramientas de generación. Pueden participar en el análisis, diseño, implementación, validación y evolución del sistema como parte activa del proceso de ingeniería.
+
+</details>
+
+<details>
+<summary><strong>3. El conocimiento debe ser abierto.</strong></summary>
+
+Las decisiones, aprendizajes y resultados deben poder compartirse, discutirse y reutilizarse siempre que sea posible.
+
+</details>
+
+<details>
+<summary><strong>4. La documentación es un artefacto de ingeniería.</strong></summary>
+
+Documentar no es una actividad posterior al desarrollo. La documentación forma parte del sistema y de su proceso de construcción.
+
+</details>
+
+<details>
+<summary><strong>5. La automatización debe ser consecuencia del diseño, no un fin en sí misma.</strong></summary>
+
+Automatizar tiene valor cuando simplifica un proceso correctamente entendido y diseñado. Automatizar un proceso deficiente solo permite equivocarse más deprisa.
+
+</details>
+
+<details>
+<summary><strong>6. Los componentes deben ser reutilizables.</strong></summary>
+
+Cuando una solución puede generalizarse, debe convertirse en un componente capaz de servir a otros proyectos y contextos.
+
+</details>
+
+<details>
+<summary><strong>7. Las decisiones deben poder cuestionarse.</strong></summary>
+
+Ninguna decisión se considera correcta por autoridad o costumbre. Debe poder explicarse, revisarse y sustituirse cuando aparezca una alternativa mejor.
+
+</details>
+
+<details>
+<summary><strong>8. La metodología también evoluciona.</strong></summary>
+
+La metodología no es un marco rígido impuesto al problema. Aprende de la experiencia y cambia cuando la evidencia demuestra que existe una forma mejor de trabajar.
+
+</details>
+
+<details>
+<summary><strong>9. El contexto debe ser explícito, compartido y gobernado.</strong></summary>
+
+Un Sistema Inteligente solo puede participar de forma fiable en ingeniería cuando dispone del contexto adecuado. Ese contexto debe formar parte explícita del proceso y poder mantenerse, compartirse y controlarse.
+
+</details>
+
+<details>
+<summary><strong>10. La complejidad debe encapsularse, no trasladarse al usuario.</strong></summary>
+
+Una solución puede ser internamente sofisticada, pero esa complejidad no debe convertirse innecesariamente en complejidad de uso. La buena ingeniería ofrece interfaces simples sobre mecanismos complejos.
+
+</details>
+
+:::
+
+:::

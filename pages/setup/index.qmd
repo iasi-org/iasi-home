@@ -1,0 +1,75 @@
+---
+pagetitle: "Setup · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.html">Setup</a>
+[IASI Platform](iasi-platform.qmd)
+[IASI Ecosystem](iasi-ecosystem.qmd)
+::::
+
+:::: {.iasi-artifact-content}
+
+# Setup IASI
+
+IASI dispone de dos entornos de instalación diferentes según el objetivo.
+
+Uno permite **instalar y utilizar IASI** como plataforma.  
+El otro permite **crear, desarrollar y evolucionar el propio ecosistema IASI**.
+
+::: {.iasi-grid}
+
+::: {.iasi-card .iasi-card-publish}
+**USAR IASI**
+
+### [IASI Platform](iasi-platform.qmd)
+
+Instalación de la plataforma IASI para utilizar sus capacidades, herramientas e integraciones sin necesidad de montar el entorno completo de desarrollo del ecosistema.
+
+El punto de entrada será `iasi-setup-platform`.
+:::
+
+::: {.iasi-card .iasi-card-extend}
+**DESARROLLAR IASI**
+
+### [IASI Ecosystem](iasi-ecosystem.qmd)
+
+Instalación del entorno necesario para desarrollar, construir, probar y evolucionar los productos y componentes que forman IASI.
+
+El punto de entrada será `iasi-setup-ecosystem`.
+:::
+
+:::
+
+## Dos objetivos, dos instalaciones
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "IASI Platform\nusar IASI" as platform
+rectangle "IASI Ecosystem\ndesarrollar IASI" as ecosystem
+
+platform -[hidden]-> ecosystem
+@enduml
+```
+
+**IASI Platform** está orientada al usuario de IASI.
+
+**IASI Ecosystem** está orientado a quienes necesitan construir, mantener o evolucionar IASI.
+
+Ambos setups actúan como puntos de entrada controlados: proporcionan documentación, configuración, scripts y versiones coherentes de los componentes necesarios para cada escenario.
+
+::::
+
+:::

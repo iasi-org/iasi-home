@@ -1,0 +1,145 @@
+---
+pagetitle: "IASI-R"
+lang: es
+---
+
+
+::::::::::::::::::: {.iasi-artifact-page .iasi-artifact-publish}
+::: iasi-artifact-subnav
+<a class="iasi-artifact-subnav-brand" href="index.html">iasi-r</a> [Overview](#overview) [Ciclo](#cycle) [Modelo](#model) <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Fuser-guide%2F&title=iasi-r%20User%20Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Fdeveloper-guide%2F&title=iasi-r%20Developer%20Guide">Developer Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Ftechnical-guide%2F&title=iasi-r%20Technical%20Guide">Technical Guide</a> [Repository](https://github.com/iasi-org/iasi-r)
+:::
+
+::::::::::::::::: iasi-artifact-content
+
+# IASI R: Construcción y publicación reproducible
+
+::: iasi-product-lead
+![](/resources/images/banner_under_construction_en.png)
+
+El componente R de IASI para **descubrir, validar, construir, publicar y reunir entregables** manteniendo separadas las fuentes, los resultados de build, la publicación y la release.
+:::
+
+
+
+## Overview {#overview}
+
+`iasi-r` es el componente del ecosistema IASI dedicado al entorno R. Su paquete `iasi` coordina proyectos Quarto y paquetes R mediante una API pequeña y explícita.
+
+Nació como **iasi-quarto**, centrado en ingeniería documental sobre Quarto. Al ampliar su responsabilidad al ciclo de construcción, publicación y release de proyectos R, evoluciona a **iasi-r**.
+
+No sustituye a Quarto ni oculta su configuración. Añade por encima un ciclo de ingeniería común para que cada fase tenga una responsabilidad clara.
+
+::::::: iasi-artifact-flow
+::: iasi-artifact-step
+### Validate
+
+Comprueba configuración, estructura e invariantes antes de construir.
+:::
+
+::: iasi-artifact-step
+### Build
+
+Construye publicaciones Quarto y artefactos de paquetes R.
+:::
+
+::: iasi-artifact-step
+### Publish
+
+Materializa una publicación local a partir de resultados ya construidos.
+:::
+
+::: iasi-artifact-step
+### Release
+
+Reúne los entregables locales preparados para consumo externo.
+:::
+:::::::
+
+## Ciclo de trabajo {#cycle}
+
+``` r
+iasi::validate()
+iasi::build()
+iasi::publish()
+iasi::release()
+```
+
+Cada operación es deliberadamente independiente:
+
+``` text
+validate  → comprobar
+build     → construir
+publish   → preparar publicación local
+release   → reunir entregables
+```
+
+El despliegue a sistemas externos queda fuera de `iasi-r`; herramientas de nivel superior, como `iasi-dev`, pueden consumir la release y continuar el ciclo.
+
+## Modelo de materialización {#model}
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "fuentes" as sources
+rectangle "_outputs" as outputs
+rectangle "_publish" as publish
+rectangle "release" as release
+cloud "remoto" as remote
+
+sources --> outputs
+outputs --> publish
+publish --> release
+release --> remote
+
+@enduml
+```
+
+`iasi-r` mantiene estas materializaciones separadas para evitar que edición, construcción, publicación y entrega se mezclen en un único directorio o en una única operación.
+
+Para proyectos Quarto, la configuración IASI puede definir una estrategia de publicación dentro de `publication`:
+
+``` yaml
+type: quarto
+
+publication:
+  strategy: parted
+```
+
+Sin estrategia IASI, un proyecto `quarto` puede renderizarse como Quarto puro. Con estrategia, entra en el pipeline IASI de preparación, construcción y postprocesado.
+
+## Recursos {#resources}
+
+::::::: iasi-artifact-docs
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Fuser-guide%2F&title=iasi-r%20User%20Guide">User Guide</a>
+
+Uso del paquete `iasi`, configuración de proyectos y ciclo `validate → build → publish → release`.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Fdeveloper-guide%2F&title=iasi-r%20Developer%20Guide">Developer Guide</a>
+
+Principios de diseño, responsabilidades y criterios para mantener y evolucionar `iasi-r`.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-r%2Ftechnical-guide%2F&title=iasi-r%20Technical%20Guide">Technical Guide</a>
+
+Arquitectura interna, motores, configuración, materialización y contratos técnicos.
+:::
+
+::: iasi-artifact-doc
+### [Repository](https://github.com/iasi-org/iasi-r)
+
+Código fuente, paquete R, documentación y evolución pública de `iasi-r`.
+:::
+:::::::
+:::::::::::::::::
+:::::::::::::::::::

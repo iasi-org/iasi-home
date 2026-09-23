@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: _outputs
+  resources:
+    - resources/**
+
+profile:
+  default: web
+
+website:
+  title: "IASI"
+  page-navigation: true
+  search: false
+
+  announcement:
+    dismissable: false
+    content: "![](/resources/images/ants.png){.iasi-ants-image}"
+    type: light
+    position: above-navbar
+
+filters:
+  - iasi-plantuml
+
+filter-options:
+  plantuml:
+    enabled: true
+    server: http://iasi-docker:10025
+    cache: true

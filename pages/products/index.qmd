@@ -1,0 +1,105 @@
+---
+pagetitle: "Productos · IASI"
+lang: es
+---
+
+::: {.iasi-artifact-page .iasi-artifact-publish}
+:::: {.iasi-artifact-subnav}
+<a class="iasi-artifact-subnav-brand" href="index.html">Productos</a>
+[IASI R](iasi-r.qmd)
+[IASI Dev](iasi-dev-tools.qmd)
+[IASI Lua](iasi-lua.qmd)
+[IASI RStudio](iasi-rstudio.qmd)
+::::
+
+:::: {.iasi-artifact-content}
+# Productos IASI {#todos}
+
+Los **productos IASI** son soluciones software nacidas para resolver necesidades reales del ecosistema: diseño, desarrollo, automatización, publicación, productividad e integración de herramientas.
+
+Pero **no están ligados exclusivamente a IASI**.
+
+Cada producto tiene **identidad y ciclo de vida propios**: evoluciona de forma independiente, puede versionarse, probarse, documentarse y liberarse por separado, y mantiene un diseño suficientemente autónomo para ser utilizado en otros contextos.
+
+> **IASI es el origen y el primer caso de uso del producto, no su frontera.**
+
+Esta autonomía es una característica deliberada. Un producto IASI debe poder satisfacer necesidades equivalentes en otros proyectos u organizaciones con los ajustes necesarios, **sin tener que cambiar su diseño ni su arquitectura fundamental**.
+
+Por tanto, los productos no son simples utilidades internas ni piezas circunstanciales del ecosistema. Son software reutilizable surgido de necesidades concretas y preparado para tener vida propia.
+
+::: {.iasi-grid}
+
+::: {#iasi-r .iasi-card .iasi-card-publish}
+**MATERIALIZAR**
+
+### [iasi-r](iasi-r.qmd)
+
+Capa R del ecosistema. Proporciona funcionalidad reutilizable para proyectos R y Quarto y materializa el ciclo `validate → build → publish → release`.
+:::
+
+::: {#iasi-dev .iasi-card .iasi-card-publish}
+**ORQUESTAR**
+
+### [iasi-dev](iasi-dev-tools.qmd)
+
+CLI de desarrollo y operación. Descubre targets, ejecuta comandos y workflows, materializa entornos y automatiza procesos repetibles de ingeniería.
+:::
+
+::: {#iasi-lua .iasi-card .iasi-card-extend}
+**EXTENDER**
+
+### [iasi-lua](iasi-lua.qmd)
+
+Conjunto de extensiones Lua para Quarto con core común y capacidades como PlantUML, Shiny y Graphics, reutilizables también mediante interfaces MCP.
+:::
+
+::: {#iasi-rstudio .iasi-card .iasi-card-environment}
+**INTEGRAR**
+
+### [iasi-rstudio](iasi-rstudio.qmd)
+
+Addin para RStudio que integra capacidades y flujos IASI dentro del entorno interactivo de desarrollo.
+:::
+
+:::
+
+## Ciclo de vida propio {#lifecycle}
+
+Aunque nacen dentro del ecosistema IASI, los productos no dependen de la evolución de un único libro, publicación o proyecto consumidor.
+
+Cada uno mantiene su propio ciclo:
+
+```text
+necesidad
+   ↓
+diseño
+   ↓
+desarrollo
+   ↓
+validación
+   ↓
+release
+   ↓
+evolución
+```
+
+Ese ciclo permite que un producto pueda continuar evolucionando aunque cambie el proyecto que lo originó, y que pueda ser reutilizado en otros escenarios donde exista una necesidad equivalente.
+
+La relación es, por tanto:
+
+```text
+necesidad IASI
+     ↓
+producto
+     ↓
+uso en IASI
+     +
+otros usos
+```
+
+> **Una solución se convierte en producto cuando deja de depender del problema concreto que la originó.**
+
+![](../../resources/images/iasi-banner.png){.iasi-subproducts-banner fig-alt="Ecosistema de productos IASI"}
+
+::::
+:::

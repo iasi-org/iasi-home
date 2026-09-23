@@ -1,0 +1,164 @@
+---
+pagetitle: "IASI-RStudio"
+lang: es
+---
+
+
+::::::::::::::::::: {.iasi-artifact-page .iasi-artifact-environment}
+::: iasi-artifact-subnav
+<a class="iasi-artifact-subnav-brand" href="index.html">iasi-rstudio</a> [Overview](#overview) [Modelo](#model) [Capacidades](#capabilities) [Integración](#integration) <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Fuser-guide%2F&title=iasi-rstudio%20User%20Guide">User Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Fdeveloper-guide%2F&title=iasi-rstudio%20Developer%20Guide">Developer Guide</a> <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Ftechnical-guide%2F&title=iasi-rstudio%20Technical%20Guide">Technical Guide</a> [Repository](https://github.com/iasi-org/iasi-rstudio)
+:::
+
+::::::::::::::::: iasi-artifact-content
+
+# IASI RStudio: IASI dentro de RStudio
+
+::: iasi-product-lead
+![](/resources/images/banner_under_construction_en.png)
+
+`iasi-rstudio` integra el ecosistema IASI en RStudio y acerca sus operaciones al flujo de trabajo habitual del desarrollador. Actúa como una **capa interactiva de integración**, proporcionando acciones, asistentes y puntos de entrada propios de RStudio sin duplicar la lógica de ingeniería de los componentes IASI.
+:::
+
+
+
+## Overview {#overview}
+
+`iasi-rstudio` es el plugin de integración entre RStudio y IASI. Su responsabilidad es trasladar las capacidades de IASI al entorno interactivo de RStudio de forma coherente con sus proyectos, menús, comandos y herramientas de desarrollo.
+
+La lógica de ingeniería permanece en los componentes especializados del ecosistema:
+
+- **`iasi-r`** proporciona las capacidades relacionadas con proyectos R y Quarto y con su ciclo de validación, construcción, publicación y release.
+- **`iasi-dev`** proporciona las capacidades de nivel superior relacionadas con proyectos, organización, materialización, workflows y operaciones de desarrollo.
+
+`iasi-rstudio` se apoya en ambos y presenta esas capacidades dentro de RStudio como una experiencia integrada.
+
+## Modelo {#model}
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "RStudio" as rstudio
+rectangle "iasi-rstudio" as plugin
+rectangle "iasi-r" as iasir
+rectangle "iasi-dev" as iasidev
+
+rstudio --> plugin
+plugin --> iasir
+plugin --> iasidev
+
+@enduml
+```
+
+La separación es deliberada: `iasi-rstudio` conoce **cómo presentar e integrar** una capacidad en RStudio; `iasi-r` e `iasi-dev` conocen **cómo ejecutarla** dentro del modelo de ingeniería IASI.
+
+## Capacidades {#capabilities}
+
+::::::: iasi-artifact-flow
+::: iasi-artifact-step
+### Crear proyectos Quarto
+
+Inicializa proyectos Quarto siguiendo las convenciones, estructura y configuración definidas por IASI.
+:::
+
+::: iasi-artifact-step
+### Crear proyectos R
+
+Crea proyectos R preparados para trabajar dentro del modelo IASI, incluyendo su estructura inicial y los elementos de configuración correspondientes.
+:::
+
+::: iasi-artifact-step
+### Generar EDR
+
+Facilita la creación de fichas **EDR** a partir de plantillas y convenciones IASI, integrándolas directamente en el proyecto activo.
+:::
+
+::: iasi-artifact-step
+### Ejecutar el ciclo IASI
+
+Expone desde RStudio operaciones como validación, build, publicación y release, delegando su ejecución en `iasi-r`.
+:::
+
+::: iasi-artifact-step
+### Operar sobre proyectos
+
+Permite acceder a operaciones de proyecto, materialización y workflows proporcionadas por `iasi-dev` sin abandonar RStudio.
+:::
+
+::: iasi-artifact-step
+### Crear artefactos IASI
+
+Ofrece asistentes para incorporar al proyecto configuraciones, documentación, estructuras y otros artefactos definidos por el ecosistema IASI.
+:::
+:::::::
+
+Estas capacidades pueden materializarse mediante addins, comandos, asistentes, acciones contextuales u otros mecanismos propios de RStudio. La interfaz concreta puede evolucionar sin alterar la separación de responsabilidades entre el plugin y los componentes que ejecutan la lógica.
+
+## Integración {#integration}
+
+`iasi-rstudio` funciona como un **frontend especializado para RStudio**. No introduce un segundo modelo de proyecto ni una implementación paralela de los procesos IASI.
+
+Cuando una acción pertenece al dominio R o Quarto, el plugin utiliza `iasi-r`. Cuando pertenece al dominio de organización, proyecto u orquestación del entorno de desarrollo, utiliza `iasi-dev`.
+
+```{.plantuml}
+@startuml
+left to right direction
+
+skinparam shadowing false
+skinparam rectangle {
+    BackgroundColor #FFF4B8
+    BorderColor #666666
+}
+
+rectangle "acción en RStudio" as action
+rectangle "iasi-rstudio" as plugin
+rectangle "capacidad IASI" as capability
+rectangle "proyecto" as project
+
+cloud "iasi-r\niasi-dev" as engines
+
+action --> plugin
+plugin --> engines
+engines --> capability
+capability --> project
+
+@enduml
+```
+
+El resultado es una integración en la que RStudio aporta la experiencia interactiva y IASI mantiene centralizada la semántica de ingeniería.
+
+## Recursos {#resources}
+
+::::::: iasi-artifact-docs
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Fuser-guide%2F&title=iasi-rstudio%20User%20Guide">User Guide</a>
+
+Uso del plugin, creación de proyectos, generación de EDR y acceso a las operaciones IASI desde RStudio.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Fdeveloper-guide%2F&title=iasi-rstudio%20Developer%20Guide">Developer Guide</a>
+
+Principios de integración, responsabilidades del plugin y criterios para incorporar nuevas capacidades IASI a RStudio.
+:::
+
+::: iasi-artifact-doc
+### <a href="../viewer.html?doc=https%3A%2F%2Fiasi-org.github.io%2Fiasi-rstudio%2Ftechnical-guide%2F&title=iasi-rstudio%20Technical%20Guide">Technical Guide</a>
+
+Arquitectura de integración, comunicación con `iasi-r` e `iasi-dev` y mecanismos técnicos utilizados dentro de RStudio.
+:::
+
+::: iasi-artifact-doc
+### [Repository](https://github.com/iasi-org/iasi-rstudio)
+
+Código fuente, integración con RStudio, documentación y evolución pública de `iasi-rstudio`.
+:::
+:::::::
+:::::::::::::::::
+:::::::::::::::::::

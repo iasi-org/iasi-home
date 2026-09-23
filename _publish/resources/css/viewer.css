@@ -1,0 +1,93 @@
+.quarto-title-block {
+  display: none;
+}
+
+main.content {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+.page-layout-full .page-columns {
+  display: block;
+}
+
+.iasi-doc-viewer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 9.5rem);
+  background: #fff;
+}
+
+.iasi-doc-viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background: #f7f8fa;
+}
+
+.iasi-doc-viewer-label {
+  display: block;
+  color: #5f6670;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.iasi-doc-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid currentColor;
+  border-radius: 0.35rem;
+  font-size: 1.35rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.iasi-doc-open:hover,
+.iasi-doc-open:focus-visible {
+  background: #fff;
+}
+
+.iasi-doc-message {
+  padding: 0.55rem 1rem;
+  color: #4f5660;
+  font-size: 0.9rem;
+  background: #fff8dc;
+}
+
+.iasi-doc-message[data-state="loaded"] {
+  display: none;
+}
+
+.iasi-doc-message[data-state="error"] {
+  color: #842029;
+  background: #f8d7da;
+}
+
+.iasi-doc-frame {
+  flex: 1 1 auto;
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 13rem);
+  border: 0;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .iasi-doc-viewer {
+    min-height: calc(100vh - 8rem);
+  }
+
+  .iasi-doc-frame {
+    min-height: calc(100vh - 12rem);
+  }
+}

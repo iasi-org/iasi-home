@@ -1,0 +1,18 @@
+---
+title: "Contact"
+lang: en
+---
+
+::: {.iasi-document}
+
+IASI is still a growing project. While new channels for participation and collaboration are being developed, **email is currently the best way to contact the team**.
+
+## Email
+
+[Javier G. Grández](mailto:jggrandez@gmail.com)
+
+You can write to us to ask questions, propose ideas, collaborate on the project, or simply start a conversation about IASI.
+
+To make our work easier, please start the email subject line with the keyword **IASI**.
+
+:::
